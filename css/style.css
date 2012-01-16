@@ -16,7 +16,7 @@ dfn { font-style: italic; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 ins { background: #ff9; color: #000; text-decoration: none; }
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
@@ -110,6 +110,16 @@ a.extra {
 
 .post h1 {
   margin-bottom: 0px;
+}
+
+.highlight {
+  font-size: 90%;
+  line-height: 1.3em;
+  background-color: #000;
+}
+
+.highlight pre {
+  padding: 2%;
 }
 
 footer {
