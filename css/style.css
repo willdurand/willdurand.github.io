@@ -93,6 +93,12 @@ a.extra {
   line-height: 1.5em;
 }
 
+.site img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .meta {
   margin-top: 0px;
   color: #93a1a1;
@@ -112,13 +118,14 @@ a.extra {
   margin-bottom: 0px;
 }
 
-.highlight {
+.highlight, pre {
+  color: #fff;
   font-size: 90%;
   line-height: 1.3em;
   background-color: #000;
 }
 
-.highlight pre {
+pre {
   padding: 2%;
 }
 
