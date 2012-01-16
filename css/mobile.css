@@ -1,0 +1,11 @@
+.site {
+  width: auto;
+}
+
+.ribbon {
+  display: none;
+}
+
+footer div.presentation {
+  width: 60%;
+}

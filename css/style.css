@@ -114,10 +114,10 @@ a.extra {
 
 footer {
   margin-top: 4%;
+  font-size: 90%;
 }
 
 footer .icon {
-  font-size: 90%;
   padding-left: 22px;
 }
 
@@ -133,14 +133,22 @@ footer .twitter {
   background: transparent url(../images/twitter.png) no-repeat;
 }
 
+footer div {
+  float: left;
+}
+
+footer div.presentation {
+  width: 15em;
+  margin-left: 5%;
+  text-align: justify;
+}
+
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
 }
 
 @media print {
