@@ -67,6 +67,15 @@ h1 {
   font-size: 120%;
 }
 
+h2, h3, h4 {
+  font-size: 110%;
+}
+
+h2.title {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
 a {
   color: #d33682;
   text-decoration: none;
@@ -104,7 +113,8 @@ a.extra {
   color: #93a1a1;
 }
 
-.posts {
+.posts,
+.projects {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -127,6 +137,11 @@ a.extra {
 
 pre {
   padding: 2%;
+}
+
+.projects li.last {
+  margin-top: 1%;
+  font-style: italic;
 }
 
 footer {

@@ -1,10 +1,22 @@
 ---
 layout: default
 title: William DURAND
+my_github: https://github.com/willdurand
 ---
+
+<h2 class="title">Blog Posts</h2>
 
 <ul class="posts">
   {% for post in site.posts %}
   <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+</ul>
+
+<h2 class="title">Highlighted Projects</h2>
+
+<ul class="projects">
+    <li><a href="{{ page.my_github }}/Geocoder">Geocoder</a> &raquo; The almost missing Geocoder PHP 5.3 library.</li>
+    <li><a href="{{ page.my_github }}/Karotz-Plugin">Karotz-Plugin</a> &raquo; A Jenkins Plugin for my beloved Karotz.</li>
+    <li><a href="{{ page.my_github }}/EmailReplyParser">EmailReplyParser</a> &raquo; Port of the cool GitHub's EmailReplyParser library in PHP 5.3.</li>
+    <li class="last">Oh, and I am working on <a href="https://github.com/propelorm">Propel</a> too!
 </ul>
