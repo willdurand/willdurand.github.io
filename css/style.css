@@ -11,7 +11,6 @@ a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
-blockquote { margin: 1em 40px; }
 dfn { font-style: italic; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 ins { background: #ff9; color: #000; text-decoration: none; }
@@ -137,6 +136,18 @@ a.extra {
 
 pre {
   padding: 2%;
+}
+
+blockquote {
+  border-left: 5px solid #d33682;
+  padding:0 0 0 10px;
+  margin:0.5em auto;
+  font-style: italic;
+  width: 80%;
+}
+
+blockquote em {
+  color: #93a1a1;
 }
 
 .projects li.last {
