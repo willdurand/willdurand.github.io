@@ -27,7 +27,7 @@ by thinking about interactions between your components. Program to interface is 
 an application, and reduces coupling but it's not the purpose of this post.
 
 My Golden Rule is: **if you're not able to find a name for a class, then ask yourself if this class makes sense**,
-or if you can decouplate things a bit more.
+or if you can decouple things a bit more.
 
 A wrong name or a non-explicit name often lead to errors. If you're not satisfied with your naming,
 then think again because you probably missed something. Inspire yourself by reading good code, thanks to
@@ -35,7 +35,7 @@ then think again because you probably missed something. Inspire yourself by read
 [Symfony2](http://www.github.com/symfony/symfony) naming in my own projects.
 
 By following these advices, you'll build a software with a **better separation of concerns**, and
-each component will be decouplate, and will own its own logic, nothing more. That way, you'll be able
+each component will be decouple, and will own its own logic, nothing more. That way, you'll be able
 to unit test your application without any effort. And, as you have a good separation of concerns, each
 unit test can cover a use case.
 
