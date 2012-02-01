@@ -47,4 +47,4 @@ per point. And, as a glue, I decided to use **Composer**. After the end of the f
 I wrote two hundred lines of code (including some test classes), and the project was ever ready to use.
 I focused on the only important thing: **the aim of the application**.
 
-Thanks to tools like _npm_, _gem_, _composer_, it's like [Lego](www.lego.com)!
+Thanks to tools like _npm_, _gem_, _composer_, it's like [Lego](http://www.lego.com)!
