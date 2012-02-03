@@ -8,7 +8,7 @@ Did you ever hear about **Component-Based Development**? Maybe about **Component
 Both concepts are the same, and if you're involved in _Symfony2_, _Spring_, or something similar, then you do
 **Component Driven Development** (**CDD**).
 
-![](/images/posts/lego.jpg)
+![](http://williamdurand.fr/images/posts/lego.jpg)
 
 It's all about **separation of concerns**. You design components with their own logic, each component does
 **one thing well**, and **only one thing**.
