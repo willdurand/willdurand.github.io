@@ -5,7 +5,7 @@ location: Clermont-Fd Area, France
 ---
 
 Yeah, I know yet another blog post on this topic. The main difference with
-others is that I wrote it myself, and it's quite up to date.
+others is that I wrote it myself, and it's quite up to date :p
 
 I often rely on [Capistrano](https://github.com/capistrano/capistrano/wiki/) to
 deploy web applications.
