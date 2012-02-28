@@ -5,6 +5,8 @@ layout: default
 <div class="post">
   <h1>{{ page.title }}</h1>
   <p class="meta">{{ page.date | date_to_string }} - {{ page.location }}</p>
+  <audio src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+
   {{ content }}
 </div>
 
