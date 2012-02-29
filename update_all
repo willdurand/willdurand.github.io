@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd _posts
+
+for post in `ls` ; do
+    ../../speaker/speaker -d ../mp3 "$post"
+done
+
+cd ..
