@@ -31,7 +31,7 @@ by default.
 
 **Today**, I'm proud to announce that the last step has been unlocked thanks to [Joseph](https://github.com/rouffj).
 **Propel has its own [chapter in the official Symfony2 book](http://symfony.com/doc/master/book/propel.html)** which means you have to think about which _Model_ layer to use now.
-No more excuse to try Propel in Symfony2, or to use Doctrine2 by default, and not by choice.
+No more excuse to not try Propel in Symfony2, or to use Doctrine2 by default, and not by choice.
 
 Try Propel, really! It could fit your needs depending on what you expect. Some great bundles already support Propel
 (like the FOSUserBundle). And please, avoid comments like "Doctrine2 is much nicer" which make no sense. Why is it much nicer?
