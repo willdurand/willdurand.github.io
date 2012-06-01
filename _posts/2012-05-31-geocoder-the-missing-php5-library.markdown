@@ -11,13 +11,13 @@ API](http://www.w3.org/TR/geolocation-API/), a server side library is
 always useful. Today this library has more than 230 watchers on GitHub, and it's
 time to introduce it here.
 
-The library is standalone, and  splitted in two parts: `HttpAdapaters` which
+The library is standalone, and split in two parts: `HttpAdapaters` which
 are responsible to get data from remote APIs, and `Providers` which own the
 logic to extract information.
 
 ### Adapters ###
 
-There are many adapters to use Geocoder with
+There are many adapters to use Geocoder with:
 [Buzz](https://github.com/kriswallsmith/Buzz),
 [cURL](http://php.net/manual/book.curl.php),
 [Guzzle](https://github.com/guzzle/guzzle), or [Zend Http
@@ -88,13 +88,13 @@ with [Doctrine2](http://www.doctrine-project.org/) thanks to the
 Both behaviors are really powerful, install them, and your model objects
 (entities) will become geo-aware.
 Note for Drupal guys, [the geocoder module should use Geocoder](
-http://drupal.org/node/1334838) sooner, or later.
+http://drupal.org/node/1334838), sooner or later.
 
 Geocoder has more than ten contributors (thank you so much guys), is actively
 maintained, and already used in production! Oh, and it's heavily unit tested
 with more than a hundred tests, and almost a thousand assertions.
 
-If you plan to use geocoding stuffs in your project, or to integrate something
+If you plan to use geocoding stuff in your project, or to integrate something
 in your favourite Framework, you should give Geocoder a try ;)
 
 
