@@ -1,13 +1,24 @@
-ul.posts li {
+ul.posts li a,
+ul.projects li a {
+    color: #fff;
     display: block;
     border-radius: 5px;
-    padding: 5px 10px 5px 10px;
     margin: 10px 0 10px 0;
+    padding: 5px 15px 5px 15px;
     background-color: #D33682;
 }
 
-ul.posts li,
-ul.posts li a,
-ul.posts li span {
-    color: white;
+ul.posts li span.separator {
+    display: none;
+}
+
+ul.posts li a:focus,
+ul.posts li a:hover,
+ul.projects li a:focus,
+ul.projects li a:hover {
+    text-decoration: none;
+}
+
+ul.projects li span.description {
+    display: none;
 }

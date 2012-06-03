@@ -1,16 +1,16 @@
 .site {
-  width: auto;
-  margin: 3%;
+    width: auto;
+    margin: 3%;
 }
 
 .site img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .ribbon {
-  display: none;
+    display: none;
 }
 
 footer div.presentation {
-  width: 60%;
+    width: 60%;
 }
