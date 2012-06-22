@@ -43,7 +43,13 @@
         <a href="http://www.twitter.com/couac" class="icon twitter">Twitter</a>
       </div>
       <div class="presentation">
-        23 years old. Student by day, web developer by night.
+        {% assign offset = 0 %}
+        {% capture month %}{{ 'now' | date: "%m" }}{% endcapture %}
+
+        {% if '10,11,12' contains month %}
+          {% assign offset = 1 %}
+        {% endif %}
+        {{ 'now' | date: "%Y" | minus: 1989 | plus: offset }} years old. Student by day, web developer by night.
         <br />
         <a href="mailto:william.durand1@gmail.com">william.durand1@gmail.com</a>
       </div>
