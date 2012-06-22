@@ -26,7 +26,7 @@ there is a wonderful project called [capifony](http://capifony.org/).
 applications. This project has been created by my friend
 [@everzet](https://twitter.com/everzet), and sponsored by KnpLabs.
 
-Today, I'm really proud to announce that Konstantin gave my the keys of this
+This week, I'm really proud to announce that Konstantin gave me the keys of this
 project, so that I can maintain, and improve it. I released [capifony
 2.1.7](https://rubygems.org/gems/capifony) yesterday with a bunch of fixes, but
 also with new features. In the next weeks, I will work on the documentation.
