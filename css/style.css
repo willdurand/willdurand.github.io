@@ -75,6 +75,10 @@ h2.title {
     margin-bottom: 1%;
 }
 
+h3 {
+    margin-top: 25px;
+}
+
 a {
     color: #d33682;
     text-decoration: none;
@@ -153,6 +157,10 @@ blockquote em {
 .projects li.last {
     margin-top: 1%;
     font-style: italic;
+}
+
+p img {
+    width: inherit;
 }
 
 footer {
