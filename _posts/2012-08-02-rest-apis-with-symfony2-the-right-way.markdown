@@ -616,7 +616,7 @@ class LinkRequestListener
             }
         }
 
-        $event->getRequest()->attributes->set('link', $links);
+        $event->getRequest()->attributes->set('links', $links);
         $this->urlMatcher->getContext()->setMethod($requestMethod);
     }
 }
@@ -644,11 +644,11 @@ And the code of the action looks like:
      */
     public function linkAction(User $user, Request $request)
     {
-        if (!$request->attributes->has('link')) {
+        if (!$request->attributes->has('links')) {
             throw new HttpException(400);
         }
 
-        foreach ($request->headers->get('Link') as $u) {
+        foreach ($request->attributes->get('links') as $u) {
             if (!$u instanceof User) {
                 throw new NotFoundHttpException('Invalid resource');
             }
