@@ -525,6 +525,7 @@ all for the listener. Here is the code:
 namespace Acme\DemoBundle\EventListener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
 use Symfony\Component\Routing\Matcher\UrlMatcherInterface;
