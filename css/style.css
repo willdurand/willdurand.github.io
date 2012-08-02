@@ -161,6 +161,7 @@ blockquote em {
 
 p img {
     width: inherit;
+    max-width: 700px;
 }
 
 footer {
