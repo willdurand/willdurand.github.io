@@ -232,6 +232,7 @@ Back to our use case, I use to define my validation rules in YAML, but feel free
 to use your preferred way. Here is an example:
 
 {% highlight yaml %}
+# src/Acme/DemoBundle/Resources/config/validation.yml
 Acme\DemoBundle\Model\User:
     getters:
         username:
