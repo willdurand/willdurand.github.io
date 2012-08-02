@@ -311,8 +311,11 @@ example, you could get the following error response:
 
 
 Note that the `View` class here is not the same as the annotation one, that's why
-I used an alias earlier. Also, passing the form name is important here.
-Basically, your clients will send the following content:
+I used an alias earlier. Read more about this class in [The View
+Layer](https://github.com/FriendsOfSymfony/FOSRestBundle/blob/master/Resources/doc/2-the-view-layer.md)
+chapter in the FOSRestBundle documentation.
+
+Also, passing the form name is important here. Basically, your clients will send the following content:
 
 {% highlight javascript %}
 {
