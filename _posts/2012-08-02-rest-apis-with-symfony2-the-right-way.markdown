@@ -270,7 +270,7 @@ The `processForm()` method looks like:
         $statusCode = $user->isNew() ? 201 : 204;
 
         $form = $this->createForm(new UserType(), $user);
-        $form->bind($this->getRequest()->request->get($form->getName()));
+        $form->bind($this->getRequest());
 
         if ($form->isValid()) {
             $user->save();
@@ -526,18 +526,25 @@ namespace Acme\DemoBundle\EventListener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
+use Symfony\Component\Routing\Matcher\UrlMatcherInterface;
 
 class LinkRequestListener
 {
     /**
-     * @var ContainerInterface
+     * @var ControllerResolverInterface
      */
-    private $container;
+    private $resolver;
+    private $urlMatcher;
 
-    public function __construct(ContainerInterface $container)
+    /**
+     * @param ControllerResolverInterface $controllerResolver The 'controller_resolver' service
+     * @param UrlMatcherInterface         $urlMatcher         The 'router' service
+     */
+    public function __construct(ControllerResolverInterface $controllerResolver, UrlMatcherInterface $urlMatcher)
     {
-        $this->container = $container;
+        $this->resolver = $controllerResolver;
+        $this->urlMatcher = $urlMatcher;
     }
 
     public function onKernelRequest(GetResponseEvent $event)
@@ -565,12 +572,13 @@ class LinkRequestListener
             $links[] = $header;
         }
 
-        // The router is also an UrlMatcher
-        $urlMatcher = $this->container->get('router');
-        $requestMethod = $urlMatcher->getContext()->getMethod();
+        $requestMethod = $this->urlMatcher->getContext()->getMethod();
         // Force the GET method to avoid the use of the
         // previous method (LINK/UNLINK)
-        $urlMatcher->getContext()->setMethod('GET');
+        $this->urlMatcher->getContext()->setMethod('GET');
+
+        // The controller resolver needs a request to resolve the controller.
+        $stubRequest = new Request();
 
         foreach ($links as $idx => $link) {
             $linkParams = explode(';', trim($link));
@@ -578,32 +586,22 @@ class LinkRequestListener
             $resource   = preg_replace('/<|>/', '', $resource);
 
             try {
-                $route = $urlMatcher->match($resource);
+                $route = $this->urlMatcher->match($resource);
             } catch (\Exception $e) {
                 // If we don't have a matching route we return
                 // the original Link header
                 continue;
             }
 
-            list($controller, $action) = explode('::', $route['_controller']);
+            $stubRequest->attributes->replace($route);
 
-            $keys = array();
-
-            // Lets extract the route parameters
-            array_walk($route, function($value, $key) use (& $keys) {
-                if (0 !== strpos($key, '_')) {
-                    $keys[$key] = $value;
-                }
-            });
+            if (false === $controller = $this->resolver->getController($stubRequest)) {
+                continue;
+            }
+            $arguments = $this->resolver->getArguments($stubRequest, $controller);
 
             try {
-                $object = new $controller();
-
-                if ($object instanceof ContainerAware) {
-                    $object->setContainer($this->container);
-                }
-
-                $result = call_user_func_array(array($object, $action), $keys);
+                $result = call_user_func_array($controller, $arguments);
 
                 // By convention the controller action must return an array
                 if (!is_array($result)) {
@@ -618,7 +616,7 @@ class LinkRequestListener
         }
 
         $event->getRequest()->attributes->set('link', $links);
-        $urlMatcher->getContext()->setMethod($requestMethod);
+        $this->urlMatcher->getContext()->setMethod($requestMethod);
     }
 }
 {% endhighlight %}
