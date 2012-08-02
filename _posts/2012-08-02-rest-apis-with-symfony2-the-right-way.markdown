@@ -565,7 +565,8 @@ class LinkRequestListener
             $links[] = $header;
         }
 
-        $urlMatcher = $this->container->get('router')->getMatcher();
+        // The router is also an UrlMatcher
+        $urlMatcher = $this->container->get('router');
         $requestMethod = $urlMatcher->getContext()->getMethod();
         // Force the GET method to avoid the use of the
         // previous method (LINK/UNLINK)
