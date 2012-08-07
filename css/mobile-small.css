@@ -19,6 +19,7 @@ ul.projects li a:hover {
     text-decoration: none;
 }
 
-ul.projects li span.description {
+ul.projects li span.description,
+ul.projects li.last {
     display: none;
 }
