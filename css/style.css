@@ -195,6 +195,17 @@ footer div.presentation {
     text-align: justify;
 }
 
+a.anchor_link {
+    color: #EEE;
+    padding: 0px 0px 0px 4px;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+a.anchor_link:hover {
+    color: #666;
+}
+
 @media only screen and (min-width: 480px) {
     /* Style adjustments for viewports 480px and over go here */
 }
