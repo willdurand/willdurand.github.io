@@ -14,3 +14,8 @@
 footer div.presentation {
     width: 60%;
 }
+
+#toTop,
+#toTopHover {
+    visibility: hidden;
+}
