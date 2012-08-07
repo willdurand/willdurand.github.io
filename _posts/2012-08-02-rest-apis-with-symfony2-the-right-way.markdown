@@ -598,7 +598,7 @@ class LinkRequestListener
             if (false === $controller = $this->resolver->getController($stubRequest)) {
                 continue;
             }
-            
+
             $arguments = $this->resolver->getArguments($stubRequest, $controller);
 
             try {
@@ -985,5 +985,4 @@ You now have all keys to build wonderful APIs!
   Features](http://tools.ietf.org/html/rfc2068#page-156);
 * [RFC 5988 - Web Linking](http://tools.ietf.org/html/rfc5988).
 
-If you find a typo, please [fork and edit this post](http://github.com/willdurand/willdurand.github.com/edit/master/_posts/2012-08-02-rest-apis-with-symfony2-the-right-way.markdown).
 I will probably update this post with more information, links, etc. So stay tuned!
