@@ -14,7 +14,7 @@ the time, reviewing a PR takes a lot of time and some files may pollute the diff
 view.
 
 Today I was bored to review `lock` files, so I decided to fix this problem with my
-team mate [Francesco](twitter.com/flevour). We simply added a
+teammate [Francesco](http://twitter.com/flevour). We simply added a
 `.gitattributes` file to our project with the following content:
 
     composer.lock -diff
