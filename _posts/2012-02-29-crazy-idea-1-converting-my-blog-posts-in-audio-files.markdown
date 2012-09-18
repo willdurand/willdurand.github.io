@@ -22,7 +22,7 @@ USAGE:
 {% endhighlight %}
 
 I used [roundup](http://bmizerany.github.com/roundup/) to test it. I love shell scripts, but
-to write them without any tests is a pain, there is often a condtion which is not good, a typo,
+to write them without any tests is a pain, there is often a condition which is not good, a typo,
 or something else. That often makes me crazy! **roundup** helps you write strong shell scripts.
 Here is my test suite output:
 
