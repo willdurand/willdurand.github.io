@@ -19,8 +19,8 @@ teammate [Francesco](http://twitter.com/flevour). We simply added a
 
     composer.lock -diff
 
-It tells Git to exclude the `composer.lock` file from the diff output. As GitHub
-uses Git, it worked fine and it's really cool because we can get cleaner diff
-views now!
+It tells Git to exclude the `composer.lock` file (which has to be under version
+control) from the diff output. As GitHub uses Git, it worked fine and it's really
+cool because we can get cleaner diff views now!
 
 More information at: [http://www.kernel.org/pub/software/scm/git/docs/gitattributes.html](http://www.kernel.org/pub/software/scm/git/docs/gitattributes.html).
