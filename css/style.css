@@ -127,6 +127,7 @@ a.extra {
     width: 95px;
     float: left;
     text-align: right;
+    padding-right: 5px;
 }
 
 .post h1 {
