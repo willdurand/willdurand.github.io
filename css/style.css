@@ -124,6 +124,9 @@ a.extra {
 
 .posts li time {
     color: #93a1a1;
+    width: 95px;
+    float: left;
+    text-align: right;
 }
 
 .post h1 {
