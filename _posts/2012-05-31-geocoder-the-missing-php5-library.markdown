@@ -40,7 +40,7 @@ and even [Geoip](http://php.net/manual/book.geoip.php), the PHP extension.
 Same thing here, you can easily write your own provider by implementing the
 `ProviderInterface` interface.
 
-Geocoder supports both geocoding, and reverse geocoding. It depends on the
+Geocoder supports both geocoding and reverse geocoding. It depends on the
 provider you choose, and also what you want to do. The API is really simple:
 
 {% highlight php %}
