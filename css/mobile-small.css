@@ -8,7 +8,8 @@ ul.projects li a {
     background-color: #D33682;
 }
 
-ul.posts li span.separator {
+ul.posts li span.separator,
+ul.posts li time {
     display: none;
 }
 
