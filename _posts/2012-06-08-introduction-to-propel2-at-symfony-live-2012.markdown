@@ -3,6 +3,7 @@ layout: post
 title: Introduction to Propel2 at Symfony Live 2012
 location: Paris, France
 audio: false
+categories: [ PHP ]
 ---
 
 Here are my slides for the talk I gave this morning at [Symfony Live

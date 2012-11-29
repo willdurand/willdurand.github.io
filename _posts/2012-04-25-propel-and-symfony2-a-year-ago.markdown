@@ -2,6 +2,7 @@
 layout: post
 title: "Propel, And Symfony2 A Year Ago"
 location: Zurich, Switzerland
+categories: [ PHP ]
 ---
 
 Did you know that the [PropelBundle](http://github.com/propelorm/PropelBundle) was part of the

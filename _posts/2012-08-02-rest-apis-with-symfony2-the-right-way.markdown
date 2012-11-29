@@ -3,6 +3,7 @@ layout: post
 title: "REST APIs with Symfony2: The Right Way"
 location: Zurich, Switzerland
 audio: false
+categories: [ PHP ]
 ---
 
 Designing a **REST** API is not easy. No, really! If you want to design an API the
