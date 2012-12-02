@@ -163,7 +163,7 @@ Creating a resource implies the use of the **POST** HTTP verb. But how do you ge
 data? How do you validate data? And how do you create your new resource? These
 three questions have more than one answer or strategy.
 
-You could use the deserialization mechanim to create an object from the input
+You could use the deserialization mechanism to create an object from the input
 serialized data. There is an interesting work in progress by
 [Benjamin](http://twitter.com/beberlei) about [Form
 deserialization](https://github.com/simplethings/SimpleThingsFormSerializerBundle).
