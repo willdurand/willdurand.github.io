@@ -12,7 +12,7 @@ API](http://www.w3.org/TR/geolocation-API/), a server side library is
 always useful. Today this library has more than 230 watchers on GitHub, and it's
 time to introduce it here.
 
-The library is standalone, and split in two parts: `HttpAdapaters` which
+The library is standalone, and split in two parts: `HttpAdapters` which
 are responsible to get data from remote APIs, and `Providers` which own the
 logic to extract information.
 

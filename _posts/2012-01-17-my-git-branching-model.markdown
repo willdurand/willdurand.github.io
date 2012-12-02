@@ -98,7 +98,7 @@ Without the `--no-ff` option, you'll get the following output:
 
     Initial commit
 
-In a team, you will probably have more than one feature branch, and you could have a depencency between
+In a team, you will probably have more than one feature branch, and you could have a dependency between
 two branches (this should be avoided).
 In this case, I use another branch in which I merge two or more feature branches.
 

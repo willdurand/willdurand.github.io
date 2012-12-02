@@ -30,7 +30,7 @@ pattern through the **Dependency Injection** design pattern (I consider IoC as a
 it's not a design pattern you can implement).
 
 A well-known issue when you use **Component Driven Development** is how to manage dependencies between components,
-and how to instanciate all your components. Dependency Injection Container to the rescue!
+and how to instantiate all your components. Dependency Injection Container to the rescue!
 By describing component's dependencies, and thanks to a container, you'll write an highly decoupled application,
 with components you can reuse.
 
