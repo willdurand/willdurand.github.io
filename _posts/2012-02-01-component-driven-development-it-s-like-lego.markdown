@@ -2,7 +2,7 @@
 layout: post
 title: "Component Driven Development: it's like Lego!"
 location: Clermont-Fd Area, France
-categories: [ PHP ]
+tags: [ PHP ]
 ---
 
 Did you ever hear about **Component-Based Development**? Maybe about **Component Driven Development**?

@@ -2,7 +2,7 @@
 layout: post
 title: "Geocoder: The Missing PHP5 Library"
 location: Zurich, Switzerland
-categories: [ PHP ]
+tags: [ PHP ]
 ---
 
 Seven months ago, I released [Geocoder](https://github.com/willdurand/Geocoder),
