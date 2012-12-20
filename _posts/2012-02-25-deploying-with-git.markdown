@@ -8,13 +8,13 @@ Yeah, I know yet another blog post on this topic. The main difference with
 others is that I wrote it myself, and it's quite up to date :p
 
 I often rely on [Capistrano](https://github.com/capistrano/capistrano/wiki/) to
-deploy web applications.
-I ever talked about this tool [in my previous blog](http://www.willdurand.fr/deploiement-automatise-avec-capistrano-et-git-pour-symfony-et-diem/),
-and it's not the purpose of this article.
+deploy web applications. I already talked about this tool
+[in my previous blog](http://www.willdurand.fr/deploiement-automatise-avec-capistrano-et-git-pour-symfony-et-diem/),
+and it's not the purpose of this post.
 
-Actually, when you need to deploy a simple web application on a server, like this
+When you need to deploy a simple web application on a server, like this
 blog for instance, there is no need to use Capistrano or [Fabric](http://docs.fabfile.org/en/1.4.0/index.html).
-You just need to copy files. So you could rely on `rsync`... But it's not fun!
+It's just about copying a set of files, so you could rely on `rsync` or `scp`... But it's not fun!
 
 Actually, you just need to rely on **Git**, assuming you are using it.
 
@@ -31,11 +31,11 @@ To deploy the application in **production**, run:
 
     git push production
 
-And, to deploy in a **testing** environment, just run:
+And, to deploy it in a **testing** environment, run:
 
     git push testing <branch>
 
-You can push your code on your server, but it won't deploy new changes at the moment.
+Now, you can push your code on your server, but it won't deploy your changes at the moment.
 So let's configuring **Git**. First, add the following lines to your `.git/config` file:
 
 {% highlight bash %}
@@ -43,13 +43,13 @@ So let's configuring **Git**. First, add the following lines to your `.git/confi
     denyCurrentBranch = false
 {% endhighlight %}
 
-It allows to push code on the current branch, it's important to deploy new changes.
+It allows to push code on the current branch, it's important to deploy your new changes.
 Old Git versions don't need to set this parameter by the way.
 
 Then, enable a `post-receive` hook with the following content:
 
 {% highlight bash %}
-#!/bin/sh
+#!/usr/bin/env bash
 
 SUBJECT="Deploy successful"
 BODY="You've successfully deployed the branch:"
@@ -82,10 +82,12 @@ env -i git checkout $branch
 env -i git reset --hard
 {% endhighlight %}
 
-Feel free to decorate these three lines as you want.
+Feel free to decorate these three lines as you wish.
 
-In a **production** environment, or because you are using a [Git Branching Model](/2012/01/17/my-git-branching-model/),
-you should modify the previous code as below. It ensures to always deploy the `master` branch:
+In a **production** environment, or because you are using a
+[Git Branching Model](/2012/01/17/my-git-branching-model/),
+you should modify the previous code as below.
+It ensures to always deploy the `master` branch:
 
 {% highlight bash %}
     if [ "$branch"  == "master" ] ; then
