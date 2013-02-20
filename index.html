@@ -1,7 +1,7 @@
 ---
-layout: default
-title: William DURAND
-my_github: https://github.com/willdurand
+layout:     default
+title:      William DURAND
+my_github:  https://github.com/willdurand
 ---
 
 <h2 class="title">Blog Posts</h2>
@@ -9,7 +9,8 @@ my_github: https://github.com/willdurand
 <ul class="posts">
     {% for post in site.posts %}
     <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> <span class="separator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+        <span class="separator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
@@ -17,8 +18,21 @@ my_github: https://github.com/willdurand
 <h2 class="title">Highlighted Projects</h2>
 
 <ul class="projects">
-    <li><a href="{{ page.my_github }}/Geocoder">Geocoder</a> <span class="description">&raquo; The almost missing Geocoder PHP 5.3 library.</span></li>
-    <li><a href="{{ page.my_github }}/Karotz-Plugin">Karotz-Plugin</a> <span class="description">&raquo; A Jenkins Plugin for my beloved Karotz.</span></li>
-    <li><a href="{{ page.my_github }}/EmailReplyParser">EmailReplyParser</a> <span class="description">&raquo; Port of the cool GitHub's EmailReplyParser library in PHP 5.3.</span></li>
-    <li class="last">Oh, and I am involved in <a href="https://github.com/propelorm">Propel</a> too!</li>
+    <li>
+        <a href="{{ page.my_github }}/Geocoder">Geocoder</a>
+        <span class="description">&raquo; The almost missing Geocoder PHP 5.3 library.</span>
+    </li>
+    <li>
+        <a href="{{ page.my_github }}/Karotz-Plugin">Karotz-Plugin</a>
+        <span class="description">&raquo; A Jenkins Plugin for my beloved Karotz.</span>
+    </li>
+    <li>
+        <a href="{{ page.my_github }}/EmailReplyParser">EmailReplyParser</a>
+        <span class="description">&raquo; Port of the cool GitHub's EmailReplyParser library in PHP 5.3.</span>
+    </li>
+    <li class="last">Oh, and I am also involved in
+        <a href="https://github.com/propelorm">Propel</a>,
+        <a href="https://github.com/everzet/capifony">capifony</a>,
+        <a href="https://github.com/willdurand">and so on</a>!
+    </li>
 </ul>
