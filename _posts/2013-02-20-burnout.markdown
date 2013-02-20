@@ -20,8 +20,9 @@ Part of my PhD allows me to give courses (in web development, PHP, and
 security). My research area doesn't allow me to work on Open Source projects
 yet, so I don't do Open Source at work (neither at the University).
 
-However, I am one of the 50 most active users on GitHub, I manage a few Open
-Source projects from weekend projects
+However, I am one of the 50 most active users on GitHub (it's
+[subjective](http://www.liferay.com/web/zeno.rocha/blog/-/blogs/i-m-the-50-most-active-contributor-on-github-so-what-)
+though), I manage a few Open Source projects from weekend projects
 (e.g. [TravisLight](https://github.com/willdurand/TravisLight)) to well-known
 projects such as [Propel](https://github.com/propelorm/Propel) or
 [capifony](https://github.com/everzet/capifony). I don't have any business
