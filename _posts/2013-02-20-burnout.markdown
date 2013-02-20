@@ -1,0 +1,56 @@
+---
+layout: post
+title: Burnout.
+location: Clermont-Fd Area, France
+audio: false
+---
+
+_To Lucie, with love._
+
+<br>
+
+_You won't be able to manage everything_, they said.
+Guess what? They were right, I am not able to manage everything, and I will try
+to explain why in this blog post.
+
+First of all, I am a [PhD student](/2013-01-02-new-year-new-life-new-job.html),
+not a full-time developer. My daily job is about reading papers, understanding
+applications I am working on, and finding a way to automatically test them.
+Part of my PhD allows me to give courses (in web development, PHP, and
+security). My research area doesn't allow me to work on Open Source projects
+yet, so I don't do Open Source at work (neither at the University).
+
+However, I am one of the 50 most active users on GitHub, I manage a few Open
+Source projects from weekend projects
+(e.g. [TravisLight](https://github.com/willdurand/TravisLight)) to well-known
+projects such as [Propel](https://github.com/propelorm/Propel) or
+[capifony](https://github.com/everzet/capifony). I don't have any business
+built on top of one of these projects, and I don't get paid for supporting any
+of these projects. This is Open Source after all!
+
+To be honest, I am really addicted to Open Source because I love working on new
+projects, releasing new libraries that could be useful (like
+[Geocoder](http://github.com/willdurand/Geocoder) I wrote for fun in one night),
+and also maintaining existing projects. I learnt so much thanks to the Open
+Source community, so I try to do my best to contribute back to this community.
+
+But now, I feel really overbooked. I spend my free time replying to emails,
+reviewing Pull Requests, and understanding issues. Free time means each free
+time frame (in my car, while eating, etc.) here. And when I have enough time, I
+can code. I write tests, I tag new versions, I ensure each project I manage
+works. This is really time consuming because I need to loop over all my
+projects, all the time. That's why I often release a bunch of new versions at
+once. But I love that! Seriously.
+
+Thing is, I sleep 4 to 6 hours a day, I never stop, I can reply to emails even
+while partying with frends. It's not healthy. It happens because I have the same
+workload I had when I was developer (or student). And, I didn't talk about
+Twitter, RSS feeds and so on, to stay up to date. It just can't work. It's not
+my job, and even if I am afraid to be egoist, I must admit I can't manage
+everything, and Open Source is not my priority anymore.
+
+That's why I have to stop working on Open Source projects for a while. In the
+next two weeks, I will try to be offline. And I will see if I can manage my time
+in a better way. In the meanwhile, if you are interested in taking the lead on
+one of my projects (or in contributing), please drop me an email, and you will
+become my hero!
