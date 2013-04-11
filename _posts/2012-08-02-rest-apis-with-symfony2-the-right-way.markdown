@@ -6,6 +6,9 @@ audio: false
 tags: [ PHP ]
 ---
 
+_Last updated: 2013-04-11 - PUT/PATCH methods should not return a `Location`
+header._
+
 Designing a **REST** API is not easy. No, really! If you want to design an API the
 right way, you have to think a lot about everything, and either to be pragmatic
 or to be an API terrorist. It's not just about **GET**, **POST**, **PUT**, and
@@ -278,12 +281,16 @@ The `processForm()` method looks like:
 
             $response = new Response();
             $response->setStatusCode($statusCode);
-            $response->headers->set('Location',
-                $this->generateUrl(
-                    'acme_demo_user_get', array('id' => $user->getId()),
-                    true // absolute
-                )
-            );
+
+            // set the `Location` header only when creating new resources
+            if (201 === $statusCode) {
+                $response->headers->set('Location',
+                    $this->generateUrl(
+                        'acme_demo_user_get', array('id' => $user->getId()),
+                        true // absolute
+                    )
+                );
+            }
 
             return $response;
         }
@@ -388,6 +395,9 @@ You have to write a new method in your controller, and to add a new route.
 Here, I rely on a ParamConverter to fetch the User object. If it doesn't exist,
 the converter will throw an exception and this exception will be converted in a
 response with a **`404`** status code.
+
+Both **PUT** and **PATCH** methods have to return a **204** status code standing
+for `No Content`, and meaning everything is ok, go ahead.
 
 {% highlight php %}
 <?php
