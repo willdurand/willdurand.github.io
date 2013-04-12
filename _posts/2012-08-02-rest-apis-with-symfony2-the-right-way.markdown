@@ -6,8 +6,11 @@ audio: false
 tags: [ PHP ]
 ---
 
-_Last updated: 2013-04-11 - PUT/PATCH methods should not return a `Location`
-header._
+_2013-04-12 - Add an example on how to create new resources with PUT._
+
+_2013-04-11 - PUT/PATCH methods should not return a `Location`
+header in the context of this blog post, as PUT is used to **update** an
+existing resource **only**, so it naturally returns a `204` status code._
 
 Designing a **REST** API is not easy. No, really! If you want to design an API the
 right way, you have to think a lot about everything, and either to be pragmatic
@@ -396,9 +399,6 @@ Here, I rely on a ParamConverter to fetch the User object. If it doesn't exist,
 the converter will throw an exception and this exception will be converted in a
 response with a **`404`** status code.
 
-Both **PUT** and **PATCH** methods have to return a **204** status code standing
-for `No Content`, and meaning everything is ok, go ahead.
-
 {% highlight php %}
 <?php
 
@@ -420,6 +420,34 @@ acme_demo_user_edit:
     requirements:
         _method: PUT
 {% endhighlight %}
+
+Both **PUT** and **PATCH** methods have to return a **204** status code standing
+for `No Content`, and meaning everything is ok, go ahead. In the context of this
+blog post, **PUT** is exclusively used to **update existing resources**, not to
+create new ones. That is why you have to return a `204` status code.
+
+If you want to create new resources at a given URI, then you will have to update
+the code above by removing the use of a ParamConverter, and create a new user in
+case it does not exist:
+
+{% highlight php %}
+<?php
+
+// ...
+
+    public function editAction($id)
+    {
+        if (null === $user = UserQuery::create()->findPk($id)) {
+            $user = new User();
+            $user->setId($id);
+        }
+
+        return $this->processForm($user);
+    }
+{% endhighlight %}
+
+In this case, your method can return either `204` if the resource exists or
+`201` with a `Location` header if a new resource has been created.
 
 That's it! What about deleting resources now?
 
