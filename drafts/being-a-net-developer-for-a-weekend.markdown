@@ -123,13 +123,13 @@ The `DeserializeObject()` method takes a string as argument, and returns an
 object. This is a **generic method** so you can specify the object's type you
 want to get:
 
-{% highlight csharp %}
+``` csharp
 using Newtonsoft.Json;
 using TravisLight.Model.Entity;
 ...
 
 List<Repo> repositories = JsonConvert.DeserializeObject<List<Repo>>(json);
-{% endhighlight %}
+```
 
 Json.NET automatically maps a key in the JSON to a property in the C# class. If
 you want to define your own mapping, you can add a `JsonProperty` annotation to
@@ -137,7 +137,7 @@ your properties. In the following code, the `Id` property is automatically
 mapped to an `id` entry in JSON, and the `LastBuildResult` property is
 explicitely mapped to a `last_build_result` entry in JSON:
 
-{% highlight csharp %}
+``` csharp
 using Newtonsoft.Json;
 using System;
 
@@ -165,7 +165,7 @@ namespace TravisLight.Model.Entity
         #endregion
     }
 }
-{% endhighlight %}
+```
 
 
 ## The Nullable Type
@@ -176,12 +176,12 @@ provided, it is a `boolean`, otherwise it is `null`. The [Nullable
 type](http://msdn.microsoft.com/library/1t3y8s4s.aspx) allows to either
 have a value or none.
 
-{% highlight csharp %}
+``` csharp
 if (LastBuildResult.HasValue)
 {
     return LastBuildResult.Value ? Status.Failed : Status.Passed;
 }
-{% endhighlight %}
+```
 
 As you can see in the example above, it is really expressive. It is worth saying
 the C# language is feature-rich:
@@ -205,9 +205,9 @@ and objects such as `List<T>`.
 I used LINQ to sort the repositories according to a rank (i.e. according to the
 build statuses, the failing projects come first):
 
-{% highlight csharp %}
+``` csharp
 return repositories.OrderBy(repository => repository.Rank).ToList();
-{% endhighlight %}
+```
 
 In the code above, the `=>` sign represents a lambda expression which is also
 known as a closure (an anonymous function with a context).
