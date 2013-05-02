@@ -3,25 +3,23 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ site.site.title }} | PHP</title>
+    <link href="http://www.williamdurand.fr/php.xml" rel="self"/>
+    <link href="http://www.williamdurand.fr/"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://www.williamdurand.fr/</id>
+    <author>
+        <name>{{ site.site.author }}</name>
+        <email>{{ site.site.email }}</email>
+    </author>
 
- <title>William Durand | PHP</title>
- <link href="http://www.williamdurand.fr/php.xml" rel="self"/>
- <link href="http://www.williamdurand.fr/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://www.williamdurand.fr/</id>
- <author>
-   <name>William Durand</name>
-   <email>william.durand1@gmail.com</email>
- </author>
-
- {% for post in site.tags.PHP %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://www.williamdurand.fr{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://www.williamdurand.fr{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
-
+    {% for post in site.tags.PHP %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="http://www.williamdurand.fr{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://www.williamdurand.fr{{ post.id }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
 </feed>
