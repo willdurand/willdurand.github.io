@@ -1,6 +1,10 @@
-safe: true
-permalink: pretty
-pygments: true
+safe:       true
+permalink:  pretty
+pygments:   true
+exclude:    [ "drafts/" ]
+markdown:   redcarpet
+redcarpet:
+    extensions: [ "tables", "no_intra_emphasis" ]
 
 site:
     title:  William DURAND
