@@ -1,3 +1,11 @@
 safe: true
 permalink: pretty
 pygments: true
+
+site:
+    title:  William DURAND
+    author: William Durand
+
+my_linkedin: http://linkedin.com/in/williamdurand
+my_github:   http://www.github.com/willdurand
+my_twitter:  http://www.twitter.com/couac

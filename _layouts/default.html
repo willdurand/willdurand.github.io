@@ -4,83 +4,86 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="author" content="William Durand" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ site.site.author }}" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 
-  <title>{{ page.title }}</title>
+    <title>{{ site.site.title }}</title>
 
-  <link href="/atom.xml" rel="alternate" title="William Durand" type="application/atom+xml" />
+    <link href="/atom.xml" rel="alternate" title="{{ site.site.author }}" type="application/atom+xml" />
 
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/base_syntax.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="/css/ui.totop.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/base_syntax.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/ui.totop.css" type="text/css" media="screen,projection" />
 
-  <link rel="stylesheet" href="/css/mobile.css" media="only screen and (max-width: 800px)" />
-  <link rel="stylesheet" href="/css/mobile-small.css" media="only screen and (max-width: 500px)" />
+    <link rel="stylesheet" href="/css/mobile.css" media="only screen and (max-width: 800px)" />
+    <link rel="stylesheet" href="/css/mobile-small.css" media="only screen and (max-width: 500px)" />
 
-  <script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
-  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
+    <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-  <div id="container" class="site">
-    <header>
-      <a href="/" class="title">William DURAND</a>
-      <a href="http://feeds.feedburner.com/williamdurand" class="extra">RSS</a>
-    </header>
-    <div id="main" role="main">
-      {{ content }}
+    <div id="container" class="site">
+        <header>
+            <a href="/" class="title">{{ site.title }}</a>
+            <a href="http://feeds.feedburner.com/williamdurand" class="extra">RSS</a>
+        </header>
+        <div id="main" role="main">
+            {{ content }}
+        </div>
+        <footer class="clearfix">
+            <div>
+                <a href="{{ site.my_github }}" class="icon github">GitHub</a>
+                <br />
+                <a href="{{ site.my_linkedin }}" class="icon linkedin">LinkedIn</a>
+                <br />
+                <a href="{{ site.my_twitter }}" class="icon twitter">Twitter</a>
+            </div>
+            <div class="presentation">
+                {% assign offset = 0 %}
+                {% capture month %}{{ 'now' | date: "%m" }}{% endcapture %}
+
+                {% if '10,11,12' contains month %}
+                {% assign offset = 1 %}
+                {% endif %}
+                {{ 'now'|date: "%Y"|minus: 1989|plus: offset }} years old. Student by
+                day, software developer by night.
+                <br />
+                <a href="mailto:william.durand1@gmail.com">william.durand1@gmail.com</a>
+            </div>
+            <a href="{{ site.my_github }}/willdurand.github.com" class="ribbon">
+                <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub">
+            </a>
+        </footer>
     </div>
-    <footer class="clearfix">
-      <div>
-        <a href="http://www.github.com/willdurand" class="icon github">GitHub</a>
-        <br />
-        <a href="http://linkedin.com/in/williamdurand" class="icon linkedin">LinkedIn</a>
-        <br />
-        <a href="http://www.twitter.com/couac" class="icon twitter">Twitter</a>
-      </div>
-      <div class="presentation">
-        {% assign offset = 0 %}
-        {% capture month %}{{ 'now' | date: "%m" }}{% endcapture %}
 
-        {% if '10,11,12' contains month %}
-          {% assign offset = 1 %}
-        {% endif %}
-        {{ 'now' | date: "%Y" | minus: 1989 | plus: offset }} years old. Student by day, web developer by night.
-        <br />
-        <a href="mailto:william.durand1@gmail.com">william.durand1@gmail.com</a>
-      </div>
-      <a href="https://github.com/willdurand/willdurand.github.com" class="ribbon"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
-    </footer>
-  </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+        <script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                $().UItoTop();
+                $("h2, h3, h4, h5, h6").each(function () {
+                    var _id = $(this).attr('id');
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-  <script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
-  <script>
-    $(document).ready(function() {
-      $().UItoTop();
-      $("h2, h3, h4, h5, h6").each(function () {
-        var _id = $(this).attr('id');
-
-        if (undefined !== _id) {
-          _anchor = '<a href="#' + _id + '" class="anchor_link">¶</a>';
-          $(this).append(_anchor);
-        }
-      });
-    });
-    window._gaq = [['_setAccount','UA-28365039-1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-</body>
+                    if (undefined !== _id) {
+                        _anchor = '<a href="#' + _id + '" class="anchor_link">¶</a>';
+                        $(this).append(_anchor);
+                    }
+                });
+            });
+            window._gaq = [['_setAccount','UA-28365039-1'],['_trackPageview'],['_trackPageLoadTime']];
+            Modernizr.load({
+                load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+            });
+        </script>
+        <!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
 </html>
