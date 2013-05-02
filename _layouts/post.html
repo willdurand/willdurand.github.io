@@ -3,26 +3,27 @@ layout: default
 ---
 
 <div class="post">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }} - {{ page.location }}</p>
-  {% if page.audio != false %}
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{% if page.date %}{{ page.date|date_to_long_string }} - {% endif %}{{ page.location }}</p>
+
+    {% if page.audio != false %}
     <audio src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
-  {% endif %}
+    {% endif %}
 
-  {{ content }}
+    {{ content }}
 
-  <em class="fork_and_edit">
-    By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much!
-  </em>
+    <em class="fork_and_edit">
+        By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much!
+    </em>
 </div>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  var disqus_shortname = 'williamdurand';
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    var disqus_shortname = 'williamdurand';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

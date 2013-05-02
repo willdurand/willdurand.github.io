@@ -29,7 +29,7 @@
 <body>
     <div id="container" class="site">
         <header>
-            <a href="/" class="title">{{ site.title }}</a>
+            <a href="/" class="title">{{ site.site.title }}</a>
             <a href="http://feeds.feedburner.com/williamdurand" class="extra">RSS</a>
         </header>
         <div id="main" role="main">
@@ -44,14 +44,7 @@
                 <a href="{{ site.my_twitter }}" class="icon twitter">Twitter</a>
             </div>
             <div class="presentation">
-                {% assign offset = 0 %}
-                {% capture month %}{{ 'now' | date: "%m" }}{% endcapture %}
-
-                {% if '10,11,12' contains month %}
-                {% assign offset = 1 %}
-                {% endif %}
-                {{ 'now'|date: "%Y"|minus: 1989|plus: offset }} years old. Student by
-                day, software developer by night.
+                24 years old. Student by day, software developer by night.
                 <br />
                 <a href="mailto:william.durand1@gmail.com">william.durand1@gmail.com</a>
             </div>
