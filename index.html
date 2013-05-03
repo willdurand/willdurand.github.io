@@ -15,7 +15,7 @@ my_projects:
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
             {{ post.date | date_to_string }}
         </time>
-        <span class="separator">&raquo;</span> <a iteprop="name" href="{{ post.url }}">{{ post.title }}</a>
+        <span class="separator">&raquo;</span> <a itemprop="name" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
