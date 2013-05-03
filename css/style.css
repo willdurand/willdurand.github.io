@@ -200,18 +200,18 @@ footer div.presentation {
     text-align: justify;
 }
 
-a.anchor_link {
+a.anchor-link {
     color: #EEE;
     padding: 0 0 0 4px;
     text-decoration: none;
     font-size: 70%;
 }
 
-a.anchor_link:hover {
+a.anchor-link:hover {
     color: #666;
 }
 
-em.fork_and_edit {
+em.fork-and-edit {
     margin-top: 25px;
     margin-bottom: 25px;
     display: block;

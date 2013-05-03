@@ -8,11 +8,14 @@ my_projects:
 
 <h2 class="title">Blog Posts</h2>
 
-<ul class="posts">
+<ul class="posts" itemscope itemtype="http://schema.org/Blog">
     {% for post in site.posts %}
-    <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-        <span class="separator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+            <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
+            {{ post.date | date_to_string }}
+        </time>
+        <span class="separator">&raquo;</span> <a iteprop="name" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
