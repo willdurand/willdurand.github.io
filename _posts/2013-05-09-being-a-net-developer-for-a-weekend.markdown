@@ -1,29 +1,30 @@
 ---
 layout: post
 title: Being A .NET Developer For A WeekEnd
-location: Clermont-Fd Area, France
+location: Zürich, Switzerland
 ---
 
-Even if I learnt C# and the .NET platform at school, I really started to play
-with all these Microsoft things a few weeks ago. At some point, my job is related
-to the .NET platform, so I decided to look at this ecosystem.
+Even if I learnt C# and the .NET platform at school, I really started playing
+with all these Microsoft things a few weeks ago. My job is sort of related to
+the .NET platform, so I decided to look at this ecosystem.
 
 To be honest, I had tons of preconceived ideas about Microsoft and its
 programming technologies. One of them was the fact that [you can certainly build
 open source software in .NET. And many do. But it never feels natural. It never
 feels right. \[...\] It is just not a native part of the Microsoft .NET culture to
-make things open source, especially not the things that suck](http://www.codinghorror.com/blog/2013/03/why-ruby.html).
+make things open source, especially not the things that
+suck](http://www.codinghorror.com/blog/2013/03/why-ruby.html).
 
 However, I always considered Visual Studio as the best IDE ever. It integrates
-everything you need while programming. And it just works. (As much as I love
-_vim_, it's not an IDE)
+everything you need while programming. And it just works (as much as I love
+_vim_, it's not an IDE).
 
 
 ## The Plan
 
 I decided to rewrite [TravisLight](https://github.com/willdurand/TravisLight), a
 weekend project I covered in [a previous "Being a _X_ Developer For A
-WeekEnd" article](/2012/12/24/being-a-frontend-developer-for-a-weekend/). The
+WeekEnd" article](/2012/12/24/being-a-frontend-developer-for-a-weekend/). My
 goal was to learn [Windows Presentation
 Foundation](http://msdn.microsoft.com/en-us/library/aa970268.aspx) (WPF), the
 [Model-View-ViewModel](http://en.wikipedia.org/wiki/Model_View_ViewModel)
@@ -62,11 +63,11 @@ pattern.
 
 ## Model-View-ViewModel
 
-The **M**odel-**V**iew-**V**iew**M**odel (MVVM) design pattern helps you
+The **M**odel - **V**iew - **V**iew **M**odel (MVVM) design pattern helps you
 separate the business and presentation logic of your application from its user
 interface. Both the Model and the View layers are the same as in the
-**M**odel-**V**iew-**C**ontroller (MVC) design pattern. However, the View is not
-aware of the Model, and vice-versa.
+**M**odel - **V**iew - **C**ontroller (MVC) design pattern. However, the View is
+not aware of the Model, and vice-versa.
 
 ![](http://i.msdn.microsoft.com/dynimg/IC448690.png)
 
@@ -167,6 +168,16 @@ namespace TravisLight.Model.Entity
 }
 ```
 
+These two code snippets above are enough to deserialize the following JSON
+content:
+
+``` json
+[
+    { "id": 123, "last_build_result": null },
+    { "id": 123, "last_build_result": "2012-06-21T12:00:59Z" }
+]
+```
+
 
 ## The Nullable Type
 
@@ -197,13 +208,16 @@ and a lot more!
 
 ## LINQ And Lambda Expressions On Collections
 
-**L**anguage-**IN**tegrated **Q**uery also known as
+**L**anguage - **IN**tegrated **Q**uery also known as
 [LINQ](http://msdn.microsoft.com/library/bb397926.aspx) extends powerful
 query capabilities to the language syntax of C#. This works with `DataSet`, XML
 and objects such as `List<T>`.
 
-I used LINQ to sort the repositories according to a rank (i.e. according to the
-build statuses, the failing projects come first):
+I used LINQ to sort the
+[repositories](http://travislightnet.codeplex.com/SourceControl/latest#481514)
+according to a rank (i.e. according to the build statuses, the failing projects
+come first) in the
+[`ApiRepository`](http://travislightnet.codeplex.com/SourceControl/latest#481515):
 
 ``` csharp
 return repositories.OrderBy(repository => repository.Rank).ToList();
@@ -213,7 +227,151 @@ In the code above, the `=>` sign represents a lambda expression which is also
 known as a closure (an anonymous function with a context).
 
 
+## Meet The Layers
+
+I only covered the **Model** layer until now, let's talk about the **View**
+and the **ViewModel** layers.
+
+The **View** has been written in
+[XAML](http://msdn.microsoft.com/en-us/library/ms752059.aspx). It is a
+declarative markup language with a large set of components to build graphical
+user interfaces.
+
+In TravisLight.Net, there is a single window (`MainWindow`) that displays a
+single **UserControl** named
+[`ListView`](http://travislightnet.codeplex.com/SourceControl/latest#481390).
+This view renders the list of repositories with their status thanks to the
+[`ListViewModel`](http://travislightnet.codeplex.com/SourceControl/latest#481391).
+
+The `ListViewModel` receives an instance of `IRepository` as constructor's
+argument, and creates an
+[`ObservableCollection`](http://msdn.microsoft.com/en-us/library/ms668604.aspx)
+containing the repositories. This ViewModel is also responsible for refreshing
+this collection, using a timer for now.
 
 
-PRISM
-NUnit
+## Dependency Inversion Principle
+
+By following the **MVVM** pattern, you ends up with a well-decoupled
+application, and it is worth using **programming to the interface** as well as a
+**Dependency Injection Container**. It is particularly useful for testing, and
+we will see that part later on.
+
+Microsoft provides a library called
+[Unity](http://msdn.microsoft.com/en-us/library/ff647202.aspx) that is a
+lightweight, and extensible Dependency Injection Container. You can configure
+this container either in XML, or C#.
+
+A common pattern using MVVM seems to be the use of a **Bootstrapper**, a class
+that triggers the container in order to start the application. Mine looks like
+this:
+
+``` csharp
+namespace TravisLight.Main
+{
+    class Bootstrapper
+    {
+        #region attributes
+
+        private IUnityContainer container = new UnityContainer();
+
+        #endregion
+
+        public Bootstrapper()
+        {
+            container.RegisterType<IRepository, ApiRepository>();
+            container.RegisterType<ListViewModel, ListViewModel>();
+            container.RegisterType<ListView, ListView>();
+            container.RegisterType<MainWindow, MainWindow>();
+        }
+
+        public void Run()
+        {
+            Application app = new App();
+            app.Run(container.Resolve<MainWindow>());
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            Bootstrapper bootstrapper = new Bootstrapper();
+            bootstrapper.Run();
+        }
+    }
+}
+```
+
+As you can see, it also contains a `Main()` method which is the **entry point**
+of the application (it is not a web application here). **Unity** is configured
+in the constructor, and the `Run()` method just passes the `MainWindow` to the
+application.
+
+
+## Unit Testing
+
+Microsoft provides **MSTest**, its own unit testing framework. As usual, it is
+well-integrated in Visual Studio, TFS, and so on. It looks good. Well, which
+unit testing framework isn't cool anyway?
+
+However, I don't like its syntax, it is not really expressive. Fortunately,
+there is another unit testing framework called [NUnit](http://www.nunit.org/) that
+is really expressive:
+
+``` csharp
+namespace ViewModel.Test
+{
+    [TestFixture]
+    public class ListViewModelTest
+    {
+        private IUnityContainer container;
+
+        [TestFixtureSetUp]
+        public void TestFixtureSetUp()
+        {
+            container = new UnityContainer();
+            container.RegisterType<ListViewModel, ListViewModel>();
+            container.RegisterType<IRepository, Mock.Repository>();
+        }
+
+        [Test]
+        public void TestRepositoriesProperty()
+        {
+            ListViewModel listViewModel = container.Resolve<ListViewModel>();
+
+            Assert.That(listViewModel.Repositories, Has.Count.EqualTo(1));
+            Assert.That(listViewModel.Repositories, Has.All.InstanceOf<Repo>());
+        }
+    }
+}
+```
+
+As you can read, it is really close to a real sentence:
+
+    Assert that [the] repositories [collection] has count equal to 1.
+
+In the code above, you may have noticed the `TestFixtureSetUp()` method I used
+to inject a mocked instance of `IRepository` instead of the `ApiRepository`
+implementation.
+
+
+## Conclusion
+
+I enjoyed playing with all these new toys. It was a great experience as I learnt
+a lot, and I must admit, Microsoft has interesting tools/technologies these
+days. I am not fan of using a PC with Windows to develop though...
+
+I should probably look at [Mono](http://www.mono-project.com/CSharp_Compiler),
+but there is no support for C# 4.5 yet. I have tons of other things to explore
+such as [Entity Framework](http://msdn.microsoft.com/en-us/data/ef.aspx), or
+the [Stack Exchange Open Source
+projects](http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/).
+
+
+## TL;DR
+
+* Avoid **TFS**, prefer **Git** instead
+* Use **NuGet**, always!
+* **MVVVM** is a great pattern
+* Use **Unity** or **MEF**
+* Prefer **NUnit** over MSTest
+* The Microsoft world is quite cool actually!
