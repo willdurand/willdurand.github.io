@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Geocoder: The Missing PHP5 Library"
-location: Zurich, Switzerland
+location: Zürich, Switzerland
 tags: [ PHP ]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "capifony, the cool Capistrano recipes for symfony applications"
-location: Zurich, Switzerland
+location: Zürich, Switzerland
 ---
 
 Since two years, I use [Capistrano](https://github.com/capistrano/capistrano)

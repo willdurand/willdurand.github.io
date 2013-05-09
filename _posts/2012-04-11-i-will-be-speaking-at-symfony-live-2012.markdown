@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Will Be Speaking At Symfony Live 2012"
-location: Zurich, Switzerland
+location: Zürich, Switzerland
 ---
 
 Heya, I'm glad to announce that I will be speaking at [Symfony Live 2012](http://paris2012.live.symfony.com/) in Paris, on 7-8th of June.

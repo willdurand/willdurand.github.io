@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "REST APIs with Symfony2: The Right Way"
-location: Zurich, Switzerland
+location: Zürich, Switzerland
 audio: false
 tags: [ PHP ]
 ---

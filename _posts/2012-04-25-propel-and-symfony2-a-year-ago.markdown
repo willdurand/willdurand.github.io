@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Propel, And Symfony2 A Year Ago"
-location: Zurich, Switzerland
+location: Zürich, Switzerland
 tags: [ PHP ]
 ---
 
