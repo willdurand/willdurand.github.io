@@ -68,12 +68,18 @@
             $(document).ready(function() {
                 $().UItoTop();
                 $("h2, h3, h4, h5, h6").each(function () {
-                    var _id = $(this).attr('id');
+                    var _id = $(this).text(),
+                        _anchor;
 
-                    if (undefined !== _id) {
-                        _anchor = '<a href="#' + _id + '" class="anchor-link">¶</a>';
-                        $(this).append(_anchor);
-                    }
+                    _id = _id.trim()
+                             .replace(/[ ;,.'?!_]/g, '-')
+                             .replace(/--/g, '-')
+                             .replace(/-$/, '')
+                             .toLowerCase();
+                    _anchor = '<a href="#' + _id + '" class="anchor-link">¶</a>';
+
+                    $(this).attr('id', _id);
+                    $(this).append(_anchor);
                 });
             });
             window._gaq = [['_setAccount','UA-28365039-1'],['_trackPageview'],['_trackPageLoadTime']];
