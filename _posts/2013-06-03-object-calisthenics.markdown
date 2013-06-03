@@ -147,7 +147,7 @@ solution.
 ``` java
 public void login(String username, String password) {
     if (userRepository.isValid(username, password)) {
-        redirect('homepage');
+        return redirect('homepage');
     }
 
     addFlash('error', 'Bad credentials');
