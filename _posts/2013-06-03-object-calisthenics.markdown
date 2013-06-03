@@ -448,7 +448,7 @@ allowed](http://whitewashing.de/2012/08/22/building_an_object_model__no_setters_
 If you don't feel comfortable with these rules, it is ok, but trust me when I
 tell you that they can be used in real life. Try them in your spare time, by
 refactoring your Open Source projects for instance. I think it is just a matter
-of practice.
+of practice. Some rules are easy to follow, and may help you.
 
 
 ## Slides
