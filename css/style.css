@@ -226,14 +226,6 @@ em.fork-and-edit {
     overflow: hidden;
 }
 
-@media only screen and (min-width: 480px) {
-    /* Style adjustments for viewports 480px and over go here */
-}
-
-@media only screen and (min-width: 768px) {
-    /* Style adjustments for viewports 768px and over go here */
-}
-
 @media print {
     * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
     a, a:visited { text-decoration: underline; }
