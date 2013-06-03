@@ -378,7 +378,7 @@ Strings](#3-wrap-all-primitives-and-strings).
 <small class="source">Source: [https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables](https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables).</small>
 
 The main question was _Why two attributes?_ My answer was _Why not?_ Not the
-cest explanation but, in my opinion, the main idea is to distinguish **two kinds
+best explanation but, in my opinion, the main idea is to distinguish **two kinds
 of classes**, those that **maintain the state of a single instance variable**,
 and those that **coordinate two separate variables**. **Two** is an arbitrary
 choice that forces you to decouple your classes a lot.
