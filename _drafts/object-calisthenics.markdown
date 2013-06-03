@@ -11,24 +11,22 @@ Last month, I gave a talk about [Object
 Calisthenics](http://williamdurand.fr/object-calisthenics-slides/) at
 [Clermont'ech](http://clermontech.org)'s
 [APIHour #2](http://clermontech.org/api-hours/api-hour-2.html), a local
-developer group based in Clermont-Ferrand. Actually, I gave this talk twice as
-I talked about Object Calisthenics at Michelin (my current company) the same
-day.
+developer group based in Clermont-Ferrand (France).
 
-I discovered **Object Calisthenics** two years ago, but I wasn't open-minded
-enough to give them a try. A year ago, [Guilherme
+I discovered **Object Calisthenics** almost two years ago, but I wasn't
+open-minded enough to give them a try. A year ago, [Guilherme
 Blanco](https://twitter.com/guilhermeblanco) and I were
 [drinking beers](https://twitter.com/jmikola/status/210448122642575360/photo/1)
 in Paris. He told me that [Rafael Dohms](https://twitter.com/rdohms) and him
-ported the concept of Object Calisthenics to PHP. That was awesome, and the time
-for me to learn, understand, and try these rules. And, now I am convinced that
+ported the concept of Object Calisthenics to PHP. That was awesome, and I
+decided to learn, understand, and try these rules. I am now convinced that
 these rules are really helpful, and that trying to respect these rules help you
 write **better Oriented Object code**.
 
 > Cal • is • then • ics - /ˌkaləsˈTHeniks/
 
-Object Calisthenics are programming exercises, formalized as a set of **9
-rules** invented by Jeff Bay in his book The [ThoughWorks
+Object Calisthenics are **programming exercises**, formalized as a set of **9
+rules** invented by Jeff Bay in his book [The ThoughWorks
 Anthology](http://pragprog.com/book/twa/thoughtworks-anthology). The word
 _Object_ is related to Object Oriented Programming. The word _Calisthenics_
 is derived from greek, and means **exercises** under the context of gymnastics.
@@ -36,10 +34,12 @@ By trying to follow these rules as much as possible, you will naturally change
 how you write code. It doesn't mean you have to follow all these rules, all the
 time. Find your balance with these rules, use some of them only if you feel
 comfortable with them.
-These rules focus on maintainability, readability, testability, and
-comprehensibility of your code. If you already write maintainable, readable,
-testable, and comprehensible code, then these rules will help you write more
-maintainable, more readable, more testable, and more comprehensible code.
+
+These rules focus on **maintainability**, **readability**, **testability**,
+and **comprehensibility** of your code. If you already write code that is
+maintainable, readable, testable, and comprehensible, then these rules will
+help you write code that is more maintainable, more readable, more testable,
+and more comprehensible.
 
 In the following, I will review each of these 9 rules listed below:
 
@@ -59,9 +59,10 @@ In the following, I will review each of these 9 rules listed below:
 ## 1. Only One Level Of Indentation Per Method
 
 Having **too many levels of indentation** in your code **is often bad for
-readability**, and maintainability. Most of the time, you can't easily understand
-the code without _compiling_ it in your head, especially if you have various
-conditions in a loop, in another loop, as shown in this example:
+readability**, and maintainability. Most of the time, you can't easily
+understand the code without _compiling_ it in your head, especially if you have
+various conditions at different level, or a loop in another loop, as shown in
+this example:
 
 ``` java
 class Board {
@@ -83,13 +84,14 @@ class Board {
 }
 ```
 
-In order to respect this rule, you have to split your methods up. Martin Fowler,
-in [Refactoring](http://martinfowler.com/books/refactoring.html), introduces the
-[Extract Method](http://refactoring.com/catalog/extractMethod.html) pattern,
-which is exactly what you have to do/use.
+In order to follow this rule, you have to split your methods up. Martin Fowler,
+in his book [Refactoring](http://martinfowler.com/books/refactoring.html),
+introduces the [**Extract
+Method**](http://refactoring.com/catalog/extractMethod.html) pattern, which is
+exactly what you have to do/use.
 
-You won't reduce the number of lines of code, but you will increase readability
-in a significant way:
+You won't reduce the number of lines of code, but you will **increase
+readability** in a significant way:
 
 ``` java
 class Board {
@@ -123,7 +125,7 @@ class Board {
 The `else` keyword is well-known as the `if/else` construct is built into nearly
 all programming languages. Do you remember the last time you saw a nested
 conditional? Did you enjoy reading it? I don't think so, and that is exactly why
-it should be avoided. It is so easy to add a new branch to the existing code
+it should be avoided. As it is so easy to add a new branch to the existing code
 than refactoring it to a better solution, you often end up with a really bad
 code.
 
@@ -162,8 +164,8 @@ put the default scenario into a condition, and if it is not satisfied, then you
 return an error status. This is better as it prevents potential issues you
 didn't think about.
 
-As an alternative, you can introduce a variable to make your return statement
-parametrizable. This is not always possible though.
+As an alternative, you can **introduce a variable** in order to make your
+**return statement parametrizable**. This is not always possible though.
 
 ``` java
 public void login(String username, String password) {
@@ -182,11 +184,23 @@ Also, it is worth mentioning that Object Oriented Programming gives us powerful
 features, such as **polymorphism**. Last but not least, the **Null Object**,
 **State** and **Strategy** patterns may help you as well!
 
+For instance, instead of using `if/else` to determine an action based on a
+status (e.g. `RUNNING`, `WAITING`, etc.), prefer the [State
+pattern](http://en.wikipedia.org/wiki/State_pattern) as it is used to
+encapsulate varying behavior for the same routine based on an object's state
+object:
+
+![](http://sourcemaking.com/files/sm/images/patterns/State1.gif)
+
+<small class="source">Source:
+[http://sourcemaking.com/design_patterns/state](http://sourcemaking.com/design_patterns/state).
+</small>
+
 
 ## 3. Wrap All Primitives And Strings
 
-Following this rule is pretty easy, you just have to encapsulate all the
-primitives within objects, in order to avoid the [**Primitive
+Following this rule is pretty easy, you simply have to **encapsulate all the
+primitives within objects**, in order to avoid the [**Primitive
 Obsession**](http://c2.com/cgi/wiki?PrimitiveObsession) anti-pattern.
 
 If the variable of your primitive type has a **behaviors**, you MUST encapsulate
@@ -196,12 +210,12 @@ it. And this is especially true for **Domain Driven Design**. **DDD** describes
 
 ## 4. First Class Collections
 
-Any class that contains a collection should contain no other member variables.
-If you have a set of elements and want to manipulate them, create a class that
-is dedicated for this set.
+**Any class that contains a collection should contain no other member
+variables**. If you have a set of elements and want to manipulate them, create
+a class that is dedicated for this set.
 
-Each collection gets wrapped in its own class, so now behaviors related to the
-collection have a home (e.g. filter methods, applying a rule to each element).
+Each collection gets wrapped in its own class, so now **behaviors related to the
+collection have a home** (e.g. filter methods, applying a rule to each element).
 
 
 ## 5. One Dot Per Line
@@ -209,7 +223,7 @@ collection have a home (e.g. filter methods, applying a rule to each element).
 This _dot_ is the one you use to call methods in Java, or C# for instance. It
 would be an arrow in PHP, but who uses PHP anyway? :D
 
-Basically, the rule says that you should not chain method calls. However, it
+Basically, the rule says that **you should not chain method calls**. However, it
 doesn't apply to [**Fluent
 Interfaces**](http://flippinawesome.org/2013/05/20/fluent-apis-and-method-chaining/)
 and more generally to anything implementing the [Method Chaining
@@ -217,8 +231,8 @@ Pattern](http://martinfowler.com/dslCatalog/methodChaining.html)
 (e.g. a Query Builder).
 
 For other classes, you should respect this rule. It is the direct use of the
-[Law of Demeter](http://c2.com/cgi/wiki?LawOfDemeter), saying only talk to
-your immediate friends, and don't talk to strangers.
+[Law of Demeter](http://c2.com/cgi/wiki?LawOfDemeter), saying only **talk to
+your immediate friends**, and don't talk to strangers.
 
 Look at these classes:
 
@@ -258,8 +272,8 @@ However, the `boardRepresentation()` method is aweful, take a look at this line:
 buf.append(loc.current.representation.substring(0, 1));
 ```
 
-We access a `Location`, then its current `Piece`, then the `Piece`'s
-representation on which we perform an action. This is far from _One Dot Per
+It accesses a `Location`, then its current `Piece`, then the `Piece`'s
+representation on which it performs an action. This is far from _One Dot Per
 Line_.
 
 Fortunately, the [Law of Demeter](http://c2.com/cgi/wiki?LawOfDemeter) tells you
@@ -275,10 +289,10 @@ class Location {
 }
 ```
 
-Making the instance of `Piece` **private** ensures that we won't try to do
-something bad. However, as we need to perform an action on this attribute, we
+Making the instance of `Piece` **private** ensures that you won't try to do
+something bad. However, as you need to perform an action on this attribute, you
 need a new method `addTo()`. It is not `Location`'s responsability to determine
-how the `Piece` will be added, so let's ask it.
+how the `Piece` will be added, so let's ask it:
 
 ``` java
 class Piece {
@@ -294,13 +308,13 @@ class Piece {
 }
 ```
 
-Then again, we changed the visibility of our attribute. As a reminder, the
-[Open/Closed Principe](http://en.wikipedia.org/wiki/Open/closed_principle) says
-that software entities (classes, modules, functions, etc.) should be open for
-extension, but closed for modification.
+Then again, you should change the visibility of your attribute. As a reminder,
+the [Open/Closed Principe](http://en.wikipedia.org/wiki/Open/closed_principle)
+says that software entities (classes, modules, functions, etc.) should be **open
+for extension**, but **closed for modification**.
 
 Also, extracting the code to get the first character of the `representation`
-looks like a good idea as it may be reused at some point.
+in a new method looks like a good idea as it may be reused at some point.
 Finally, here is the updated `Board` class:
 
 ``` java
@@ -318,6 +332,7 @@ class Board {
 ```
 
 Much better, right?
+
 
 ## 6. Don't Abbreviate
 
@@ -341,35 +356,37 @@ Don't abbreviate, period.
 
 ## 7. Keep All Entities Small
 
-No class over 50 lines and no package over 10 files. Well, it depends on you,
-but I think we could change the number of lines from 50 to 150.
+No class over **50 lines** and no package over 10 files. Well, it depends on
+you, but I think you could change the number of lines from 50 to 150.
 
-The idea behind this rule is that long files are harder to read, harder to
+The idea behind this rule is that **long files are harder to read**, harder to
 understand, and harder to maintain.
 
 
 ## 8. No Classes With More Than Two Instance Variables
 
 I thought people would yell at me while introducing this rule, but it didn't
-happen. This rule is probably the hardest one, but it promotes low cohesion, and
-better encapsulation.
+happen. This rule is probably the hardest one, but it promotes **low cohesion**,
+and **better encapsulation**.
 
 A picture is worth a thousand words, so here is the explanation of this rule in
-picture. Note that it relies on [rule 3: Wrap All Primitives And
+picture. Note that it relies on [Rule 3: Wrap All Primitives And
 Strings](#3-wrap-all-primitives-and-strings).
 
 ![](https://raw.github.com/TheLadders/object-calisthenics/master/assets/2-instance-variables.png)
 
 <small class="source">Source: [https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables](https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables).</small>
 
-The main question was _Why two?_ My answer was _Why not?_ The main idea is
-to distinguish two kinds of classes, those that maintain the state of a single
-instance variable, and those that coordinate two separate variables.
+The main question was _Why two attributes?_ My answer was _Why not?_ Not the
+cest explanation but, in my opinion, the main idea is to distinguish **two kinds
+of classes**, those that **maintain the state of a single instance variable**,
+and those that **coordinate two separate variables**. **Two** is an arbitrary
+choice that forces you to decouple your classes a lot.
 
 
 ## 9. No Getters/Setters/Properties
 
-My favourite rule. It could be rephrased as
+My favorite rule. It could be rephrased as
 [Tell](http://c2.com/cgi/wiki?TellDontAsk), [don't
 ask](http://pragprog.com/articles/tell-dont-ask).
 
@@ -379,7 +396,7 @@ entirely upon the state of one object should be made inside the object itself.
 
 That is why [getters/setters are often considered
 evil](http://stackoverflow.com/questions/565095/are-getters-and-setters-evil).
-Again, they violate the [Open/Closed
+Then again, they violate the [Open/Closed
 Principe](http://en.wikipedia.org/wiki/Open/closed_principle).
 
 Let's take an example:
@@ -405,7 +422,9 @@ to increase your score, instead of leaving this responsability to the `Game`
 instance.
 
 A better solution would be to remove the getters/setters, and to provide methods
-that make sense:
+that make sense. Remember, you must **tell** the class to do something, and you
+should **not ask** it. In the following, you **tell** the `game` to update your
+score as you destroyed `ENEMY_DESTROYED_SCORE` enemies.
 
 ``` java
 // Game
@@ -426,6 +445,10 @@ allowed](http://whitewashing.de/2012/08/22/building_an_object_model__no_setters_
 
 ## Conclusion
 
+If you don't feel comfortable with these rules, it is ok, but trust me when I
+tell you that they can be used in real life. Try them in your spare time, by
+refactoring your Open Source projects for instance. I think it is just a matter
+of practice.
 
 
 ## Slides
