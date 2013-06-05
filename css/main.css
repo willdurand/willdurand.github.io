@@ -110,9 +110,13 @@ a.extra {
     margin-right: auto;
 }
 
-.meta {
+.post-meta {
     margin-top: 0;
     color: #93a1a1;
+}
+
+.post-audio {
+    margin: 1em 0 1em 0;
 }
 
 .posts,
@@ -130,7 +134,7 @@ a.extra {
     padding-right: 5px;
 }
 
-.post h1 {
+.post-title {
     margin-bottom: 0;
 }
 

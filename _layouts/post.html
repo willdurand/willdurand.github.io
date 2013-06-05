@@ -3,20 +3,26 @@ layout: default
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <h1 itemprop="name">{{ page.title }}</h1>
-    <p class="meta">
+    <h1 class="post-title" itemprop="name">
+        {{ page.title }}
+    </h1>
+
+    <div class="post-meta">
         {% if page.date %}
         <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
             <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
             {{ page.date | date_to_long_string }}&nbsp;-&nbsp;
         </time>
-        {% endif %}{{ page.location }}</p>
+        {% endif %}{{ page.location }}
+    </div>
 
     {% if page.audio != false %}
-    <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+    <div class="post-audio">
+        <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+    </div>
     {% endif %}
 
-    <div itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
         {{ content }}
     </div>
 
