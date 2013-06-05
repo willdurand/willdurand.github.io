@@ -461,10 +461,10 @@ of practice. Some rules are easy to follow, and may help you.
 * [Object Calisthenics and Code Readability in
 PHP](http://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808);
 * [Object Calisthenics Applied to
-PHP](http://www.slideshare.net/guilhermeblanco/object-calisthenics-applied-to-php)
+PHP](http://www.slideshare.net/guilhermeblanco/object-calisthenics-applied-to-php);
 * [Object
   Calisthenics](http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
-  by Jeff Bay
+  by Jeff Bay.
 
 
 ## TL;DR
