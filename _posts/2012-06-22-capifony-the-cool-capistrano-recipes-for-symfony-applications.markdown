@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "capifony, the cool Capistrano recipes for symfony applications"
+title: "Capifony, The Cool Capistrano Recipes For Symfony Applications"
 location: Zürich, Switzerland
 ---
 
