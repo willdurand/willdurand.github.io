@@ -16,19 +16,18 @@ I introduced not only best practices in web development, but tools such as
 [Git](http://git-scm.com), [Vim](http://www.vim.org/),
 [Vagrant](http://vagrantup.com),
 [Puppet](http://puppetlabs.com), and [GitHub](http://github.com).
-Each student had to work on a [Virtual
-Machine](http://github.com/licpro/php-vm), so that they could do whatever they
-wanted. Except a few weird issues, that was really interesting because pushing
-updates, from my point of view, was really easy. The workflow was pretty
-straightforward, they all started by running `git pull && vagrant up` and that
-was it!
+Each student worked on a [Virtual Machine](http://github.com/licpro/php-vm),
+so that they could do whatever they wanted. Except a few weird issues, that was
+really interesting because pushing updates, from my point of view, was really
+easy. The workflow was pretty straightforward, they all started by running
+`git pull && vagrant up` and that was it!
 
 Students wrote their own micro-framework in PHP relying on components such as
-the [Symfony2](http://symfony.com) ones and managed with
-[Composer](http://getcomposer.org). They wrote unit tests, and functional tests.
-Some published their code on GitHub, and most of them did a great job by building
-a web application combined to a _true_ REST API, serving content in the best
-format for the clients.
+the [Symfony2](http://symfony.com) ones and managed thanks to
+[Composer](http://getcomposer.org). They wrote unit tests, and functional tests
+too. Some published their code on GitHub, and most of them did a great job by
+building a web application combined to a _true_ REST API, serving content in the
+best format for the clients.
 
 As for the [security lectures](http://licpro.williamdurand.fr/security-slides/),
 I tried to give an overview of well-known security topics, including
