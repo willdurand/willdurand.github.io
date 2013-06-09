@@ -266,7 +266,7 @@ It is ok-ish to have `public` attributes in `Piece` and `Location`. Actually,
 having a `public` property or a `private` one with getter/setter is the same
 thing (see [Rule 9](#9-no-getters/setters/properties)).
 
-However, the `boardRepresentation()` method is aweful, take a look at this line:
+However, the `boardRepresentation()` method is awful, take a look at this line:
 
 ``` java
 buf.append(loc.current.representation.substring(0, 1));
