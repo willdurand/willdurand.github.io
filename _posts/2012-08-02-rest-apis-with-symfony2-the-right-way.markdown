@@ -6,12 +6,6 @@ audio: false
 tags: [ PHP ]
 ---
 
-This article is also available in
-[Spanish](http://www.webhostinghub.com/support/es/misc/apis-rest-con-symfony2)
-thanks to Maria Ramos.
-
-<hr />
-
 _2013-04-12 - Add an example on how to create new resources with PUT._
 
 _2013-04-11 - PUT/PATCH methods should not return a `Location`
