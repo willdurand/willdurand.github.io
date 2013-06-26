@@ -4,10 +4,10 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ site.site.title }} | PHP</title>
-    <link href="http://www.williamdurand.fr/php.xml" rel="self"/>
-    <link href="http://www.williamdurand.fr/"/>
+    <link href="{{ site.site.url }}/atom.xml" rel="self"/>
+    <link href="{{ site.site.url }}"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://www.williamdurand.fr/</id>
+    <id>{{ site.site.url }}</id>
     <author>
         <name>{{ site.site.author }}</name>
         <email>{{ site.site.email }}</email>
@@ -16,9 +16,9 @@ layout: nil
     {% for post in site.tags.PHP %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="http://www.williamdurand.fr{{ post.url }}"/>
+        <link href="{{ site.site.url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://www.williamdurand.fr{{ post.id }}</id>
+        <id>{{ site.site.url }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}

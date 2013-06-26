@@ -23,7 +23,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    ul.posts li a,
+    ul.posts li a.link,
     ul.projects li a {
         color: #fff;
         display: block;

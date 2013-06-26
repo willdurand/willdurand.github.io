@@ -1,7 +1,6 @@
 safe:       true
 permalink:  pretty
 pygments:   true
-exclude:    [ "drafts/" ]
 markdown:   redcarpet
 redcarpet:
     extensions: [ "tables", "no_intra_emphasis" ]
@@ -10,6 +9,7 @@ site:
     title:  William DURAND
     author: William Durand
     email:  william.durand1@gmail.com
+    url:    http://www.williamdurand.fr
 
 my_linkedin: http://linkedin.com/in/williamdurand
 my_github:   http://www.github.com/willdurand
