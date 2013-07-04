@@ -20,9 +20,10 @@ my_projects:
     {% else %}
     {% if year != nyear %}
         </ul>
+    </li>
+    <li>
         <h2 class="title">{{ post.date | date: '%Y' }}</h2>
         <ul class="posts-by-year {{ post.date | date: '%Y' }}">
-    </li>
     {% endif %}
     {% endif %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
