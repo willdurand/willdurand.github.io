@@ -4,6 +4,9 @@ location: Clermont-Fd Area, France
 title: On Open Sourcing Libraries
 ---
 
+Shortcut: [TL;DR](#tl-dr)
+<hr>
+
 Open sourcing a library is easy, it is just a matter of seconds. All you need is
 a public repository hosted somewhere ([GitHub](https://github.com/),
 [Bitbucket](https://bitbucket.org/), etc.) right? _Nope!_ Actually, it would be
