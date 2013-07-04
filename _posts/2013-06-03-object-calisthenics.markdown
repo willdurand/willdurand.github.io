@@ -291,7 +291,7 @@ class Location {
 
 Making the instance of `Piece` **private** ensures that you won't try to do
 something bad. However, as you need to perform an action on this attribute, you
-need a new method `addTo()`. It is not `Location`'s responsability to determine
+need a new method `addTo()`. It is not `Location`'s responsibility to determine
 how the `Piece` will be added, so let's ask it:
 
 ``` java
@@ -343,7 +343,7 @@ And I would answer that this method is reused multiple times, and that it looks
 like **code duplication**.
 
 So you will say that the method name is too long anyway. And I would tell you
-that maybe your class has multiple responsabilities, which is bad as it violates
+that maybe your class has multiple responsibilities, which is bad as it violates
 the [Single Responsibility
 Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle).
 
@@ -418,7 +418,7 @@ game.setScore(game.getScore() + ENEMY_DESTROYED_SCORE);
 ```
 
 In the code above, the `getScore()` is used to make a decision, you choose how
-to increase your score, instead of leaving this responsability to the `Game`
+to increase your score, instead of leaving this responsibility to the `Game`
 instance.
 
 A better solution would be to remove the getters/setters, and to provide methods
@@ -436,7 +436,7 @@ public void addScore(int delta) {
 game.addScore(ENEMY_DESTROYED_SCORE);
 ```
 
-It is `game`'s responsability to determine how to update the score.
+It is `game`'s responsibility to determine how to update the score.
 
 In this case, you could keep the `getScore()` as you may want to display it
 somewhere on the UI, but keep in mind that [setters should not be
