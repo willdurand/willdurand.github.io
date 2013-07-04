@@ -37,7 +37,7 @@ how to **secure the web**.
 That was a really great experience! I learnt quite a few tips on how to be better
 at teaching. I use to talk to skilled people, my vocabulary is really technical,
 and that was the first thing I had to change while explaining something to
-students. They never did web developement before. Introducing high-level
+students. They never did web development before. Introducing high-level
 concepts using simple words is not easy, but it is a really good exercise for
 those who want to improve their communication skills.
 Also, as I needed to be able to answer various questions, I had to know my
