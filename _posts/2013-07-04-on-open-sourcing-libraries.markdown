@@ -97,7 +97,7 @@ I won't compare all licenses, browse [tl;drLegal](http://www.tldrlegal.com/)
 instead. It provides useful information related to Open Source licenses, with
 simple words.
 
-I use to use the [MIT license](http://www.tldrlegal.com/license/mit-license) as
+I tend to use the [MIT license](http://www.tldrlegal.com/license/mit-license) as
 it is very liberal. My advice here is to **look at your community**, and choose
 the most appropriate one. For example, in the Symfony2 (a PHP Framework)
 community, most of the related projects (bundles) are released under the MIT
@@ -138,7 +138,7 @@ as much as you can.
 ## Be Standard
 
 It is important to **use the right tools** for your library. Look at your
-community again, and choose the tools people use to use. In PHP, we use
+community again, and choose the tools people tend to use. In PHP, we use
 [Composer](http://getcomposer.org/) as dependency manager. Don't waste your time
 with PEAR or anything else, use Composer. If you write a Node.js library,
 register it on [npm](https://npmjs.org/). For Ruby developers, distribute your
@@ -202,7 +202,7 @@ Open Source projects (also known as your new world domination plans) :-)
 
 Open sourcing a library is not just about publishing the source code. You need
 to add a few things to make it usable, and enjoyable. Documenting your projects
-show that you are able to teach, and that you are able to find the right words
+shows that you are able to teach, and that you are able to find the right words
 to explain something. Also, it shows that you care about what you do.
 
 Don't forget to add tests in your library, if you don't do that at work, do it
