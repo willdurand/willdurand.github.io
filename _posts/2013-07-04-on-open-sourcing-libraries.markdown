@@ -113,6 +113,14 @@ license](http://www.theregister.co.uk/2013/04/18/github_licensing_study/). That
 is bad! You MUST have a license, even if it is the [Beerware
 license](http://en.wikipedia.org/wiki/Beerware).
 
+As mentioned on [Hacker News](https://news.ycombinator.com/item?id=5990836),
+[please don't license it under the GPL. If the library is GPL it can only be used
+by other GPL applications, which excludes major open source projects like Rails
+and Django](https://news.ycombinator.com/item?id=5992270) for instance. Also,
+[don't make up your own or just state that it's public domain. Public domain is
+actually not a well-defined concept internationally, and means different things
+in different countries](https://news.ycombinator.com/item?id=5992428).
+
 Even if you now have a well-documented library and a license, you can't dominate
 the world yet. In the following, I give an overview of what I consider important
 in Open Source projects.
