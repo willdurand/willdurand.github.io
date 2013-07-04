@@ -25,7 +25,7 @@ words and code snippets. Add screenshots or GIFs. Be as exhaustive as you can.
 This is your project's **documentation**, and most of the time for libraries,
 this will be the only documentation you will provide.
 
-Writting the **Usage** part first is not a random choice. Your `README` file
+Writing the **Usage** part first is not a random choice. Your `README` file
 should blow your reader's mind, so that they will use your library and
 contribute back (or not).
 
