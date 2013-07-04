@@ -24,6 +24,7 @@ my_projects:
         <ul class="posts-by-year {{ post.date | date: '%Y' }}">
     </li>
     {% endif %}
+    {% endif %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
         <time datetime="{{ post.date | date_to_xmlschema }}">
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
@@ -31,8 +32,6 @@ my_projects:
         </time>
         <span class="separator">&raquo;</span><a itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
     </li>
-    {% endif %}
-
 
     {% if forloop.last %}
         </ul>
