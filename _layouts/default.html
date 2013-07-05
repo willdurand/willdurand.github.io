@@ -15,9 +15,11 @@
     <meta name="twitter:creator" content="@couac">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% endif %}">
-    {% endif %}
 
+    <title>{{ page.title }} | {{ site.site.title }}</title>
+    {% else %}
     <title>{{ site.site.title }}</title>
+    {% endif %}
 
     <link href="/atom.xml" rel="alternate" title="{{ site.site.author }}" type="application/atom+xml" />
 

@@ -119,6 +119,10 @@ a.extra {
     margin: 1em 0 1em 0;
 }
 
+.post-shortcuts {
+    border-bottom: 1px solid black;
+}
+
 .posts,
 .projects {
     padding: 0;

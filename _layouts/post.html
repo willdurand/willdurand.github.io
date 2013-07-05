@@ -22,6 +22,12 @@ layout: default
     </div>
     {% endif %}
 
+    {% if page.tldr %}
+    <div class="post-shortcuts">
+        <p>Shortcut: <a href="#tl-dr">TL;DR</a></p>
+    </div>
+    {% endif %}
+
     <div class="post-body" itemprop="articleBody">
         {{ content }}
     </div>

@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Object Calisthenics
+tldr: true
 location: Clermont-Fd Area, France
+title: Object Calisthenics
 ---
-
-Shortcut: [TL;DR](#tl-dr)
-<hr>
 
 Last month, I gave a talk about [Object
 Calisthenics](http://williamdurand.fr/object-calisthenics-slides/) at
