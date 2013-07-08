@@ -37,7 +37,7 @@
         background: -o-linear-gradient(top, #ff5db1 0%,#d33682 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(top, #ff5db1 0%,#d33682 100%); /* IE10+ */
         background: linear-gradient(to bottom, #ff5db1 0%,#d33682 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#d33682',GradientType=0 ); /* IE6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5db1', endColorstr='#d33682', GradientType=0); /* IE6-9 */
     }
 
     ul.posts li span.separator,
