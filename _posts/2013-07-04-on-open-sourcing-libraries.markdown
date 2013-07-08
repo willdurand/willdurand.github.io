@@ -122,7 +122,7 @@ the world yet. In the following, I give an overview of what I consider important
 in Open Source projects.
 
 
-### Write Tests & Automate
+## Write Tests & Automate
 
 Open Source projects are a way to write beautiful code as there are no deadlines,
 and no "customers". Keep in mind that your projects show what you are able to do.
