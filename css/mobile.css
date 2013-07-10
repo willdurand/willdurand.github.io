@@ -1,10 +1,10 @@
 @media only screen and (max-width: 800px) {
-    .site {
+    #container {
         width: auto;
         margin: 3%;
     }
 
-    .site img {
+    img {
         max-width: 100%;
     }
 
