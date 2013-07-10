@@ -4,7 +4,7 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { text-align: center; margin: 0; font-size: 13px; line-height: 1.231; }
-body, button, input, select, textarea { font-family: Georgia, Times New Roman, serif; color: #222; }
+body, button, input, select, textarea { font-family: 'Raleway', sans-serif; color: #222; }
 ::-moz-selection { background: #d33682; color: #fff; text-shadow: none; }
 ::selection { background: #d33682; color: #fff; text-shadow: none; }
 a:focus { outline: thin dotted; }
@@ -62,7 +62,8 @@ header {
 }
 
 h1 {
-    font-size: 120%;
+    font-size: 140%;
+    font-weight: bold;
 }
 
 h2, h3, h4 {
