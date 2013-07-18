@@ -39,7 +39,22 @@ layout: default
     </em>
 </article>
 
-<div id="disqus_thread"></div>
+<section class="related-posts">
+    <h2 class="title">Related Posts</h2>
+    <ul class="posts" itemscope itemtype="http://schema.org/Blog">
+        {% for post in site.related_posts limit:3 %}
+        <li itemscope itemtype="http://schema.org/BlogPosting">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+                <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
+                {{ post.date | date: '%d %b' }}
+            </time>
+            <span class="separator"> &raquo; </span><a itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="comments" id="disqus_thread"></section>
 <script type="text/javascript">
     var disqus_shortname = 'williamdurand';
     (function() {

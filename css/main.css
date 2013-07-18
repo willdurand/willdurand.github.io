@@ -221,8 +221,7 @@ a.anchor-link:hover {
 }
 
 em.fork-and-edit {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 5%;
     display: block;
 }
 
@@ -233,6 +232,10 @@ em.fork-and-edit {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.comments {
+    margin-top: 5%;
 }
 
 @media print {
