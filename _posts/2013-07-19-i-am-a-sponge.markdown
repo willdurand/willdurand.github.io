@@ -75,7 +75,7 @@ become more **valuable**, and people will naturally come to you to ask you
 advices, or simply to share their new shiny things with you. Become a sponge,
 and join us!
 
-Last but not the least, remember that [great programmers never stop learning and
+Last but not least, remember that [great programmers never stop learning and
 teaching](http://37signals.com/svn/posts/3559-my-observations-about-teaching-and-learning-programming).
 
 So, are you a sponge too?
