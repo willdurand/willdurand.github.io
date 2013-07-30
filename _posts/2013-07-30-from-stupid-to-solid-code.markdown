@@ -12,7 +12,7 @@ Michelin, the company I am working for. I talked about writing better code,
 code!](http://williamdurand.fr/from-stupid-to-solid-code-slides/)
 **STUPID** as well as
 [**SOLID**](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design\)) are
-two accronyms, and have been
+two acronyms, and have been
 [covered](http://blog.ircmaxell.com/2012/05/dont-be-stupid-grasp-solid-slides.html)
 [quite](http://nikic.github.io/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html) a
 [lot](http://lostechies.com/chadmyers/2008/03/08/pablo-s-topic-of-the-month-march-solid-principles/)
@@ -152,7 +152,7 @@ application. Ask yourself whether the logic you are introducing should live in
 this class or not. Using **layers** in your application helps a lot. Split big
 classes in smaller ones, and avoid [god
 classes](http://c2.com/cgi/wiki?GodClass).
-Last but not least, **write straigthforward comments**. If you start writing
+Last but not least, **write straightforward comments**. If you start writing
 comments such as `in this case`, `but if`, `except when`, `or`, then you are
 doing it wrong.
 
@@ -284,7 +284,7 @@ Honestly, writing SOLID code is not that hard.
 
 ## TL;DR
 
-**STUPID** is an accronym that describes bad practices in Oriented Object
+**STUPID** is an acronym that describes bad practices in Oriented Object
 Programming:
 
 * [**S**ingleton](#singleton)
@@ -294,7 +294,7 @@ Programming:
 * [**I**ndescriptive Naming](#indescriptive-naming)
 * [**D**uplication](#duplication)
 
-**SOLID** is an accronym that stands for **five basic principles** of
+**SOLID** is an acronym that stands for **five basic principles** of
 Object-Oriented Programming and design to _fix_ STUPID code:
 
 * [**S**ingle Responsibility Principle](#single-responsibility-principle)
