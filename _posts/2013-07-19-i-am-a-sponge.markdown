@@ -5,9 +5,12 @@ tldr: false
 title: I Am A Sponge
 ---
 
-According to my PhD advisor, **I am a sponge**. What does it mean though? That
+According to my PhD advisor, **I am a sponge**. What does that mean though? That
 is the purpose of this article in which I am going to introduce a sort of
-_Sponge Theory_.
+_Sponge Theory_. First of all, it is not about
+[SpongeBob](https://en.wikipedia.org/wiki/SpongeBob_SquarePants). This theory is
+actually focused on two values: **learning** and **sharing**, and the order
+matters.
 
 ![](/images/posts/spongebob.png)
 
