@@ -503,7 +503,7 @@ And here is the configuration file for the `UserId` value object:
 
 ``` yaml
 # src/Acme/CoreDomainBundle/Resources/config/serializer/User.UserId.yml
-Acme\CoreDomain\ValueObject\UserId:
+Acme\CoreDomain\User\UserId:
     exclusion_policy: ALL
     properties:
         value:
