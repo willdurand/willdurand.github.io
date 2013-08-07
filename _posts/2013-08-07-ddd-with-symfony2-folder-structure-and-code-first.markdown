@@ -53,8 +53,8 @@ Structures](http://verraes.net/2011/10/code-folder-structure/), most of the
 usual Symfony2 project folder structures are **not efficient**. That is why it
 is important to spend some time designing a decent folder structure.
 
-In your case, the domain expert said _users_ are **centrepieces**. The _User_
-term is part of the [Ubiquitous
+In your case, the domain expert said _users_ are **centrepieces**. The word
+_User_ is part of the [Ubiquitous
 Language](http://martinfowler.com/bliki/UbiquitousLanguage.html), the term [Eric
 Evans](http://www.amazon.com/gp/product/0321125215) uses in **DDD** for the
 practice of building up a common, rigorous language between developers and
@@ -202,6 +202,7 @@ The domain expert said the application will manage **users**, so your
 application will deal with a **collection** of users. In **DDD**, a collection
 can be implemented by using the
 [Repository](http://martinfowler.com/eaaCatalog/repository.html) design pattern.
+
 A Repository mediates between the domain and data mapping using a
 **collection-like interface** for accessing domain objects. It is **not** a Data
 Access Layer though, as it deals with Entities and Value Objects. Note that there
@@ -249,8 +250,8 @@ In a **Code First** approach, you can **delay the decision** to choose a
 persistence layer. The main advantage is to be able to write some other parts of
 the application without having to wait.
 
-Let's create a `InMemoryUserRepository` class that implements the
-`UserRepository` interface:
+You can create a `InMemoryUserRepository` class that implements the
+`UserRepository` interface which contains hardcoded objects:
 
 ``` php
 <?php
@@ -398,7 +399,7 @@ You will need the following dependencies in your `composer.json` file:
 
 Don't forget to register the bundles in the `AppKernel` class.
 
-For now, you will implement just one action to retrieve all users into your
+For now, you will implement only one action to retrieve all users into your
 `UserController` class:
 
 ``` php
