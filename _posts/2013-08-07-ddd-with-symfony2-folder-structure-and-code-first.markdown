@@ -102,9 +102,9 @@ instance. It is [RAD](http://en.wikipedia.org/wiki/Rapid_application_development
 compliant, but it does not fit the **DDD** mindset.
 
 Let's try the **Code First** approach then. Basically, start by writing your
-classes, think in term of objects, not tables. We don't take care of the
-database yet. The **domain expert** said a `User` has an _identifier_, a _first
-name_, and a _last name_.
+classes, think in term of objects, not tables. You don't have to take care of
+the database yet. The **domain expert** said a `User` has an _identifier_, a
+_first name_, and a _last name_.
 
 The `User` class is called an
 [Entity](http://devlicio.us/blogs/casey/archive/2009/02/13/ddd-entities-and-value-objects.aspx)
@@ -176,8 +176,8 @@ immutable](http://c2.com/cgi/wiki?ValueObjectsShouldBeImmutable). If you want to
 change a Value Object you should replace the object with a new one.
 
 As you might noticed, the `User` identifier is represented by a `UserId`
-instance, not a scalar type because we don't know which type to use. Will it be
-a numeric identifier or a GUID? We don't know yet. Also, instead of passing IDs
+instance, not a scalar type because you don't know which type to use. Will it be
+a numeric identifier or a GUID? You don't know yet. Also, instead of passing IDs
 everywhere, having a class for them makes this very explicit. This `UserId`
 class is your very first **Value Object**:
 
@@ -313,7 +313,7 @@ Here is what you should get by running `tree src/`:
             │   └── InMemoryUserRepository.php
             └── AcmeCoreDomainBundle.php
 
-The `InMemoryUserRepository` class is part of what we call the
+The `InMemoryUserRepository` class is part of what people call the
 **Infrastructure Layer** in **DDD**, and is located into the `CoreDomainBundle`
 bundle because it is specific to the application. The **Infrastructure Layer**
 contains technical services, persistence, and more generally, concrete
