@@ -8,6 +8,10 @@
         max-width: 100%;
     }
 
+    p > code {
+        word-break: break-all;
+    }
+
     .ribbon {
         display: none;
     }
