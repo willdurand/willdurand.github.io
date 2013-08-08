@@ -112,7 +112,8 @@ in **DDD** as it has an **identity**. It is unique within the system.
 **Identity** can be represented in many ways on an entity, it could be a numeric
 identifier, a [GUID](http://en.wikipedia.org/wiki/Globally_unique_identifier),
 or a natural key. Note that these [Entities](http://dddsample.sourceforge.net/characterization.html#Entities)
-are not the same as the Doctrine ones.
+are not the same as the [Doctrine](http://www.doctrine-project.org/) ones. They
+might be Doctrine classes, but they don't have to be.
 
 ``` php
 <?php
@@ -175,7 +176,10 @@ immutable](http://c2.com/cgi/wiki?ValueObjectsShouldBeImmutable). If you want to
 change a Value Object you should replace the object with a new one.
 
 As you might noticed, the `User` identifier is represented by a `UserId`
-instance, not a scalar type. This `UserId` class is a **Value Object**:
+instance, not a scalar type because we don't know which type to use. Will it be
+a numeric identifier or a GUID? We don't know yet. Also, instead of passing IDs
+everywhere, having a class for them makes this very explicit. This `UserId`
+class is your very first **Value Object**:
 
 ``` php
 <?php
