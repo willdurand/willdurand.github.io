@@ -80,7 +80,7 @@ However, you still need a `CoreDomainBundle` bundle in order to integrate your
     src
     └── Acme
         ├── CoreDomain
-        |   └── User
+        │   └── User
         └── CoreDomainBundle
             └── AcmeCoreDomainBundle.php
 
@@ -232,10 +232,10 @@ You should end up with the following folder structure:
     src
     └── Acme
         ├── CoreDomain
-        |   └── User
-        |       ├── User.php
-        |       ├── UserId.php
-        |       └── UserRepository.php
+        │   └── User
+        │       ├── User.php
+        │       ├── UserId.php
+        │       └── UserRepository.php
         └── CoreDomainBundle
             └── AcmeCoreDomainBundle.php
 
@@ -300,10 +300,10 @@ Here is what you should get by running `tree src/`:
     src
     └── Acme
         ├── CoreDomain
-        |   └── User
-        |       ├── User.php
-        |       ├── UserId.php
-        |       └── UserRepository.php
+        │   └── User
+        │       ├── User.php
+        │       ├── UserId.php
+        │       └── UserRepository.php
         └── CoreDomainBundle
             ├── Repository
             │   └── InMemoryUserRepository.php
@@ -375,10 +375,10 @@ What you have to build is a REST API. The code will live in a bundle named
         │   │       └── routing.yml
         │   └── AcmeApiBundle.php
         ├── CoreDomain
-        |   └── User
-        |       ├── User.php
-        |       ├── UserId.php
-        |       └── UserRepository.php
+        │   └── User
+        │       ├── User.php
+        │       ├── UserId.php
+        │       └── UserRepository.php
         └── CoreDomainBundle
             ├── DependencyInjection
             │   └── AcmeCoreDomainExtension.php
@@ -539,16 +539,16 @@ Running `tree src/` on the command line should give you the following output:
         │   │   └── UserController.php
         │   ├── Resources
         │   │   ├── config
-        │   │   |   └── routing.yml
+        │   │   │   └── routing.yml
         │   │   └── views
         │   │       └── User
         │   │           └── all.html.twig
         │   └── AcmeApiBundle.php
         ├── CoreDomain
-        |   └── User
-        |       ├── User.php
-        |       ├── UserId.php
-        |       └── UserRepository.php
+        │   └── User
+        │       ├── User.php
+        │       ├── UserId.php
+        │       └── UserRepository.php
         └── CoreDomainBundle
             ├── DependencyInjection
             │   └── AcmeCoreDomainExtension.php
