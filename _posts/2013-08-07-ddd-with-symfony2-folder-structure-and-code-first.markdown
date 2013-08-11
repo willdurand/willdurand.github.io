@@ -37,8 +37,6 @@ I use to remove unecessary files such as `src/*`, as well as useless bundles. My
     "php": ">=5.3.3",
     "symfony/symfony": "2.3.*",
     "sensio/distribution-bundle": "2.3.*",
-    "doctrine/orm": ">=2.2.3,<2.4-dev",
-    "doctrine/doctrine-bundle": "1.2.*",
     "twig/extensions": "1.0.*",
     "symfony/monolog-bundle": "2.3.*",
     "incenteev/composer-parameter-handler": "~2.0",
