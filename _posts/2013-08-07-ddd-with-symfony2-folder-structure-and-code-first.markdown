@@ -6,6 +6,9 @@ audio: false
 title: "DDD with Symfony2: Folder Structure And Code First"
 ---
 
+_2013-08-11 - Move JMSSerializerBundle configuration files into the `ApiBundle`
+bundle._
+
 [Domain Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) also
 known as **DDD** is an approach to develop software for complex needs by
 connecting the implementation to an evolving model. [It is a way of thinking and
@@ -463,7 +466,7 @@ At this time, you should be able to access `http://yourproject.local/users`, but
 it should throw an exception saying the Twig template named
 `AcmeApiBundle:User:all.html.twig` does not exist.
 However, if you browse `http://yourproject.local/users.json`, you should get JSON
-content with your users.
+content containing your users.
 
 Thing is, it is not well serialized. That is because you didn't configure
 [JMSSerializerBundle](https://github.com/schmittjoh/JMSSerializerBundle) yet.
@@ -478,17 +481,17 @@ jms_serializer:
         directories:
             CoreDomain:
                 namespace_prefix: "Acme\\CoreDomain"
-                path: "@AcmeCoreDomainBundle/Resources/config/serializer/"
+                path: "@AcmeApiBundle/Resources/config/serializer/"
 ```
 
-The `CoreDomainBundle` owns the serializer configuration. It is one of its
+The `ApiBundle` owns the serializer configuration, it is one of its
 responsibilities. As you can see, I **use a YAML configuration file**, not
 annotations, because I don't want to pollute the agnostic **Domain Layer**.
 
 Here is the configuration file for the `User` entity:
 
 ``` yaml
-# src/Acme/CoreDomainBundle/Resources/config/serializer/User.User.yml
+# src/Acme/ApiBundle/Resources/config/serializer/User.User.yml
 Acme\CoreDomain\User\User:
     exclusion_policy: ALL
     properties:
@@ -506,7 +509,7 @@ Acme\CoreDomain\User\User:
 And here is the configuration file for the `UserId` value object:
 
 ``` yaml
-# src/Acme/CoreDomainBundle/Resources/config/serializer/User.UserId.yml
+# src/Acme/ApiBundle/Resources/config/serializer/User.UserId.yml
 Acme\CoreDomain\User\UserId:
     exclusion_policy: ALL
     properties:
@@ -543,7 +546,10 @@ Running `tree src/` on the command line should give you the following output:
         │   │   └── UserController.php
         │   ├── Resources
         │   │   ├── config
-        │   │   │   └── routing.yml
+        │   │   │   ├── routing.yml
+        │   │   │   └── serializer
+        │   │   │       ├── User.User.yml
+        │   │   │       └── User.UserId.yml
         │   │   └── views
         │   │       └── User
         │   │           └── all.html.twig
@@ -560,10 +566,7 @@ Running `tree src/` on the command line should give you the following output:
             │   └── InMemoryUserRepository.php
             ├── Resources
             │   └── config
-            │       ├── repositories.xml
-            │       └── serializer
-            │           ├── User.User.yml
-            │           └── User.UserId.yml
+            │       └── repositories.xml
             └── AcmeCoreDomainBundle.php
 
 
@@ -589,5 +592,5 @@ By using the **Code First** approach, you have been able to write a first
 action that just works. You won't have to change it. However, you will be able
 to rely on a database or whatever you want later on. It will be up to you.
 
-In the next blog post, I will introduce a new entity, relationship, aggregates,
-new Value Objects such as the Name one, and more on **DDD** layers!
+In the next blog post, I will introduce the **Presentation Layer**, new Value
+Objects such as the `Name` one, and more on **DDD**!
