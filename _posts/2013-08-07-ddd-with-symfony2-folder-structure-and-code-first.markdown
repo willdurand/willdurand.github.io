@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
+tags: [ PHP, DDD ]
 title: "DDD with Symfony2: Folder Structure And Code First"
 ---
 
