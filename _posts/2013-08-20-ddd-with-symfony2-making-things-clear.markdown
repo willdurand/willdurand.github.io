@@ -23,7 +23,8 @@ This is the second article of this series! You should read [Folder Structure
 And Code First](/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/)
 before digging into that one. This blog post is an attempt to fix a few
 misunderstandings coming from the [first
-post](/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/).
+post](/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/). I
+recommend you to quickly jump to all links, they are valuable!
 
 
 ## DDD Is Not RAD

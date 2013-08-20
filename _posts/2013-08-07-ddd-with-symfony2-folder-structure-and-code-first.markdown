@@ -592,5 +592,5 @@ action that just works. You won't have to change it. However, you will be able
 to rely on a database or whatever you want later on. It will be up to you.
 
 In the next blog post, I will <strike>introduce the **Presentation Layer**, new Value
-Objects such as the `Name` one, and more on **DDD**!</strike>[cover a few points that
+Objects such as the `Name` one, and more on **DDD**!</strike> [cover a few points that
 have been misunderstood](/2013/08/20/ddd-with-symfony2-making-things-clear/).
