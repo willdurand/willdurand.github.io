@@ -65,6 +65,7 @@ td { vertical-align: top; }
 header {
     margin-bottom: 4%;
     font-size: 120%;
+    line-height: 120%;
     clear: both;
 }
 
@@ -104,9 +105,9 @@ a.title {
 a.extra {
     color: #93a1a1;
     font-size: 80%;
-    margin-left: 1.5em;
     text-transform: uppercase;
     float: right;
+    margin-left: 1.5em;
 }
 
 .post-meta {
