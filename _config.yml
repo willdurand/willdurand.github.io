@@ -1,9 +1,8 @@
-safe:       true
-permalink:  pretty
-pygments:   true
-markdown:   redcarpet
-redcarpet:
-    extensions: [ "tables", "no_intra_emphasis" ]
+safe:      true
+permalink: pretty
+pygments:  true
+markdown:  redcarpet
+exclude:   [ README.md, Gemfile ]
 
 site:
     title:  William DURAND
