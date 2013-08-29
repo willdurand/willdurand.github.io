@@ -45,7 +45,7 @@ Our goal is to make Geocoder even better!
 
 Last but not least, Geocoder now has its own shiny logo:
 
-![](/images/posts/geocoder.png)
+<img src="/images/posts/geocoder.png" style="width: 300px" />
 
 We, the Geocoder team, will try to ship new features, releases and so on as
 seriously as we are doing it right now. Please, let us know if you like Geocoder
