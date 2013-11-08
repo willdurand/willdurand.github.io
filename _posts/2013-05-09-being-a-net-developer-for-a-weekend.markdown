@@ -371,7 +371,7 @@ projects](http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-proje
 
 * Avoid **TFS**, prefer **Git** instead
 * Use **NuGet**, always!
-* **MVVVM** is a great pattern
+* **MVVM** is a great pattern
 * Use **Unity** or **MEF**
 * Prefer **NUnit** over MSTest
 * The Microsoft world is quite cool actually!
