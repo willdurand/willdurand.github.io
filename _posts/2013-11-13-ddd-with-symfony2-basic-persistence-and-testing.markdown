@@ -350,7 +350,7 @@ class UserControllerTest extends WebTestCase
         $this->client = static::createClient();
 
         (new Filesystem())->copy(
-                __DIR__ . '/../Fixtures/users.yml',
+            __DIR__ . '/../Fixtures/users.yml',
             $this->client->getContainer()->get('kernel')->getCacheDir() . '/users.yml',
             true
         );
