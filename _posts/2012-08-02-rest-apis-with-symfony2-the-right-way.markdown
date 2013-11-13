@@ -310,11 +310,15 @@ example, you could get the following error response:
 
 {% highlight javascript %}
 {
-  "children": {
-    "username": {
-      "errors": [
-        "This value should not be blank."
-      ]
+  "code": 400,
+  "message": "Validation Failed";
+  "errors": {
+    "children": {
+      "username": {
+        "errors": [
+          "This value should not be blank."
+        ]
+      }
     }
   }
 }
