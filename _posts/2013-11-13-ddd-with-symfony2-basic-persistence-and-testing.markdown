@@ -4,7 +4,7 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: false
 tags: [ PHP, DDD ]
-title: "DDD with Symfony2: Basic Persistence & Testing"
+title: "DDD with Symfony2: Basic Persistence &amp; Testing"
 ---
 
 After having described [a decent folder
