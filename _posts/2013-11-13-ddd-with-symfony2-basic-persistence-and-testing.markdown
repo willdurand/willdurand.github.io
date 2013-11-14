@@ -258,7 +258,7 @@ class YamlUserRepositoryTest extends TestCase
 }
 ```
 
-And here is your first test:
+And here are your first tests:
 
 ``` php
 <?php
@@ -267,6 +267,28 @@ class YamlUserRepositoryTest extends TestCase
 {
 
     // ...
+
+    public function testFind()
+    {
+        $this->addUsers();
+
+        $user = $this->repository->find(
+            new UserId('62A0CEB4-0403-4AA6-A6CD-1EE808AD4D23')
+        );
+
+        $this->assertNotNull($user);
+        $this->assertInstanceOf('Sportbook\CoreDomain\User\User', $user);
+        $this->assertEquals('Jean', $user->getName()->getFirstName());
+    }
+
+    public function testFindReturnsNullIfNotFound()
+    {
+        $user = $this->repository->find(
+            new UserId('62A0CEB4-0403-4AA6-A6CD-1EE808AD4D23')
+        );
+
+        $this->assertNull($user);
+    }
 
     public function testAdd()
     {
@@ -290,9 +312,9 @@ YAML;
 }
 ```
 
-It creates two users, and ensures that the content of the YAML file is correct.
-I won't cover all tests that should be written for this repository, however you
-must test all its public methods.
+Note that the `testAdd()` method is just an example on how to use vfsStream.
+Also, I won't cover all tests that should be written for this repository, however
+you must test all its public methods.
 
 Now, let's setup the functional tests.
 
