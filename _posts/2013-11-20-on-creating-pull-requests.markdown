@@ -35,6 +35,8 @@ and any other things related to the targeted project. Thanks to
 [GitHub](https://github.com), these rules may be found in a `CONTRIBUTING`
 file. Mine (for PHP projects) contains the following set of rules:
 
+> [...]
+>
 > You MUST follow the [PSR-1](http://www.php-fig.org/psr/1/) and
 > [PSR-2](http://www.php-fig.org/psr/2/). If you don't know about any of them, you
 > should really read the recommendations. Can't wait? Use the [PHP-CS-Fixer
