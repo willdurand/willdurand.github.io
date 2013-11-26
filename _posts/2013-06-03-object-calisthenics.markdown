@@ -364,7 +364,7 @@ understand, and harder to maintain.
 ## 8. No Classes With More Than Two Instance Variables
 
 I thought people would yell at me while introducing this rule, but it didn't
-happen. This rule is probably the hardest one, but it promotes **low cohesion**,
+happen. This rule is probably the hardest one, but it promotes **high cohesion**,
 and **better encapsulation**.
 
 A picture is worth a thousand words, so here is the explanation of this rule in
