@@ -571,6 +571,9 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
 use Symfony\Component\Routing\Matcher\UrlMatcherInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Symfony\Component\HttpKernel\KernelEvents;
+use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
 class LinkRequestListener
 {
@@ -641,7 +644,12 @@ class LinkRequestListener
             if (false === $controller = $this->resolver->getController($stubRequest)) {
                 continue;
             }
-
+            
+            // Make sure @ParamConverter and friends are handled
+            $subEvent = new FilterControllerEvent($event->getKernel(), $controller, $stubRequest, HttpKernelInterface::MASTER_REQUEST);
+            $event->getDispatcher()->dispatch(KernelEvents::CONTROLLER, $subEvent);
+            $controller = $subEvent->getController();
+            
             $arguments = $this->resolver->getArguments($stubRequest, $controller);
 
             try {
