@@ -7,21 +7,51 @@ tags: [ PHP ]
 title: "Enforcing Data Encapsulation with Symfony Forms"
 ---
 
-**Encapsulation** is **one of the four fundamentals** in Object-Oriented
-Programming (OOP). It is used [to hide the values or state of a structured
-object inside a
+**Update:** [Mathias and I exchanged a few
+tweets](https://twitter.com/couac/status/412677521977921536), so I updated this
+post a bit to give the context.
+
+---
+
+
+Having classes (entities or whatever related to your model layer) that exposes
+attributes publicly, i.e. setters and getters for all attributes is just a **non
+sense**. Basically, a class with _attributes/getters/setters_ is the same thing
+as a class with public properties or even as an array. **Don't do that!**
+
+You should rather write classes that owns data, and keep them in a safe place.
+That is called **encapsulation**. **Encapsulation** is **one of the four
+fundamentals** in Object-Oriented Programming (OOP). It is used [to hide the
+values or state of a structured object inside a
 class](http://en.wikipedia.org/wiki/Encapsulation_\(object-oriented_programming\)),
 preventing unauthorized parties direct access to them. That is why you should
 [avoid getters and
 setters](http://williamdurand.fr/2013/06/03/object-calisthenics/#9-no-getters/setters/properties)
 as much as you can, not to say all the time!
 
-However, using the [Symfony
-Form](http://symfony.com/doc/current/components/form/introduction.html)
-component, you may think that it is not possible. Guess what? It is actually
-possible, and it is really easy thanks to the
+Working with the [Symfony
+Form](http://symfony.com/doc/current/components/form/introduction.html), it may
+be hard to decouple your code, and to not rely on getters and setters. Mathias
+Verraes describes a great approach in [Decoupling (Symfony2) Forms from
+Entities](http://verraes.net/2013/04/decoupling-symfony2-forms-from-entities/),
+and I strongly agree with him. To sum up, the Form component should be used in
+your Presentation Layer, and it should not mess with your Model Layer. Use
+commands or DTOs with Forms, then create or act on your Model entities in the
+Application Layer (i.e. in your controllers).
+
+However, the aim of this blog post is to show you how to keep **decent model
+classes** even with the Form component. In other words, don't write poor model
+classes because of the framework you are using. You should design your model
+classes to fit your business, and according to OOP paradigms, not because
+framework X sucks at hydrating an object. I guess it is Hibernate's fault at
+some point, at least in the Java world with their
+[POJOs/JavaBeans](http://en.wikipedia.org/wiki/Plain_Old_Java_Object), but I am
+digressing...
+
+The solution to not rely on getters and setters is to control how objects are
+created into the Form component. In order to do that, you can rely on the
 [`empty_data`](http://symfony.com/doc/current/cookbook/form/use_empty_data.html#option-2-provide-a-closure)
-option!
+option.
 
 Let's take an example. Among other things, your model layer defines a `Customer`
 entity that owns a `name` and an `Email` value object. You don't want to break
@@ -161,8 +191,4 @@ class EmailType extends AbstractType
 }
 ```
 
-No more excuse to write crappy code now!
-
-PS: Mathias Verraes describes another approach in [Decoupling (Symfony2) Forms
-from
-Entities](http://verraes.net/2013/04/decoupling-symfony2-forms-from-entities/).
+No more excuse to write crappy model classes now!
