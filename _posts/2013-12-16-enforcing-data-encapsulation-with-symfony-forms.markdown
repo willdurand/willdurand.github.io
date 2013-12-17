@@ -123,7 +123,7 @@ class CustomerType extends AbstractType
         $builder
             ->add('name', 'string')
             ->add('email', new EmailType())
-        );
+        ;
     }
 
     /**
