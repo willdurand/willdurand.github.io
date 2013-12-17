@@ -19,7 +19,7 @@ attributes publicly, i.e. setters and getters for all attributes is just a **non
 sense**. Basically, a class with _attributes/getters/setters_ is the same thing
 as a class with public properties or even as an array. **Don't do that!**
 
-You should rather write classes that owns data, and keep them in a safe place.
+You should rather write classes that own data, and keep them in a safe place.
 That is called **encapsulation**. **Encapsulation** is **one of the four
 fundamentals** in Object-Oriented Programming (OOP). It is used [to hide the
 values or state of a structured object inside a
@@ -81,7 +81,7 @@ class Customer
 }
 ```
 
-The `Email` value object can be defined as follow. Thank you
+The `Email` value object can be defined as follows. Thank you
 [Mathias](http://verraes.net/) by the way.
 
 ```php
@@ -100,7 +100,7 @@ class Email
 }
 ```
 
-In your `CustomerType`, all you need to do is configuring the `empty_data`
+In your `CustomerType`, all you need to do is configure the `empty_data`
 option in the `setDefaultOptions()` method using a **closure**:
 
 ```php
