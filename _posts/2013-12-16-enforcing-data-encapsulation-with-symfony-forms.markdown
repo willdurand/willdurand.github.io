@@ -108,6 +108,7 @@ option in the `setDefaultOptions()` method using a **closure**:
 
 namespace My\Form\Type;
 
+use My\Model\Customer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
@@ -132,6 +133,7 @@ class CustomerType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
+            'data_class' => 'My\Model\Customer',
             'empty_data' => function (FormInterface $form) {
                 return new Customer(
                     $form->get('name')->getData(),
@@ -158,6 +160,7 @@ For the record, here is the `EmailType` definition:
 
 namespace My\Form\Type;
 
+use My\Model\Email;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
@@ -179,6 +182,7 @@ class EmailType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
+            'data_class' => 'My\Model\Email',
             'empty_data' => function (FormInterface $form) {
                 return new Email(
                     $form->get('email')->getData()
