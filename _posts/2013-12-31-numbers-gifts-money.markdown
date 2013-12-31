@@ -55,7 +55,7 @@ work takes time and costs energy. So, next time you wonder why I am doing all of
 this without being rewarded or without using it myself, just don't ask.
 
 I am rewarded all the time. Most of the time because people use my stuff, and
-sometimes, thet are even happy with them. I receive emails or tweets with kind
+sometimes, they are even happy with them. I receive emails or tweets with kind
 words. This is really great, and really rewarding! This year, I even tweeted my
 [Christmas Wish List](http://www.amazon.fr/registry/wishlist/3ICJE3SIOIDWE),
 and received gifts:
