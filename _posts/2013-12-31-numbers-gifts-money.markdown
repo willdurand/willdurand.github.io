@@ -78,5 +78,9 @@ I know that money in Open Source is always a tricky point. Be sure that I won't
 get paid twice for the Open Source work I am doing. I am not sponsored by
 anyone, and over the last **3** years, I never asked for money.
 
+Next year, I will probably continue my Open Source stuff, and I will try to
+learn as much as I can. I have new ideas to improve REST things in PHP/Symfony,
+but I would also love to expand my knowledge with new languages.
+
 I wish you a Happy New Year, and all the best for next year! See you next year!
 Thank you &hearts;
