@@ -293,3 +293,7 @@ em.fork-and-edit {
     color: #31708f;
     background-color: #d9edf7;
 }
+
+.money {
+    text-align: right;
+}
