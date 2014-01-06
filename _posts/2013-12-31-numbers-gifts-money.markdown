@@ -93,9 +93,12 @@ I also have a lot of books to read, and I promise to write a review for each
 book I receive.
 
 On a personal plan, I lost **15** kilograms in **2013**. I changed my way of
-life. I don't drink alcohol anymore, I never smoked. I feel way better.
-I do a lot of sport, mainly running, mountain biking, squash, and soccer. I have
-three goals for **2014**:
+life. I don't drink alcohol anymore (I am not an alcoholic, I just stopped drinking
+beers and so on during parties or dinners). I try to eat less meat, in order to
+become a [flexitarian](http://en.wikipedia.org/wiki/Semi-vegetarianism). I feel way
+better.
+I also do a lot of sport, mainly running, mountain biking, squash, and soccer. I
+have three goals for **2014**:
 
 * running **10** kilometers in less than **40** minutes;
 * swimming faster, and better (~**2**kms);
