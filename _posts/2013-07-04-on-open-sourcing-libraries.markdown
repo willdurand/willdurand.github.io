@@ -39,7 +39,8 @@ of a `CONTRIBUTING` file though. Explain **how to hack your library**, how to
 report bugs or how to submit feature requests. It is important to be exhaustive
 here.
 **Explain the rules** to avoid commenting every single line in Pull Requests you
-receive. Point contributors to the right tools such as linters or compilers.
+receive. Point contributors to the right tools such as linters or compilers. For
+instance, here is [my standard `CONTRIBUTING` file for PHP projects](https://github.com/willdurand/Hateoas/blob/master/CONTRIBUTING.md).
 
 You MUST add a **Testing** section too. Explain **how to set up the test suite**,
 how to run the functional tests, and the tools that people may have to install.
