@@ -277,7 +277,7 @@ The `processForm()` method looks like:
         $statusCode = $user->isNew() ? 201 : 204;
 
         $form = $this->createForm(new UserType(), $user);
-        $form->bind($this->getRequest());
+        $form->handleRequest($this->getRequest());
 
         if ($form->isValid()) {
             $user->save();
