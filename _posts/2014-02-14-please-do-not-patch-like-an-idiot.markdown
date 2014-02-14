@@ -84,7 +84,7 @@ can use either `PUT` or `POST`. From the RFC:
 > and it also MAY have side effects on other resources; i.e., new resources may be
 > created, or existing ones modified, by the application of a PATCH.
 
-You can use whatever you want as `[description of changes]`, as far as its
+You can use whatever format you want as `[description of changes]`, as far as its
 semantics is well-defined. That is why using `PATCH` to send updated values only
 is not suitable.
 
