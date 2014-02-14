@@ -69,7 +69,20 @@ PATCH /users/123
 The entire set of changes must be applied **atomically**, and the API must never
 provide a partially modified representation by the way. It is worth mentioning
 that the request entity to `PATCH` is of a **different content-type** that the
-resource that is being modified.
+resource that is being modified.  You have to use a media type that defines
+semantics for PATCH, otherwise you loose the advantage of this method, and you
+can use either `PUT` or `POST`. From the RFC:
+
+> The difference between the PUT and PATCH requests is reflected in the way the
+> server processes the enclosed entity to modify the resource identified by the
+> Request-URI. In a PUT request, the enclosed entity is considered to be a
+> modified version of the resource stored on the origin server, and the client is
+> requesting that the stored version be replaced. With PATCH, however, **the
+> enclosed entity contains a set of instructions describing how a resource
+> currently residing on the origin server should be modified to produce a new
+> version**. The PATCH method affects the resource identified by the Request-URI,
+> and it also MAY have side effects on other resources; i.e., new resources may be
+> created, or existing ones modified, by the application of a PATCH.
 
 [RFC 6902](http://tools.ietf.org/html/rfc6902) defines a **JSON document
 structure** for expressing a **sequence of operations** to apply to a JSON
