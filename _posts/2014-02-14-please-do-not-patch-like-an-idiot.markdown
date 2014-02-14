@@ -29,7 +29,7 @@ new.email@example.org
 ```
 
 While it makes things clear, and it looks like a nice way to decide what to
-expose, and what not to expose, this solution introduces a lot of complexity
+expose and what not to expose, this solution introduces a lot of complexity
 into your API (more actions in the controllers, routing definition,
 documentation, etc.). However, it is REST compliant, and a not-so-bad solution,
 but there is a better alternative: `PATCH`.
