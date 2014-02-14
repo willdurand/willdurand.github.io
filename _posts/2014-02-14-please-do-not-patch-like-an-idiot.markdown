@@ -84,6 +84,10 @@ can use either `PUT` or `POST`. From the RFC:
 > and it also MAY have side effects on other resources; i.e., new resources may be
 > created, or existing ones modified, by the application of a PATCH.
 
+You can use whatever you want as `[description of changes]`, as far as its
+semantics is well-defined. That is why using `PATCH` to send updated values only
+is not suitable.
+
 [RFC 6902](http://tools.ietf.org/html/rfc6902) defines a **JSON document
 structure** for expressing a **sequence of operations** to apply to a JSON
 document, suitable for use with the `PATCH` method. Here is how it looks like:
