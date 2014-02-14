@@ -1,0 +1,126 @@
+---
+layout: post
+location: Clermont-Fd Area, France
+tldr: false
+audio: true
+title: "Please. Don't Patch Like An Idiot."
+---
+
+Modifying HTTP resources is not a new topic. Most of the existing REST APIs
+provide a way to modify resources. They often provide such a feature by using
+the `PUT` method on the resource, asking clients to **send the entire resource**
+with the updated values, but that requires a recent `GET` on its resource, and a
+way to not miss updates between this `GET` call, and the `PUT` one. Indeed, one
+may update values before you, and it can lead to bad side effects. Moreover,
+sending a complete resource representation utilizes **more bandwidth**, and
+sometimes it must be taken into account. Also, most of the time you want to
+update one or two values in a resource, not everything, so the `PUT` method is
+probably not the right solution for partial update, which is the term used to
+describe such a use case.
+
+Another solution is to expose the resource's properties you want to make
+editable, and use the `PUT` method to send an updated value. In the example
+below, the `email` property of user `123` is exposed:
+
+```http
+PUT /users/123/email
+
+new.email@example.org
+```
+
+While it makes things clear, and it looks like a nice way to decide what to
+expose, and what not to expose, this solution introduces a lot of complexity
+into your API (more actions in the controllers, routing definition,
+documentation, etc.). However, it is REST compliant, and a not-so-bad solution,
+but there is a better alternative: `PATCH`.
+
+`PATCH` is an HTTP method (a.k.a. verb) which has been described in [RFC
+5789](https://tools.ietf.org/html/rfc5789). The initial idea was to propose a
+new way to modify existing HTTP resources. The biggest issue with this method
+is that people misunderstand its usage. **No, `PATCH` is not about sending an
+updated value, rather than the entire resource** as described in the first
+paragraph of this article. Please, **stop** doing this right now! This is
+**wrong**:
+
+```http
+PATCH /users/123
+
+{ "email": "new.email@example.org" }
+```
+
+And, this is **wrong** too:
+
+```http
+PATCH /users/123?email=new.email@example.org
+```
+
+The `PATCH` method requests that **a set of changes**, described in the request
+entity, must be applied to the resource identified by the request's URI. This
+set contains **instructions** describing how a resource currently residing on
+the origin server should be modified to produce a new version. You can think of
+this as a **diff**:
+
+```http
+PATCH /users/123
+
+[description of changes]
+```
+
+The entire set of changes must be applied **atomically**, and the API must never
+provide a partially modified representation by the way.
+
+[RFC 6902](http://tools.ietf.org/html/rfc6902) defines a **JSON document
+structure** for expressing a **sequence of operations** to apply to a JSON
+document, suitable for use with the `PATCH` method. Here is how it looks like:
+
+```json
+[
+    { "op": "test", "path": "/a/b/c", "value": "foo" },
+    { "op": "remove", "path": "/a/b/c" },
+    { "op": "add", "path": "/a/b/c", "value": [ "foo", "bar" ] },
+    { "op": "replace", "path": "/a/b/c", "value": 42 },
+    { "op": "move", "from": "/a/b/c", "path": "/a/b/d" },
+    { "op": "copy", "from": "/a/b/d", "path": "/a/b/e" }
+]
+```
+
+It relies on **JSON Pointers**, described in [RFC
+6901](http://tools.ietf.org/html/rfc6901), to identify specific values in a JSON
+document, i.e. in a HTTP resource representation.
+
+Modifying the email of the user `123` by applying the `PATCH` method to its JSON
+representation looks like this:
+
+```http
+PATCH /users/123
+
+[
+    { "op": "replace", "path": "/email", "new.email@example.org" }
+]
+```
+
+So readable, and expressive! Wonderful &hearts; **This** is how the `PATCH`
+method MUST be used.  If it succeeds, you get a `200` response.
+
+For XML aficionados, [RFC 5261](http://tools.ietf.org/html/rfc5261) describes an
+XML patch framework utilizing XML Path language (XPath) selectors to update an
+existing XML document.
+
+To sum up, the `PATCH` method is not a replacement for the `POST` or `PUT`
+methods. It applies a delta (diff) rather than replacing the entire resource.
+The request entity to `PATCH` is of a **different content-type** that the
+resource that is being modified. Instead of being an entire resource
+representation, it is a resource that describes changes to apply on a resource.
+
+Now, please, either don't use the `PATCH` method, or use it the right way!
+
+
+Useful Links
+------------
+
+* [An Extensible Markup Language (XML) Patch Operations Framework Utilizing XML
+  Path Language (XPath) Selectors](http://tools.ietf.org/html/rfc5261)
+* [PATCH Method for HTTP](https://tools.ietf.org/html/rfc5789)
+* [JavaScript Object Notation (JSON) Pointer](http://tools.ietf.org/html/rfc6901)
+* [JavaScript Object Notation (JSON) Patch](http://tools.ietf.org/html/rfc6902)
+* [Why PATCH is Good for Your HTTP API](http://www.mnot.net/blog/2012/09/05/patch)

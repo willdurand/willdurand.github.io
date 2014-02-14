@@ -6,6 +6,9 @@ audio: false
 tags: [ PHP ]
 ---
 
+_2O14-02-14 - [PATCH should not be used the way it has been described
+here](/2014/02/14/please-do-not-patch-like-an-idiot/)._
+
 _2013-04-12 - Add an example on how to create new resources with PUT._
 
 _2013-04-11 - PUT/PATCH methods should not return a `Location`
@@ -644,12 +647,12 @@ class LinkRequestListener
             if (false === $controller = $this->resolver->getController($stubRequest)) {
                 continue;
             }
-            
+
             // Make sure @ParamConverter and friends are handled
             $subEvent = new FilterControllerEvent($event->getKernel(), $controller, $stubRequest, HttpKernelInterface::MASTER_REQUEST);
             $event->getDispatcher()->dispatch(KernelEvents::CONTROLLER, $subEvent);
             $controller = $subEvent->getController();
-            
+
             $arguments = $this->resolver->getArguments($stubRequest, $controller);
 
             try {
@@ -739,99 +742,15 @@ you provide a `PATCH` method.
 
 ### Let's PATCH the world ###
 
-First, declare a new route:
+This section has been removed as it described a wrong way to use the `PATCH`
+method. You can read this: [Please. Don't Patch Like An
+Idiot.](/2014/02/14/please-do-not-patch-like-an-idiot/). It covers how to update
+user's email, using the `PATCH` method the right way, but not in PHP
+unfortunately.
 
-{% highlight yaml %}
-acme_demo_user_patch:
-    pattern:  /users/{id}
-    defaults: { _controller: AcmeDemoBundle:User:patch, _format: ~ }
-    requirements:
-        _method: PATCH
-{% endhighlight %}
-
-And, now it's time to be creative in order to write a safe `patchAction()`
-method in your controller. Let's think about the use case. The client can send
-one or more data on a resource, in order to partially update it. That means you
-have to allow attributes that can be updated using this method. It's a good idea
-to rely on a whitelist to avoid [mass
-assignement](http://blog.mhartl.com/2008/09/21/mass-assignment-in-rails-applications/)
-like [all good ruby
-guys](https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation)
-use to do..
-
-So let's filter input parameters:
-
-{% highlight php %}
-<?php
-
-$parameters = array();
-foreach ($request->request->all() as $k => $v) {
-    // whitelist
-    if (in_array($k, array('email'))) {
-        $parameters[$k] = $v;
-    }
-}
-{% endhighlight %}
-
-Once we filtered input parameters, we get parameters we want. If we get nothing,
-it's a bad request and we return a response with a **`400`** status code.
-
-Otherwise, we just have to assign new values to our resource. _OH! Wait! No!_
-We will validate our entity before, and if it's ok, then we will persist it.
-
-The code of this action looks like:
-
-{% highlight php %}
-<?php
-
-// ....
-
-    public function patchAction(User $user, Request $request)
-    {
-        $parameters = array();
-        foreach ($request->request->all() as $k => $v) {
-            // whitelist
-            if (in_array($k, array('email'))) {
-                $parameters[$k] = $v;
-            }
-        }
-
-        if (0 === count($parameters)) {
-            return View::create(
-                array('errors' => array('Invalid parameters.')), 400
-            );
-        }
-
-        $user->fromArray($parameters);
-        $errors = $this->get('validator')->validate($user);
-
-        if (0 < count($errors)) {
-            return View::create(array('errors' => $errors), 400);
-        }
-
-        $user->save();
-
-        $response = new Response();
-        $response->setStatusCode(204);
-        $response->headers->set('Location',
-            $this->generateUrl(
-                'acme_demo_user_get', array('id' => $user->getId()),
-                true // absolute
-            )
-        );
-
-        return $response;
-    }
-{% endhighlight %}
-
-The code is pretty straightforward, right? As usual when you create or update a
-resource, you get a response with a **`2xx`** status code, and a **Location**
-header. Here we get a **`204`** as there is no content, and it's not a creation.
-
-So now, what's the plan? We used `GET`, `POST`, `PUT`, `DELETE`, `PATCH`,
-`LINK`, and `UNLINK` verbs. We are able to create, read, update, delete, and
-even partially update a user. We can get all users, and add relationships between
-them. We know that if we want to modify a user, we can rely on `PATCH`.
+So now, what's the plan? We use `GET`, `POST`, `PUT`, `DELETE`, `LINK`, and
+`UNLINK` verbs. We are able to create, read, update, delete a user. We can get
+all users, and add relationships between them.
 
 Actually, regarding the [Richardson Maturity
 Model](http://www.crummy.com/writing/speaking/2008-QCon/act3.html),
