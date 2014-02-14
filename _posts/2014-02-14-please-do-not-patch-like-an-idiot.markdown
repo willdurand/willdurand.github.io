@@ -37,7 +37,7 @@ but there is a better alternative: `PATCH`.
 `PATCH` is an HTTP method (a.k.a. verb) which has been described in [RFC
 5789](https://tools.ietf.org/html/rfc5789). The initial idea was to propose a
 new way to modify existing HTTP resources. The biggest issue with this method
-is that people misunderstand its usage. **No, `PATCH` is not about sending an
+is that people misunderstand its usage. **No! `PATCH` is not about sending an
 updated value, rather than the entire resource** as described in the first
 paragraph of this article. Please, **stop** doing this right now! This is
 **wrong**:
@@ -67,7 +67,9 @@ PATCH /users/123
 ```
 
 The entire set of changes must be applied **atomically**, and the API must never
-provide a partially modified representation by the way.
+provide a partially modified representation by the way. It is worth mentioning
+that the request entity to `PATCH` is of a **different content-type** that the
+resource that is being modified.
 
 [RFC 6902](http://tools.ietf.org/html/rfc6902) defines a **JSON document
 structure** for expressing a **sequence of operations** to apply to a JSON
