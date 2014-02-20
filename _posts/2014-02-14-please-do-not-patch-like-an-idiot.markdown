@@ -6,17 +6,17 @@ audio: true
 title: "Please. Don't Patch Like An Idiot."
 ---
 
-Modifying HTTP resources is not a new topic. Most of the existing REST APIs
-provide a way to modify resources. They often provide such a feature by using
-the `PUT` method on the resource, asking clients to **send the entire resource**
-with the updated values, but that requires a recent `GET` on its resource, and a
-way to not miss updates between this `GET` call, and the `PUT` one. Indeed, one
-may update values before you, and it can lead to bad side effects. Moreover,
-sending a complete resource representation utilizes **more bandwidth**, and
-sometimes it must be taken into account. Also, most of the time you want to
-update one or two values in a resource, not everything, so the `PUT` method is
-probably not the right solution for partial update, which is the term used to
-describe such a use case.
+Modifying HTTP resources is not a new topic. Most of the existing HTTP or REST
+APIs provide a way to modify resources. They often provide such a feature by
+using the `PUT` method on the resource, asking clients to **send the entire
+resource** with the updated values, but that requires a recent `GET` on its
+resource, and a way to not miss updates between this `GET` call, and the `PUT`
+one. Indeed, one may update values before you, and it can lead to bad side
+effects. Moreover, sending a complete resource representation utilizes **more
+bandwidth**, and sometimes it must be taken into account. Also, most of the time
+you want to update one or two values in a resource, not everything, so the `PUT`
+method is probably not the right solution for partial update, which is the term
+used to describe such a use case.
 
 Another solution is to expose the resource's properties you want to make
 editable, and use the `PUT` method to send an updated value. In the example
@@ -133,6 +133,13 @@ representation, it is a resource that describes changes to apply on a resource.
 
 Now, please, either don't use the `PATCH` method, or use it the right way!
 
+It is worth mentioning that `PATCH` is not really designed for truely REST APIs,
+as Fielding's dissertation does not define any way to **partially** modify
+resources. But, Roy Fielding himself said that
+[PATCH was something \[he\] created for the initial HTTP/1.1 proposal because partial
+PUT is never RESTful](https://twitter.com/fielding/status/275471320685367296).
+Sure you are not transfering a **complete** representation, but REST does not
+require representations to be complete anyway.
 
 Useful Links
 ------------
@@ -143,3 +150,13 @@ Useful Links
 * [JavaScript Object Notation (JSON) Pointer](http://tools.ietf.org/html/rfc6901)
 * [JavaScript Object Notation (JSON) Patch](http://tools.ietf.org/html/rfc6902)
 * [Why PATCH is Good for Your HTTP API](http://www.mnot.net/blog/2012/09/05/patch)
+* [REST Partial Updates: Use POST, PUT or
+  PATCH?](http://jasonsirota.com/rest-partial-updates-use-post-put-or-patch)
+* [Embrace, Extend then
+  Innovate](http://intertwingly.net/blog/2008/02/15/Embrace-Extend-then-Innovate)
+* [Why isn't HTTP PUT allowed to do partial updates in a REST
+  API?](http://stackoverflow.com/questions/19732423/why-isnt-http-put-allowed-to-do-partial-updates-in-a-rest-api)
+* [The Right Way to Do REST
+  Updates](http://blog.earaya.com/blog/2013/05/30/the-right-way-to-do-rest-updates/)
+* [HTTP PUT, PATCH or POST - Partial updates or full
+  replacement?](http://soabits.blogspot.fr/2013/01/http-put-patch-or-post-partial-updates.html)
