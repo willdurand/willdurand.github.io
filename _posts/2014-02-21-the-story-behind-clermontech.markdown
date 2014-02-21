@@ -38,7 +38,7 @@ developers at large. That is how [Clermont'ech](http://clermontech.org) is born,
 exactly a year ago. Julien was really a catalyst, and it was the right moment I
 guess. We discussed the idea with [the](https://twitter.com/tmaurel)
 [LavaJUG](https://twitter.com/pcolomb) [guys](https://twitter.com/coupelon)
-(Java User Group), the former local tech organization, and they helped us a lot,
+(Java User Group), the first local tech organization, and they helped us a lot,
 giving valuable advices.
 
 The first thing we did was to all agree on a **manifesto** with **four strong
