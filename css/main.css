@@ -297,3 +297,23 @@ em.fork-and-edit {
 .money {
     text-align: right;
 }
+
+.aligned-images {
+    display:inline-block;
+    white-space:nowrap;
+    margin: 0;
+}
+
+.aligned-images img {
+    width: 50%;
+    display: inherit;
+    margin-right: -4px;
+}
+
+.aligned-images img:first-child {
+    border-right: 1px solid #fff;
+}
+
+.aligned-images img:last-child {
+    border-left: 1px solid #fff;
+}
