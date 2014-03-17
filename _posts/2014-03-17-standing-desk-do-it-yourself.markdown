@@ -43,8 +43,8 @@ at the height of 32cm starting from the top of my existing desk, and the main
 monitor at the height of 10-15cm upper.
 
 <p class="aligned-images">
-    <a href="/images/posts/standing-desk/items.jpg"><img src="/images/posts/standing-desk/items.jpg" /></a>
-    <a href="/images/posts/standing-desk/the-plan.jpg"><img src="/images/posts/standing-desk/the-plan.jpg" /></a>
+    <a href="/images/posts/standing-desk/items.jpg"><img src="/images/posts/standing-desk/items_small.jpg" /></a>
+    <a href="/images/posts/standing-desk/the-plan.jpg"><img src="/images/posts/standing-desk/the-plan_small.jpg" /></a>
 </p>
 
 The side tables are square (50x50cm), and their height (42cm) perfectly fits my
@@ -60,8 +60,8 @@ happens when you buy cheap furniture... Adding these blocks did the trick
 though.
 
 <p class="aligned-images">
-    <a href="/images/posts/standing-desk/half-table.jpg"><img src="/images/posts/standing-desk/half-table.jpg" /></a>
-    <a href="/images/posts/standing-desk/blocks.jpg"><img src="/images/posts/standing-desk/blocks.jpg" /></a>
+    <a href="/images/posts/standing-desk/half-table.jpg"><img src="/images/posts/standing-desk/half-table_small.jpg" /></a>
+    <a href="/images/posts/standing-desk/blocks.jpg"><img src="/images/posts/standing-desk/blocks_small.jpg" /></a>
 </p>
 
 I did the same thing for the two hollow legs of the half table, gluing blocks of
@@ -69,31 +69,31 @@ wood into them so that it looks exactly like the original legs. Here, I reused
 the blocks that were located in the offcuts of the two legs I cut.
 
 <p class="aligned-images">
-    <a href="/images/posts/standing-desk/legs.jpg"><img src="/images/posts/standing-desk/legs.jpg" /></a>
-    <a href="/images/posts/standing-desk/wood-block-legs.jpg"><img src="/images/posts/standing-desk/wood-block-legs.jpg" /></a>
+    <a href="/images/posts/standing-desk/legs.jpg"><img src="/images/posts/standing-desk/legs_small.jpg" /></a>
+    <a href="/images/posts/standing-desk/wood-block-legs.jpg"><img src="/images/posts/standing-desk/wood-block-legs_small.jpg" /></a>
 </p>
 
 At that time, everything was ready for assembling. I put up the other side
 table, then I screwed the short legs and the brackets on the half table.
 
 <p class="aligned-images">
-    <a href="/images/posts/standing-desk/table.jpg"><img src="/images/posts/standing-desk/table.jpg" /></a>
-    <a href="/images/posts/standing-desk/blocks-and-brackets.jpg"><img src="/images/posts/standing-desk/blocks-and-brackets.jpg" /></a>
+    <a href="/images/posts/standing-desk/table.jpg"><img src="/images/posts/standing-desk/table_small.jpg" /></a>
+    <a href="/images/posts/standing-desk/blocks-and-brackets.jpg"><img src="/images/posts/standing-desk/blocks-and-brackets_small.jpg" /></a>
 </p>
 
 Sort of protip, I used a black marker to color the edges of the half table in
 order to make them pretty. Version 1 will not hide the back of the half table
 unfortunately. I didn't find a satisfying solution yet.
 
-![](/images/posts/standing-desk/black-marker.jpg)
+[![](/images/posts/standing-desk/black-marker_small.jpg)](/images/posts/standing-desk/black-marker.jpg)
 
 Then, I screwed the half table part to the main side table, and cut and stuck
 rubber pads on each leg. That way, the whole piece of furniture should be pretty
 stable once put on the desk.
 
 <p class="aligned-images">
-    <a href="/images/posts/standing-desk/assembling.jpg"><img src="/images/posts/standing-desk/assembling.jpg" /></a>
-    <a href="/images/posts/standing-desk/rubber-pads.jpg"><img src="/images/posts/standing-desk/rubber-pads.jpg" /></a>
+    <a href="/images/posts/standing-desk/assembling.jpg"><img src="/images/posts/standing-desk/assembling_small.jpg" /></a>
+    <a href="/images/posts/standing-desk/rubber-pads.jpg"><img src="/images/posts/standing-desk/rubber-pads_small.jpg" /></a>
 </p>
 
 And voilà! I am ready to work standing up. It is worth mentioning that I can
@@ -102,8 +102,8 @@ side table (I actually bought a few ones already, just in case you know). I also
 kept the other part of the table I cut so that I can possibly build another
 similar piece of furniture.
 
-![](/images/posts/standing-desk/final-front.jpg)
+[![](/images/posts/standing-desk/final-front_small.jpg)](/images/posts/standing-desk/final-front.jpg)
 
-![](/images/posts/standing-desk/final-back.jpg)
+[![](/images/posts/standing-desk/final-back_small.jpg)](/images/posts/standing-desk/final-back.jpg)
 
 I would like to thank Jean-Pierre who has provided me all tools I needed.
