@@ -107,3 +107,5 @@ similar piece of furniture.
 [![](/images/posts/standing-desk/final-back_small.jpg)](/images/posts/standing-desk/final-back.jpg)
 
 I would like to thank Jean-Pierre who has provided me all tools I needed.
+
+UPDATE: I started to use an [Apple Wireless Keyboard](https://www.apple.com/keyboard/) and a [Magic Mouse](https://www.apple.com/magicmouse/) rather than directly using my laptop.
