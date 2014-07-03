@@ -16,7 +16,7 @@ sad, and that is what I am going to explain here.
 RESTing with Symfony for the last year now. Sure thing is that we have a nice
 set of components (libraries and bundles) that work well together, and provide a
 lot of interesting features.  For those who are not aware of this, checkout
-[our](friendsofsymfony.github.io/slides/rest-dans-le-monde-symfony.html)
+[our](http://friendsofsymfony.github.io/slides/rest-dans-le-monde-symfony.html)
 [slides](http://friendsofsymfony.github.io/slides/build-awesome-rest-apis-with-symfony2.html)!
 The Symfony developers behind all of this even contributed to the PHP ecosystem
 at large as most of the features are provided as standalone PHP libraries.
