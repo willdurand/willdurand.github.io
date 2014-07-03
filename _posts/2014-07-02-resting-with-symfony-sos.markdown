@@ -34,7 +34,7 @@ It is a nice series, not only `s/right/best`, but it covers pretty much the same
 things I covered two years ago. I didn't see any other interesting blog post
 about REST with Symfony recently unfortunately... Lately,
 [Ryan](https://twitter.com/weaverryan),
-[Lenna](https://twitter.com/leannapelham) and I created a screencast named
+[Leanna](https://twitter.com/leannapelham) and I created a screencast named
 [RESTful APIs in the Real World](https://knpuniversity.com/screencast/rest).
 I came across a few new bundles, mainly focused on authentication such as
 [ApiKeyBundle](https://github.com/uecode/api-key-bundle) and
