@@ -6,6 +6,8 @@ tags: [ PHP, Symfony ]
 title: "RESTing with Symfony: SOS"
 ---
 
+> **Update:** I created a working group: [https://groups.google.com/forum/#!forum/resting-with-symfony](https://groups.google.com/forum/#!forum/resting-with-symfony). More information on [the symfony.com blog](http://symfony.com/blog/improving-rest-in-symfony)!
+
 Two years ago, I wrote [REST APIs with Symfony2: The Right
 Way](/2012/08/02/rest-apis-with-symfony2-the-right-way/), one of my most popular
 blog posts, but also one of the most well-known blog post about Symfony and
