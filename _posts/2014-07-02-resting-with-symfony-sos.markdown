@@ -7,8 +7,7 @@ title: "RESTing with Symfony: SOS"
 ---
 
 _2014-07-08 - I created a [Symfony REST Working Group](https://groups.google.com/forum/#!forum/resting-with-symfony). More information on the [symfony.com blog](http://symfony.com/blog/improving-rest-in-symfony)!_
-
----
+<br>
 
 Two years ago, I wrote [REST APIs with Symfony2: The Right
 Way](/2012/08/02/rest-apis-with-symfony2-the-right-way/), one of my most popular
