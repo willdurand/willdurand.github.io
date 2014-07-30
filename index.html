@@ -7,6 +7,49 @@ my_projects:
     - { name: Karotz-Plugin,    description: Jenkins Plugin for your beloved Karotz. }
     - { name: Negotiation,      description: Content Negotiation tools for PHP. }
     - { name: TravisLight,      description: Build monitoring tool (buildwall) for Travis-CI. }
+my_talks:
+    -
+        title: "Domain-Driven Model Inference Applied To Web Applications"
+        date: "2014-07-22"
+        at: "SERP'14, Las Vegas, USA"
+        slides_url: http://williamdurand.fr/serp14-slides/
+        video_url:
+        post_url:
+    -
+        title: "REST dans le monde Symfony"
+        date: 2014-06-23"
+        at: "PHP Tour Lyon 2014, France"
+        slides_url: http://friendsofsymfony.github.io/slides/rest-dans-le-monde-symfony.html
+        video_url: https://www.youtube.com/watch?v=nm1obAL1xoo
+        post_url: /2014/07/16/video-rest-dans-le-monde-symfony/
+    -
+        title: "Build Awesome REST APIs With Symfony2"
+        date: "2013-12-12"
+        at: "SymfonyCon Warsaw 2013, Poland"
+        slides_url: http://friendsofsymfony.github.io/slides/build-awesome-rest-apis-with-symfony2/
+        video_url: https://www.youtube.com/watch?v=AcLHvOT5Ekg
+        post_url:
+    -
+        title: "From STUPID to SOLID Code!"
+        date: "2013-07-30"
+        at: "Michelin, France"
+        slides_url: http://williamdurand.fr/from-stupid-to-solid-code-slides/
+        video_url:
+        post_url: /2013/07/30/from-stupid-to-solid-code/
+    -
+        title: "Object Calisthenics"
+        date: "2013-06-03"
+        at: "Clermont'ech API Hour #2, France"
+        slides_url: http://williamdurand.fr/object-calisthenics-slides/
+        video_url: https://www.youtube.com/watch?v=ODK2gnzQ7u8
+        post_url: /2013/06/03/object-calisthenics/
+    -
+        title: "Introduction to Propel2"
+        date: "2012-06-08"
+        at: "Symfony Live Paris 2012, France"
+        slides_url: https://speakerdeck.com/willdurand/introduction-to-propel2
+        video_url:
+        post_url: /2012/06/08/introduction-to-propel2-at-symfony-live-2012/
 ---
 
 <ul class="posts" itemscope itemtype="http://schema.org/Blog">
@@ -58,4 +101,14 @@ my_projects:
         <a href="https://github.com/everzet/capifony">capifony</a>,
         <a href="{{ site.my_github }}">and so on</a>!
     </li>
+</ul>
+
+<h2 class="title">Talks</h2>
+
+<ul class="talks">
+    {% for talk in page.my_talks %}
+    <li>
+        {{ talk.title }} - <em class="at">{{ talk.at }}</em> - [<a href="{{ talk.slides_url }}">slides</a>]{% if talk.video_url %} [<a href="{{ talk.video_url }}">video</a>]{% endif %}{% if talk.post_url %} [<a href="{{ talk.post_url }}">post</a>]{% endif %}
+    </li>
+    {% endfor %}
 </ul>

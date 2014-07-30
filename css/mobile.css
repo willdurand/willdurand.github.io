@@ -44,6 +44,9 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5db1', endColorstr='#d33682', GradientType=0); /* IE6-9 */
     }
 
+    ul.talks {
+    }
+
     ul.posts li span.separator,
     ul.posts li time {
         display: none;

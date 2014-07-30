@@ -122,13 +122,18 @@ a.extra {
 }
 
 .posts,
-.projects {
+.projects,
+.talks {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 .posts li time {
+    color: #93a1a1;
+}
+
+.talks .at {
     color: #93a1a1;
 }
 
