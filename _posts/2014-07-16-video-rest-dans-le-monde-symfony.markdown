@@ -15,9 +15,11 @@ event was a blast!
 
 You will find the video of my talk (in French, sorry) below:
 
+<div class="video-container">
 <center>
 <iframe width="560" height="315" src="//www.youtube.com/embed/nm1obAL1xoo" frameborder="0" allowfullscreen></iframe>
 </center>
+</div>
 
 And, here are my slides:
 
