@@ -73,11 +73,11 @@ my_talks:
     {% endif %}
     {% endif %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="hide-on-mobile">
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
             {{ post.date | date: '%d %b' }}
         </time>
-        <span class="separator"> &raquo; </span><a itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+        <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
     </li>
 
     {% if forloop.last %}
@@ -93,22 +93,26 @@ my_talks:
     {% for project in page.my_projects %}
     <li>
         <a href="{% if project.url %}{{ project.url }}{% else %}{{ site.my_github }}/{{ project.name }}{% endif %}">{{ project.name }}</a>
-        <span class="description">&raquo; {{ project.description }}</span>
+        <span class="description hide-on-mobile">&raquo; {{ project.description }}</span>
     </li>
     {% endfor %}
-    <li class="last">Oh, and I am also involved in
+    <li class="last hide-on-mobile">Oh, and I am also involved in
         <a href="https://github.com/propelorm">Propel</a>,
         <a href="https://github.com/everzet/capifony">capifony</a>,
         <a href="{{ site.my_github }}">and so on</a>!
     </li>
 </ul>
 
-<h2 class="title">Talks</h2>
+<div class="hide-on-mobile">
+    <h2 class="title">Talks</h2>
 
-<ul class="talks">
-    {% for talk in page.my_talks %}
-    <li>
-        {{ talk.title }} - <em class="at">{{ talk.at }}</em> - [<a href="{{ talk.slides_url }}">slides</a>]{% if talk.video_url %} [<a href="{{ talk.video_url }}">video</a>]{% endif %}{% if talk.post_url %} [<a href="{{ talk.post_url }}">post</a>]{% endif %}
-    </li>
-    {% endfor %}
-</ul>
+    <ul class="talks">
+        {% for talk in page.my_talks %}
+        <li>
+            {{ talk.title }}
+            - <em class="at">{{ talk.at }}</em>
+            - [<a href="{{ talk.slides_url }}">slides</a>]{% if talk.video_url %} [<a href="{{ talk.video_url }}">video</a>]{% endif %}{% if talk.post_url %} [<a href="{{ talk.post_url }}">post</a>]{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

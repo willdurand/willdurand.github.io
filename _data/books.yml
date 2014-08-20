@@ -1,0 +1,48 @@
+-
+    year: 2014
+    books:
+        -   title: Le procès
+            authors: Franz Kafka
+            url: http://amzn.com/B00LB9YF82
+        -   title: "Quand j'étais superman"
+            authors: Raphael Poulain
+            url: http://amzn.com/2266228587
+        -   title: Dire non
+            authors: Edwy Plenel
+            url: http://amzn.com/B00J2835VM
+        -   title: "Petit traité de manipulation à l'usage des honnêtes gens"
+            authors: Jean-Léon Beauvois
+            url: http://amzn.com/2706110449
+        -   title: ReWork
+            authors: Jason Fried, David Heinemeier Hansson
+            url: http://amzn.com/0091929784
+-
+    year: 2013
+    books:
+        -   title: The Pragmatic Programmer
+            authors: Andrew Hunt, David Thomas
+            url: http://amzn.com/020161622X
+-
+    year: 2012
+    books:
+        -   title: The Passionate Programmer
+            authors: Chad Fowler
+            url: http://amzn.com/1934356344
+        -   title: The Agile Samurai
+            authors: Jonathan Rasmusson
+            url: http://amzn.com/1934356581
+        -   title: JavaScript The Good Parts
+            authors: The Good Parts
+            url: http://amzn.com/0596517742
+        -   title: SCRUM
+            authors: Claude Aubry
+            url: http://amzn.com/2100540181
+        -   title: The Smashing Book
+            authors: Vitaly Friedman
+            url: http://amzn.com/B003CH11BU
+        -   title: Pro Puppet
+            authors: James Turnbull, Jeffrey McCune
+            url: http://amzn.com/1430230576
+        -   title: Pro Git
+            authors: Scott Chacon
+            url: http://amzn.com/1430218339

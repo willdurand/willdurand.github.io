@@ -28,7 +28,8 @@
 
 @media only screen and (max-width: 500px) {
     ul.posts li a.link,
-    ul.projects li a {
+    ul.projects li a,
+    ul.books li a {
         color: #fff;
         display: block;
         border-radius: 5px;
@@ -44,23 +45,20 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5db1', endColorstr='#d33682', GradientType=0); /* IE6-9 */
     }
 
-    ul.talks {
-    }
-
-    ul.posts li span.separator,
-    ul.posts li time {
+    .hide-on-mobile {
         display: none;
     }
 
     ul.posts li a:focus,
     ul.posts li a:hover,
     ul.projects li a:focus,
-    ul.projects li a:hover {
+    ul.projects li a:hover,
+    ul.books li a:focus,
+    ul.books li a:hover {
         text-decoration: none;
     }
 
-    ul.projects li span.description,
-    ul.projects li.last {
-        display: none;
+    .book-authors {
+        color: #fff;
     }
 }
