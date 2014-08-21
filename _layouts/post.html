@@ -57,11 +57,11 @@ layout: default
         {% for related in site.posts %}
         {% if related.url != page.url and related.link == null and (void == null or void != '2') %}
         <li itemscope itemtype="http://schema.org/BlogPosting">
-            <time datetime="{{ related.date | date_to_xmlschema }}">
+            <time datetime="{{ related.date | date_to_xmlschema }}" class="hide-on-mobile">
                 <meta itemprop="datePublished" content="{{ related.date | date_to_xmlschema }}" />
                 {{ related.date | date: '%d %b' }}
             </time>
-            <span class="separator"> &raquo; </span><a itemprop="name" href="{{ related.url }}" class="link">{{ related.title }}</a>
+            <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="name" href="{{ related.url }}" class="link">{{ related.title }}</a>
         </li>
         {% capture void %}{% increment related_shown %}{% endcapture %}
         {% endif %}
