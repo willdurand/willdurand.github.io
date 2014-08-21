@@ -1,6 +1,9 @@
 -
     year: 2014
     books:
+        -   title: Men Explain Things to Me
+            authors: Rebecca Solnit
+            url: http://amzn.com/1608463869
         -   title: Le procès
             authors: Franz Kafka
             url: http://amzn.com/B00LB9YF82
@@ -46,3 +49,6 @@
         -   title: Pro Git
             authors: Scott Chacon
             url: http://amzn.com/1430218339
+        -   title: Programmation iPhone 3
+            authors: Sarlandie Thomas
+            url: http://amzn.com/B005T54H96
