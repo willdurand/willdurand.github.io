@@ -26,8 +26,7 @@ laws would be good for those who want to improve themselves.
 
 ## STUPID code, seriously?
 
-This may hurts your sensibility, but you probably wrote STUPID code already. I
-did too. But, what does that mean?
+This may hurt your feelings, but you have probably written STUPID code already. I have too. But, what does that mean?
 
 * [**S**ingleton](#singleton)
 * [**T**ight Coupling](#tight-coupling)
@@ -48,14 +47,14 @@ Singleton pattern is the most appropriate pattern for the current use case you
 have. In other words, you use it everywhere. That is definitely **not** cool.
 
 [Singletons are
-controversials](https://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial),
-they are often [considered
-anti-patterns](http://stackoverflow.com/questions/11292109/why-is-singleton-considered-an-anti-pattern-in-java-world-sometimes),
-and you should [avoid
+controversial](https://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial),
+and they are often [considered
+anti-patterns](http://stackoverflow.com/questions/11292109/why-is-singleton-considered-an-anti-pattern-in-java-world-sometimes).
+You should [avoid
 them](http://programmers.stackexchange.com/questions/40373/so-singletons-are-bad-then-what).
 Actually, the use of a [singleton is not the problem, but the symptom of
-a problem](http://programmers.stackexchange.com/questions/40373/so-singletons-are-bad-then-what/40376#40376),
-and here are two important points:
+a problem](http://programmers.stackexchange.com/questions/40373/so-singletons-are-bad-then-what/40376#40376).
+Here are two reasons why:
 
 * Programs using global state are very difficult to test;
 * Programs that rely on global state hide their dependencies.
@@ -73,13 +72,13 @@ modules. **Coupling** is [the degree to which each program module relies on
 each one of the other
 modules](http://en.wikipedia.org/wiki/Coupling_(computer_programming\)).
 
-If changing one module in your application requires changing another module,
+If makingg a change in one module in your application requires you to change another module,
 then coupling exists. For instance, you instantiate objects in your
-constructor's class instead of passing instances as arguments. It is bad because
-you **don't allow further changes** such as replacing the instance by an instance
+constructor's class instead of passing instances as arguments. That is bad because
+it **doesn't allow further changes** such as replacing the instance by an instance
 of a sub-class, a _mock_ or whatever.
 
-Tight coupled modules are **difficult to reuse**, but also **hard to test**.
+Tightly coupled modules are **difficult to reuse**, and also **hard to test**.
 
 ### Untestability
 
@@ -91,14 +90,14 @@ Most of the time, **untestability** is caused by **tight coupling**.
 
 ### Premature Optimization
 
-Donald Knuth said: _premature optimization is the root of all evil_. There is
-**only cost**, and **no benefit**. Actually, optimized systems are much more
-complexes than just rewriting a loop or using [pre-increment instead of
+Donald Knuth said: "_premature optimization is the root of all evil_. There is
+**only cost**, and **no benefit**". Actually, optimized systems are much more
+complex than just rewriting a loop or using [pre-increment instead of
 post-increment](http://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c).
-You will just end up with unreadable code, that is why [Premature Optimization
+You will just end up with unreadable code. That is why [Premature Optimization
 is often considered an anti-pattern](http://www.c2.com/cgi/wiki?PrematureOptimization).
 
-A friend of mine often repeats that there are two rules to optimize an
+A friend of mine often says that there are two rules to optimize an
 application:
 
 * don't do it;
@@ -106,11 +105,11 @@ application:
 
 ### Indescriptive Naming
 
-This is obvious but it is better saying it: **name** your classes, methods,
+This should be obvious, but still needs to be said: **name** your classes, methods,
 attributes, and variables **properly**. Oh, and [don't
 abbreviate](/2013/06/03/object-calisthenics/#6-don-t-abbreviate)! You write code
-for people, not for computers. They don't understand what you write anyway,
-computers just understands `0` and `1`. **Programming languages are for humans**.
+for people, not for computers. They don't understand what you write anyway.
+Computers just understand `0` and `1`. **Programming languages are for humans**.
 
 ### Duplication
 
@@ -118,7 +117,7 @@ computers just understands `0` and `1`. **Programming languages are for humans**
 Repeat Yourself](http://lostechies.com/patricklioi/2013/07/30/no-seriously-dont-repeat-yourself/)
 ([DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself)),
 and also [Keep It Simple, Stupid](http://en.wikipedia.org/wiki/KISS_principle).
-Be lazy the right way, write code only once!
+Be lazy the right way - write code only once!
 
 Now that I have explained what STUPID code is, you may think that your code
 is STUPID. It does not matter (yet). Don't feel bad, keep calm and be awesome
@@ -128,7 +127,7 @@ by writing SOLID code instead!
 ## SOLID to the rescue!
 
 SOLID is a term describing a **collection of design principles** for good code
-that was invented by Robert C. Martin also known as _Uncle Bob_.
+that was invented by Robert C. Martin, also known as _Uncle Bob_.
 
 SOLID means:
 
@@ -146,9 +145,9 @@ Principle](http://www.objectmentor.com/resources/articles/srp.pdf) or
 **every class should have a single responsibility**. There should **never be
 more than one reason for a class to change**.
 
-It is not because you can add everything you want into your class that you
-should do that. Thinking in term of responsibilities will help you design your
-application. Ask yourself whether the logic you are introducing should live in
+Just because you can add everything you want into your class doesn't mean that you
+should. Thinking in term of responsibilities will help you design your
+application better. Ask yourself whether the logic you are introducing should live in
 this class or not. Using **layers** in your application helps a lot. Split big
 classes in smaller ones, and avoid [god
 classes](http://c2.com/cgi/wiki?GodClass).
@@ -163,9 +162,9 @@ or [OCP](http://en.wikipedia.org/wiki/Open/closed_principle) states that
 software entities should be **open for extension**, but **closed for
 modification**.
 
-You should make all member variables **private** by default. Write a getter only
-if you need it, same rule for setters. I already covered this point in a previous
-article as [the ninth rule of the Object
+You should make all member variables **private** by default. Write getters and setters only
+when you need them. I've already covered this point in a previous
+article, as [the ninth rule of the Object
 Calisthenics](/2013/06/03/object-calisthenics/#9-no-getters/setters/properties)
 is related to this principle.
 
@@ -224,10 +223,9 @@ design](http://www.jasoncoffin.com/cohesion-and-coupling-principles-of-orthogona
 The idea is to **keep your components focused** and try to **minimize the
 dependencies between them**.
 
-Note that it is close to the [Single Responsibility
+Note that this is similar to the [Single Responsibility
 Principle](#single-responsibility-principle). An interface is a contract that
-meets a need. It is ok to have a class that implements different interfaces by
-the way, but be careful, don't violate SRP.
+meets a need. It is ok to have a class that implements different interfaces, but be careful, don't violate SRP.
 
 ### Dependency Inversion Principle
 
@@ -256,9 +254,9 @@ though. Look at the [Service
 Locator](http://en.wikipedia.org/wiki/Service_locator_pattern) for example.
 
 Also, rather than working with classes that are tight coupled, use interfaces.
-It is called [programming to the
+This is called [programming to the
 interface](http://www.fatagnus.com/program-to-an-interface-not-an-implementation/).
-It **reduces dependency** on implementation specifics and makes code **more
+This **reduces dependency** on implementation specifics and makes code **more
 reusable**. It also ensures that you can replace the implementation without
 violating the expectations of that interface, according to the Liskov
 Substitution Principle seen before.
@@ -267,12 +265,11 @@ Substitution Principle seen before.
 ## Conclusion
 
 As you probably noticed, **avoiding tight coupling is the key**. It is present
-everywhere, and if you can _fix_ that point, you will start writing better code.
+in a lot of code, and if you start by focusing on _fixing_ this alone, you will immediately start writing better code.
 
-If I would have to give only one advice, that would be to **use your brain**. We
-have plenty principles in software engineering. You can't follow all these
-principles, even if it works most of the time. Be smart, and think before
-writing code.
+If I may leave you with only one piece of advice, that would be to **use your brain**. There
+are a lot of principles in software engineering. Even if you don't understand all these
+principles, always think before writing code. Take the time to understand those that you don't understand.
 
 Honestly, writing SOLID code is not that hard.
 
