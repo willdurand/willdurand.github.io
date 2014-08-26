@@ -1,6 +1,9 @@
 -
     year: 2014
     books:
+        -   title: "Métronome: L'histoire de France au Rythme du Métro Parisien"
+            authors: Lorant Deutsch
+            url: http://amzn.com/2749910110
         -   title: Men Explain Things to Me
             authors: Rebecca Solnit
             url: http://amzn.com/1608463869
@@ -28,9 +31,18 @@
         -   title: The Pragmatic Programmer
             authors: Andrew Hunt, David Thomas
             url: http://amzn.com/020161622X
+        -   title: Domain-Driven Design Quickly
+            authors: Abel Avram, Floyd Marinescu
+            url: http://amzn.com/1411609255
+        -   title: Scalable and Modular Architecture for CSS
+            authors: Jonathan Snook
+            url: https://smacss.com/
 -
     year: 2012
     books:
+        -   title: "REST in Practice: Hypermedia and Systems Architecture"
+            authors: Jim Webber, Savas Parastatidis, Ian Robinson
+            url: http://amzn.com/0596805829
         -   title: The Passionate Programmer
             authors: Chad Fowler
             url: http://amzn.com/1934356344
