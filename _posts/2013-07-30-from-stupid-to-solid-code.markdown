@@ -70,7 +70,7 @@ the Singleton issue. Basically, you should [reduce
 coupling](http://martinfowler.com/ieeeSoftware/coupling.pdf) between your
 modules. **Coupling** is [the degree to which each program module relies on
 each one of the other
-modules](http://en.wikipedia.org/wiki/Coupling_(computer_programming\)).
+modules](http://en.wikipedia.org/wiki/Coupling\_(computer\_programming\)).
 
 If makingg a change in one module in your application requires you to change another module,
 then coupling exists. For instance, you instantiate objects in your
