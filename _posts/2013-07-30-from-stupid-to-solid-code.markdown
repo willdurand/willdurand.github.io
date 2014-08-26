@@ -11,7 +11,7 @@ Michelin, the company I am working for. I talked about writing better code,
 [from STUPID to SOLID
 code!](http://williamdurand.fr/from-stupid-to-solid-code-slides/)
 **STUPID** as well as
-[**SOLID**](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design\)) are
+[**SOLID**](http://en.wikipedia.org/wiki/SOLID\_\(object-oriented\_design\)) are
 two acronyms, and have been
 [covered](http://blog.ircmaxell.com/2012/05/dont-be-stupid-grasp-solid-slides.html)
 [quite](http://nikic.github.io/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html) a
@@ -215,7 +215,7 @@ interface. In other words, you should not have to implement methods that you
 don't use. Enforcing ISP gives you **low coupling**, and **high cohesion**.
 
 When talking about **coupling**,
-[cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science\)) is often
+[cohesion](http://en.wikipedia.org/wiki/Cohesion\_\(computer\_science\)) is often
 mentioned as well. **High cohesion** means to keep similar and related things
 together. The **union** of cohesion and coupling is [orthogonal
 design](http://www.jasoncoffin.com/cohesion-and-coupling-principles-of-orthogonal-object-oriented-programming/).
