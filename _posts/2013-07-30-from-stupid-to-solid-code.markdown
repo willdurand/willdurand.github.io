@@ -6,7 +6,7 @@ title: From STUPID to SOLID Code!
 ---
 
 Last week I gave a talk about [Object-Oriented
-Programming](https://en.wikipedia.org/wiki/Object-oriented_programming) at
+Programming](https://en.wikipedia.org/wiki/Object-oriented\_programming) at
 Michelin, the company I am working for. I talked about writing better code,
 [from STUPID to SOLID
 code!](http://williamdurand.fr/from-stupid-to-solid-code-slides/)
@@ -114,8 +114,8 @@ Computers just understand `0` and `1`. **Programming languages are for humans**.
 
 [Duplicated code](http://c2.com/cgi/wiki?DuplicatedCode) is bad, so please [Don't
 Repeat Yourself](http://lostechies.com/patricklioi/2013/07/30/no-seriously-dont-repeat-yourself/)
-([DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself)),
-and also [Keep It Simple, Stupid](http://en.wikipedia.org/wiki/KISS_principle).
+([DRY](http://en.wikipedia.org/wiki/Don't\_repeat\_yourself)),
+and also [Keep It Simple, Stupid](http://en.wikipedia.org/wiki/KISS\_principle).
 Be lazy the right way - write code only once!
 
 Now that I have explained what STUPID code is, you may think that your code
@@ -140,7 +140,7 @@ SOLID means:
 
 [Single Responsibility
 Principle](http://www.objectmentor.com/resources/articles/srp.pdf) or
-[SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) states that
+[SRP](http://en.wikipedia.org/wiki/Single\_responsibility\_principle) states that
 **every class should have a single responsibility**. There should **never be
 more than one reason for a class to change**.
 
@@ -157,7 +157,7 @@ doing it wrong.
 ### Open/Closed Principle
 
 [Open/Closed Principle](http://www.objectmentor.com/resources/articles/ocp.pdf)
-or [OCP](http://en.wikipedia.org/wiki/Open/closed_principle) states that
+or [OCP](http://en.wikipedia.org/wiki/Open/closed\_principle) states that
 software entities should be **open for extension**, but **closed for
 modification**.
 
