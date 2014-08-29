@@ -114,7 +114,7 @@ representation looks like this:
 PATCH /users/123
 
 [
-    { "op": "replace", "path": "/email", "new.email@example.org" }
+    { "op": "replace", "path": "/email", "value": "new.email@example.org" }
 ]
 ```
 
