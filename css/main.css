@@ -163,7 +163,7 @@ a.link.current {
     font-size: 90%;
     line-height: 1.3em;
     background-color: #000;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 pre {
