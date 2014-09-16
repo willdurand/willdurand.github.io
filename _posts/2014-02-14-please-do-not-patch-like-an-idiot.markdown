@@ -68,7 +68,7 @@ PATCH /users/123
 
 The entire set of changes must be applied **atomically**, and the API must never
 provide a partially modified representation by the way. It is worth mentioning
-that the request entity to `PATCH` is of a **different content-type** that the
+that the request entity to `PATCH` is of a **different content-type** than the
 resource that is being modified.  You have to use a media type that defines
 semantics for PATCH, otherwise you loose the advantage of this method, and you
 can use either `PUT` or `POST`. From the RFC:
