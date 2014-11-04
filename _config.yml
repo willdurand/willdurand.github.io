@@ -1,6 +1,6 @@
 safe:      true
 permalink: pretty
-pygments:  true
+highlighter: pygments
 markdown:  redcarpet
 exclude:   [ README.md, Gemfile ]
 
