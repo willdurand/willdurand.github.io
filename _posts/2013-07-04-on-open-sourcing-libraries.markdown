@@ -5,7 +5,7 @@ tldr: true
 title: On Open Sourcing Libraries
 ---
 
-_2014-12-17 — Your project should own a Contributor Code of Conduct._
+_2014-12-17 — Your project should have a Contributor Code of Conduct._
 
 Open sourcing a library is easy, it is just a matter of seconds. All you need is
 a public repository hosted somewhere ([GitHub](https://github.com/),
