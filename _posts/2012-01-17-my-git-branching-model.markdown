@@ -13,7 +13,7 @@ I use two main branches:
 * `master` : the code in a _production-ready_ state;
 * `develop` : the _integration branch_.
 
-![](http://nvie.com/img/2009/12/bm002.png)
+![](/images/bm002.png)
 
 I also use **feature branches**. A feature branch contains a work in progress. Keep in mind that a feature branch
 should reflect a feature in your backlog. I use a convention for these branches, I always prefix them with `feat-`.
@@ -27,7 +27,7 @@ A feature branch has two constraints:
 * the code must come from the `develop` branch;
 * the code must be merged in the `develop` branch.
 
-![](http://nvie.com/img/2009/12/fb.png)
+![](/images/fb.png)
 
 To create a feature branch, I use the following command:
 
