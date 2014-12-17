@@ -5,6 +5,8 @@ tldr: true
 title: On Open Sourcing Libraries
 ---
 
+_2014-12-17 — Your project should own a Contributor Code of Conduct._
+
 Open sourcing a library is easy, it is just a matter of seconds. All you need is
 a public repository hosted somewhere ([GitHub](https://github.com/),
 [Bitbucket](https://bitbucket.org/), etc.) right? _Nope!_ Actually, it would be
@@ -50,7 +52,9 @@ want to list your contributors (that could be an **Authors** section though).
 
 You MUST add a [Contributor Code of Conduct](http://contributor-covenant.org/)
 because the lack of diversity in Open Source is not acceptable, and this is an
-easy way to begin addressing this problem.
+easy way to begin addressing this problem. Unacceptable behaviors have to be
+banned and unfortunately, we have to make this statement **really** explicit,
+for instance by adding a `CODE_OF_CONDUCT.md` file.
 
 Last but not the least, add a **License** section!
 
@@ -90,7 +94,7 @@ Here is a template:
 
     Please note that this project is released with a [Contributor Code of
     Conduct](http://contributor-covenant.org/). By participating in this project
-    you agree to abide by its terms.
+    you agree to abide by its terms. See CODE_OF_CONDUCT file.
 
     ## License
 
