@@ -4,7 +4,7 @@ location: Paris, France
 tldr: false
 audio: false
 tags: [ Docker ]
-title: "Elasticsearch, Logstash & Kibana With Docker"
+title: "Elasticsearch, Logstash & Kibana with Docker"
 ---
 
 Yesterday, I gave a talk on [how I use **Docker** to deploy
