@@ -141,6 +141,6 @@ if you speak French...
 [Twelve Factors](http://12factor.net) has a point saying that logs should be
 sent to `std[err|out]`, which seems not always possible to me, but if you do
 that, then you will probably be interested in
-[logsprout](https://github.com/progrium/logspout).
+[logspout](https://github.com/progrium/logspout).
 
 Don't hesitate to share your point of view :-)
