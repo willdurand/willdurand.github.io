@@ -60,7 +60,7 @@ To merge a feature branch into `develop`, I use the following set of commands:
 
 I always merge a feature branch into `develop` using `--no-ff` to keep a clean log:
 
-![](http://nvie.com/img/2010/01/merge-without-ff.png)
+![](/images/merge-without-ff.png)
 
 The `--no--ff` option allows to keep track of a feature branch name which is quite useful.
 The following `git log` output shows you a feature branch merged with this option:
