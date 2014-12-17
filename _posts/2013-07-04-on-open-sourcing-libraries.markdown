@@ -48,6 +48,10 @@ how to run the functional tests, and the tools that people may have to install.
 Optionally, add a **Credits** section if you use third-party things or if you
 want to list your contributors (that could be an **Authors** section though).
 
+You MUST add a [Contributor Code of Conduct](http://contributor-covenant.org/)
+because the lack of diversity in Open Source is not acceptable, and this is an
+easy way to begin addressing this problem.
+
 Last but not the least, add a **License** section!
 
 Here is a template:
@@ -81,6 +85,12 @@ Here is a template:
     ## Credits
 
     ...
+
+    ## Contributor Code of Conduct
+
+    Please note that this project is released with a [Contributor Code of
+    Conduct](http://contributor-covenant.org/). By participating in this project
+    you agree to abide by its terms.
 
     ## License
 
@@ -228,6 +238,7 @@ Your library/project:
 * MUST have a `README` file including a name, a description, and the following
   sections: **Usage**, **Installation**, **Contributing**, **Testing** and
   **License**;
+* MUST add a Contributor Code of Conduct;
 * MUST have a **license** that is visible;
 * MUST be tested;
 * MUST be standard or MUST fit your community habits;
