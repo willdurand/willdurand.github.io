@@ -222,7 +222,7 @@ footer div {
 }
 
 footer div.presentation {
-    width: 15em;
+    width: 60%;
     margin-left: 5%;
     text-align: justify;
 }
@@ -361,4 +361,9 @@ em.fork-and-edit {
     color: #8a6d3b;
     background-color: #fcf8e3;
     border-color: #faebcc;
+}
+
+.social-links {
+    list-style-type: none;
+    padding-left: 0;
 }
