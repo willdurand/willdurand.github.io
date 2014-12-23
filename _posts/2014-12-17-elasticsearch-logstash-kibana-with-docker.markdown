@@ -26,11 +26,11 @@ talk about this part, I am going to explain it in this blog post.
 I wrote a [Dockerfile](https://github.com/willdurand/docker-elk) to build an ELK
 image. While you can directly use this image to run a container (mounting a
 _host_ folder as a volume for the configuration files), you should probably
-extend it to add your own configuration so that you can ride of this mapping to
-a _host_ folder. This is one of the Docker best practices. Last but not the
-least, Elasticsearch's data are located into `/data`. I recommend you to use a
+extend it to add your own configuration so that you can get rid of this mapping to
+a _host_ folder. This is one of the Docker best practices. Last but not
+least, Elasticsearch's data are located into `/data`. I recommend that you use a
 [data-only container](https://docs.docker.com/userguide/dockervolumes/) [to
-persist such
+persist these
 data](http://www.tech-d.net/2013/12/16/persistent-volumes-with-docker-container-as-volume-pattern/).
 
 ```
