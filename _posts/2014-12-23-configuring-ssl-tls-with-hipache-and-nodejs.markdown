@@ -118,7 +118,7 @@ Service](https://community.qualys.com/blogs/securitylabs/2011/10/31/tls-renegoti
 In Node.js, [renegotiations are limited to three times every 10
 minutes](http://nodejs.org/api/tls.html#tls_client_initiated_renegotiation_attack_mitigation).
 While these default values seems legit to me, Qualys' tool [reports no
-proctection against this attack](https://community.qualys.com/thread/14077).
+protection against this attack](https://community.qualys.com/thread/14077).
 
 ### TLS Compression
 
