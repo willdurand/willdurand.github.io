@@ -6,6 +6,9 @@ audio: false
 title: "Configuring SSL/TLS With Hipache (And Node.js)"
 ---
 
+_2014-12-26 - most of the patches I have sent to Hipache have already been
+merged, making Hipache safer than ever._
+
 Lately, I have been working on configuring a **SSL/TLS layer** for a project. As
 you may (or may not) think, it is not only about creating SSL certificates. In
 the following article, I am going to describe how to properly configure SSL/TLS
@@ -13,9 +16,6 @@ with [Hipache](https://github.com/hipache/hipache), a distributed HTTP(s) and
 websocket proxy.
 _Disclaimer: even if I am really interested in security, I am not a security
 expert._
-
-_2014-12-26 - most of the patches I have sent to Hipache have already been
-merged, making Hipache safer than ever._
 
 ---
 
