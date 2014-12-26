@@ -14,6 +14,9 @@ websocket proxy.
 _Disclaimer: even if I am really interested in security, I am not a security
 expert._
 
+_2014-12-26 - most of the patches I have sent to Hipache have already been
+merged, making Hipache safer than ever._
+
 ---
 
 Getting SSL certificates (`key`, `crt`, `pem` files) is a good start, but it is
