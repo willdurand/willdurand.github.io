@@ -78,7 +78,8 @@ output {
   elasticsearch {
     host => "127.0.0.1"
     cluster => "logstash"
-    embedded => false
+    # Uncomment the line below if you use Kibana 3.1.0
+    # embedded => false
   }
 }
 ```
