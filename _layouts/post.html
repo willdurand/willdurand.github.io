@@ -55,7 +55,7 @@ layout: default
     <h2 class="title">Related Posts</h2>
     <ul class="posts" itemscope itemtype="http://schema.org/Blog">
         {% for related in site.posts %}
-        {% if related.url != page.url and related.link == null and (void == null or void != '2') %}
+        {% if related.url != page.url and related.link == null and (void == null or void != '4') %}
         <li itemscope itemtype="http://schema.org/BlogPosting">
             <time datetime="{{ related.date | date_to_xmlschema }}" class="hide-on-mobile">
                 <meta itemprop="datePublished" content="{{ related.date | date_to_xmlschema }}" />
