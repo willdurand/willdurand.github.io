@@ -119,4 +119,6 @@ of my greatest moments in 2014.
 
 ---
 
-I wish you all of you a **Happy New Year**, and all the best! See you in 2015!
+I would like to **thank** everyone I met either online or in real life over the
+year as well as my lovely friends &hearts; I wish all of you a **Happy New
+Year**, and all the best! See you in 2015!
