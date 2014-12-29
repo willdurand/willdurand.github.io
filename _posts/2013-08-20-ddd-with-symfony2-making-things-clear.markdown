@@ -109,10 +109,9 @@ Serializer component to only expose some properties. That is actually another
 sort of DTO. The Entity is transformed to only expose data that are relevant for
 the clients (the clients that consume your API). So it is ok(-ish)!
 
-Also, note that [HTTP methods explicitly delineate commands and
-queries](http://gotocon.com/dl/JW-REST-and-DDD.pdf). That means **Command Query
-Responsibility Separation** [CQRS](http://martinfowler.com/bliki/CQRS.html)
-**maps directly to HTTP**. Hurray!
+Also, note that HTTP methods explicitly delineate commands and
+queries. That means **Command Query Responsibility Separation**
+[CQRS](http://martinfowler.com/bliki/CQRS.html) **maps directly to HTTP**. Hurray!
 
 
 ## So, What's Next?
