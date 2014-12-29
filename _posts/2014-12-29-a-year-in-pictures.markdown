@@ -6,7 +6,7 @@ audio: false
 title: "A Year In Pictures"
 ---
 
-Between [Open Source](https://github.com/willdurand) and work, here are some
+Putting aside [Open Source](https://github.com/willdurand) and work, here are some
 of my greatest moments in 2014.
 
 <center>
