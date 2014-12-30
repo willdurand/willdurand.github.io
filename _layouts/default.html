@@ -38,14 +38,15 @@
     {% endif %}
 
     <link href="/atom.xml" rel="alternate" title="{{ site.site.author }}" type="application/atom+xml">
-    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/mobile.css">
 
-    <script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
-    <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//api.html5media.info/1.1.5/html5media.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -91,20 +92,23 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-    <script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
-    <script src="/js/anchorify.js" type="text/javascript"></script>
-    <script>
-        $().UItoTop();
-        $('h2, h3, h4, h5, h6').anchorify();
+        <script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
+        <script src="/js/anchorify.js" type="text/javascript"></script>
+        <script>
+            $().UItoTop();
+            $('h2, h3, h4, h5, h6').anchorify();
 
-        window._gaq = [['_setAccount','UA-28365039-1'],['_trackPageview'],['_trackPageLoadTime']];
-        Modernizr.load({
-            load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-        });
-    </script>
-    <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
-</body>
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//batcave.stage1.io:49180/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', 4]);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript><p><img src="//batcave.stage1.io:49180/piwik.php?idsite=4" style="border:0;" alt=""></p></noscript>
+    </body>
 </html>
