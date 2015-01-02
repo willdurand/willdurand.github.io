@@ -7,7 +7,7 @@ exclude:   [ README.md, Gemfile ]
 site:
     title:  William DURAND
     author: William Durand
-    email:  william.durand1@gmail.com
+    email:  will@drnd.me
     url:    http://williamdurand.fr
 
 my_linkedin: http://linkedin.com/in/williamdurand
