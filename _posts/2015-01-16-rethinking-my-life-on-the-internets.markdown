@@ -93,7 +93,9 @@ platform for file sharing through WebDAV. _Tip top!_
 
 I often use GTalk, replacing it is not easy because of my contacts, but also
 because most of the existing IM solutions are tied to corporations (Facebook,
-Google, etc.).
+Google, etc.). The main issue is that GTalk conversations are indexed by Google
+in Gmail, meaning these conversations are not really private.
+
 As suggested by [Josh](https://twitter.com/codeguy), [using Adium and firing up
 OTR-encryption](https://joshlockhart.com/archive/goodbye-google) is a wise
 solution. Because I can't force my friends to use a secure communication
