@@ -12,8 +12,8 @@ title: "Rethinking My Life (On The Internets)"
 I often **carefully** chose what I put online: comments, documents, pictures,
 etc. I wrote _often_ here because it took me a while to **educate myself**, to
 **learn and understand** the implications of my behavior on Internet. I started
-using Internet when I was 18_-ish_, because of my studies to be honest, because
-I was not much interested in anything over IP at that time.
+using Internet when I was 18_-ish_, because of my studies to be honest, since I
+was not much interested in anything over IP at that time.
 
 ## Fighting Technology Enslavement
 
@@ -45,7 +45,7 @@ Last year, I started to reduce the amount of web services I was using or rather,
 I thought I would use. [Justdelete.me](http://justdelete.me/) was great help! I
 listed all services I was still using, and I deleted or disabled the other ones.
 
-Now we are in 2015 and I commenced to accomplish something I wanted to do for a
+Now we are in 2015 and I began to accomplish something I wanted to do for a
 while now: taking care of my personal data, for real. Too late? No, it is
 **better late than never**.
 
@@ -146,5 +146,10 @@ key](https://pgp.mit.edu/pks/lookup?op=get&search=0xA509BCF1C1274F3B)), mainly
 because I don't really know who really uses it: my parents don't, my friends
 don't. That is why projects such as [Caliopen](https://www.caliopen.org/) are
 more than interesting!
+Since I own a PGP key, I use OSX's Mail.app mail client +
+[GPGTools](https://gpgtools.org/) and [iPGMail](https://ipgmail.com/) on iPhone.
 
-It is probably far from perfect, but it is better than doing nothing.
+Talking about security, that is not what I targeted in the first place. I am
+still growing up (we are all growing up when it is related to security in my
+opinion), so things are going to change over time. It is probably far from
+perfect, but it is better than doing nothing.
