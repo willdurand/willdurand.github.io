@@ -124,7 +124,7 @@ less the _client version_ of
 
 For fun, I also gave the [Tor
 Browser](https://www.torproject.org/projects/torbrowser.html.en) a try, a bit
-too slow but still quite good. I don't plan to use yet, but it may be useful is
+too slow but still quite good. I don't plan to use yet, but it may be useful if
 things turn worse than expected here in France...
 
 ## What Else?
