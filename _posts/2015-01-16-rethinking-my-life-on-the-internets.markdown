@@ -82,7 +82,11 @@ recommandations](https://twitter.com/couac/status/554218360050049024), I chose
 care of my emails, and I am **happy to pay** for it! It is **blazing fast**, it
 works and it perfectly fits my needs. Importing all my emails from Gmail took
 half a day. At the time of writing this article, Gmail forwards all emails to
-Fastmail, and I now exclusively use it.
+Fastmail, and I now exclusively use it. Fastmail [takes the privacy of their
+users very seriously](https://www.fastmail.com/about/privacy.html), no data
+mining, a clear privacy policy and it is an Australian company subject to
+Australian law ([even if their servers are in the
+US](http://blog.fastmail.com/2013/10/07/fastmails-servers-are-in-the-us-what-this-means-for-you/)).
 
 Fastmail also provides an **Address Book** feature in _beta_. It works pretty
 well so I moved all my contacts from Gmail to Fastmail. I also switched from
