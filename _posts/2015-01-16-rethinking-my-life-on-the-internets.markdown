@@ -10,6 +10,8 @@ _2015-01-30 - recomend [Privacy Badger](https://www.eff.org/privacybadger)
 rather than [Ghostery which uses the data it collects from its users to help
 advertisers](http://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6)_
 
+---
+
 > _The Internets._ This wonderful land where everything is **free**, **public**,
 > and... **persistent**. LOL
 
