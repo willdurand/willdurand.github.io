@@ -6,6 +6,10 @@ audio: false
 title: "Rethinking My Life (On The Internets)"
 ---
 
+_2015-01-30 - recomend [Privacy Badger](https://www.eff.org/privacybadger)
+rather than [Ghostery which uses the data it collects from its users to help
+advertisers](http://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6)_
+
 > _The Internets._ This wonderful land where everything is **free**, **public**,
 > and... **persistent**. LOL
 
@@ -118,9 +122,9 @@ features_ that use Google web services.
 
 I configured Chrome to use [DuckDuckGo](https://duckduckgo.com/), rather than
 Google. It is going well so far, but I am not going to definitely avoid Google.
-That is why I installed [Ghostery](https://www.ghostery.com), a free
-**privacy-related browser extension**, enabling its users to easily detect and
-control web bugs. As suggested by Josh again, I also installed [HTTPS
+That is why I installed [Privacy Badger](https://www.eff.org/privacybadger), a
+free **privacy-related browser extension**, enabling its users to easily detect
+and control web bugs. As suggested by Josh again, I also installed [HTTPS
 Everywhere](https://www.eff.org/https-everywhere) to ensure that my web browser
 establishes **a secure connection** to websites that support it. This is more or
 less the _client version_ of
