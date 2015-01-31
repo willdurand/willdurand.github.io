@@ -26,7 +26,7 @@ project was born.
 What I started to do was basic: aggregating information from various places, and
 trying to come up with a website. However, **this would not have been possible
 without the help of [Vincent](https://twitter.com/mazenovi)**. Yes, it would not
-have exist. To be honest, convincing him was the most complicated challenge to
+have even existed. To be honest, convincing him was the most complicated challenge to
 me. But as soon as I explained him the project, he was willing to take part in
 it! After a few weeks of work, we were able to release a first version!
 
