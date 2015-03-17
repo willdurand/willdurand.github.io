@@ -39,6 +39,8 @@ complicated and should be the same for all versions of this module:
 * `TX` is connected to FTDI's `RX` pin
 * other pins are left floating
 
+![](/images/posts/2015/esp/sketch.png)
+
 The important detail here is that this module needs 3.3V, not 5V which is what
 most FTDIs supply. Mine has a jumper to supply either 3.3V or 5V. In case yours
 only supplies 5V, you need a [voltage
