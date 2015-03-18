@@ -134,7 +134,7 @@ sending `AT` commands or by using the `esp8266server.py` script, bundled with th
 
 ![](/images/posts/2015/esp/screen.png)
 
-The script runs a simple, TCP server on port `80` by sending the following `AT`
+The script runs a simple TCP server on port `80` by sending the following `AT`
 commands:
 
     # allow multiple connections
