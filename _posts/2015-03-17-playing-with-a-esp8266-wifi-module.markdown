@@ -152,12 +152,11 @@ address. Browsing it will give you a message starting wit `GOT IT!`
 **coffuino** is the project I am working on during my spare time, and it needs
 an Internet connection. I used this WiFi module and implemented a library to
 manage it in C++, which should be opensourced soon.
-There are a few libraries for Arduino (or not, it does not really matter to be
-honest), but I did not find any simple library that worked with my setup (my
-Arduino only has one hardware serial for instance).
+There are a few libraries for Arduino, but I did not find any simple library
+that worked with my setup (my Arduino only has one hardware serial for instance).
 
 The picture below is the prototype of **coffuino** (PS: you will find more
-teasers on Twitter):
+teasers on [Twitter](https://twitter.com/couac)):
 
 ![](/images/posts/2015/esp/wiring.jpg)
 
