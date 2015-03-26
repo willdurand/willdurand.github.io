@@ -10,6 +10,8 @@ title: "Playing With a ESP8266 WiFi Module"
 **2015-03-26: I open-sourced [EspWiFi](https://github.com/willdurand/EspWiFi),
 a Arduino driver for the ESP8266 WiFi Module.**
 
+---
+
 Lately, I started to play with some [Arduino](http://arduino.cc/)-based
 technologies after having made my very own [Arduino
 DIY](http://redmine.acolab.fr/projects/yabbas-v1/wiki/YABBAS) at
