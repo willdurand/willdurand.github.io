@@ -16,7 +16,7 @@ title: "On capifony and its Future"
 >
 > Don't worry, there is a plugin for that! Using *Capistrano v3* +
 > [*capistrano/symfony*](https://github.com/capistrano/symfony) (heavily
-> inspired by *capifony*) is the way to go for new projects!
+> inspired by *capifony*) may be the way to go for new projects!
 >
 > Cheers!
 
