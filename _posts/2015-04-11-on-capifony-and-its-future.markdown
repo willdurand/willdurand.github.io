@@ -43,13 +43,13 @@ v3](https://github.com/everzet/capifony/pull/437) but due to various reasons, a
 work on _capifony v3_ did not get merged into capifony. The plugin has been
 built from scratch and is what could have been known as _capifony v3_, [without
 tests](https://github.com/capistrano/symfony/issues/27) unfortunately. That is
-one of the reasons why I did not write this article earlier... Now, it is time
+one of the reasons why I did not write this article earlier... But now, it is time
 to move forward!
 
 ### Now What?
 
 * If you use capifony on an existing project, **no need to upgrade**. It might be
- tricky, and you could introduce unwanted bugs. If your deployment process works
+ complicated, and you could introduce unwanted bugs. If your deployment process works
  for you, no need to change it.
 
 * If you start a new project, you can use Capistrano v3 and its symfony plugin.
