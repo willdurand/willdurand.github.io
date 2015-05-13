@@ -2,7 +2,7 @@ safe:      true
 permalink: pretty
 highlighter: pygments
 markdown:  redcarpet
-exclude:   [ README.md, Gemfile ]
+exclude:   [ README.md, Gemfile, vendor ]
 
 site:
     title:  William DURAND
