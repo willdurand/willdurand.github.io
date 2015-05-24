@@ -1,0 +1,111 @@
+-
+  year: 2015
+  talks:
+    -
+      title: "REST, l'Architecture Incomprise"
+      date: "2015-05-12"
+      at: "PHP Tour 2015, Luxembourg, Luxembourg"
+      slides_url: https://speakerdeck.com/willdurand/rest-larchitecture-incomprise-phptour
+      video_url:
+      post_url:
+    -
+      title: "Deploying with Docker"
+      date: "2015-04-17"
+      at: "SymfonyTN 2015, Tunis, Tunisia"
+      slides_url: https://speakerdeck.com/willdurand/deploying-with-docker-symfonytn
+      video_url:
+      post_url:
+
+-
+  year: 2014
+  talks:
+    -
+      title: "Docker, Ceci N'Est Pas Une Introduction"
+      date: "2014-12-16"
+      at: "API Hour #12, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/docker-ceci-nest-pas-une-introduction-apihour-number-12
+      video_url: https://www.youtube.com/watch?v=jrNiyBFxlyQ
+      post_url: /2014/12/17/elasticsearch-logstash-kibana-with-docker/
+    -
+      title: "Inferring Models With Rule-Based Expert Systems"
+      date: "2014-12-05"
+      at: "SoICT 2014, Hanoi, Vietnam"
+      slides_url: https://speakerdeck.com/willdurand/inferring-models-with-rule-based-expert-systems-soict-14
+      video_url:
+      post_url:
+    -
+      title: "Git & GitHub & Open Source"
+      date: "2014-11-15"
+      at: "Clermont'ech Workshop Git, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/git-and-github-and-open-source-clermontech-workshop-git
+    -
+      title: "Architecture REST : On ne va pas se mentir"
+      date: "2014-10-30"
+      at: "BlendWebMix 2014, Lyon, France"
+      slides_url: https://speakerdeck.com/willdurand/architecture-rest-on-ne-va-pas-se-mentir-blendwebmix
+      video_url:
+      post_url:
+    -
+      title: "Test Logiciel : Passé, Présent, Futur"
+      date: "2014-10-23"
+      at: "Forum PHP 2014, Paris, France"
+      slides_url: https://speakerdeck.com/willdurand/test-logiciel-passe-present-futur-forum-php
+      video_url: https://www.youtube.com/watch?v=UNSJI4jsmCc
+      post_url: /2014/11/09/video-software-testing-past-present-future/
+    -
+      title: "REST dans le monde Symfony"
+      date: "2014-10-17"
+      at: "Bdx.io 2014, Bordeaux, France"
+      slides_url: https://speakerdeck.com/willdurand/rest-dans-le-monde-symfony-bdx-dot-io
+      video_url:
+      post_url:
+    -
+      title: "Domain-Driven Model Inference Applied To Web Applications"
+      date: "2014-07-22"
+      at: "SERP'14, Las Vegas, USA"
+      slides_url: https://speakerdeck.com/willdurand/domain-driven-model-inference-applied-to-web-applications
+      video_url:
+      post_url:
+    -
+      title: "REST dans le monde Symfony"
+      date: 2014-06-23"
+      at: "PHP Tour 2014, Lyon, France"
+      slides_url: https://speakerdeck.com/willdurand/rest-dans-le-monde-symfony-phptour
+      video_url: https://www.youtube.com/watch?v=nm1obAL1xoo
+      post_url: /2014/07/16/video-rest-dans-le-monde-symfony/
+
+-
+  year: 2013
+  talks:
+    -
+      title: "Build Awesome REST APIs With Symfony2"
+      date: "2013-12-12"
+      at: "SymfonyCon 2013, Warsaw, Poland"
+      slides_url: https://speakerdeck.com/willdurand/build-awesome-rest-apis-with-symfony2-symfonycon
+      video_url: https://www.youtube.com/watch?v=AcLHvOT5Ekg
+      post_url:
+    -
+      title: "From STUPID to SOLID Code!"
+      date: "2013-07-30"
+      at: "Michelin, Clermont-Fd, France"
+      slides_url: http://slides.williamdurand.fr/from-stupid-to-solid-code/
+      video_url:
+      post_url: /2013/07/30/from-stupid-to-solid-code/
+    -
+      title: "Object Calisthenics"
+      date: "2013-06-03"
+      at: "API Hour #2, Clermont-Fd, France"
+      slides_url: http://slides.williamdurand.fr/object-calisthenics/
+      video_url: https://www.youtube.com/watch?v=ODK2gnzQ7u8
+      post_url: /2013/06/03/object-calisthenics/
+
+-
+  year: 2012
+  talks:
+    -
+      title: "Introduction to Propel2"
+      date: "2012-06-08"
+      at: "Symfony Live 2012, Paris, France"
+      slides_url: https://speakerdeck.com/willdurand/introduction-to-propel2
+      video_url:
+      post_url: /2012/06/08/introduction-to-propel2-at-symfony-live-2012/
