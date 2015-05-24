@@ -2,72 +2,70 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <h1 class="post-title" itemprop="name">
-        {{ page.title }}
-    </h1>
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
-    <div class="post-meta">
-        {% if page.date %}
-        <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
-            <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
-            {{ page.date | date_to_long_string }} &mdash;
-        </time>
-        {% endif %}{{ page.location }}
-    </div>
+  <span class="post-date">
+      {% if page.date %}
+      <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
+          <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
+          {{ page.date | date_to_long_string }} &mdash;
+      </time>
+      {% endif %}{{ page.location }}
+  </span>
 
-    {% if page.audio != false %}
-    <div class="post-audio">
-        <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
-    </div>
-    {% endif %}
+  {% if page.audio != false %}
+  <div class="post-audio">
+      <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+  </div>
+  {% endif %}
 
-    {% if page.tldr %}
-    <div class="post-shortcuts">
-        <p>Jump to: <a href="#tl-dr">TL;DR</a></p>
-    </div>
-    {% endif %}
+  {% if page.tldr %}
+  <div class="post-shortcuts">
+      <p>Jump to: <a href="#tl-dr">TL;DR</a></p>
+  </div>
+  {% endif %}
 
-    <div class="post-body" itemprop="articleBody">
-        {{ content }}
-    </div>
+  <div itemprop="articleBody">
+      {{ content }}
+  </div>
 
-    <em class="fork-and-edit">
-        By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much!
-        <br />
-        This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-    </em>
+  <em class="fork-and-edit">
+      By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much!
+      <br>
+      This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+  </em>
 
-    <p class="christmas">
-        If you like this post, or if you use one of my <a href="https://github.com/willdurand">Open Source projects</a>,
-        don't hesitate to <a href="mailto:william.durand1@gmail.com">send me an email</a>. Oh, and just in case, here is
-        my <a href="http://www.amazon.fr/registry/wishlist/3ICJE3SIOIDWE">Amazon Wish List</a>. Thank you &hearts;
-    </p>
+  <p class="christmas">
+      If you like this post, or if you use one of my <a href="https://github.com/willdurand">Open Source projects</a>,
+      don't hesitate to <a href="mailto:william.durand1@gmail.com">send me an email</a>. Oh, and just in case, here is
+      my <a href="http://www.amazon.fr/registry/wishlist/3ICJE3SIOIDWE">Amazon Wish List</a>. Thank you &hearts;
+  </p>
 
-    <p class="money">
-        <script data-gittip-username="willdurand" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
-        &nbsp;
-        <script id='fb85n2m'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=willdurand&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb85n2m');</script>
-    </p>
-</article>
+  <p class="money">
+      <script data-gittip-username="willdurand" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
+      &nbsp;
+      <script id='fb85n2m'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=willdurand&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb85n2m');</script>
+  </p>
+</div>
 
-<section class="related-posts">
-    <h2 class="title">Related Posts</h2>
-    <ul class="posts" itemscope itemtype="http://schema.org/Blog">
-        {% for related in site.posts %}
-        {% if related.url != page.url and related.link == null and (void == null or void != '4') %}
-        <li itemscope itemtype="http://schema.org/BlogPosting">
-            <time datetime="{{ related.date | date_to_xmlschema }}" class="hide-on-mobile">
-                <meta itemprop="datePublished" content="{{ related.date | date_to_xmlschema }}" />
-                {{ related.date | date: '%d %b' }}
-            </time>
-            <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="name" href="{{ related.url }}" class="link">{{ related.title }}</a>
-        </li>
-        {% capture void %}{% increment related_shown %}{% endcapture %}
-        {% endif %}
-        {% endfor %}
-    </ul>
-</section>
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts" itemscope itemtype="http://schema.org/Blog">
+    {% for post in site.related_posts limit:5 %}
+      <li itemscope itemtype="http://schema.org/BlogPosting">
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}" itemprop="name">
+            {{ post.title }}
+          </a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            <small><meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</small>
+          </time>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
 <section class="comments" id="disqus_thread"></section>
 <script type="text/javascript">

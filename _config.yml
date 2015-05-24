@@ -4,11 +4,29 @@ highlighter: pygments
 markdown:  redcarpet
 exclude:   [ README.md, Gemfile, vendor ]
 
-site:
-    title:  William DURAND
-    author: William Durand
-    email:  will@drnd.me
-    url:    http://williamdurand.fr
+# Setup
+title: "William Durand"
+tagline: "Lifelong learner."
+description: |
+    Hi! I'm <a href="http://www.twitter.com/couac">Will</a>.
+    <br>
+    <br>
+    26 years old. Lifelong learner. Open Source evangelist. Traveler. Triathlete.
+    <br>
+    <br>
+    <small>
+    <a href="mailto:will@drnd.me">will@drnd.me</a> | <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xa509bcf1c1274f3b">0xa509bcf1c1274f3b</a>
+    </small>
+
+url: http://williamdurand.fr
+baseurl: ""
+
+# About/contact
+author:
+  name: William Durand
+  url:
+  email: will@drnd.me
+
 
 my_linkedin: http://linkedin.com/in/williamdurand
 my_github:   http://www.github.com/willdurand
