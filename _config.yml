@@ -6,7 +6,7 @@ exclude:   [ README.md, Gemfile, vendor ]
 
 # Setup
 title: "William Durand"
-tagline: "Lifelong learner."
+tagline: ""
 description: |
     Hi! I'm <a href="http://www.twitter.com/couac">Will</a>.
     <br>
