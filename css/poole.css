@@ -335,6 +335,21 @@ tbody tr:nth-child(odd) th {
   text-align: justify;
 }
 
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page h6,
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  text-align: left;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title {
