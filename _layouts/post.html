@@ -6,46 +6,44 @@ layout: default
   <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
   <span class="post-date">
-      {% if page.date %}
-      <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
-          <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
-          {{ page.date | date_to_long_string }} &mdash;
-      </time>
-      {% endif %}{{ page.location }}
+    {% if page.date %}
+    <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
+      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
+      {{ page.date | date_to_long_string }} &mdash;
+    </time>
+    {% endif %}{{ page.location }}
   </span>
 
   {% if page.audio != false %}
   <div class="post-audio">
-      <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+    <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
   </div>
   {% endif %}
 
   {% if page.tldr %}
   <div class="post-shortcuts">
-      <p>Jump to: <a href="#tl-dr">TL;DR</a></p>
+    <p>Jump to: <a href="#tl-dr">TL;DR</a></p>
   </div>
   {% endif %}
 
   <div itemprop="articleBody">
-      {{ content }}
+    {{ content }}
   </div>
 
   <em class="fork-and-edit">
-      By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much!
-      <br>
-      This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much! This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
   </em>
 
   <p class="christmas">
-      If you like this post, or if you use one of my <a href="https://github.com/willdurand">Open Source projects</a>,
-      don't hesitate to <a href="mailto:william.durand1@gmail.com">send me an email</a>. Oh, and just in case, here is
-      my <a href="http://www.amazon.fr/registry/wishlist/3ICJE3SIOIDWE">Amazon Wish List</a>. Thank you &hearts;
+    If you like this post, or if you use one of my <a href="https://github.com/willdurand">Open Source projects</a>,
+    don't hesitate to <a href="mailto:william.durand1@gmail.com">send me an email</a>. Oh, and just in case, here is
+    my <a href="http://www.amazon.fr/registry/wishlist/3ICJE3SIOIDWE">Amazon Wish List</a>. Thank you &hearts;
   </p>
 
   <p class="money">
-      <script data-gittip-username="willdurand" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
-      &nbsp;
-      <script id='fb85n2m'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=willdurand&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb85n2m');</script>
+    <script data-gittip-username="willdurand" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
+    &nbsp;
+    <script id='fb85n2m'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=willdurand&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb85n2m');</script>
   </p>
 </div>
 
@@ -67,7 +65,11 @@ layout: default
   </ul>
 </div>
 
-<section class="comments" id="disqus_thread"></section>
+<section class="post-comments">
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+</section>
+
 <script type="text/javascript">
     var disqus_shortname = 'williamdurand';
     (function() {

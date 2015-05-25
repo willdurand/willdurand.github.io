@@ -11,8 +11,6 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
-    <a class="sidebar-nav-item" href="http://fr.linkedin.com/in/williamdurand">About</a>
-
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -25,21 +23,27 @@
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
-      {% endfor %}
+    {% endfor %}
 
-      <a class="sidebar-nav-item" href="http://feeds.feedburner.com/williamdurand">RSS</a>
+    <span class="sidebar-nav-item">
+      <i class="fa fa-external-link"></i>&nbsp;<a href="http://fr.linkedin.com/in/williamdurand">About</a>
+    </span>
+
+    <span class="sidebar-nav-item">
+      <i class="fa fa-external-link"></i>&nbsp;<a href="http://feeds.feedburner.com/williamdurand">RSS</a>
+    </span>
   </nav>
 
   <div class="sidebar-item">
     <ul class="social-links">
       <li>
-        <a href="http://www.github.com/willdurand" class="icon github">GitHub</a>
+        <i class="fa fa-github"></i>&nbsp;<a href="http://www.github.com/willdurand">GitHub</a>
       </li>
       <li>
-        <a href="http://linkedin.com/in/williamdurand" class="icon linkedin">LinkedIn</a>
+        <i class="fa fa-linkedin"></i>&nbsp;<a href="http://linkedin.com/in/williamdurand">LinkedIn</a>
       </li>
       <li>
-        <a href="http://www.twitter.com/couac" class="icon twitter">Twitter</a>
+        <i class="fa fa-twitter"></i>&nbsp;<a href="http://www.twitter.com/couac">Twitter</a>
       </li>
     </ul>
   </div>

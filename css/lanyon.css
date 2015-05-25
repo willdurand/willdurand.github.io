@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1em;
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
@@ -706,6 +706,12 @@ a.anchor-link:hover {
 
 .social-links .twitter {
   background: transparent url(../images/twitter.png) no-repeat;
+}
+
+.post-comments {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
 }
 
 @media only screen and (max-width: 800px) {
