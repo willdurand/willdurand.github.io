@@ -4,6 +4,12 @@ title: Talks
 tagline: Talks I gave.
 ---
 
+Most of my slides are available on [Speaker
+Deck](https://speakerdeck.com/willdurand), and the sources can be found at:
+[slides.williamdurand.fr](http://slides.williamdurand.fr/).
+
+---
+
 <ul class="talks">
   {% for data in site.data.talks %}
   <h2 class="title">{{ data.year }}</h2>
