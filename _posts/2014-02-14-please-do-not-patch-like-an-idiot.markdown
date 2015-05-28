@@ -6,6 +6,13 @@ audio: true
 title: "Please. Don't Patch Like An Idiot."
 ---
 
+<style>
+  .language-http .err {
+    color: #bf616a!important;
+    background: none!important;
+  }
+</style>
+
 Modifying HTTP resources is not a new topic. Most of the existing HTTP or REST
 APIs provide a way to modify resources. They often provide such a feature by
 using the `PUT` method on the resource, asking clients to **send the entire
