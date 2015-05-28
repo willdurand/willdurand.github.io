@@ -130,11 +130,11 @@ code.
 ``` java
 public void login(String username, String password) {
     if (userRepository.isValid(username, password)) {
-        redirect('homepage');
+        redirect("homepage");
     } else {
-        addFlash('error', 'Bad credentials');
+        addFlash("error", "Bad credentials");
 
-        redirect('login');
+        redirect("login");
     }
 }
 ```
@@ -145,12 +145,12 @@ solution.
 ``` java
 public void login(String username, String password) {
     if (userRepository.isValid(username, password)) {
-        return redirect('homepage');
+        return redirect("homepage");
     }
 
-    addFlash('error', 'Bad credentials');
+    addFlash("error", "Bad credentials");
 
-    return redirect('login');
+    return redirect("login");
 }
 ```
 
@@ -167,11 +167,11 @@ As an alternative, you can **introduce a variable** in order to make your
 
 ``` java
 public void login(String username, String password) {
-    String redirectRoute = 'homepage';
+    String redirectRoute = "homepage";
 
     if (!userRepository.isValid(username, password)) {
-        addFlash('error', 'Bad credentials');
-        redirectRoute = 'login';
+        addFlash("error", "Bad credentials");
+        redirectRoute = "login";
     }
 
     redirect(redirectRoute);
