@@ -19,7 +19,7 @@ matters.
 
 One of the main goals of a sponge (the material) is to **sponge an impervious
 surface** in order to clean it. A sponge is [especially good at absorbing water
-and water-based solutions](http://en.wikipedia.org/wiki/Sponge_(material\)). In
+and water-based solutions](http://en.wikipedia.org/wiki/Sponge_\(material\)). In
 other words, a sponge is able to _store_ a large amount of liquid into it.
 
 Obviously, as a human, being a sponge means that you are able to **absorb a lot
