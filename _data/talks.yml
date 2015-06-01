@@ -6,8 +6,8 @@
       date: "2015-05-12"
       at: "PHP Tour 2015, Luxembourg, Luxembourg"
       slides_url: https://speakerdeck.com/willdurand/rest-larchitecture-incomprise-phptour
-      video_url:
-      post_url:
+      video_url: https://www.youtube.com/watch?v=u_jDzcXCimM
+      post_url: /2015/06/02/video-nobody-understands-rest/
     -
       title: "Deploying with Docker"
       date: "2015-04-17"
