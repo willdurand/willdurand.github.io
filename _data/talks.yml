@@ -2,6 +2,13 @@
   year: 2015
   talks:
     -
+      title: "Autofunk: An Inference-Based Formal Model Generation Framework for Production Systems"
+      date: "2015-06-25"
+      at: "Formal Methods 2015, Oslo, Norway"
+      slides_url: https://speakerdeck.com/willdurand/autofunk-an-inference-based-formal-model-generation-framework-for-production-systems-fm-2015
+      video_url:
+      post_url:
+    -
       title: "REST, l'Architecture Incomprise"
       date: "2015-05-12"
       at: "PHP Tour 2015, Luxembourg, Luxembourg"
