@@ -228,6 +228,8 @@ class YamlUserRepositoryTest extends TestCase
 {
     private $cacheDir;
 
+    private $repository;
+
     protected function setUp()
     {
         $this->cacheDir   = vfsStream::setup('cache');
