@@ -5,10 +5,6 @@ location: Clermont-Fd Area, France
 audio: false
 ---
 
-_To Lucie, with love._
-
-<br>
-
 _You won't be able to manage everything_, they said.
 Guess what? They were right, I am not able to manage everything, and I will try
 to explain why in this blog post.
