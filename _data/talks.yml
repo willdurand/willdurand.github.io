@@ -2,9 +2,16 @@
   year: 2015
   talks:
     -
+      title: "Autofunk: a fast and scalable framework for building formal models from production systems"
+      date: "2015-01-01"
+      at: "The 9th ACM International Conference on Distributed Event-Based Systems, Oslo, Norway"
+      slides_url: https://speakerdeck.com/willdurand/autofunk-a-fast-and-scalable-framework-for-building-formal-models-from-production-systems-debs-2015
+      video_url:
+      post_url:
+    -
       title: "Autofunk: An Inference-Based Formal Model Generation Framework for Production Systems"
       date: "2015-06-25"
-      at: "Formal Methods 2015, Oslo, Norway"
+      at: "The 20th International Symposium on Formal Methods, Oslo, Norway"
       slides_url: https://speakerdeck.com/willdurand/autofunk-an-inference-based-formal-model-generation-framework-for-production-systems-fm-2015
       video_url:
       post_url:
@@ -36,7 +43,7 @@
     -
       title: "Inferring Models With Rule-Based Expert Systems"
       date: "2014-12-05"
-      at: "SoICT 2014, Hanoi, Vietnam"
+      at: "The 5th Symposium on Information and Communication Technology, Hanoi, Vietnam"
       slides_url: https://speakerdeck.com/willdurand/inferring-models-with-rule-based-expert-systems-soict-14
       video_url:
       post_url:
