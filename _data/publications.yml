@@ -1,0 +1,28 @@
+-
+  year: 2015
+  publications:
+    -
+      title: "Autofunk, a fast and scalable framework for building formal models from production systems"
+      authors: "Sébastien Salva, William Durand"
+      booktitle: "Proceedings of the 9th ACM International Conference on Distributed Event-Based Systems, DEBS '15"
+      where_and_when: "Oslo, Norway, June 29 - July 3, 2015"
+      doi_url: http://doi.acm.org/10.1145/2675743.2771876
+      pdf: "Industry Paper - Autofunk a fast and scalable framework for building formal models from production systems.pdf"
+    -
+      title: "Autofunk: An Inference-Based Formal Model Generation Framework for Production Systems"
+      authors: "William Durand, Sébastien Salva"
+      booktitle: "FM 2015: Formal Methods - 20th International Symposium"
+      where_and_when: "Oslo, Norway, June 24-26, 2015"
+      doi_url: http://dx.doi.org/10.1007/978-3-319-19249-9_36
+      pdf: "Autofunk, an inference-based formal model generation framework for production systems.pdf"
+
+-
+  year: 2014
+  publications:
+    -
+      title: "Inferring models with rule-based expert systems"
+      authors: "William Durand, Sébastien Salva"
+      booktitle: "Proceedings of the Fifth Symposium on Information and Communication Technology, SoICT '14"
+      where_and_when: "Hanoi, Vietnam, December 4-5, 2014"
+      doi_url: http://doi.acm.org/10.1145/2676585.2676615
+      pdf: "Inferring models with rule-based expert systems.pdf"

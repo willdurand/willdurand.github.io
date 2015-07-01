@@ -687,7 +687,8 @@ a.anchor-link:hover {
 
 .books,
 .posts,
-.talks {
+.talks,
+.publications {
     padding-left: 0;
     list-style-type: none;
 }
