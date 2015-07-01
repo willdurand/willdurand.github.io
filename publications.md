@@ -4,7 +4,10 @@ title: Publications
 tagline: Papers I wrote.
 ---
 
-You may also look at my [DBLP
+Since January 2013, I am a PhD student at Michelin. I am conducting my research
+work in the software testing field, and I focus on Model-based Testing but also
+on formal model inference. You can find my publications below, and you may also
+have a look at my [DBLP
 entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
 
 ---
