@@ -26,3 +26,10 @@
       where_and_when: "Hanoi, Vietnam, December 4-5, 2014"
       doi_url: http://doi.acm.org/10.1145/2676585.2676615
       pdf: "Inferring models with rule-based expert systems.pdf"
+    -
+      title: "Inférence de modeles dirigée par la logique métier"
+      authors: "William Durand, Sébastien Salva"
+      booktitle: "Actes de la 13eme édition d’AFADL, atelier francophone sur les Approches Formelles dans l’Assistance au Développement de Logiciels"
+      where_and_when: "Juin 2014"
+      doi_url:
+      pdf:
