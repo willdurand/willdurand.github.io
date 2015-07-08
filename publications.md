@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-tagline: Papers I wrote.
+tagline: "Papers I've written."
 ---
 
 Since January 2013, I am a PhD student at Michelin. I am conducting my research

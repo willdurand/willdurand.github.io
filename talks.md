@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-tagline: Talks I gave.
+tagline: "Talks I've given."
 ---
 
 Most of my slides are available on [Speaker
