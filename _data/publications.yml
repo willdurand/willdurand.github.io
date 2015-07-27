@@ -2,6 +2,14 @@
   year: 2015
   publications:
     -
+      title: "Passive testing of production systems based on model inference"
+      authors: "William Durand, Sébastien Salva"
+      booktitle: "Proceedings of the 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, MEMOCODE '15"
+      where_and_when: "Austin, Texax, USA, September 21-23, 2015"
+      doi_url:
+      pdf:
+
+    -
       title: "Autofunk, a fast and scalable framework for building formal models from production systems"
       authors: "Sébastien Salva, William Durand"
       booktitle: "Proceedings of the 9th ACM International Conference on Distributed Event-Based Systems, DEBS '15"
