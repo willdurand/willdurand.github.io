@@ -1,4 +1,10 @@
 -
+    year: 2015
+    books:
+        -   title: "Neural Networks and Deep Learning"
+            authors: Michael Nielsen
+            url: http://neuralnetworksanddeeplearning.com/
+-
     year: 2014
     books:
         -   title: "Métronome: L'histoire de France au Rythme du Métro Parisien"
