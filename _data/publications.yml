@@ -7,7 +7,7 @@
       booktitle: "Proceedings of the 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, MEMOCODE '15"
       where_and_when: "Austin, Texax, USA, September 21-23, 2015"
       doi_url:
-      pdf:
+      pdf: "Passive testing of production systems based on model inference.pdf"
 
     -
       title: "Autofunk, a fast and scalable framework for building formal models from production systems"
