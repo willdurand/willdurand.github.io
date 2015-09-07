@@ -1,6 +1,9 @@
 -
     year: 2015
     books:
+        -   title: "Cathedral and the Bazaar"
+            authors: Eric S. Raymond
+            url: http://amzn.com/B00E32OENK
         -   title: "Neural Networks and Deep Learning"
             authors: Michael Nielsen
             url: http://neuralnetworksanddeeplearning.com/
