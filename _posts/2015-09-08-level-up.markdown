@@ -1,0 +1,68 @@
+---
+layout: post
+location: Clermont-Fd, France
+tldr: false
+audio: true
+title: "Level Up"
+---
+
+What I have delayed as long as I could finally happened: deciding what to do,
+professionally speaking. _Yup_, it is almost time to leave the University after
+nine years studying tons of different topics. Fortunately, I had the
+opportunity to work beside my studies, and Open Source gave me a few keys to
+explore the real world by myself, so I knew what a "job" was. I was just too
+scared, and making choices has often been complicated to me.
+
+Three years ago, I thought working for a big (read famous) company in the Bay
+was what I wanted the most. I even did some interviews that all went well, but
+I never joined any company. I received various job proposals from all over the
+world, and some of them were really interesting, but then again, I was not
+excited enough. After three years doing research, I know that I am not a good
+fit for that, even if I like its realm. Consequently, I decided not to pursue
+this path.
+
+Over the years, I started to care more and more about humans, rights, and
+ethical behaviours. I also wanted to become a better version of myself,
+by [rethinking my life on the
+Internets](/2015/01/16/rethinking-my-life-on-the-internets/), [reading
+more](/books/), encouraging sharing and diversity with
+[Clermont'ech](http://clermontech.org/), [creating projects that target a wider
+audience than usual](/2015/01/31/je-n-ai-rien-a-cacher/), and even by [giving
+lectures](http://edu.williamdurand.fr) and [talks](/talks/) all over the world!
+I also grew up by [traveling a lot](/trips/) over the last three years. Among
+all my trips, visiting my friend Igor who lives in Berlin has been a
+revelation:  I wanted to live and work in Berlin.
+
+Earlier this year, I thought about working for a non-for-profit organization a
+lot: I wanted to work abroad and for a good cause. Organizations such as
+[EFF](https://www.eff.org/) and [RSF](https://en.rsf.org/) caught my attention.
+I found positions in Berlin too. At that time, this seemed to be my best (and
+also, only viable) plan. But then, [Julien](https://twitter.com/julienmaupetit)
+came to me with a deal...
+
+After several months thinking and discussing, I am really happy to announce
+that Julien and I are now partners at [TailorDev](http://tailordev.fr/), to
+develop modern tools to **ease scientific collaboration and promote Open Science
+Data in research**.
+
+This mission, including its strong underlying values, are the goals I have ever
+dreamt &hearts; &hearts; &hearts; Being the CTO of such a company comes with
+tons of new exciting challenges, and that is why I chose to partner rather than
+working for an organization (not saying there are no challenges in
+non-for-profit orgs here). Creating a startup has always been something I
+wanted to try at least once, and that was the right moment I believe. As both
+of us are happy to run  a _remote first_ company, moving to Berlin will still
+be possible. This also means that we will be able to work with people from
+everywhere ;-)
+
+Right now, we are working hard on
+[**artich.io**](https://artich.io/?pk_campaign=luwd), a **collaborative
+platform for scientists**! Researchers reading this blog post, if you are not
+registered yet, you should! We are former scientists in bioinformatics and
+software engineering, we know how things work in Academia. That is why we put
+all our energy and skills on providing you with efficient tools!
+
+---
+
+_PS: Geoffrey, I know I loosely used the same title you chose for your similar
+[blog post](http://geoffrey.io/level-up.html)._
