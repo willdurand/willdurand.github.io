@@ -1,7 +1,7 @@
 ---
 layout: post
 location: Clermont-Fd, France
-tldr: false
+tldr: true
 audio: true
 title: "Level Up"
 ---
@@ -61,6 +61,11 @@ platform for scientists**! Researchers reading this blog post, if you are not
 registered yet, you should! We are former scientists in bioinformatics and
 software engineering, we know how things work in Academia. That is why we put
 all our energy and skills on providing you with efficient tools!
+
+## TL;DR
+
+I am CTO at [TailorDev](http://tailordev.fr/). We build
+[artich.io](https://artich.io/?pk_campaign=luwd), a platform for researchers.
 
 ---
 
