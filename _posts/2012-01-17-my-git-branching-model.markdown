@@ -4,6 +4,8 @@ title: My Git Branching Model
 location: Clermont-Fd Area, France
 ---
 
+_2015-09-11: I like (and use) this [simple yet powerful Git branching model by Juan Benet](https://gist.github.com/willdurand/eec15f945d55ea80d62a)._ 
+
 We all probably know [a successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) which
 is a very interesting model for teams who want to use Git. However, this model is a bit too complex for common needs.
 So here is my lightweight model.
