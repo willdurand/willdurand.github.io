@@ -104,7 +104,7 @@ In this case, I use another branch in which I merge two or more feature branches
 
     > git checkout -b feat-my-feature-with-another-feature develop
 
-Then, I can merge the two feature branches, and solves conflicts in it:
+Then, I can merge the two feature branches, and solve possible conflicts:
 
     > git merge feat-my-feature
 
