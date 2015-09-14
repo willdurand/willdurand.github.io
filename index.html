@@ -36,7 +36,7 @@ my_projects:
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
             {{ post.date | date: '%d %b' }}
         </time>
-        <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+        <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="headline" itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
     </li>
 
     {% if forloop.last %}
