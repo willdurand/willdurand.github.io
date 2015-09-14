@@ -19,7 +19,7 @@ description: |
     </small>
 
 url: http://williamdurand.fr
-baseurl: ""
+baseurl: "http://williamdurand.fr"
 
 # About/contact
 author:
