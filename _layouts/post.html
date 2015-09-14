@@ -48,7 +48,7 @@ layout: default
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts" itemscope itemtype="http://schema.org/Blog">
-    {% for post in site.related_posts limit:5 %}
+    {% for post in site.related_posts limit:8 %}
       <li itemscope itemtype="http://schema.org/BlogPosting">
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}" itemprop="name">
