@@ -4,7 +4,7 @@
     -
       title: "Passive testing of production systems based on model inference"
       date: "2015-09-22"
-      at: "The 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, Austin TX, USA"
+      at: "The 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, Austin (TX), USA"
       slides_url: https://speakerdeck.com/willdurand/passive-testing-of-production-systems-based-on-model-inference-memocode-2015
     -
       title: "Autofunk: a fast and scalable framework for building formal models from production systems"
