@@ -2,8 +2,13 @@
   year: 2015
   talks:
     -
+      title: "Passive testing of production systems based on model inference"
+      date: "2015-09-22"
+      at: "The 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, Austin TX, USA"
+      slides_url: https://speakerdeck.com/willdurand/passive-testing-of-production-systems-based-on-model-inference-memocode-2015
+    -
       title: "Autofunk: a fast and scalable framework for building formal models from production systems"
-      date: "2015-01-01"
+      date: "2015-07-01"
       at: "The 9th ACM International Conference on Distributed Event-Based Systems, Oslo, Norway"
       slides_url: https://speakerdeck.com/willdurand/autofunk-a-fast-and-scalable-framework-for-building-formal-models-from-production-systems-debs-2015
       video_url:
