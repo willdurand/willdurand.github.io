@@ -715,6 +715,22 @@ a.anchor-link:hover {
   border-top: 1px solid #eee;
 }
 
+.menu-hint {
+  position: absolute;
+  height: 161px;
+  width: 200px;
+  top: 3em;
+  left: 4em;
+  background: url(../images/arrow-menu.png) no-repeat;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu-hint {
+    opacity: 0.1;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .ribbon {
     display: none;
