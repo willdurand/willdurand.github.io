@@ -1,6 +1,9 @@
 -
     year: 2015
     books:
+        -   title: "Don't Make Me Think, Revisited"
+            authors: Steve Krug
+            url: http://amzn.com/0321965515
         -   title: "Running Lean"
             authors: Ash Maurya
             url: http://www.amazon.fr/dp/1449305172
