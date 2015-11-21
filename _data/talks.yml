@@ -2,6 +2,11 @@
   year: 2015
   talks:
     -
+      title: "Rapid Application Development & Deployment"
+      date: "2015-11-21"
+      at: "StartupWeekend Clermont-Fd"
+      slides_url: https://speakerdeck.com/willdurand/rapid-application-development-and-deployment-swclermont-2015
+    -
       title: "Passive testing of production systems based on model inference"
       date: "2015-09-22"
       at: "The 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, Austin (TX), USA"
