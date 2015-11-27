@@ -2,6 +2,11 @@
   year: 2015
   talks:
     -
+      title: "Git & GitHub & OpenSource"
+      date: "2015-11-26"
+      at: "LavaJUG 11/2015, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/2015
+    -
       title: "Rapid Application Development & Deployment"
       date: "2015-11-21"
       at: "Startup Weekend 2015, Clermont-Fd, France"
