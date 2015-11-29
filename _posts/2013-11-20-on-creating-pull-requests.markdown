@@ -6,6 +6,9 @@ audio: false
 title: "On Creating Pull Requests"
 ---
 
+_2015-11-29 - added a note on PR title prefixes ([thanks to
+Lukas](https://twitter.com/lsmith/status/670721764951986176))._
+
 As a [maintainer of various Open Source
 projects](https://github.com/willdurand), I use to manage quite a lot of issues
 and **P**ull **R**equests (PRs). While **issues** are often **well-written**, I
@@ -80,6 +83,11 @@ GitHub. Most of the time, people don't write any description. Please, **start
 writing Pull Request descriptions, now!** Give the context such as the "why"
 (you need this feature) or the "how" (you found the bug you fixed).
 
+Also, the title of your Pull Request is important. Write a short yet clear
+sentence giving the insight of your Pull Request. It is common to add a prefix
+to the title, such as: `[WIP]`, which stands for _Work In Progress_; `[POC]`
+(Proof Of Concept), `[WCM]` (Waiting Code Merge), etc.
+
 If you follow these rules, then maintainers will focus on the code while
 reviewing your Pull Request and will be able to quickly merge it, rather than
 wasting their time on trying to get something "mergeable".
@@ -95,3 +103,4 @@ Thank you my heroes! &hearts;
 * Follow the rules of the project you are contributing to;
 * Attach clean commits to your Pull Request (rebase may help);
 * Write a description in your Pull Request, explaining the context.
+* More information at: [Git & GitHub & OpenSource](https://speakerdeck.com/willdurand/2015)
