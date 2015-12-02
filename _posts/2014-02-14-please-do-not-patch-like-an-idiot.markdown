@@ -134,7 +134,7 @@ existing XML document.
 
 To sum up, the `PATCH` method is not a replacement for the `POST` or `PUT`
 methods. It applies a delta (diff) rather than replacing the entire resource.
-The request entity to `PATCH` is of a **different content-type** that the
+The request entity to `PATCH` is of a **different content-type** than the
 resource that is being modified. Instead of being an entire resource
 representation, it is a resource that describes changes to apply on a resource.
 
