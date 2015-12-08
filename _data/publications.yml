@@ -6,7 +6,7 @@
       authors: "William Durand, Sébastien Salva"
       booktitle: "Proceedings of the 13th ACM-IEEE International Conference on Formal Methods and Models for System Design, MEMOCODE '15"
       where_and_when: "Austin, Texax, USA, September 21-23, 2015"
-      doi_url:
+      doi_url: http://dx.doi.org/10.1109/MEMCOD.2015.7340480
       pdf: "Passive testing of production systems based on model inference.pdf"
 
     -
