@@ -1,6 +1,9 @@
 -
     year: 2015
     books:
+        -   title: "Drop the Pink Elephant: 15 Ways to Say What You Mean...and Mean What You Say"
+            authors: "Bill McFarlan"
+            url: http://amzn.com/1841126373
         -   title: "Don't Make Me Think, Revisited"
             authors: Steve Krug
             url: http://amzn.com/0321965515
