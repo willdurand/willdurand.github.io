@@ -18,13 +18,12 @@ description: |
     <a href="mailto:will@drnd.me">will@drnd.me</a> | <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xa509bcf1c1274f3b">0xa509bcf1c1274f3b</a>
     </small>
 
-url: http://williamdurand.fr
-baseurl: "http://williamdurand.fr"
+# Used in Atom feeds
+url: "http://williamdurand.fr"
 
 # About/contact
 author:
   name: William Durand
-  url:
   email: will@drnd.me
 
 
