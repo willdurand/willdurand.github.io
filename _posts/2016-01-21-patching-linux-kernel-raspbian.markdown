@@ -22,7 +22,7 @@ the Raspberry Pi kernel GitHub repository. I jumped to the [source
 code](https://github.com/raspberrypi/linux/blob/d51c7d840b002a6b26089d8b45679d9331880060/security/keys/process_keys.c#L796-L799),
 and it seemed the code was vulnerable, at least according to the patch and what
 I understood from the
-[report](perception-point.io/2016/01/14/analysis-and-exploitation-of-a-linux-kernel-vulnerability-cve-2016-0728/).
+[report](http://perception-point.io/2016/01/14/analysis-and-exploitation-of-a-linux-kernel-vulnerability-cve-2016-0728/).
 
 Yet, I wanted to run a patched kernel version, hence I gave [kernel
 compilation](https://www.raspberrypi.org/documentation/linux/kernel/) a try.
