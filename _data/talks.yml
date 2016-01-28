@@ -1,4 +1,12 @@
 -
+  year: 2016
+  talks:
+    -
+      title: "Git & Open Source & Collaboration"
+      date: "2016-01-01"
+      at: "Michelin, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/git-and-open-source-and-collaboration
+-
   year: 2015
   talks:
     -
