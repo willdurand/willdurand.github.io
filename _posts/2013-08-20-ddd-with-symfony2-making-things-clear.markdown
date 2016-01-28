@@ -70,7 +70,7 @@ users inhabit](http://devlicio.us/blogs/casey/archive/2008/09/10/the-tao-of-doma
 
 By now, I use a REST API as **Presentation Layer**. It is **perfectly doable**
 and, even if [both concepts seem opposites, they play nice
-together](https://blog.42.nl/articles/rest-and-ddd-incompatible/). Remember that
+together](http://dontpanic.42.nl/2012/04/rest-and-ddd-incompatible.html). Remember that
 one of the **strengths** of DDD is the **separation of concerns** thanks to
 [distinct
 layers](/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/#conclusion).
