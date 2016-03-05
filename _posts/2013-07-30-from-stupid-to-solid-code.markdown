@@ -157,7 +157,7 @@ doing it wrong.
 ### Open/Closed Principle
 
 [Open/Closed Principle](http://www.objectmentor.com/resources/articles/ocp.pdf)
-or [OCP](http://en.wikipedia.org/wiki/Open/closed\_principle) states that
+or [OCP](http://en.wikipedia.org/wiki/Open/closed_principle) states that
 software entities should be **open for extension**, but **closed for
 modification**.
 
