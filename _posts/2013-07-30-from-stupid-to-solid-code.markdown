@@ -215,7 +215,7 @@ interface. In other words, you should not have to implement methods that you
 don't use. Enforcing ISP gives you **low coupling**, and **high cohesion**.
 
 When talking about **coupling**,
-[cohesion](http://en.wikipedia.org/wiki/Cohesion\_\(computer\_science\)) is often
+[cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science)) is often
 mentioned as well. **High cohesion** means to keep similar and related things
 together. The **union** of cohesion and coupling is [orthogonal
 design](http://www.jasoncoffin.com/cohesion-and-coupling-principles-of-orthogonal-object-oriented-programming/).
