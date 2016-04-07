@@ -307,7 +307,7 @@ class Piece {
 ```
 
 Then again, you should change the visibility of your attribute. As a reminder,
-the [Open/Closed Principe](http://en.wikipedia.org/wiki/Open/closed_principle)
+the [Open/Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle)
 says that software entities (classes, modules, functions, etc.) should be **open
 for extension**, but **closed for modification**.
 
