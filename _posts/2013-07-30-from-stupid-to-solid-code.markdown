@@ -9,7 +9,7 @@ Last week I gave a talk about [Object-Oriented
 Programming](https://en.wikipedia.org/wiki/Object-oriented\_programming) at
 Michelin, the company I am working for. I talked about writing better code,
 [from STUPID to SOLID
-code!](http://williamdurand.fr/from-stupid-to-solid-code-slides/)
+code!](http://slides.williamdurand.fr/from-stupid-to-solid-code/)
 **STUPID** as well as
 [**SOLID**](http://en.wikipedia.org/wiki/SOLID\_\(object-oriented\_design\)) are
 two acronyms, and have been
