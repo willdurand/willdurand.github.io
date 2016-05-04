@@ -395,7 +395,7 @@ entirely upon the state of one object should be made inside the object itself.
 That is why [getters/setters are often considered
 evil](http://stackoverflow.com/questions/565095/are-getters-and-setters-evil).
 Then again, they violate the [Open/Closed
-Principe](http://en.wikipedia.org/wiki/Open/closed_principle).
+Principle](http://en.wikipedia.org/wiki/Open/closed_principle).
 
 Let's take an example:
 
