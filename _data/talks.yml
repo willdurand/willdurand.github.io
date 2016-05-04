@@ -2,6 +2,11 @@
   year: 2016
   talks:
     -
+      title: "PhD Thesis Defense: Automated Test Generation for production systems with a Model-based Testing approach"
+      date: "2016-05-04"
+      at: "Amphi Garcia, ISIMA, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/phd-thesis-defense-automated-test-generation-for-production-systems-with-a-model-based-testing-approach
+    -
       title: "Git & Open Source & Collaboration"
       date: "2016-01-01"
       at: "Michelin, Clermont-Fd, France"
