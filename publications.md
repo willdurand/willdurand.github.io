@@ -22,6 +22,7 @@ my [DBLP entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
       {{ publication.authors }}. <strong>{{ publication.title }}</strong>. {% if publication.booktitle %}<em>{{ publication.booktitle }}</em>, {{ publication.where_and_when }}.{% endif %}
       {% if publication.doi_url %}[<a href="{{ publication.doi_url }}">doi</a>]{% endif %}
       {% if publication.pdf %}[<a href="/papers/{{ publication.pdf }}">pdf</a>]{% endif %}
+      {% if publication.url %}[<a href="{{ publication.url }}">link</a>]{% endif %}
     </li>
     {% endfor %}
   </ul>
