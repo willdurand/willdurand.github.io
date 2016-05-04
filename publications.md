@@ -4,11 +4,11 @@ title: Publications
 tagline: "Papers I've written."
 ---
 
-Since January 2013, I am a PhD student at Michelin. I am conducting my research
-work in the software testing field, and I focus on Model-based Testing but also
-on formal model inference. You can find my publications below, and you may also
-have a look at my [DBLP
-entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
+I have conducted research as a PhD student for Michelin, from January 2013 to
+May 2016. My two main research fields are **software testing** and (formal)
+**model inference**, which I link together by developing Model-based Testing
+techniques. You can find my publications below, and you may also have a look at
+my [DBLP entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
 
 ---
 
@@ -19,7 +19,7 @@ entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
   <ul class="publications-by-year {{ data.year }}">
     {% for publication in data.publications %}
     <li class="publication">
-      {{ publication.authors }}. <strong>{{ publication.title }}</strong>. <em>{{ publication.booktitle }}</em>, {{ publication.where_and_when }}.
+      {{ publication.authors }}. <strong>{{ publication.title }}</strong>. {% if publication.booktitle %}<em>{{ publication.booktitle }}</em>, {{ publication.where_and_when }}.{% endif %}
       {% if publication.doi_url %}[<a href="{{ publication.doi_url }}">doi</a>]{% endif %}
       {% if publication.pdf %}[<a href="/papers/{{ publication.pdf }}">pdf</a>]{% endif %}
     </li>

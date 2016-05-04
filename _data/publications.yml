@@ -1,4 +1,10 @@
 -
+  year: 2016
+  publications:
+    -
+      title: "Automated Test Generation for production systems with a Model-based Testing approach"
+      authors: "William Durand"
+      url: https://github.com/willdurand/thesis
   year: 2015
   publications:
     -
