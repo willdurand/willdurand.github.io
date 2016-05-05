@@ -43,15 +43,15 @@ In the following, I will review each of these 9 rules listed below:
 
 1. [Only One Level Of Indentation Per
    Method](#only-one-level-of-indentation-per-method)
-2. [Don't Use The ELSE Keyword](#don-t-use-the-else-keyword)
+2. [Don't Use The ELSE Keyword](#dont-use-the-else-keyword)
 3. [Wrap All Primitives And Strings](#wrap-all-primitives-and-strings)
 4. [First Class Collections](#first-class-collections)
 5. [One Dot Per Line](#one-dot-per-line)
-6. [Don't Abbreviate](#don-t-abbreviate)
+6. [Don't Abbreviate](#dont-abbreviate)
 7. [Keep All Entities Small](#keep-all-entities-small)
 8. [No Classes With More Than Two Instance
    Variables](#no-classes-with-more-than-two-instance-variables)
-9. [No Getters/Setters/Properties](#no-getters/setters/properties)
+9. [No Getters/Setters/Properties](#no-getterssettersproperties)
 
 
 ## 1. Only One Level Of Indentation Per Method
