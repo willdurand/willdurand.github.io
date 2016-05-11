@@ -6,7 +6,7 @@ audio: false
 tags: [ PHP ]
 ---
 
-_2O14-02-14 - [PATCH should not be used the way it has been described
+_2014-02-14 - [PATCH should not be used the way it has been described
 here](/2014/02/14/please-do-not-patch-like-an-idiot/)._
 
 _2013-04-12 - Add an example on how to create new resources with PUT._
