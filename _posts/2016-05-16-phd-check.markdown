@@ -6,7 +6,10 @@ tldr: false
 location: "Clermont-Fd Area, France"
 ---
 
-_(A quick update on my personal life.)_
+_(A quick update on my personal life)_
+
+> The more I learn, the more I realize how much I don't know.
+> <br><small>— A. Einstein</small>
 
 [Three years ago]({% post_url 2013-01-02-new-year-new-life-new-job %}), I
 started a PhD. I am happy to let the Internets™ know that I successfully
