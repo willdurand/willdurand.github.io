@@ -717,7 +717,6 @@ a.anchor-link:hover {
 }
 
 .menu-hint {
-  z-index: 10;
   position: absolute;
   height: 161px;
   width: 200px;
