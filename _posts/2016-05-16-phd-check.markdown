@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PhD: ✓"
+title: "PhD: &#10003;"
 audio: false
 tldr: false
 location: "Clermont-Fd Area, France"
