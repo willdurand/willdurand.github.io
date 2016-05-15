@@ -1,0 +1,22 @@
+---
+layout: post
+title: "PhD: ✓"
+audio: false
+tidr: false
+location: Clermont-Fd Area, France
+---
+
+_(A quick update on my personal life.)_
+
+[Three years ago]({% post_url 2013-01-02-new-year-new-life-new-job %}), I
+started a PhD. I am happy to let the Internets™ know that I successfully
+defended it two weeks ago! I can now officially call myself a doctor (lol).
+
+For what it is worth, you can find my slides below, but I think you will be more
+interested in the thesis itself: [Automated Test Generation for production
+systems with a Model-based Testing approach](/papers/phd-thesis-v2.pdf).
+
+<script async class="speakerdeck-embed" data-id="b4ba8e7c34514e7b84b5528acc7a26bf" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+<br>
+
+PS: I did not choose the date of my defense myself ;-)
