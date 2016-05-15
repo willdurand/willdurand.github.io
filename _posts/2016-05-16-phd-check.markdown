@@ -2,8 +2,8 @@
 layout: post
 title: "PhD: ✓"
 audio: false
-tidr: false
-location: Clermont-Fd Area, France
+tldr: false
+location: "Clermont-Fd Area, France"
 ---
 
 _(A quick update on my personal life.)_
