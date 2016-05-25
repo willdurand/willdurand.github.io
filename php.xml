@@ -14,7 +14,7 @@
 
     {% for post in site.tags.PHP %}
     <entry>
-        <title>{{ post.title }}</title>
+        <title>{{ post.title|xml_escape }}</title>
         <link href="{{ site.url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>{{ site.url }}{{ post.id }}</id>
