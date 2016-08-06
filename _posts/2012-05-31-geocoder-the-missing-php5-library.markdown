@@ -44,7 +44,7 @@ Same thing here, you can easily write your own provider by implementing the
 Geocoder supports both geocoding and reverse geocoding. It depends on the
 provider you choose, and also what you want to do. The API is really simple:
 
-{% highlight php %}
+```php
 <?php
 
 $geocoder = new \Geocoder\Geocoder();
@@ -62,7 +62,7 @@ $result = $geocoder->geocode('10 rue Gambetta, Paris, France');
 
 // reverse geocoding
 $result = $geocoder->reverse($latitude, $longitude);
-{% endhighlight %}
+```
 
 The `$result` variable is an instance of [ResultInterface](https://github.com/willdurand/Geocoder/blob/master/src/Geocoder/Result/ResultInterface.php).
 Again, the API is simple.

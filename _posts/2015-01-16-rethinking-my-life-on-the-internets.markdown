@@ -114,7 +114,7 @@ of my contacts uses a client supporting
 [OTR](https://en.wikipedia.org/wiki/Off-the-Record_Messaging), we will have
 private conversations though.
 
-### Web Browsing
+### Web Browsing
 
 My main web browser is Chrome, and I am not going to change it. What I did
 however has been to completely **remove any link to my Google account**. I lost

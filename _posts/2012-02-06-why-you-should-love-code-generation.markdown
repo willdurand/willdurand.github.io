@@ -35,7 +35,7 @@ _But wait, what?_ It's all about [**Model Driven Architecture**](http://www.ibm.
 Did you ever hear about that? It's the state of the art in research in Computer Science (at least in France).
 This is a software design approach for the development of applications.
 
-![](http://www.leonardi-free.org/wp-content/uploads/2011/02/model-driven-engineering-schema-en.jpg)
+<small>Picture is missing here :(</small>
 
 But this is a formal approach, and I would like to keep a pragmatic mind here through Propel.
 Then, what I love in **code generation** is that your code is **easily debuggable**, you can read it, and learn from it.
@@ -50,7 +50,7 @@ A behavior is reusable, testable, and easy to write. Then, you can adopt a
 [behavior driven development](http://propel.posterous.com/behavior-driven-development): write behaviors you will reuse in
 order to avoid code duplication.
 
-![](http://4.bp.blogspot.com/_Ln5yflq9tNw/STU5TRYvU9I/AAAAAAAAABo/lujbozAii1E/s320/software_management_2.jpg)
+<small>Picture is missing here :(</small>
 
 I know there are drawbacks to use code generation, especially the need to generate code before to deploy your application
 in production, or the lack of implementation details. But, for the most part of an application, to generate code helps

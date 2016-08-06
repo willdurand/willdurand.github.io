@@ -53,7 +53,7 @@ get a resource, you get the same response, and nothing should be altered.
 You will use **GET** to return resources: either a collection, or a single
 resource. In Symfony2, the routing definition would be:
 
-{% highlight yaml %}
+```yaml
 # src/Acme/DemoBundle/Resources/config/routing.yml
 
 acme_demo_user_all:
@@ -68,11 +68,11 @@ acme_demo_user_get:
     requirements:
         _method: GET
         id: "\d+"
-{% endhighlight %}
+```
 
 The `UserController` class would contain the following code:
 
-{% highlight php %}
+```php
 <?php
 
 namespace Acme\DemoBundle\Controller;
@@ -108,7 +108,7 @@ class UserController
         return array('user' => $user);
     }
 }
-{% endhighlight %}
+```
 
 Instead of using a [ParamConverter](http://symfony.com/doc/master/bundles/SensioFrameworkExtraBundle/annotations/converters.html),
 I always use to fetch the object myself in `get*()` methods. You will know later
@@ -132,7 +132,7 @@ You probably don't want to expose the password for some good reasons. The easies
 way to achieve that is to configure the serializer. I use to configure it in
 YAML:
 
-{% highlight yaml %}
+```yaml
 # In Propel, the most part of the code is located in base classes
 # src/Acme/DemoBundle/Resources/config/serializer/Model.om.BaseUser.yml
 Acme\DemoBundle\Model\om\BaseUser:
@@ -144,7 +144,7 @@ Acme\DemoBundle\Model\om\BaseUser:
             expose: true
         email:
             expose: true
-{% endhighlight %}
+```
 
 I exclude all properties by default, it allows me more control on what I really
 want to expose. It doesn't matter with four attributes, but it's always better
@@ -152,7 +152,7 @@ to adopt this strategy, it's like configuring a firewall after all.
 
 Basically, you will get the following JSON response:
 
-{% highlight javascript %}
+```javascript
 {
   "user": {
     "id": 999,
@@ -160,7 +160,7 @@ Basically, you will get the following JSON response:
     "email": "xxxx@example.org"
   }
 }
-{% endhighlight %}
+```
 
 Easy right? But, you will probably need to create, update, or delete your users,
 and that's what we will discover in the next sections.
@@ -187,7 +187,7 @@ PropelBundle, you could use the `propel:form:generate` command:
 
 It will create the following form type:
 
-{% highlight php %}
+```php
 <?php
 
 namespace Acme\DemoBundle\Form\Type;
@@ -227,7 +227,7 @@ class UserType extends AbstractType
         return 'user';
     }
 }
-{% endhighlight %}
+```
 
 The only things I tweaked are the `email` and `password` types, and I disabled
 the CSRF protection. In a REST API, you probably use an security layer like
@@ -241,7 +241,7 @@ all data you want in a safe way.
 Back to our use case, I use to define my validation rules in YAML, but feel free
 to use your preferred way. Here is an example:
 
-{% highlight yaml %}
+```yaml
 # src/Acme/DemoBundle/Resources/config/validation.yml
 Acme\DemoBundle\Model\User:
     getters:
@@ -252,11 +252,11 @@ Acme\DemoBundle\Model\User:
             - Email:
         password:
             - NotBlank:
-{% endhighlight %}
+```
 
 Let's write the controller method now:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -265,12 +265,12 @@ Let's write the controller method now:
     {
         return $this->processForm(new User());
     }
-{% endhighlight %}
+```
 
 New tip, always use a method to process your form. You will thank yourself.
 The `processForm()` method looks like:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -303,7 +303,7 @@ The `processForm()` method looks like:
 
         return View::create($form, 400);
     }
-{% endhighlight %}
+```
 
 Basically, you create a form, you bind input data, if everything is valid, you
 save your user, and you return a response. If something went wrong, you return a
@@ -311,7 +311,7 @@ save your user, and you return a response. If something went wrong, you return a
 The `$form` instance will be serialized to highlight invalid input data. For
 example, you could get the following error response:
 
-{% highlight javascript %}
+```javascript
 {
   "code": 400,
   "message": "Validation Failed";
@@ -325,7 +325,7 @@ example, you could get the following error response:
     }
   }
 }
-{% endhighlight %}
+```
 
 
 Note that the `View` class here is not the same as the annotation one, that's why
@@ -335,7 +335,7 @@ chapter in the FOSRestBundle documentation.
 
 Also, passing the form name is important here. Basically, your clients will send the following content:
 
-{% highlight javascript %}
+```javascript
 {
   "user": {
     "username": "foo",
@@ -343,7 +343,7 @@ Also, passing the form name is important here. Basically, your clients will send
     "password": "hahaha"
   }
 }
-{% endhighlight %}
+```
 
 You can try this API method with `curl`:
 
@@ -382,13 +382,13 @@ return the `id` in addition. Being pragmatic is not a bad idea anyway.
 Don't forget to add the routing definition for this action. Creating a resource
 is a `POST` request to the collection, so let's add a new route:
 
-{% highlight yaml %}
+```yaml
 acme_demo_user_new:
     pattern:  /users
     defaults: { _controller: AcmeDemoBundle:User:new, _format: ~ }
     requirements:
         _method: POST
-{% endhighlight %}
+```
 
 Once you know how to create a new resource, it's quite easy to update it.
 
@@ -406,7 +406,7 @@ Here, I rely on a ParamConverter to fetch the User object. If it doesn't exist,
 the converter will throw an exception and this exception will be converted in a
 response with a **`404`** status code.
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -415,18 +415,18 @@ response with a **`404`** status code.
     {
         return $this->processForm($user);
     }
-{% endhighlight %}
+```
 
 Editing a resource means you know it, so you will perform a `PUT` request on
 this resource:
 
-{% highlight yaml %}
+```yaml
 acme_demo_user_edit:
     pattern:  /users/{id}
     defaults: { _controller: AcmeDemoBundle:User:edit, _format: ~ }
     requirements:
         _method: PUT
-{% endhighlight %}
+```
 
 Both **PUT** and **PATCH** methods have to return a **204** status code standing
 for `No Content`, and meaning everything is ok, go ahead. In the context of this
@@ -437,7 +437,7 @@ If you want to create new resources at a given URI, then you will have to update
 the code above by removing the use of a ParamConverter, and create a new user in
 case it does not exist:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -451,7 +451,7 @@ case it does not exist:
 
         return $this->processForm($user);
     }
-{% endhighlight %}
+```
 
 In this case, your method can return either `204` if the resource exists or
 `201` with a `Location` header if a new resource has been created.
@@ -463,17 +463,17 @@ That's it! What about deleting resources now?
 
 Deleting a resource is super easy. Add a new route:
 
-{% highlight yaml %}
+```yaml
 acme_demo_user_delete:
     pattern:  /users/{id}
     defaults: { _controller: AcmeDemoBundle:User:remove, _format: ~ }
     requirements:
         _method: DELETE
-{% endhighlight %}
+```
 
 And, write a short method:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -485,7 +485,7 @@ And, write a short method:
     {
         $user->delete();
     }
-{% endhighlight %}
+```
 
 In a few lines of code, you have a fully working API that exposes **CRUD**
 operations in a safe way. But now, what about adding relationship between users,
@@ -500,17 +500,17 @@ friends as a collection of users owned by the user. Let's implement that.
 First, we have to create a new route. As we consider the friends as a collection
 owned by a user, we will fetch this collection directly on a resource:
 
-{% highlight yaml %}
+```yaml
 acme_demo_user_get_friends:
     pattern:  /users/{id}/friends
     defaults: { _controller: AcmeDemoBundle:User:getFriends, _format: ~ }
     requirements:
         _method: GET
-{% endhighlight %}
+```
 
 The action in the controller looks like:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -519,7 +519,7 @@ The action in the controller looks like:
     {
         return array('friends' => $user->getFriends());
     }
-{% endhighlight %}
+```
 
 That's it. Now, think about how to represent the process of becoming friend with
 another user. _How would you manage that in a REST approach?_ You can't use `POST`
@@ -565,7 +565,7 @@ and to get my resource. I make two assumptions:
 Once I get my resource objects, I put them in the request's attributes, and that's
 all for the listener. Here is the code:
 
-{% highlight php %}
+```php
 <?php
 
 namespace Acme\DemoBundle\EventListener;
@@ -674,21 +674,21 @@ class LinkRequestListener
         $this->urlMatcher->getContext()->setMethod($requestMethod);
     }
 }
-{% endhighlight %}
+```
 
 Now, you can create a new route:
 
-{% highlight yaml %}
+```yaml
 acme_demo_user_link:
     pattern:  /users/{id}
     defaults: { _controller: AcmeDemoBundle:User:link, _format: ~ }
     requirements:
         _method: LINK
-{% endhighlight %}
+```
 
 And the code of the action looks like:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -716,7 +716,7 @@ And the code of the action looks like:
 
         $user->save();
     }
-{% endhighlight %}
+```
 
 If users are already friends, you will get a response with a **`409`** status
 code which means _Conflict_. If there is no link header, it's a bad request
@@ -774,18 +774,18 @@ follow HATEOAS principles even if some
 
 Let's convert our _User_ representation in XML:
 
-{% highlight xml %}
+```xml
 <user>
     <id>999</id>
     <username>xxxx</username>
     <email>xxxx@example.org</email>
 </user>
-{% endhighlight %}
+```
 
 This is the output you could get by requesting the XML format as a client. There
 is nothing HATEOAS here. The first step is the addition of **links**:
 
-{% highlight xml %}
+```xml
 <user>
     <id>999</id>
     <username>xxxx</username>
@@ -793,12 +793,12 @@ is nothing HATEOAS here. The first step is the addition of **links**:
 
     <link href="http://example.com/users/999" rel="self" />
 </user>
-{% endhighlight %}
+```
 
 This was easy, we just added the link that references the user you fetched. But
 if you get a paginate collection of users, you could get:
 
-{% highlight xml %}
+```xml
 <users>
     <user>
         <id>999</id>
@@ -821,7 +821,7 @@ if you get a paginate collection of users, you could get:
     <link href="http://example.com/users?page=2" rel="self" />
     <link href="http://example.com/users?page=3" rel="next" />
 </users>
-{% endhighlight %}
+```
 
 Now the client knows how to browse the collection, how to use the pager, and how
 to fetch a user and/or its friends.
@@ -837,7 +837,7 @@ This part introduces your own **content type**:
 Our users will now have the following content type:
 `application/vnd.acme.user+xml`.
 
-{% highlight xml %}
+```xml
 <user>
     <id>999</id>
     <username>xxxx</username>
@@ -849,7 +849,7 @@ Our users will now have the following content type:
           type="application/vnd.acme.user+xml"
           href="http://example.com/users/999/friends" />
 </user>
-{% endhighlight %}
+```
 
 Last, but not the least, you can add versioning to your API in three different
 ways. First, you can add the version number in your URIs, this is the easy way:
@@ -880,7 +880,7 @@ system as a black box. Symfony2 embeds a nice
 [Client](http://symfony.com/doc/master/book/testing.html#working-with-the-test-client)
 which allows you to call your API methods directly in your test classes:
 
-{% highlight php %}
+```php
 <?php
 
 $client   = static::createClient();
@@ -889,11 +889,11 @@ $crawler  = $client->request('GET', '/users');
 $response = $crawler->getResponse();
 
 $this->assertJsonResponse($response, 200);
-{% endhighlight %}
+```
 
 I use to use my own `WebTestCase` class with a `assertJsonResponse()` method:
 
-{% highlight php %}
+```php
 <?php
 
 // ...
@@ -909,7 +909,7 @@ I use to use my own `WebTestCase` class with a `assertJsonResponse()` method:
             $response->headers
         );
     }
-{% endhighlight %}
+```
 
 This is the first check I do after a call to the API. If it's ok, then I can
 make more assertions related to the content I fetched.

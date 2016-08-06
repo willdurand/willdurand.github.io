@@ -63,3 +63,10 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+.language-json .err,
+.language-javascript .err,
+.language-yaml .err {
+    color: inherit!important;
+    background: none!important;
+}

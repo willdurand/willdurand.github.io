@@ -39,16 +39,14 @@ sources have to be cloned:
 2. In order to compile a new kernel version, we have to slighty update its name. I
 edited the `EXTRAVERSION` variable in the `Makefile`:
 
-    ```
-    head Makefile -n 4
-    ```
+        head Makefile -n 4
 
-    ```
-    VERSION = 4
-    PATCHLEVEL = 1
-    SUBLEVEL = 15
-    EXTRAVERSION = +will
-    ```
+    <p></p>
+
+        VERSION = 4
+        PATCHLEVEL = 1
+        SUBLEVEL = 15
+        EXTRAVERSION = +will
 
 3. Now let's fetch the
 [patch](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/patch/?id=23567fd052a9abb6d67fe8e7a9ccdd9800a540f2)
@@ -77,19 +75,17 @@ compilation successfully ended. Let's install this brand new kernel:
 
 7. And now, time to try it for real (fingers crossed):
 
-    ```
-    uname -a
-    Linux raspberrypi 4.1.15-v7+ #831 SMP Tue Jan 19 18:39:46 GMT 2016 armv7l GNU/Linux
-    ```
+        uname -a
+        Linux raspberrypi 4.1.15-v7+ #831 SMP Tue Jan 19 18:39:46 GMT 2016 armv7l GNU/Linux
 
-    ```
-    sudo reboot
-    ```
+    <p></p>
 
-    ```
-    uname -a
-    Linux raspberrypi 4.1.15+will-v7+ #1 SMP Thu Jan 21 02:09:58 CET 2016 armv7l GNU/Linux
-    ```
+        sudo reboot
+
+    <p></p>
+
+        uname -a
+        Linux raspberrypi 4.1.15+will-v7+ #1 SMP Thu Jan 21 02:09:58 CET 2016 armv7l GNU/Linux
 
 Achievement unlocked \o/
 

@@ -23,7 +23,7 @@ a REST API.
 
 Run `npm install` to setup the project and its dependencies, then add your own configuration in `settings.js`. Mine is:
 
-{% highlight js %}
+```javascript
 // ...
 settings['william'] = {
   services: [{
@@ -49,7 +49,7 @@ settings['william'] = {
     }
   }
 };
-{% endhighlight %}
+```
 
 Then, start the server:
 

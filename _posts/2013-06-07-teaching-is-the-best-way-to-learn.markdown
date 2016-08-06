@@ -6,17 +6,17 @@ location: Clermont-Fd Area, France
 
 Earlier this year, I gave lectures to undergraduate students at IUT de
 Clermont-Fd (France). I taught **web development** using PHP as media
-([slides](http://licpro.williamdurand.fr/php-slides/) &
-[sources](https://github.com/licpro/php-slides)), and **security**, mainly
+([slides](http://edu.williamdurand.fr/php-slides/) &
+[sources](https://github.com/willdurand-edu/php-slides)), and **security**, mainly
 focused on Web/APIs security
-([slides](http://licpro.williamdurand.fr/security-slides/)
-& [sources](https://github.com/licpro/security-slides)).
+([slides](http://edu.williamdurand.fr/security-slides/)
+& [sources](https://github.com/willdurand-edu/security-slides)).
 
 I introduced not only best practices in web development, but tools such as
 [Git](http://git-scm.com), [Vim](http://www.vim.org/),
 [Vagrant](http://vagrantup.com),
 [Puppet](http://puppetlabs.com), and [GitHub](http://github.com).
-Each student worked on a [Virtual Machine](http://github.com/licpro/php-vm),
+Each student worked on a [Virtual Machine](http://github.com/willdurand-edu/php-vm),
 so that they could do whatever they wanted. Except a few weird issues, that was
 really interesting because pushing updates, from my point of view, was really
 easy. The workflow was pretty straightforward, they all started by running
@@ -29,7 +29,7 @@ too. Some published their code on GitHub, and most of them did a great job by
 building a web application combined to a _true_ REST API, serving content in the
 best format for the clients.
 
-As for the [security lectures](http://licpro.williamdurand.fr/security-slides/),
+As for the [security lectures](http://edu.williamdurand.fr/security-slides/),
 I tried to give an overview of well-known security topics, including
 **authorization**, **authentication**, some **authentication mechanisms**, and
 how to **secure the web**.
@@ -52,5 +52,5 @@ Actually, I think **I open sourced my knowledge**.
 
 ## TL;DR
 
-* [PHP Slides](http://licpro.williamdurand.fr/php-slides/);
-* [Security Slides](http://licpro.williamdurand.fr/security-slides/).
+* [PHP Slides](http://edu.williamdurand.fr/php-slides/);
+* [Security Slides](http://edu.williamdurand.fr/security-slides/).

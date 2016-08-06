@@ -13,6 +13,7 @@ answer comments, to write new entries, and so on.
 That's why I'm starting this new blog, in English (as well-written as possible) powered by [Jekyll](https://github.com/mojombo/jekyll),
 [HTML5 Boilerplate](http://html5boilerplate.com/), and hosted by [GitHub](http://www.github.com).
 
-You'll get the code by browsing the following repository: [willdurand/willdurand.github.com](https://github.com/willdurand/willdurand.github.com).
+You'll get the code by browsing the following repository:
+[willdurand.github.com](https://github.com/willdurand/willdurand.github.com).
 
 William

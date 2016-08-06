@@ -6,116 +6,160 @@ audio: false
 title: "A Year In Pictures"
 ---
 
+<style>
+    figcaption {
+        text-align: center;
+        font-style: italic;
+    }
+</style>
+
 Putting aside [Open Source](https://github.com/willdurand) and work, here are some
 of my greatest moments in 2014.
 
-<center>
-
 ## January
 
-![](/images/posts/2014/brussels.jpg)
+<figure>
+<img src="/images/posts/2014/brussels.jpg">
 
-<small><em>Visiting my sister + City Trip &mdash; Brussels, Belgium</em></small>
+<figcaption>Visiting my sister + City Trip &mdash; Brussels,
+Belgium</figcaption>
+</figure>
 
 ## February
 
-![](/images/posts/2014/clermontech-birthday.jpg)
+<figure>
+<img src="/images/posts/2014/clermontech-birthday.jpg">
 
-<small><em>Clermont'ech 1st Birthday &mdash; Clermont-Fd, France</em></small>
+<figcaption>Clermont'ech 1st Birthday &mdash; Clermont-Fd, France</figcaption>
+</figure>
 
 ## March
 
-![](/images/posts/2014/alps.jpg)
+<figure>
+<img src="/images/posts/2014/alps.jpg">
 
-<small><em>Skiing with friends &mdash; French Alps, France</em></small>
+<figcaption>Skiing with friends &mdash; French Alps, France</figcaption>
+</figure>
 
 ## April
 
-![](/images/posts/2014/running.jpg)
+<figure>
+<img src="/images/posts/2014/running.jpg">
 
-<small><em>Running &mdash; Gergovie, France</em></small>
+<figcaption>Running &mdash; Gergovie, France</figcaption>
+</figure>
 
 ## May
 
-![](/images/posts/2014/montreal.jpg)
+<figure>
+<img src="/images/posts/2014/montreal.jpg">
 
-<small><em>Visiting [Kevin](https://twitter.com/KPhoen) + City Trip &mdash; Montreal, Canada</em></small>
+<figcaption>Visiting <a href="https://twitter.com/KPhoen">Kevin</a> + City Trip &mdash; Montreal, Canada</figcaption>
+</figure>
 
-![](/images/posts/2014/nyc.jpg)
+<figure>
+<img src="/images/posts/2014/nyc.jpg">
 
-<small><em>City Trip + Visiting [Jeremy](https://twitter.com/jmikola) &mdash; New York City, USA</em></small>
+<figcaption>City Trip + Visiting <a href="https://twitter.com/jmikola">Jeremy</a> &mdash; New York City, USA</figcaption>
+</figure>
 
-![](/images/posts/2014/quebec.jpg)
+<figure>
+<img src="/images/posts/2014/quebec.jpg">
 
-<small><em>Visiting Julien + City Trip &mdash; Quebec, Canada</em></small>
+<figcaption>Visiting Julien + City Trip &mdash; Quebec, Canada</figcaption>
+</figure>
 
 ## June
 
-![](/images/posts/2014/phptour.jpg)
+<figure>
+<img src="/images/posts/2014/phptour.jpg">
 
-<small><em>Visiting [Hubert](https://twitter.com/youb_s) + Conference &mdash; Lyon, France</em></small>
+<figcaption>Visiting <a href="https://twitter.com/youb_s">Hubert</a> + Conference &mdash; Lyon, France</figcaption>
+</figure>
 
 ## July
 
-![](/images/posts/2014/las-vegas.jpg)
+<figure>
+<img src="/images/posts/2014/las-vegas.jpg">
 
-<small><em>Conference &mdash; Las Vegas, USA</em></small>
+<figcaption>Conference &mdash; Las Vegas, USA</figcaption>
+</figure>
 
-![](/images/posts/2014/road66.jpg)
+<figure>
+<img src="/images/posts/2014/road66.jpg">
 
-<small><em>Road Trip &mdash; Somewhere on Road 66, USA</em></small>
+<figcaption>Road Trip &mdash; Somewhere on Road 66, USA</figcaption>
+</figure>
 
-![](/images/posts/2014/williams.jpg)
+<figure>
+<img src="/images/posts/2014/williams.jpg">
 
-<small><em>Road Trip &mdash; Williams (Arizona), USA</em></small>
+<figcaption>Road Trip &mdash; Williams (Arizona), USA</figcaption>
+</figure>
 
-![](/images/posts/2014/grand-canyon.jpg)
+<figure>
+<img src="/images/posts/2014/grand-canyon.jpg">
 
-<small><em>Road Trip &mdash; Grand Canyon, USA</em></small>
+<figcaption>Road Trip &mdash; Grand Canyon, USA</figcaption>
+</figure>
 
-![](/images/posts/2014/horseshoe-bend.jpg)
+<figure>
+<img src="/images/posts/2014/horseshoe-bend.jpg">
 
-<small><em>Road Trip &mdash; Horseshoe Bend, USA</em></small>
+<figcaption>Road Trip &mdash; Horseshoe Bend, USA</figcaption>
+</figure>
 
-![](/images/posts/2014/valley-of-fire.jpg)
+<figure>
+<img src="/images/posts/2014/valley-of-fire.jpg">
 
-<small><em>Road Trip &mdash; Valley of Fire, USA</em></small>
+<figcaption>Road Trip &mdash; Valley of Fire, USA</figcaption>
+</figure>
 
 ## August
 
-![](/images/posts/2014/berlin.jpg)
+<figure>
+<img src="/images/posts/2014/berlin.jpg">
 
-<small><em>Visiting [Igor](https://twitter.com/igorwhiletrue) + City Trip &mdash; Berlin, Germany</em></small>
+<figcaption>Visiting <a href="https://twitter.com/igorwhiletrue">Igor</a> + City Trip &mdash; Berlin, Germany</figcaption>
+</figure>
 
-![](/images/posts/2014/vichy-tri.jpg)
+<figure>
+<img src="/images/posts/2014/vichy-tri.jpg">
 
-<small><em>Triathlon (Olympic distance) &mdash; Vichy, France</em></small>
+<figcaption>Triathlon (Olympic distance) &mdash; Vichy, France</figcaption>
+</figure>
 
 ## September
 
-![](/images/posts/2014/bike.jpg)
+<figure>
+<img src="/images/posts/2014/bike.jpg">
 
-<small><em>Mountain Biking race with friends (2x85km) &mdash; [Massif Central](http://en.wikipedia.org/wiki/Massif_Central), France</em></small>
+<figcaption>Mountain Biking race with friends (2x85km) &mdash; <a href="http://en.wikipedia.org/wiki/Massif_Central">Massif Central</a>, France</figcaption>
+</figure>
 
 ## October
 
-![](/images/posts/2014/blend.jpg)
+<figure>
+<img src="/images/posts/2014/blend.jpg">
 
-<small><em>Conference &mdash; Lyon, France</em></small>
+<figcaption>Conference &mdash; Lyon, France</figcaption>
+</figure>
 
 ## November
 
-![](/images/posts/2014/clermontech-workshop.jpg)
+<figure>
+<img src="/images/posts/2014/clermontech-workshop.jpg">
 
-<small><em>1st Clermont'ech Workshop (Git) &mdash; Clermont-Fd, France</em></small>
+<figcaption>1st Clermont'ech Workshop (Git) &mdash; Clermont-Fd, France</figcaption>
+</figure>
 
 ## December
 
-![](/images/posts/2014/hanoi.jpg)
+<figure>
+<img src="/images/posts/2014/hanoi.jpg">
 
-<small><em>Conference + City Trip &mdash; Hanoi, Vietnam</em></small>
-
-</center>
+<figcaption>Conference + City Trip &mdash; Hanoi, Vietnam</figcaption>
+</figure>
 
 ---
 

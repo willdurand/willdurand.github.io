@@ -38,17 +38,17 @@ And, to deploy it in a **testing** environment, run:
 Now, you can push your code on your server, but it won't deploy your changes at the moment.
 So let's configuring **Git**. First, add the following lines to your `.git/config` file:
 
-{% highlight bash %}
+```bash
 [receive]
     denyCurrentBranch = false
-{% endhighlight %}
+```
 
 It allows to push code on the current branch, it's important to deploy your new changes.
 Old Git versions don't need to set this parameter by the way.
 
 Then, enable a `post-receive` hook with the following content:
 
-{% highlight bash %}
+```bash
 #!/usr/bin/env bash
 
 SUBJECT="Deploy successful"
@@ -69,18 +69,18 @@ do
         echo "$BODY" | mail -s "$SUBJECT" "$EMAIL"
     fi
 done
-{% endhighlight %}
+```
 
 This script updates the working tree after changes have been pushed, and send an email to the
 last committer. Keep in mind that it always deploys the last branch you push.
 
 The important part is:
 
-{% highlight bash %}
+```bash
 cd ..
 env -i git checkout $branch
 env -i git reset --hard
-{% endhighlight %}
+```
 
 Feel free to decorate these three lines as you wish.
 
@@ -89,14 +89,14 @@ In a **production** environment, or because you are using a
 you should modify the previous code as below.
 It ensures to always deploy the `master` branch:
 
-{% highlight bash %}
+```bash
     if [ "$branch"  == "master" ] ; then
         cd ..
         env -i git reset --hard
 
         // Send an email
     fi
-{% endhighlight %}
+```
 
 You're done, each time you'll run a `git push production`, you'll deploy your application in production.
 

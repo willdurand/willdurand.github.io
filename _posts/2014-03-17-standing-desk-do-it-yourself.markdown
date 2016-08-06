@@ -7,6 +7,10 @@ tags: [ life, DIY ]
 title: "Standing Desk Do It Yourself (DIY)"
 ---
 
+_UPDATE: I started to use an [Apple Wireless Keyboard](https://www.apple.com/keyboard/) and a [Magic Mouse](https://www.apple.com/magicmouse/) rather than directly using my laptop._
+
+---
+
 I have been interested in standing desks for a while. [A standing desk is a desk
 conceived for writing, reading, or working, while standing up or while sitting
 on a high stool](http://en.wikipedia.org/wiki/Standing_desk). The impact of such
@@ -107,5 +111,3 @@ similar piece of furniture.
 [![](/images/posts/standing-desk/final-back_small.jpg)](/images/posts/standing-desk/final-back.jpg)
 
 I would like to thank Jean-Pierre who has provided me all tools I needed.
-
-UPDATE: I started to use an [Apple Wireless Keyboard](https://www.apple.com/keyboard/) and a [Magic Mouse](https://www.apple.com/magicmouse/) rather than directly using my laptop.
