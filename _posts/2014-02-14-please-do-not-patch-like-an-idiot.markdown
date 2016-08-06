@@ -13,6 +13,21 @@ title: "Please. Don't Patch Like An Idiot."
   }
 </style>
 
+---
+
+**UPDATE** — 2016-08-06 — Since I wrote this blog post, [RFC
+7396](https://tools.ietf.org/html/rfc7396), introducing the **JSON Merge Patch**
+format, has been created. It can be seen as the "just send what you need"
+format. Therefore, it is valid to only send what you need to update as the
+`[description of changes]` as far as it complies with the [JSON Merge Patch
+format](https://tools.ietf.org/html/rfc7396).
+
+On an unrelated note, I do apologize for the misuse of the word "idiot". I did
+not want to be rude. The exact same word in French is less "strong" than in
+English.
+
+---
+
 Modifying HTTP resources is not a new topic. Most of the existing HTTP or REST
 APIs provide a way to modify resources. They often provide such a feature by
 using the `PUT` method on the resource, asking clients to **send the entire
@@ -43,11 +58,11 @@ but there is a better alternative: `PATCH`.
 
 `PATCH` is an HTTP method (a.k.a. verb) which has been described in [RFC
 5789](https://tools.ietf.org/html/rfc5789). The initial idea was to propose a
-new way to modify existing HTTP resources. The biggest issue with this method
-is that people misunderstand its usage. **No! `PATCH` is not about sending an
-updated value, rather than the entire resource** as described in the first
-paragraph of this article. Please, **stop** doing this right now! This is
-**wrong**:
+new way to modify existing HTTP resources. The biggest issue with this method is
+that people misunderstand its usage. **No! `PATCH` is not **strictly** about
+sending an updated value, rather than the entire resource** as described in the
+first paragraph of this article. Please, **stop** doing this right now! This is
+not correct:
 
 ```http
 PATCH /users/123
@@ -55,7 +70,7 @@ PATCH /users/123
 { "email": "new.email@example.org" }
 ```
 
-And, this is **wrong** too:
+And, this is not correct too:
 
 ```http
 PATCH /users/123?email=new.email@example.org
@@ -132,6 +147,12 @@ For XML aficionados, [RFC 5261](http://tools.ietf.org/html/rfc5261) describes an
 XML patch framework utilizing XML Path language (XPath) selectors to update an
 existing XML document.
 
+As of late 2014 (that is, _after_ the publication of this article), a new
+[RFC](https://tools.ietf.org/html/rfc7396) introducing the JSON Merge Patch
+format and describing another way to send a set of changes has been proposed. It
+is very similar to the idea of sending only what needs to be updated, but it is
+explicit thanks to the `application/merge-patch+json` content type.
+
 To sum up, the `PATCH` method is not a replacement for the `POST` or `PUT`
 methods. It applies a delta (diff) rather than replacing the entire resource.
 The request entity to `PATCH` is of a **different content-type** than the
@@ -147,6 +168,7 @@ resources. But, Roy Fielding himself said that
 PUT is never RESTful](https://twitter.com/fielding/status/275471320685367296).
 Sure you are not transferring a **complete** representation, but REST does not
 require representations to be complete anyway.
+
 
 Useful Links
 ------------
@@ -167,3 +189,5 @@ Useful Links
   Updates](http://blog.earaya.com/blog/2013/05/30/the-right-way-to-do-rest-updates/)
 * [HTTP PUT, PATCH or POST - Partial updates or full
   replacement?](http://soabits.blogspot.fr/2013/01/http-put-patch-or-post-partial-updates.html)
+* [PUT vs PATCH vs
+JSON-PATCH](https://philsturgeon.uk/api/2016/05/03/put-vs-patch-vs-json-patch/)
