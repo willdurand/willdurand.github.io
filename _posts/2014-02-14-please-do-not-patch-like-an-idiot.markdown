@@ -70,7 +70,7 @@ PATCH /users/123
 { "email": "new.email@example.org" }
 ```
 
-And, this is not correct too:
+And, this is not correct either:
 
 ```http
 PATCH /users/123?email=new.email@example.org
