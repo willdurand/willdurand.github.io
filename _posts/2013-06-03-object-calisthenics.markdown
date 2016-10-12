@@ -26,7 +26,7 @@ write **better Oriented Object code**.
 > Cal • is • then • ics - /ˌkaləsˈTHeniks/
 
 Object Calisthenics are **programming exercises**, formalized as a set of **9
-rules** invented by Jeff Bay in his book [The ThoughWorks
+rules** invented by Jeff Bay in his book [The ThoughtWorks
 Anthology](http://pragprog.com/book/twa/thoughtworks-anthology). The word
 _Object_ is related to Object Oriented Programming. The word _Calisthenics_
 is derived from greek, and means **exercises** under the context of gymnastics.
