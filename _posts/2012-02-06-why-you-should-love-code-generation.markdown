@@ -56,6 +56,6 @@ I know there are drawbacks to use code generation, especially the need to genera
 in production, or the lack of implementation details. But, for the most part of an application, to generate code helps
 a lot, and it helps you to get what you really want to get too.
 
-Tu sum up, **code generation** is not a crazy idea. It's close to MDA, it has pros and cons but in my opinion,
+To sum up, **code generation** is not a crazy idea. It's close to MDA, it has pros and cons but in my opinion,
 code generation is definitely **not** a bad practice, and you should use it instead of relying on _in memory_ code
 or complex architectures just to avoid generation.
