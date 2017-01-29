@@ -16,7 +16,7 @@ layout: main
 
   {% if page.audio != false %}
   <div class="post-audio">
-    <audio itemprop="audio" src="/mp3/{{ page.id | remove_first:'/' | replace:'/','-' }}.mp3" controls preload></audio>
+    <audio itemprop="audio" src="/mp3/{{ page.id|remove_first:'/'|replace:'/','-' }}.mp3" controls preload></audio>
   </div>
   {% endif %}
 

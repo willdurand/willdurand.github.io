@@ -8,7 +8,7 @@
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}/</id>
     <author>
-        <name>{{ site.author.name }}</name>
+        <name>{{ site.author.name }}</name>
         <email>{{ site.author.email }}</email>
     </author>
 

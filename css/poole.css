@@ -275,10 +275,13 @@ tbody tr:nth-child(odd) th {
  */
 
 .message {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  width: 85%;
+  margin: 1rem auto;
+  padding: 0.5rem;
   color: #717171;
-  background-color: #f9f9f9;
+  background-color: transparent;
+  text-align: center;
+  font-size: 80%;
 }
 
 

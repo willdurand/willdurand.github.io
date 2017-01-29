@@ -6,15 +6,15 @@ exclude:   [ README.md, Gemfile, vendor, .*, bower.json ]
 title: "William Durand"
 tagline: ""
 description: |
-    Hi! I'm <a href="http://www.twitter.com/couac">Will</a>.
-    <br>
-    <br>
-    28 years old. Lifelong learner. Open Source evangelist. Traveler. Triathlete. Work <a href="https://twitter.com/_TailorDev">@_TailorDev</a>.
-    <br>
-    <br>
-    <small>
-    <a href="mailto:will@drnd.me">will@drnd.me</a> | <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xa509bcf1c1274f3b">0xa509bcf1c1274f3b</a>
-    </small>
+  Hi! I'm <a href="http://www.twitter.com/couac">Will</a>.
+  <br>
+  <br>
+  28 years old. Lifelong learner. Open Source evangelist. Traveler. Triathlete. Work <a href="https://twitter.com/_TailorDev">@_TailorDev</a>.
+  <br>
+  <br>
+  <small>
+  <a href="mailto:will@drnd.me">will@drnd.me</a> | <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xa509bcf1c1274f3b">0xa509bcf1c1274f3b</a>
+  </small>
 
 # Used in Atom feeds
 url: "http://williamdurand.fr"
@@ -28,3 +28,11 @@ author:
 my_linkedin: http://linkedin.com/in/williamdurand
 my_github:   http://www.github.com/willdurand
 my_twitter:  http://www.twitter.com/couac
+
+global_message: |
+  Hi! I have been working on a **side project** since mid-January: [Assignees](https://app.assignees.io/),
+  which **finds the right reviewers** for each opened pull request you get on GitHub. You can **try it** at:
+  [app.assignees.io](https://app.assignees.io/). Let me know what you think of it!
+
+gems:
+  - jemoji
