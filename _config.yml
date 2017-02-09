@@ -29,10 +29,7 @@ my_linkedin: http://linkedin.com/in/williamdurand
 my_github:   http://www.github.com/willdurand
 my_twitter:  http://www.twitter.com/couac
 
-global_message: |
-  Hi! I have been working on a **side project** since mid-January: [Assignees](https://app.assignees.io/),
-  which **finds the right reviewers** for each opened pull request you get on GitHub. You can **try it** at:
-  [app.assignees.io](https://app.assignees.io/). Let me know what you think of it!
+#global_message:
 
 gems:
   - jemoji
