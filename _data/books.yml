@@ -1,6 +1,9 @@
 -
     year: 2017
     books:
+        -   title: "Practical Arduino: Cool Projects for Open Source Hardware"
+            authors: Jonathan Oxer, Hugh Blemings
+            url: http://a.co/c1yGeBS
         -   title: "Arduino Workshop: A Hands-On Introduction with 65 Projects"
             authors: John Boxall
             url: http://a.co/9Zo6DHK
