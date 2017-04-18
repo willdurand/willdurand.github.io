@@ -1,6 +1,9 @@
 -
     year: 2017
     books:
+        -   title: "The C Programming Language, 2nd edition"
+            authors: Brian W. Kernighan, Dennis M. Ritchie
+            url: http://a.co/7TEQiIG
         -   title: "Practical Arduino: Cool Projects for Open Source Hardware"
             authors: Jonathan Oxer, Hugh Blemings
             url: http://a.co/c1yGeBS
