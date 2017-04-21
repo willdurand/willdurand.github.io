@@ -1,6 +1,14 @@
 -
   year: 2016
   talks:
+    - title: "Remote-first?"
+      date: "2016-10-29"
+      at: "MiXiT 2017, Lyon, France"
+      slides_url: https://speakerdeck.com/willdurand/remote-first-mixit-2017
+      
+-
+  year: 2016
+  talks:
     - title: "Pragmatic APIs 101"
       date: "2016-10-29"
       at: "Symfony Camp UA, Kiev, Ukrain"
