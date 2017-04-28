@@ -1,8 +1,12 @@
 -
-  year: 2016
+  year: 2017
   talks:
+    - title: "A Year of TailorDev"
+      date: "2017-04-27"
+      at: "How to Skyrocket in Life Sciences, Freiburg"
+      slides_url: https://speakerdeck.com/willdurand/a-year-of-tailordev-freiburg
     - title: "Remote-first?"
-      date: "2016-10-29"
+      date: "2017-04-21"
       at: "MiXiT 2017, Lyon, France"
       slides_url: https://speakerdeck.com/willdurand/remote-first-mixit-2017
       
