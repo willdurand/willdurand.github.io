@@ -114,7 +114,7 @@ is not suitable.
 structure** for expressing a **sequence of operations** to apply to a JSON
 document, suitable for use with the `PATCH` method. Here is how it looks like:
 
-```json
+```jsonloo
 [
     { "op": "test", "path": "/a/b/c", "value": "foo" },
     { "op": "remove", "path": "/a/b/c" },
