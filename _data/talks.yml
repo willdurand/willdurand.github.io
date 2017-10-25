@@ -1,15 +1,19 @@
 -
   year: 2017
   talks:
+    - title: "Introduction to React Native"
+      date: "2017-10-25"
+      at: "Devsmeetup, Freiburg, Germany"
+      slides_url: https://speakerdeck.com/willdurand/introduction-to-react-native
     - title: "A Year of TailorDev"
       date: "2017-04-27"
-      at: "How to Skyrocket in Life Sciences, Freiburg"
+      at: "How to Skyrocket in Life Sciences, Freiburg, Germany"
       slides_url: https://speakerdeck.com/willdurand/a-year-of-tailordev-freiburg
     - title: "Remote-first?"
       date: "2017-04-21"
       at: "MiXiT 2017, Lyon, France"
       slides_url: https://speakerdeck.com/willdurand/remote-first-mixit-2017
-      
+
 -
   year: 2016
   talks:
