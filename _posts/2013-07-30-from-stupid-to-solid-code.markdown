@@ -145,7 +145,7 @@ Principle](http://www.objectmentor.com/resources/articles/srp.pdf) or
 more than one reason for a class to change**.
 
 Just because you can add everything you want into your class doesn't mean that you
-should. Thinking in term of responsibilities will help you design your
+should. Thinking in terms of responsibilities will help you design your
 application better. Ask yourself whether the logic you are introducing should live in
 this class or not. Using **layers** in your application helps a lot. Split big
 classes in smaller ones, and avoid [god
