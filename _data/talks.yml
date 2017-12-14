@@ -1,6 +1,10 @@
 -
   year: 2017
   talks:
+    - title: "Introduction à React Native"
+      date: "2017-12-13"
+      at: "API Hour #32, Clermont-Fd, France"
+      slides_url: https://speakerdeck.com/willdurand/introduction-a-react-native-api-hour-32
     - title: "Introduction to React Native"
       date: "2017-10-25"
       at: "Devsmeetup, Freiburg, Germany"
