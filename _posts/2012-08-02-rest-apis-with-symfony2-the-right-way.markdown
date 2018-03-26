@@ -886,7 +886,7 @@ which allows you to call your API methods directly in your test classes:
 $client   = static::createClient();
 $crawler  = $client->request('GET', '/users');
 
-$response = $crawler->getResponse();
+$response = $client->getResponse();
 
 $this->assertJsonResponse($response, 200);
 ```
