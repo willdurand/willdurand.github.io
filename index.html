@@ -1,13 +1,6 @@
 ---
 layout: main
 title: "Home"
-
-my_projects:
-    - { name: Monod,            description: "Cool, secure, and offline-first Markdown editor.", url: "https://github.com/TailorDev/monod" }
-    - { name: Geocoder,         description: The most-featured PHP Geocoder library., url: "http://geocoder-php.org/" }
-    - { name: docker-elk,       description: "Jenkins Plugin for your beloved Karotz." }
-    - { name: Negotiation,      description: Content Negotiation tools for PHP. }
-    - { name: EmailReplyParser, description: Port of GitHub's EmailReplyParser library in PHP. }
 ---
 
 <ul class="posts" itemscope itemtype="http://schema.org/Blog">
@@ -43,20 +36,4 @@ my_projects:
     </li>
     {% endif %}
     {% endfor %}
-</ul>
-
-<h2 class="title">Highlighted Projects</h2>
-
-<ul class="projects">
-    {% for project in page.my_projects %}
-    <li>
-        <a href="{% if project.url %}{{ project.url }}{% else %}{{ site.my_github }}/{{ project.name }}{% endif %}">{{ project.name }}</a>
-        <span class="description hide-on-mobile">&raquo; {{ project.description }}</span>
-    </li>
-    {% endfor %}
-    <li class="last hide-on-mobile">Oh, and I am also involved in
-        <a href="https://github.com/propelorm">Propel</a>,
-        <a href="https://github.com/everzet/capifony">capifony</a>,
-        <a href="{{ site.my_github }}">and so on</a>!
-    </li>
 </ul>
