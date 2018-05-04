@@ -6,10 +6,10 @@ exclude:   [ README.md, Gemfile, vendor, .*, bower.json ]
 title: "William Durand"
 tagline: ""
 description: |
-  Hi! I'm <a href="http://www.twitter.com/couac">Will</a>.
+  Hi! I'm <a href="https://www.twitter.com/couac">Will</a>.
   <br>
   <br>
-  Lifelong learner. OSS evangelist. Traveler. Runner. Speaker. Work at <a href="https://twitter.com/_TailorDev">@_TailorDev</a>.
+  Lifelong learner. OSS evangelist. Traveler. Runner. Speaker. Web worker at Mozilla.
   <br>
   <br>
   <small>
@@ -17,7 +17,7 @@ description: |
   </small>
 
 # Used in Atom feeds
-url: "http://williamdurand.fr"
+url: "https://williamdurand.fr"
 
 # About/contact
 author:
@@ -25,8 +25,8 @@ author:
   email: will@drnd.me
 
 
-my_github:   http://www.github.com/willdurand
-my_twitter:  http://www.twitter.com/couac
+my_github:   https://www.github.com/willdurand
+my_twitter:  https://www.twitter.com/couac
 
 #global_message:
 
