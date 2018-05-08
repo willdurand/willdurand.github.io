@@ -31,7 +31,7 @@ layout: main
   </div>
 
   <em class="fork-and-edit">
-    By the way, if you found a typo, please <a href="http://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much! This post is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    By the way, if you found a typo, please <a href="https://github.com/willdurand/willdurand.github.com/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a>. Thank you so much! This post is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
   </em>
 
   <p class="christmas">
@@ -43,9 +43,9 @@ layout: main
 
 <div class="related">
   <h2>Related Posts</h2>
-  <ul class="related-posts" itemscope itemtype="http://schema.org/Blog">
+  <ul class="related-posts" itemscope itemtype="https://schema.org/Blog">
     {% for post in site.related_posts limit:8 %}
-      <li itemscope itemtype="http://schema.org/BlogPosting">
+      <li itemscope itemtype="https://schema.org/BlogPosting">
         <h3>
           <a href="{{ post.url }}" itemprop="name" itemprop="headline">
             {{ post.title }}
@@ -68,7 +68,7 @@ layout: main
     var disqus_shortname = 'williamdurand';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
