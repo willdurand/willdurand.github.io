@@ -1,4 +1,12 @@
 -
+  year: 2018
+  talks:
+    - title: "Server Side Rendering from the trenches"
+      date: "2018-05-10"
+      at: "jsDay, Verona, Italy"
+      slides_url: https://speakerdeck.com/willdurand/server-side-rendering-from-the-trenches
+      
+-
   year: 2017
   talks:
     - title: "Introduction à React Native"
