@@ -607,6 +607,10 @@ em.fork-and-edit {
   outline:none;
 }
 
+.twitter-tweet {
+  margin: 1em auto !important;
+}
+
 .christmas {
   padding: 15px;
   margin-top: 5%;
