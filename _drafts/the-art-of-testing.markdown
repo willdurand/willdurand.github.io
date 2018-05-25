@@ -65,12 +65,14 @@ important for, at least, two reasons:
   can have bugs depending on how we call that part for instance.
 
 In general, testing involves a (software) system under test (SUT), which is the
-application you are working on. The prevailing intuition of testing is reflected
-in its operational characterization as an activity in which a tester first
-generates and sends stimuli, _i.e._ test input data, to a system under test in
-order to observe phenomena (mainly behaviors). Such phenomena can be represented
-by the existence of test outputs for instance. We then have to decide on a
-suitable verdict, which expresses the assessment made.
+application you are working on. You have to know this term because it is used
+sometimes. The prevailing intuition of testing is reflected in its operational
+characterization as an activity in which a tester first generates and sends
+stimuli, _i.e._ test input data, to a system under test in order to observe
+phenomena (mainly behaviors). Such phenomena can be represented by the existence
+of test outputs for instance, like the result of a function call. We then have
+to decide on a suitable verdict, which expresses the assessment made (does this
+result make sense?).
 
 The two most well-known verdicts are **Pass** and **Fail**. That is why you can
 read or hear: _"tests fail"_ or _"the build passes"_, and because we often use
@@ -159,12 +161,92 @@ the last five years though, mainly to improve expressiveness and have a better
 experience writing tests (with new syntax, helper functions and speed
 improvements for instance).
 
+Let's concentrate on how to write test cases now. According to the definition of
+a test case given previously, we need something to test (SUT), some input data
+and a way of determining whether the resulting output or behavior is expected or
+not. This is what we call an expectation, and every test case should have at
+least one. We validate these expectations with assertions.
 
-...
+An assertion is a statement that a true–false expression is always true at that
+point in code execution, [according to
+Wikipedia](https://en.wikipedia.org/wiki/Assertion_(software_development)). When
+you expect an addition function `add(a, b)` to return `2` given `1` and `1` as
+inputs, the assertion is: the value returned by `add(1, 1)` must be equal to
+`2`. Many test frameworks use the keyword `assert` to help you write these
+assertions. For example, you could write the following Python code:
+
+```python
+# Python
+
+assert add(1, 1) == 2
+```
+
+You might also find more expressive keywords such as `expect` followed by a
+"matcher", a function that tests the expected value in a certain way. For
+instance, we could write the code below with
+[Jest](https://facebook.github.io/jest/), a JavaScript testing framework:
+
+```js
+// JavaScript
+
+expect(add(1, 1)).toEqual(2);
+```
+
+In Java with JUnit, you would probably write the code below:
+
+```java
+// Java
+
+assertThat(add(1, 1), is(2));
+```
+
+As you can see, the same assertion is expressed in slightly different ways, but
+in the end, the expectation remains the same. You will have to learn how to
+write these assertions depending on your project. When writing a test case, you
+should have clear expectations in mind, and that starts with knowing the purpose
+of this test case. Most testing frameworks will give you a minute to think about
+it, because you will have to write a test case method or function and give a
+name or description to that test case. You should never neglect this part
+because your tests should be understandable and have objectives.
+
+Continuing my example with the `add()` function, you could write a test case
+with a name like `test_ok()` or `"it works"` but that is not meaningful at all.
+What you should write instead is the intent/purpose of this test case. You
+should find a description or method name that is both short and accurate. In the
+two code snippets below, I try to convey the intent of the test case (_i.e._ my
+expectation), which is then highlighted by the assertion.
+
+```python
+# Python
+
+def test_add_returns_positive_integer():
+
+  assert add(1, 1) == 2
+```
+
+```js
+// JavaScript
+
+test('add() returns a positive integer when called with two positive integers', () => {
+  expect(add(1, 1)).toEqual(2);
+});
+```
+
+Most xUnit frameworks require a `test` prefix on the test case function/method
+(or a `@Test` annotation) so that the runner finds the test cases to execute,
+but other frameworks offer, again, a slightly different syntax (as seen above).
+The runner is an important part of any testing framework. Its job is to find all
+the test cases in your project, to run them, and to generate a report for you.
+Great testing frameworks have great runners (and a very expressive syntax).
+
+It is OK to have more than one assertion, as far as the assertions are related
+to the same expectation. If you find yourself writing assertions for a different
+expectation, it would be better to write another test case. This happens often
+when the piece of code you are testing does different things for instance.
+
+describe/it: writing good test case descs
 
 ```
-expectations/assertions
-describe/it: writing good test case descs
 run the test suite/make a change/run the test suite
 regressions
 think about all the edge cases
