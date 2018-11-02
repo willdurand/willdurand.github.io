@@ -12,7 +12,7 @@ location: Clermont-Fd Area, France
 
 When you start writing a new application, the first step is often to rely on some
 [UML](http://en.wikipedia.org/wiki/Unified_Modeling_Language) diagrams. It allows you
-to think before to code, what a nice idea!
+to think before you start to code, what a nice idea!
 
 Even if use cases or user stories are essential, a **class diagram** is probably the most useful UML diagram.
 A first step can be to find packages names (more or less _sub-namespaces_), and to connect them.
@@ -29,17 +29,17 @@ an application, and reduces coupling but it's not the purpose of this post.
 My Golden Rule is: **if you're not able to find a name for a class, then ask yourself if this class makes sense**,
 or if you can decouple things a bit more.
 
-A wrong name or a non-explicit name often leads to errors. If you're not satisfied with your naming,
+A wrong name or a non-explicit name can often leads to errors. If you're not satisfied with your naming,
 then think again because you probably missed something. Inspire yourself by reading good code, thanks to
 [GitHub](http://www.github.com), it's easy to browse awesome code. As a PHP developer, I often use
 [Symfony2](http://www.github.com/symfony/symfony) naming in my own projects.
 
 By following these advices, you'll build a software with a **better separation of concerns**, and
-each component will be decoupled, and will own its own logic, nothing more. That way, you'll be able
-to unit test your application without any effort. And, as you have a good separation of concerns, each
+each component will be decoupled, and has it's own logic, nothing more. That way, you'll be able
+to unit test your application without any effort. And, if you have a good separation of concerns, each
 unit test can cover a use case.
 
-This is my last point, always write unit tests that make sense, and think them as use cases. Take a look
+This is my last point, always write unit tests that make sense, and think of them as use cases. Take a look
 at the [Propel2 test suite](http://www.github.com/propelorm/Propel2/tree/master/tests/Propel/Tests), each test
 method has a readable name which explains a use case: `testIsValidReturnsFalseIfNoUserFound()` is really
 explicit for instance. Don't forget, **the best documentation you can write is tests**.
