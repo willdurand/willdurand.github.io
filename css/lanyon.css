@@ -730,6 +730,14 @@ a.anchor-link:hover {
   opacity: 0.3;
 }
 
+.with-caption {
+  text-align: center;
+}
+
+.with-caption em {
+  font-size: 0.8em;
+}
+
 @media only screen and (max-width: 1300px) {
   .menu-hint {
     opacity: 0.1;
