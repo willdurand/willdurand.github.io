@@ -33,5 +33,6 @@ my_twitter:  https://www.twitter.com/couac
 
 #global_message:
 
-gems:
+plugins:
   - jemoji
+  - jekyll-seo-tag
