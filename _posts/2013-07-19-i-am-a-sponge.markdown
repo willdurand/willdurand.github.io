@@ -14,12 +14,11 @@ matters.
 
 ![](/images/posts/spongebob.png)
 
-
 ## Learning
 
 One of the main goals of a sponge (the material) is to **sponge an impervious
 surface** in order to clean it. A sponge is [especially good at absorbing water
-and water-based solutions](http://en.wikipedia.org/wiki/Sponge_\(material\)). In
+and water-based solutions](<http://en.wikipedia.org/wiki/Sponge_(material)>). In
 other words, a sponge is able to _store_ a large amount of liquid into it.
 
 Obviously, as a human, being a sponge means that you are able to **absorb a lot
@@ -39,7 +38,6 @@ tastes, your aspirations, etc. But I am digressing...
 
 However, behaving like a sponge is not just about swallowing and filtering
 information.
-
 
 ## Sharing
 
@@ -61,7 +59,6 @@ world actually. You start by using an Open Source project, and end up by
 contributing back (you may not agree with me, that is my very own point of view).
 That is probably why I feel so comfortable in this world, but then again, I am
 digressing.
-
 
 ## Conclusion
 

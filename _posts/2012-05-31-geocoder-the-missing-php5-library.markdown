@@ -2,7 +2,7 @@
 layout: post
 title: "Geocoder: The Missing PHP5 Library"
 location: Zürich, Switzerland
-tags: [ PHP ]
+tags: [PHP]
 ---
 
 Seven months ago, I released [Geocoder](https://github.com/willdurand/Geocoder),
@@ -16,7 +16,7 @@ The library is standalone, and split in two parts: `HttpAdapters` which
 are responsible to get data from remote APIs, and `Providers` which own the
 logic to extract information.
 
-### Adapters ###
+### Adapters
 
 There are many adapters to use Geocoder with:
 [Buzz](https://github.com/kriswallsmith/Buzz),
@@ -26,8 +26,7 @@ Client](http://framework.zend.com/manual/en/zend.http.client.html).
 If you want to use another HTTP layer, you can easily write your own provider by
 implementing the `HttpAdapterInterface` interface.
 
-
-## Providers ###
+## Providers
 
 The most important part of Geocoder is probably all its providers:
 [FreeGeoIp](http://freegeoip.net/static/index.html),
@@ -67,8 +66,7 @@ $result = $geocoder->reverse($latitude, $longitude);
 The `$result` variable is an instance of [ResultInterface](https://github.com/willdurand/Geocoder/blob/master/src/Geocoder/Result/ResultInterface.php).
 Again, the API is simple.
 
-
-### Dumpers ###
+### Dumpers
 
 Another feature provided by Geocoder is the ability to dump a
 `ResultInterface` object in standard formats like GPS eXchange (GPX),
@@ -78,8 +76,7 @@ Another feature provided by Geocoder is the ability to dump a
 This is too small to become a separated library, and it can be helpful if you need
 to share geolocated data.
 
-
-### Conclusion ###
+### Conclusion
 
 Geocoder is quite stable now, and is well integrated with
 [Propel](http://www.propelorm.org) thanks to the
@@ -88,8 +85,7 @@ with [Doctrine2](http://www.doctrine-project.org/) thanks to the
 [DoctrineBehaviors](https://github.com/KnpLabs/DoctrineBehaviors#geocodable).
 Both behaviors are really powerful, install them, and your model objects
 (entities) will become geo-aware.
-Note for Drupal guys, [the geocoder module should use Geocoder](
-http://drupal.org/node/1334838), sooner or later.
+Note for Drupal guys, [the geocoder module should use Geocoder](http://drupal.org/node/1334838), sooner or later.
 
 Geocoder has more than ten contributors (thank you so much guys), is actively
 maintained, and already used in production! Oh, and it's heavily unit tested
@@ -98,8 +94,7 @@ with more than a hundred tests, and almost a thousand assertions.
 If you plan to use geocoding stuff in your project, or to integrate something
 in your favourite Framework, you should give Geocoder a try ;)
 
-
 ### Links
 
-* [The Geocoder website](http://geocoder-php.org/);
-* [The GitHub repository](https://github.com/willdurand/Geocoder).
+- [The Geocoder website](http://geocoder-php.org/);
+- [The GitHub repository](https://github.com/willdurand/Geocoder).

@@ -19,7 +19,6 @@ However, I always considered Visual Studio as the best IDE ever. It integrates
 everything you need while programming. And it just works (as much as I love
 _vim_, it's not an IDE).
 
-
 ## The Plan
 
 I decided to rewrite [TravisLight](https://github.com/willdurand/TravisLight), a
@@ -37,7 +36,6 @@ web site. CodePlex could be seen as a GitHub for .NET developers. It offers
 [Git](http://git-scm.com/) and [Team Foundation
 Server](http://en.wikipedia.org/wiki/Team_Foundation_Server) (TFS) repositories
 for your .NET Open Source projects.
-
 
 ## Team Foundation Server
 
@@ -59,7 +57,6 @@ cool.
 
 The next step was to know how to organize my code. I decided to follow the MVVM
 pattern.
-
 
 ## Model-View-ViewModel
 
@@ -96,7 +93,6 @@ To sum up, I needed a library to manipulate JSON data, and a way to perform
 requests. I googled these terms, and found something **really** awesome:
 [NuGet](http://nuget.org/).
 
-
 ## Introducing NuGet
 
 [NuGet](http://nuget.org/) (pronounced "New Get" and not "Nugget") is a
@@ -113,7 +109,6 @@ PHP, etc.
 Now that I have introduced some tools and concepts, let's focus on some
 implementation details.
 
-
 ## Working With JSON
 
 I chose [Json.NET](http://james.newtonking.com/projects/json-net.aspx), a
@@ -124,7 +119,7 @@ The `DeserializeObject()` method takes a string as argument, and returns an
 object. This is a **generic method** so you can specify the object's type you
 want to get:
 
-``` csharp
+```csharp
 using Newtonsoft.Json;
 using TravisLight.Model.Entity;
 ...
@@ -138,7 +133,7 @@ your properties. In the following code, the `Id` property is automatically
 mapped to an `id` entry in JSON, and the `LastBuildResult` property is
 explicitely mapped to a `last_build_result` entry in JSON:
 
-``` csharp
+```csharp
 using Newtonsoft.Json;
 using System;
 
@@ -171,13 +166,12 @@ namespace TravisLight.Model.Entity
 These two code snippets above are enough to deserialize the following JSON
 content:
 
-``` json
+```json
 [
-    { "id": 123, "last_build_result": null },
-    { "id": 123, "last_build_result": "2012-06-21T12:00:59Z" }
+  { "id": 123, "last_build_result": null },
+  { "id": 123, "last_build_result": "2012-06-21T12:00:59Z" }
 ]
 ```
-
 
 ## The Nullable Type
 
@@ -187,7 +181,7 @@ provided, it is a `boolean`, otherwise it is `null`. The [Nullable
 type](http://msdn.microsoft.com/library/1t3y8s4s.aspx) allows to either
 have a value or none.
 
-``` csharp
+```csharp
 if (LastBuildResult.HasValue)
 {
     return LastBuildResult.Value ? Status.Failed : Status.Passed;
@@ -205,7 +199,6 @@ the C# language is feature-rich:
 programming](http://msdn.microsoft.com/library/hh191443.aspx),
 and a lot more!
 
-
 ## LINQ And Lambda Expressions On Collections
 
 **L**anguage - **IN**tegrated **Q**uery also known as
@@ -219,13 +212,12 @@ according to a rank (i.e. according to the build statuses, the failing projects
 come first) in the
 [`ApiRepository`](http://travislightnet.codeplex.com/SourceControl/latest#481515):
 
-``` csharp
+```csharp
 return repositories.OrderBy(repository => repository.Rank).ToList();
 ```
 
 In the code above, the `=>` sign represents a lambda expression which is also
 known as a closure (an anonymous function with a context).
-
 
 ## Meet The Layers
 
@@ -249,7 +241,6 @@ argument, and creates an
 containing the repositories. This ViewModel is also responsible for refreshing
 this collection, using a timer for now.
 
-
 ## Dependency Inversion Principle
 
 By following the **MVVM** pattern, you ends up with a well-decoupled
@@ -266,7 +257,7 @@ A common pattern using MVVM seems to be the use of a **Bootstrapper**, a class
 that triggers the container in order to start the application. Mine looks like
 this:
 
-``` csharp
+```csharp
 namespace TravisLight.Main
 {
     class Bootstrapper
@@ -306,7 +297,6 @@ of the application (it is not a web application here). **Unity** is configured
 in the constructor, and the `Run()` method just passes the `MainWindow` to the
 application.
 
-
 ## Unit Testing
 
 Microsoft provides **MSTest**, its own unit testing framework. As usual, it is
@@ -317,7 +307,7 @@ However, I don't like its syntax, it is not really expressive. Fortunately,
 there is another unit testing framework called [NUnit](http://www.nunit.org/) that
 is really expressive:
 
-``` csharp
+```csharp
 namespace ViewModel.Test
 {
     [TestFixture]
@@ -353,7 +343,6 @@ In the code above, you may have noticed the `TestFixtureSetUp()` method I used
 to inject a mocked instance of `IRepository` instead of the `ApiRepository`
 implementation.
 
-
 ## Conclusion
 
 I enjoyed playing with all these new toys. It was a great experience as I learnt
@@ -366,12 +355,11 @@ such as [Entity Framework](http://msdn.microsoft.com/en-us/data/ef.aspx), or
 the [Stack Exchange Open Source
 projects](http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/).
 
-
 ## TL;DR
 
-* Avoid **TFS**, prefer **Git** instead
-* Use **NuGet**, always!
-* **MVVM** is a great pattern
-* Use **Unity** or **MEF**
-* Prefer **NUnit** over MSTest
-* The Microsoft world is quite cool actually!
+- Avoid **TFS**, prefer **Git** instead
+- Use **NuGet**, always!
+- **MVVM** is a great pattern
+- Use **Unity** or **MEF**
+- Prefer **NUnit** over MSTest
+- The Microsoft world is quite cool actually!

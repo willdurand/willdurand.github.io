@@ -13,7 +13,6 @@ a public repository hosted somewhere ([GitHub](https://github.com/),
 better for everyone if you would **add some love to your new shiny library** you
 just made publicly available. Let's see how to do that.
 
-
 ## README
 
 The `README` file is a **first-class citizen** in your project. You MUST have
@@ -106,7 +105,6 @@ As you can see, I introduced two files in this template: `LICENSE`, and
 the **Contributing** section. The `LICENSE` file contains the license you will
 choose for your project, but which license?
 
-
 ## License
 
 I won't compare all licenses, browse [tl;drLegal](http://www.tldrlegal.com/)
@@ -136,7 +134,6 @@ Even if you now have a well-documented library and a license, you can't dominate
 the world yet. In the following, I give an overview of what I consider important
 in Open Source projects.
 
-
 ## Write Tests & Automate
 
 Open Source projects are a way to write beautiful code as there are no deadlines,
@@ -156,7 +153,6 @@ Take a look at online tools such as [Scrutinizer](https://scrutinizer-ci.com) fo
 PHP and JavaScript, or [Puppet Linter](http://www.puppetlinter.com/). Automate
 as much as you can.
 
-
 ## Be Standard
 
 It is important to **use the right tools** for your library. Look at your
@@ -170,7 +166,6 @@ developers, use [NuGet](http://nuget.org/).
 Another example, in Symfony2 it is considered good practice to add documentation
 in `Resources/doc`. It is a convention. **Don't duplicate your documentation**.
 Add a link to quickly jump to this folder on your `README` file instead.
-
 
 ## Managing Issues & Releases
 
@@ -197,7 +192,6 @@ Then, maintain a `CHANGELOG` file to help your users identify changes. If you
 break backward compatibility, write an `UPGRADE` file in order to explain how
 to upgrade.
 
-
 ## You Need Feedback!
 
 The main reason why [I open source a lot of
@@ -212,13 +206,11 @@ Use GitHub pages to create a website for your library, buy a domain if you want.
 Remember the world domination plan? That is pretty much all you need to achieve
 this goal. We never know!
 
-
 ## Hire People
 
 Once you dominate the world, it is important to enroll new people to help you.
 That is a terrific experience! And it will give you more time for your other
 Open Source projects (also known as your new world domination plans) :-)
-
 
 ## Conclusion
 
@@ -234,21 +226,20 @@ It is really cool to open source projects, but avoid the [NIH
 syndrome](http://en.wikipedia.org/wiki/Not_invented_here). Contribute as much as
 you can, open source things that don't exist.
 
-
 ## TL;DR
 
 Your library/project:
 
-* MUST have a `README` file including a name, a description, and the following
+- MUST have a `README` file including a name, a description, and the following
   sections: **Usage**, **Installation**, **Contributing**, **Testing** and
   **License**;
-* MUST add a Contributor Code of Conduct;
-* MUST have a **license** that is visible;
-* MUST be tested;
-* MUST be standard or MUST fit your community habits;
+- MUST add a Contributor Code of Conduct;
+- MUST have a **license** that is visible;
+- MUST be tested;
+- MUST be standard or MUST fit your community habits;
 
 You:
 
-* NEED feedback;
-* MUST be nice;
-* SHOULD enroll people.
+- NEED feedback;
+- MUST be nice;
+- SHOULD enroll people.

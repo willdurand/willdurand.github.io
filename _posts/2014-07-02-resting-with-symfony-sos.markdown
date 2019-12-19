@@ -2,7 +2,7 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-tags: [ PHP, Symfony ]
+tags: [PHP, Symfony]
 title: "RESTing with Symfony: SOS"
 ---
 
@@ -18,7 +18,7 @@ sad, and that is what I am going to explain here.
 [Lukas](https://twitter.com/lsmith) and I give talks to spread the word about
 RESTing with Symfony for the last year now. Sure thing is that we have a nice
 set of components (libraries and bundles) that work well together, and provide a
-lot of interesting features.  For those who are not aware of this, checkout
+lot of interesting features. For those who are not aware of this, checkout
 [our](http://friendsofsymfony.github.io/slides/rest-dans-le-monde-symfony.html)
 [slides](http://friendsofsymfony.github.io/slides/build-awesome-rest-apis-with-symfony2.html)!
 The Symfony developers behind all of this even contributed to the PHP ecosystem
@@ -47,9 +47,9 @@ That is it!
 I think that we, the Symfony folks interested in APIs and REST stuff, have **two
 problems**:
 
-* a clear **lack of contributions** (not only in term of code, documentation
+- a clear **lack of contributions** (not only in term of code, documentation
   matters too);
-* **too few new big features**.
+- **too few new big features**.
 
 For instance, we could probably leverage the
 [GeneratorBundle](https://github.com/sensiolabs/SensioGeneratorBundle) to

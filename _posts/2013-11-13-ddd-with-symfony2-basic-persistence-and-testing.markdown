@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
-tags: [ PHP, DDD ]
+tags: [PHP, DDD]
 title: "DDD with Symfony2: Basic Persistence &amp; Testing"
 ---
 
@@ -18,7 +18,6 @@ A **basic persistence** layer is a layer that is **simple**. In other words, it
 does the job, period. It has poor performances, but it does not matter. What
 matters is that you can develop your application without having to decide
 whether you will use MySQL rather than a NoSQL database or an API for instance.
-
 
 ## The `YamlUserRepository` Repository
 
@@ -36,7 +35,7 @@ to focus on performance right now, so storing data in a file is ok.
 Here is the implementation of the `YamlUserRepository`. That might not be the
 perfect/best implementation but it actually works:
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomainBundle\Repository;
@@ -144,7 +143,7 @@ As you might notice, the identity between two **users** is checked by the
 `isEqualTo()` method, part of the `UserId` value object. The body of this method
 is pretty straightforward:
 
-``` php
+```php
 public function isEqualTo(UserId $userId)
 {
     return $this->getValue() === $userId->getValue();
@@ -159,7 +158,7 @@ the service definition contains a `<argument>` tag.
 The file will be created into the cache directory (`%kernel.cache_dir%`) meaning
 that if you clear the cache, your data will be lost.
 
-``` xml
+```xml
 <!-- src/Acme/CoreDomainBundle/Resources/config/repositories.xml -->
 <?xml version="1.0" ?>
 <container xmlns="http://symfony.com/schema/dic/services"
@@ -186,13 +185,12 @@ Using the `YamlUserRepository` rather than the `InMemoryUserRepository` is just
 a matter of configuration. Change the **alias** for the `user_repository`
 service and you are done:
 
-``` xml
+```xml
 <service id="user_repository" alias="user_repository.yaml"></service>
 ```
 
 Looks good? **No!** I told you that the implementation worked fine, did you
 trust me? You should not, and you should write tests instead.
-
 
 ## Unit Testing
 
@@ -213,7 +211,7 @@ First, you need to setup the virtual filesystem using the `vfsStream::setup()`
 method. Then, you can create a virtual filename that will be injected into your
 `YamlUserRepository` just like the DIC would do it:
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomainBundle\Tests\Repository;
@@ -240,7 +238,7 @@ class YamlUserRepositoryTest extends TestCase
 
 The following method creates fixtures that will be useful in your test methods:
 
-``` php
+```php
 <?php
 
 class YamlUserRepositoryTest extends TestCase
@@ -262,7 +260,7 @@ class YamlUserRepositoryTest extends TestCase
 
 And here are your first tests:
 
-``` php
+```php
 <?php
 
 class YamlUserRepositoryTest extends TestCase
@@ -320,7 +318,6 @@ you must test all its public methods.
 
 Now, let's setup the functional tests.
 
-
 ## Functional Testing
 
 A while ago, I created a bundle named
@@ -338,7 +335,7 @@ Require it as `dev` package:
 
 Then, create your first functional test class:
 
-``` php
+```php
 <?php
 
 namespace Acme\ApiBundle\Tests\Controller;
@@ -362,7 +359,7 @@ This test should fail because you didn't provide any fixtures. Use the
 `setUp()` method to copy a fixtures file to the cache directory so that you
 keep control over the data in your tests:
 
-``` php
+```php
 <?php
 
 class UserControllerTest extends WebTestCase
@@ -384,20 +381,17 @@ class UserControllerTest extends WebTestCase
 
 The `Fixtures/users.yml` file contains the following data:
 
-``` yaml
--
-    id: 50AAF29D-DB0B-43FE-9DD8-2F1C058416C5
-    first_name: Jean
-    last_name: Bon
--
-    id: 53E2F088-E0B0-4A21-86A8-67B2FD6A2749
-    first_name: John
-    last_name: Doe
+```yaml
+- id: 50AAF29D-DB0B-43FE-9DD8-2F1C058416C5
+  first_name: Jean
+  last_name: Bon
+- id: 53E2F088-E0B0-4A21-86A8-67B2FD6A2749
+  first_name: John
+  last_name: Doe
 ```
 
 That's it! You are able to test your application in a functional way like a
 boss!
-
 
 ## Conclusion
 

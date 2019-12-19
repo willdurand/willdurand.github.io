@@ -11,7 +11,7 @@ Michelin, the company I am working for. I talked about writing better code,
 [from STUPID to SOLID
 code!](http://slides.williamdurand.fr/from-stupid-to-solid-code/)
 **STUPID** as well as
-[**SOLID**](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) are
+[**SOLID**](<http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)>) are
 two acronyms, and have been
 [covered](http://blog.ircmaxell.com/2012/05/dont-be-stupid-grasp-solid-slides.html)
 [quite](http://nikic.github.io/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html) a
@@ -23,17 +23,16 @@ In the following, I will introduce both **STUPID** and **SOLID** principles. Kee
 in mind that these are **principles**, **not laws**. However, considering them as
 laws would be good for those who want to improve themselves.
 
-
 ## STUPID code, seriously?
 
 This may hurt your feelings, but you have probably written STUPID code already. I have too. But, what does that mean?
 
-* [**S**ingleton](#singleton)
-* [**T**ight Coupling](#tight-coupling)
-* [**U**ntestability](#untestability)
-* [**P**remature Optimization](#premature-optimization)
-* [**I**ndescriptive Naming](#indescriptive-naming)
-* [**D**uplication](#duplication)
+- [**S**ingleton](#singleton)
+- [**T**ight Coupling](#tight-coupling)
+- [**U**ntestability](#untestability)
+- [**P**remature Optimization](#premature-optimization)
+- [**I**ndescriptive Naming](#indescriptive-naming)
+- [**D**uplication](#duplication)
 
 In the following, I will explain the individual points with more details. This
 is more or less the transcript of my talk.
@@ -56,8 +55,8 @@ Actually, the use of a [singleton is not the problem, but the symptom of
 a problem](http://programmers.stackexchange.com/questions/40373/so-singletons-are-bad-then-what/40376#40376).
 Here are two reasons why:
 
-* Programs using global state are very difficult to test;
-* Programs that rely on global state hide their dependencies.
+- Programs using global state are very difficult to test;
+- Programs that rely on global state hide their dependencies.
 
 But should you really avoid them all the time? I would say _yes_ because you can
 often replace the use of a singleton by something better. Avoiding static things
@@ -69,7 +68,7 @@ is important to avoid something called **tight coupling**.
 the Singleton issue. Basically, you should [reduce
 coupling](http://martinfowler.com/ieeeSoftware/coupling.pdf) between your
 modules. **Coupling** is [the degree to which each program module relies on
-each one of the other modules](http://en.wikipedia.org/wiki/Coupling_(computer_programming)).
+each one of the other modules](<http://en.wikipedia.org/wiki/Coupling_(computer_programming)>).
 
 If making a change in one module in your application requires you to change another module,
 then coupling exists. For instance, you instantiate objects in your
@@ -99,8 +98,8 @@ is often considered an anti-pattern](http://www.c2.com/cgi/wiki?PrematureOptimiz
 A friend of mine often says that there are two rules to optimize an
 application:
 
-* don't do it;
-* (for experts only!) don't do it yet.
+- don't do it;
+- (for experts only!) don't do it yet.
 
 ### Indescriptive Naming
 
@@ -122,7 +121,6 @@ Now that I have explained what STUPID code is, you may think that your code
 is STUPID. It does not matter (yet). Don't feel bad, keep calm and be awesome
 by writing SOLID code instead!
 
-
 ## SOLID to the rescue!
 
 SOLID is a term describing a **collection of design principles** for good code
@@ -130,11 +128,11 @@ that was invented by Robert C. Martin, also known as _Uncle Bob_.
 
 SOLID means:
 
-* [**S**ingle Responsibility Principle](#single-responsibility-principle)
-* [**O**pen/Closed Principle](#open/closed-principle)
-* [**L**iskov Substitution Principle](#liskov-substitution-principle)
-* [**I**nterface Segregation Principle](#interface-segregation-principle)
-* [**D**ependency Inversion Principle](#dependency-inversion-principle)
+- [**S**ingle Responsibility Principle](#single-responsibility-principle)
+- [**O**pen/Closed Principle](#open/closed-principle)
+- [**L**iskov Substitution Principle](#liskov-substitution-principle)
+- [**I**nterface Segregation Principle](#interface-segregation-principle)
+- [**D**ependency Inversion Principle](#dependency-inversion-principle)
 
 ### Single Responsibility Principle
 
@@ -215,7 +213,7 @@ interface. In other words, you should not have to implement methods that you
 don't use. Enforcing ISP gives you **low coupling**, and **high cohesion**.
 
 When talking about **coupling**,
-[cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science)) is often
+[cohesion](<http://en.wikipedia.org/wiki/Cohesion_(computer_science)>) is often
 mentioned as well. **High cohesion** means to keep similar and related things
 together. The **union** of cohesion and coupling is [orthogonal
 design](http://www.jasoncoffin.com/cohesion-and-coupling-principles-of-orthogonal-object-oriented-programming/).
@@ -233,8 +231,8 @@ Principle](http://www.objectmentor.com/resources/articles/dip.pdf)
 or [DIP](http://www.c2.com/cgi/wiki?DependencyInversionPrinciple) has two key
 points:
 
-* **Abstractions should not depend upon details**;
-* **Details should depend upon abstractions**.
+- **Abstractions should not depend upon details**;
+- **Details should depend upon abstractions**.
 
 This principle could be rephrased as **use the same level of abstraction at a
 given level**. Interfaces should depend on other interfaces. Don't add concrete
@@ -260,7 +258,6 @@ reusable**. It also ensures that you can replace the implementation without
 violating the expectations of that interface, according to the Liskov
 Substitution Principle seen before.
 
-
 ## Conclusion
 
 As you probably noticed, **avoiding tight coupling is the key**. It is present
@@ -272,31 +269,29 @@ principles, always think before writing code. Take the time to understand those 
 
 Honestly, writing SOLID code is not that hard.
 
-
 ## Slides
 
 <script async class="speakerdeck-embed" data-id="e04c5ae0d74d013022821e9ac6d7834e" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
-
 
 ## TL;DR
 
 **STUPID** is an acronym that describes bad practices in Oriented Object
 Programming:
 
-* [**S**ingleton](#singleton)
-* [**T**ight Coupling](#tight-coupling)
-* [**U**ntestability](#untestability)
-* [**P**remature Optimization](#premature-optimization)
-* [**I**ndescriptive Naming](#indescriptive-naming)
-* [**D**uplication](#duplication)
+- [**S**ingleton](#singleton)
+- [**T**ight Coupling](#tight-coupling)
+- [**U**ntestability](#untestability)
+- [**P**remature Optimization](#premature-optimization)
+- [**I**ndescriptive Naming](#indescriptive-naming)
+- [**D**uplication](#duplication)
 
 **SOLID** is an acronym that stands for **five basic principles** of
 Object-Oriented Programming and design to _fix_ STUPID code:
 
-* [**S**ingle Responsibility Principle](#single-responsibility-principle)
-* [**O**pen/Closed Principle](#open/closed-principle)
-* [**L**iskov Substitution Principle](#liskov-substitution-principle)
-* [**I**nterface Segregation Principle](#interface-segregation-principle)
-* [**D**ependency Inversion Principle](#dependency-inversion-principle)
+- [**S**ingle Responsibility Principle](#single-responsibility-principle)
+- [**O**pen/Closed Principle](#open/closed-principle)
+- [**L**iskov Substitution Principle](#liskov-substitution-principle)
+- [**I**nterface Segregation Principle](#interface-segregation-principle)
+- [**D**ependency Inversion Principle](#dependency-inversion-principle)
 
 Rule of thumb: **use your brain**!

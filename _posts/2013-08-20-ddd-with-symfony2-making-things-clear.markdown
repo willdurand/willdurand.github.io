@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
-tags: [ PHP, DDD ]
+tags: [PHP, DDD]
 title: "DDD with Symfony2: Making Things Clear"
 ---
 
@@ -26,7 +26,6 @@ misunderstandings coming from the [first
 post](/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/). I
 recommend you to quickly jump to all links, they are valuable!
 
-
 ## DDD Is Not RAD
 
 Domain Driven Design is **not** a **fast** way to build a software. It is not
@@ -44,7 +43,6 @@ probably the best way to learn the hard way). So question is [when to use
 DDD?](http://shishkin.wordpress.com/2008/10/10/when-to-use-domain-driven-design/)
 I would say when your domain is very complex, or when the business requirements
 change fast.
-
 
 ## There Is No Database
 
@@ -64,7 +62,6 @@ or whatever. This is not how we should use DDD. We, as [developers, need to
 become part of our business users domains, we need to stop thinking in technical
 terms and constructs, and need to immerse ourselves in the world our business
 users inhabit](http://devlicio.us/blogs/casey/archive/2008/09/10/the-tao-of-domain-driven-design.aspx).
-
 
 ## DDD And REST
 
@@ -112,7 +109,6 @@ the clients (the clients that consume your API). So it is ok(-ish)!
 Also, note that HTTP methods explicitly delineate commands and
 queries. That means **Command Query Responsibility Separation**
 [CQRS](http://martinfowler.com/bliki/CQRS.html) **maps directly to HTTP**. Hurray!
-
 
 ## So, What's Next?
 

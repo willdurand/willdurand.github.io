@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
-tags: [ life, DIY ]
+tags: [life, DIY]
 title: "Standing Desk Do It Yourself (DIY)"
 ---
 
@@ -29,7 +29,7 @@ didn't find any formal report confirming that yet.
 After [having given standing desk a
 try](https://twitter.com/couac/status/443674631892123649) with cardboard last
 week, I decided to build my own standing desk, on top of my existing desk, for
-less than 30 euros ($40). There are plenty examples of
+less than 30 euros (\$40). There are plenty examples of
 [DIY](http://en.wikipedia.org/wiki/Do_it_yourself) standing desks on the
 Internet, but [that
 one](http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html) is
@@ -37,10 +37,10 @@ probably the best known, and this is the one I used as an example.
 
 First, I needed the following items:
 
-* two [side tables](http://www.but.fr/produits/43394/Table-basse-NEXT-2-wenge.html) (2 x 7 euros);
-* two black brackets (2 x 1.5 euros);
-* a black rubber slab with adhesive backing (8 euros);
-* wood glue, screws, and a few tools (free).
+- two [side tables](http://www.but.fr/produits/43394/Table-basse-NEXT-2-wenge.html) (2 x 7 euros);
+- two black brackets (2 x 1.5 euros);
+- a black rubber slab with adhesive backing (8 euros);
+- wood glue, screws, and a few tools (free).
 
 Then, it was time to write down **THE plan**. I needed to put the keyboard
 at the height of 32cm starting from the top of my existing desk, and the main

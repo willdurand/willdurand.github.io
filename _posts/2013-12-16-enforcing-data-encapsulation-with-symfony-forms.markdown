@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: true
-tags: [ PHP ]
+tags: [PHP]
 title: "Enforcing Data Encapsulation with Symfony Forms"
 ---
 
@@ -12,7 +12,6 @@ tweets](https://twitter.com/couac/status/412677521977921536), so I updated this
 post a bit to give the context.
 
 ---
-
 
 Having classes (entities or whatever related to your model layer) that exposes
 attributes publicly, i.e. setters and getters for all attributes is just a **non
@@ -23,7 +22,7 @@ You should rather write classes that own data, and keep them in a safe place.
 That is called **encapsulation**. **Encapsulation** is **one of the four
 fundamentals** in Object-Oriented Programming (OOP). It is used [to hide the
 values or state of a structured object inside a
-class](http://en.wikipedia.org/wiki/Encapsulation_\(object-oriented_programming\)),
+class](<http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)>),
 preventing unauthorized parties direct access to them. That is why you should
 [avoid getters and
 setters](http://williamdurand.fr/2013/06/03/object-calisthenics/#9-no-getters/setters/properties)

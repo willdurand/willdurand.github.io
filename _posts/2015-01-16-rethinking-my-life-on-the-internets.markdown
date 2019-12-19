@@ -18,7 +18,7 @@ advertisers](http://www.businessinsider.com/evidon-sells-ghostery-data-to-advert
 I often **carefully** chose what I put online: comments, documents, pictures,
 etc. I wrote _often_ here because it took me a while to **educate myself**, to
 **learn and understand** the implications of my behavior on Internet. I started
-using Internet when I was 18_-ish_, because of my studies to be honest, since I
+using Internet when I was 18*-ish*, because of my studies to be honest, since I
 was not much interested in anything over IP at that time.
 
 ## Fighting Technology Enslavement

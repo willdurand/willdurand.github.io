@@ -91,7 +91,7 @@ PATCH /users/123
 The entire set of changes must be applied **atomically**, and the API must never
 provide a partially modified representation by the way. It is worth mentioning
 that the request entity to `PATCH` is of a **different content-type** than the
-resource that is being modified.  You have to use a media type that defines
+resource that is being modified. You have to use a media type that defines
 semantics for PATCH, otherwise you lose the advantage of this method, and you
 can use either `PUT` or `POST`. From the RFC:
 
@@ -116,12 +116,12 @@ document, suitable for use with the `PATCH` method. Here is how it looks like:
 
 ```json
 [
-    { "op": "test", "path": "/a/b/c", "value": "foo" },
-    { "op": "remove", "path": "/a/b/c" },
-    { "op": "add", "path": "/a/b/c", "value": [ "foo", "bar" ] },
-    { "op": "replace", "path": "/a/b/c", "value": 42 },
-    { "op": "move", "from": "/a/b/c", "path": "/a/b/d" },
-    { "op": "copy", "from": "/a/b/d", "path": "/a/b/e" }
+  { "op": "test", "path": "/a/b/c", "value": "foo" },
+  { "op": "remove", "path": "/a/b/c" },
+  { "op": "add", "path": "/a/b/c", "value": ["foo", "bar"] },
+  { "op": "replace", "path": "/a/b/c", "value": 42 },
+  { "op": "move", "from": "/a/b/c", "path": "/a/b/d" },
+  { "op": "copy", "from": "/a/b/d", "path": "/a/b/e" }
 ]
 ```
 
@@ -141,7 +141,7 @@ PATCH /users/123
 ```
 
 So readable, and expressive! Wonderful &hearts; **This** is how the `PATCH`
-method MUST be used.  If it succeeds, you get a `200` response.
+method MUST be used. If it succeeds, you get a `200` response.
 
 For XML aficionados, [RFC 5261](http://tools.ietf.org/html/rfc5261) describes an
 XML patch framework utilizing XML Path language (XPath) selectors to update an
@@ -169,25 +169,23 @@ PUT is never RESTful](https://twitter.com/fielding/status/275471320685367296).
 Sure you are not transferring a **complete** representation, but REST does not
 require representations to be complete anyway.
 
+## Useful Links
 
-Useful Links
-------------
-
-* [An Extensible Markup Language (XML) Patch Operations Framework Utilizing XML
+- [An Extensible Markup Language (XML) Patch Operations Framework Utilizing XML
   Path Language (XPath) Selectors](http://tools.ietf.org/html/rfc5261)
-* [PATCH Method for HTTP](https://tools.ietf.org/html/rfc5789)
-* [JavaScript Object Notation (JSON) Pointer](http://tools.ietf.org/html/rfc6901)
-* [JavaScript Object Notation (JSON) Patch](http://tools.ietf.org/html/rfc6902)
-* [Why PATCH is Good for Your HTTP API](http://www.mnot.net/blog/2012/09/05/patch)
-* [REST Partial Updates: Use POST, PUT or
+- [PATCH Method for HTTP](https://tools.ietf.org/html/rfc5789)
+- [JavaScript Object Notation (JSON) Pointer](http://tools.ietf.org/html/rfc6901)
+- [JavaScript Object Notation (JSON) Patch](http://tools.ietf.org/html/rfc6902)
+- [Why PATCH is Good for Your HTTP API](http://www.mnot.net/blog/2012/09/05/patch)
+- [REST Partial Updates: Use POST, PUT or
   PATCH?](http://jasonsirota.com/rest-partial-updates-use-post-put-or-patch)
-* [Embrace, Extend then
+- [Embrace, Extend then
   Innovate](http://intertwingly.net/blog/2008/02/15/Embrace-Extend-then-Innovate)
-* [Why isn't HTTP PUT allowed to do partial updates in a REST
+- [Why isn't HTTP PUT allowed to do partial updates in a REST
   API?](http://stackoverflow.com/questions/19732423/why-isnt-http-put-allowed-to-do-partial-updates-in-a-rest-api)
-* [The Right Way to Do REST
+- [The Right Way to Do REST
   Updates](http://blog.earaya.com/blog/2013/05/30/the-right-way-to-do-rest-updates/)
-* [HTTP PUT, PATCH or POST - Partial updates or full
+- [HTTP PUT, PATCH or POST - Partial updates or full
   replacement?](http://soabits.blogspot.fr/2013/01/http-put-patch-or-post-partial-updates.html)
-* [PUT vs PATCH vs
-JSON-PATCH](https://philsturgeon.uk/api/2016/05/03/put-vs-patch-vs-json-patch/)
+- [PUT vs PATCH vs
+  JSON-PATCH](https://philsturgeon.uk/api/2016/05/03/put-vs-patch-vs-json-patch/)

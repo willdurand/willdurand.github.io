@@ -44,13 +44,13 @@ giving valuable advices.
 The first thing we did was to all agree on a **manifesto** with **four strong
 values**:
 
-* **openness**: we are technology-agnostic, even C++ guys can join the flock;
-* **independence**: we are not tied to any company or organization, no matter
+- **openness**: we are technology-agnostic, even C++ guys can join the flock;
+- **independence**: we are not tied to any company or organization, no matter
   how much they could give us (well, it is worth mentioning that [16 billion
   dollars seems to be the "fuck you"
   price](https://twitter.com/codinghorror/status/436265430005448704), so ...);
-* **respect**: basically, people who stir up trouble are not welcomed;
-* **sharing**: every decision we make is driven by this value, we don't just
+- **respect**: basically, people who stir up trouble are not welcomed;
+- **sharing**: every decision we make is driven by this value, we don't just
   promote sharing through the conferences.
 
 A year later, I think that this was our main key success factor. We always stick
@@ -73,7 +73,7 @@ people**, and make the events more **friendly**.
 
 We were more and more prepared, with more equipement, and a lot of **goodies**!
 That is probably the second key success factor: **focusing on the marketing
-stuff**.  This led us to the notion of sponsorship, i.e. **money**. Since the
+stuff**. This led us to the notion of sponsorship, i.e. **money**. Since the
 beginning, we wanted our events to be _free of charge_ for the attendees, but
 also, providing food (we are French afterall). Thanks to our fabulous sponsors,
 we were able to do more, making

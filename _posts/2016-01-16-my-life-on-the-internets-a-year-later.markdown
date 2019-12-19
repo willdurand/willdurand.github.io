@@ -16,7 +16,7 @@ I am more than **happy** with [Fastmail](http://www.fastmail.com/?STKI=13808765)
 everything I ever needed, and support team is amazing! The only missing feature
 is that, when sending an event invitation from my phone or laptop, it uses my
 Fastmail email, _e.g._, `account@fastmail.com` rather than my own email, _i.e._
-`will@drnd.me`.  Yet, this should be supported soon.
+`will@drnd.me`. Yet, this should be supported soon.
 
 I do not use any Instant Messaging application anymore. I was a Google Talk
 user, but as I do not use it anymore, I simply do not use any IM client anymore.
@@ -59,7 +59,7 @@ your "own" ownCloud, there are countless providers: in France, I would recommend
 
 Last but not least, I keep using [Instapaper](https://www.instapaper.com), the
 last web application that I am not self-hosting, even though
-[Wallabag](https://www.wallabag.org/) seems more and more what I need.  What is
+[Wallabag](https://www.wallabag.org/) seems more and more what I need. What is
 weird is that I do not know why... Oh, and I still did not find any
 [Disqus](https://disqus.com/) alternative.
 

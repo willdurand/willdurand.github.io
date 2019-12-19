@@ -33,7 +33,6 @@ find a specific file.
 But this is not the purpose of this post. Let me explain why and how I wrote
 TravisLight, and the tools I discovered.
 
-
 ## The Beginning
 
 I started reading [Backbone
@@ -56,7 +55,6 @@ say. I also used [RequireJS](http://requirejs.org/), and
 [Moment.js](http://momentjs.com/). In order to manage all these dependencies,
 I needed a tool, so I took a look at Bower, from the Twitter guys.
 
-
 ## Bower, A Package Manager For The Web
 
 [Bower](https://github.com/twitter/bower) is a package manager for the web, in
@@ -68,10 +66,10 @@ Bootstrap](http://twitter.github.com/bootstrap/), etc. All you need is a
 
 {% highlight json %}
 {
-  "name": "travis-light",
-  "dependencies": {
-    "jquery": "~1.8.3"
-  }
+"name": "travis-light",
+"dependencies": {
+"jquery": "~1.8.3"
+}
 }
 {% endhighlight %}
 
@@ -85,7 +83,6 @@ At some point, I needed a tool to perform some tasks on my application like
 running [jshint](http://www.jshint.com/) or compiling my files. I tried
 Grunt, a build tool written in JavaScript, and it was a good choice.
 
-
 ## Grunt, The JavaScript Build Tool
 
 [Grunt](http://gruntjs.com/) is a task-based command line build tool for
@@ -96,10 +93,10 @@ files, _run_ the test suite, and so on.
 In TravisLight, I mainly use Grunt to package the application. Packaging the
 application means:
 
-* compiling the JavaScript files;
-* compiling the CSS files;
-* using the compiled files into the HTML markup;
-* copying the required libraries.
+- compiling the JavaScript files;
+- compiling the CSS files;
+- using the compiled files into the HTML markup;
+- copying the required libraries.
 
 Compiling the JavaScript files is about compiling the
 [RequireJS](http://requirejs.org/) dependencies. Thanks to the
@@ -108,14 +105,14 @@ plugin, it's super easy!
 
 {% highlight javascript %}
 requirejs: {
-    compile: {
-        options: {
-            name: "main",
-            baseUrl: "js/",
-            mainConfigFile: "js/main.js",
-            out: "dist/compiled.js"
-        }
-    }
+compile: {
+options: {
+name: "main",
+baseUrl: "js/",
+mainConfigFile: "js/main.js",
+out: "dist/compiled.js"
+}
+}
 }
 {% endhighlight %}
 
@@ -125,11 +122,11 @@ in the CSS are embedded using the
 
 {% highlight javascript %}
 imageEmbed: {
-    application: {
-        src: 'css/application.css',
-        dest: 'dist/application-embed.css',
-        deleteAfterEncoding : false
-    }
+application: {
+src: 'css/application.css',
+dest: 'dist/application-embed.css',
+deleteAfterEncoding : false
+}
 }
 {% endhighlight %}
 
@@ -138,14 +135,14 @@ Then, the CSS files are minified using the
 
 {% highlight javascript %}
 mincss: {
-    compress: {
-        files: {
-            'dist/compiled.css': [
-                'css/bootstrap.min.css',
-                'dist/application-embed.css'
-            ]
-        }
-    }
+compress: {
+files: {
+'dist/compiled.css': [
+'css/bootstrap.min.css',
+'dist/application-embed.css'
+]
+}
+}
 }
 {% endhighlight %}
 
@@ -155,16 +152,17 @@ It's achieved by using the
 
 {% highlight javascript %}
 targethtml: {
-    dist: {
-        src: 'index.html',
-        dest: 'dist/index.html'
-    }
+dist: {
+src: 'index.html',
+dest: 'dist/index.html'
+}
 }
 {% endhighlight %}
 
 The `index.html` file looks like:
 
 {% highlight html %}
+
 <!doctype html>
 <html lang="en">
     ...
@@ -177,6 +175,7 @@ The `index.html` file looks like:
         <script data-main="js/main" src="components/requirejs/require.js"></script>
         <!--<!(endif)-->
     </body>
+
 </html>
 {% endhighlight %}
 
@@ -191,11 +190,11 @@ is the one I used to copy some files to the `dist/` folder:
 
 {% highlight javascript %}
 copy: {
-    dist: {
-        files: {
-            'dist/js/require.js': 'components/requirejs/require.js'
-        }
-    }
+dist: {
+files: {
+'dist/js/require.js': 'components/requirejs/require.js'
+}
+}
 }
 {% endhighlight %}
 
@@ -208,7 +207,6 @@ at some JavaScript testing libraries. I already knew
 [QUnit](http://qunitjs.com/) but I wanted to use something different so I gave a
 try to [Mocha](http://visionmedia.github.com/mocha/) and
 [Chai](http://chaijs.com/).
-
 
 ## Testing A Backbone.js Application
 
@@ -226,14 +224,14 @@ the _dev_ dependencies:
 
 {% highlight json %}
 {
-  "name": "TravisLight",
-  "version": "0.0.1",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "mocha": "~1.7.4",
-    "chai": "~1.4.0"
-  }
+"name": "TravisLight",
+"version": "0.0.1",
+"dependencies": {
+},
+"devDependencies": {
+"mocha": "~1.7.4",
+"chai": "~1.4.0"
+}
 }
 {% endhighlight %}
 
@@ -243,6 +241,7 @@ directory.
 Now, you need a `test/index.html` file to run the test suite in a browser:
 
 {% highlight html %}
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -277,16 +276,17 @@ files:
 
 {% highlight javascript %}
 var assert = chai.assert,
-    expect = chai.expect;
+expect = chai.expect;
 
 mocha.setup({
-    ui: 'bdd'
+ui: 'bdd'
 });
 
 require.config({
-    baseUrl: '../js/',
+baseUrl: '../js/',
 
     ...
+
 });
 {% endhighlight %}
 
@@ -295,11 +295,11 @@ Here is an example of test file for the TravisLight's `router`:
 
 {% highlight javascript %}
 define(
-    [
-        'router'
-    ],
-    function (router) {
-        "use script";
+[
+'router'
+],
+function (router) {
+"use script";
 
         describe('router', function () {
             it('should be an instance of Backbone.Router', function () {
@@ -311,6 +311,7 @@ define(
             });
         });
     }
+
 );
 {% endhighlight %}
 
@@ -319,7 +320,6 @@ directory](https://github.com/willdurand/TravisLight/tree/master/test) for more
 information.
 
 Achievement unlocked! I wrote a JavaScript application that is tested.
-
 
 ## Using Travis-CI With JavaScript Projects
 
@@ -332,7 +332,7 @@ the TravisLight's configuration for this plugin:
 
 {% highlight javascript %}
 mocha: {
-    all: [ 'test/index.html' ]
+all: [ 'test/index.html' ]
 }
 {% endhighlight %}
 
@@ -352,12 +352,9 @@ application requires a set of libraries installed through Bower:
 {% highlight yaml %}
 language: node_js
 
-node_js:
-    - 0.8
+node_js: - 0.8
 
-before_script:
-    - export PATH=$PATH:`npm bin`
-    - bower install
+before_script: - export PATH=\$PATH:`npm bin` - bower install
 {% endhighlight %}
 
 Travis-CI will run `npm install` first, and then `npm test`. This second command
@@ -365,14 +362,13 @@ has to be configured in the TravisLight's `package.json`:
 
 {% highlight json %}
 {
-  ...
+...
 
-  "scripts": {
-    "test": "./node_modules/grunt/bin/grunt test"
-  }
+"scripts": {
+"test": "./node_modules/grunt/bin/grunt test"
+}
 }
 {% endhighlight %}
-
 
 ## The End
 

@@ -3,7 +3,7 @@ layout: post
 title: "REST APIs with Symfony2: The Right Way"
 location: Zürich, Switzerland
 audio: false
-tags: [ PHP ]
+tags: [PHP]
 ---
 
 _2014-02-14 - [PATCH should not be used the way it has been described
@@ -29,8 +29,7 @@ how I used [Symfony2](http://github.com/symfony/symfony), the
 [Propel](http://github.com/propelorm/Propel).
 Let's say we will build a User API.
 
-
-### Do you speak...? ###
+### Do you speak...?
 
 An API is used by clients. They need to know how to talk to your API, and a
 decent documentation is a good start, and will be described at the end of this
@@ -45,8 +44,7 @@ this part yourself, but you have to configure which formats you want to support.
 Most of the time, you will use **JSON**, and if you take care of semantic
 problematics, you will send **XML**. This part will be described later too.
 
-
-### GET what? ###
+### GET what?
 
 The **GET** HTTP verb is idempotent. That means whatever you can do, when you
 get a resource, you get the same response, and nothing should be altered.
@@ -136,14 +134,14 @@ YAML:
 # In Propel, the most part of the code is located in base classes
 # src/Acme/DemoBundle/Resources/config/serializer/Model.om.BaseUser.yml
 Acme\DemoBundle\Model\om\BaseUser:
-    exclusion_policy: ALL
-    properties:
-        id:
-            expose: true
-        username:
-            expose: true
-        email:
-            expose: true
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+    username:
+      expose: true
+    email:
+      expose: true
 ```
 
 I exclude all properties by default, it allows me more control on what I really
@@ -165,8 +163,7 @@ Basically, you will get the following JSON response:
 Easy right? But, you will probably need to create, update, or delete your users,
 and that's what we will discover in the next sections.
 
-
-### POST 'it ###
+### POST 'it
 
 Creating a resource implies the use of the **POST** HTTP verb. But how do you get
 data? How do you validate data? And how do you create your new resource? These
@@ -244,14 +241,14 @@ to use your preferred way. Here is an example:
 ```yaml
 # src/Acme/DemoBundle/Resources/config/validation.yml
 Acme\DemoBundle\Model\User:
-    getters:
-        username:
-            - NotBlank:
-        email:
-            - NotBlank:
-            - Email:
-        password:
-            - NotBlank:
+  getters:
+    username:
+      - NotBlank:
+    email:
+      - NotBlank:
+      - Email:
+    password:
+      - NotBlank:
 ```
 
 Let's write the controller method now:
@@ -327,7 +324,6 @@ example, you could get the following error response:
 }
 ```
 
-
 Note that the `View` class here is not the same as the annotation one, that's why
 I used an alias earlier. Read more about this class in [The View
 Layer](https://github.com/FriendsOfSymfony/FOSRestBundle/blob/master/Resources/doc/2-the-view-layer.md)
@@ -358,7 +354,7 @@ everything works out of the box.
 As I said previously, when everything is ok, you persist the user
 (`$user->save()` in Propel), and then you return a response.
 
-You will return a **`201`** status code which means  _resource created_.
+You will return a **`201`** status code which means _resource created_.
 Note that I don't use the `View` annotation here.
 
 But if you read the code, you may think that I did weird stuff. Actually, once a
@@ -374,7 +370,6 @@ returning just the **Location** header:
 
     Location: http://example.com/users/999
 
-
 When I have a JavaScript framework like Backbone.js as client, and because I
 don't want to rewrite it entirely because it doesn't support right APIs, I
 return the `id` in addition. Being pragmatic is not a bad idea anyway.
@@ -384,16 +379,15 @@ is a `POST` request to the collection, so let's add a new route:
 
 ```yaml
 acme_demo_user_new:
-    pattern:  /users
-    defaults: { _controller: AcmeDemoBundle:User:new, _format: ~ }
-    requirements:
-        _method: POST
+  pattern: /users
+  defaults: { _controller: AcmeDemoBundle:User:new, _format: ~ }
+  requirements:
+    _method: POST
 ```
 
 Once you know how to create a new resource, it's quite easy to update it.
 
-
-### PUT vs PATCH, fight! ###
+### PUT vs PATCH, fight!
 
 Updating a resource in REST means replacing it actually, especially if you use
 the **PUT** HTTP verb. There is also the **PATCH** method which takes a diff as
@@ -422,10 +416,10 @@ this resource:
 
 ```yaml
 acme_demo_user_edit:
-    pattern:  /users/{id}
-    defaults: { _controller: AcmeDemoBundle:User:edit, _format: ~ }
-    requirements:
-        _method: PUT
+  pattern: /users/{id}
+  defaults: { _controller: AcmeDemoBundle:User:edit, _format: ~ }
+  requirements:
+    _method: PUT
 ```
 
 Both **PUT** and **PATCH** methods have to return a **204** status code standing
@@ -458,17 +452,16 @@ In this case, your method can return either `204` if the resource exists or
 
 That's it! What about deleting resources now?
 
-
-### DELETE ###
+### DELETE
 
 Deleting a resource is super easy. Add a new route:
 
 ```yaml
 acme_demo_user_delete:
-    pattern:  /users/{id}
-    defaults: { _controller: AcmeDemoBundle:User:remove, _format: ~ }
-    requirements:
-        _method: DELETE
+  pattern: /users/{id}
+  defaults: { _controller: AcmeDemoBundle:User:remove, _format: ~ }
+  requirements:
+    _method: DELETE
 ```
 
 And, write a short method:
@@ -494,18 +487,17 @@ like friendship?
 _How to retrieve the friends for a given user in REST?_ We just have to consider
 friends as a collection of users owned by the user. Let's implement that.
 
-
-### The Friendship Algorithm ###
+### The Friendship Algorithm
 
 First, we have to create a new route. As we consider the friends as a collection
 owned by a user, we will fetch this collection directly on a resource:
 
 ```yaml
 acme_demo_user_get_friends:
-    pattern:  /users/{id}/friends
-    defaults: { _controller: AcmeDemoBundle:User:getFriends, _format: ~ }
-    requirements:
-        _method: GET
+  pattern: /users/{id}/friends
+  defaults: { _controller: AcmeDemoBundle:User:getFriends, _format: ~ }
+  requirements:
+    _method: GET
 ```
 
 The action in the controller looks like:
@@ -559,8 +551,8 @@ header, it calls the `getUser()` action on the `UserController` controller.
 That's why I didn't use ParamConverters, it allows me to pass the _id_ value,
 and to get my resource. I make two assumptions:
 
-* if the user doesn't exist, I will get an exception;
-* I will get an array as returned value because I use the `View` annotation.
+- if the user doesn't exist, I will get an exception;
+- I will get an array as returned value because I use the `View` annotation.
 
 Once I get my resource objects, I put them in the request's attributes, and that's
 all for the listener. Here is the code:
@@ -680,10 +672,10 @@ Now, you can create a new route:
 
 ```yaml
 acme_demo_user_link:
-    pattern:  /users/{id}
-    defaults: { _controller: AcmeDemoBundle:User:link, _format: ~ }
-    requirements:
-        _method: LINK
+  pattern: /users/{id}
+  defaults: { _controller: AcmeDemoBundle:User:link, _format: ~ }
+  requirements:
+    _method: LINK
 ```
 
 And the code of the action looks like:
@@ -739,8 +731,7 @@ the client has to call your API.
 Either this client will fetch the resource, and replace it or you are smart and
 you provide a `PATCH` method.
 
-
-### Let's PATCH the world ###
+### Let's PATCH the world
 
 This section has been removed as it described a wrong way to use the `PATCH`
 method. You can read this: [Please. Don't Patch Like An
@@ -759,8 +750,7 @@ level 3!
 
 ![](http://williamdurand.fr/images/posts/richardson_maturity_model.png)
 
-
-### Hate who? ###
+### Hate who?
 
 HATEOAS is not about hating people, but you could hate this movement if you are
 a true pragmatic programmer. It basically means **H**ypermedia **A**s **T**he
@@ -868,8 +858,7 @@ touch your content type:
 It's really up to you. The first solution is easy but less RESTful than the two
 other solutions. But those solutions require more smart clients.
 
-
-### Testing ###
+### Testing
 
 To be honest, if you decide to expose your API to your customers, this section
 is the most important. You can decide to follow the REST approach or not, but
@@ -920,8 +909,7 @@ status code you can return. It's important because, even if there is a problem,
 you have to return the right status code, and the right message to the clients.
 A `500` status code doesn't have the same meaning than a `400`.
 
-
-### Documentation ###
+### Documentation
 
 Having a well documented API is really important, because it's the only thing
 your clients will have access to. You don't provide the entire code to them,
@@ -946,17 +934,15 @@ and displays a nice page with all information found:
 
 You now have all keys to build wonderful APIs!
 
+### Useful Links 
 
-### Useful Links ###
-
-* [RFC 2616 - Section 10 - Status Code
+- [RFC 2616 - Section 10 - Status Code
   Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html);
-* [RFC 2068 - Section 19.6 - Additional
+- [RFC 2068 - Section 19.6 - Additional
   Features](http://tools.ietf.org/html/rfc2068#page-156);
-* [RFC 5988 - Web Linking](http://tools.ietf.org/html/rfc5988).
+- [RFC 5988 - Web Linking](http://tools.ietf.org/html/rfc5988).
 
 I will probably update this post with more information, links, etc. So stay tuned!
-
 
 <p class="ad">
 Want to <strong>learn more</strong> about REST? Interested in reading more code? I

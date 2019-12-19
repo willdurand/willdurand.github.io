@@ -62,7 +62,6 @@ only two sizes: 27" and 35". The 27" workstation costs 280 euros (at the time of
 writing) and you can buy it on Amazon. That is what I did, and I chose the 27"
 because I do not need a large work surface.
 
-
 ## Assembling the workstation
 
 I chose the version _M1B_ of this FlexiSpot workstation. I guess `1` stands for
@@ -103,6 +102,7 @@ could throw all my devices placed on the work surface, but there was no problem.
 It works very well, in both directions.
 
 ![](/images/posts/2017/flexispot_gas_2.jpg)
+
 <center><small><em>Left side: gas spring and lever.</em></small><br><br></center>
 
 So far, I only presented the main part of the workstation, but there is also a
@@ -132,7 +132,7 @@ monitor. There is still plenty of room on the work surface:
 ![](/images/posts/2017/flexispot_assembled.jpg)
 
 It is very important to have enough space to fell comfortable while working in a
-standing position, and this workstation makes it easy.  If you have a rather
+standing position, and this workstation makes it easy. If you have a rather
 large keyboard, do not worry. There is also a lot of space on the keyboard tray:
 
 ![](/images/posts/2017/flexispot_keyboard_tray.jpg)
@@ -145,6 +145,7 @@ desk](https://www.quora.com/What-is-the-best-position-to-use-a-laptop), you
 should set the keyboard tray at or slightly below your elbows height:
 
 ![](/images/posts/2017/flexispot_standing_position.jpg)
+
 <center><small><em>My (right) elbow and the keyboard tray are at the same height.</em></small><br><br></center>
 
 That is also why, in my case, I had to put a book below the external monitor.
@@ -163,6 +164,7 @@ an important part of the screen is hidden in the slot. Hence, I do not use it
 and I would have preferred a plain surface instead:
 
 ![](/images/posts/2017/flexispot_ipad.jpg)
+
 <center><small><em>So many Apple stuff...</em></small><br><br></center>
 
 So far, the painted finish has held up perfectly. It is not glossy, it is not
@@ -188,6 +190,7 @@ back again. That is one of the main advantages of such a product, but I was not
 used to it as my previous standing-desk setups were "fixed".
 
 ![](/images/posts/2017/flexispot_switching_position.jpg)
+
 <center><small><em>Me, switching position by holding the two levers.</em></small><br><br></center>
 
 Personally, I do not think this workstation is ugly when put on top of a desk,

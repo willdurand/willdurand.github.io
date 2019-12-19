@@ -25,27 +25,28 @@ Run `npm install` to setup the project and its dependencies, then add your own c
 
 ```javascript
 // ...
-settings['william'] = {
-  services: [{
-    name: 'williamdurand.fr',
-    label: 'William DURAND (blog)',
-    check: 'http',
-    host: 'williamdurand.fr',
-    port: '80',
-    path: '/',
-    headers: {
-    'Host': 'williamdurand.fr'
+settings["william"] = {
+  services: [
+    {
+      name: "williamdurand.fr",
+      label: "William DURAND (blog)",
+      check: "http",
+      host: "williamdurand.fr",
+      port: "80",
+      path: "/",
+      headers: {
+        Host: "williamdurand.fr"
+      }
     }
-  }],
+  ],
   plugins: {
     history: {
-    enable: true,
-    host: "127.0.0.1",
-    port: 6379,
-    namespace: "statusdashboard",
-    options: {
-    },
-    client: true
+      enable: true,
+      host: "127.0.0.1",
+      port: 6379,
+      namespace: "statusdashboard",
+      options: {},
+      client: true
     }
   }
 };

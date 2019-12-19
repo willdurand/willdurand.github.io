@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
-tags: [ PHP, DDD ]
+tags: [PHP, DDD]
 title: "DDD with Symfony2: Folder Structure And Code First"
 ---
 
@@ -22,7 +22,6 @@ going to introduce in a series of blog posts. You will learn how to build an
 API](/2012/08/02/rest-apis-with-symfony2-the-right-way/) using **D**omain
 **D**riven **D**esign.
 
-
 ## Bootstrap
 
 Start by creating a fresh project using the
@@ -33,7 +32,7 @@ Start by creating a fresh project using the
 I use to remove unecessary files such as `src/*`, as well as useless bundles. My
 `composer.json` file requires the following packages (for now):
 
-``` json
+```json
 "require": {
     "php": ">=5.3.3",
     "symfony/symfony": "2.3.*",
@@ -46,7 +45,6 @@ I use to remove unecessary files such as `src/*`, as well as useless bundles. My
 ```
 
 Don't forget to update the `AppKernel` class accordingly. You are now ready!
-
 
 ## Folder Structure
 
@@ -91,7 +89,6 @@ your application. **Business rules and logic live inside this layer**. Business
 entity state and behavior are defined and used here. Next section is about
 designing this **Domain Layer** using a **Code First** approach.
 
-
 ## Code First
 
 The **Code First** approach provides an alternative to the well-known **Database
@@ -117,7 +114,7 @@ or a natural key. Note that these [Entities](http://dddsample.sourceforge.net/ch
 are not the same as the [Doctrine](http://www.doctrine-project.org/) ones. They
 might be Doctrine classes, but they don't have to be.
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomain\User;
@@ -165,7 +162,6 @@ to [represent the name of the
 user](/2013/06/03/object-calisthenics/#8-no-classes-with-more-than-two-instance-variables)
 but it is not mandatory.
 
-
 By the way, a [Value Object](http://martinfowler.com/eaaCatalog/valueObject.html)
 is a simple object whose equality is **not based on identity**, instead two
 Value Objects are equal if all their fields are equal. Value Objects can be a
@@ -183,7 +179,7 @@ a numeric identifier or a GUID? You don't know yet. Also, instead of passing IDs
 everywhere, having a class for them makes this very explicit. This `UserId`
 class is your very first **Value Object**:
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomain\User;
@@ -216,7 +212,7 @@ are [various Repository implementation
 patterns](http://lostechies.com/jimmybogard/2009/09/03/ddd-repository-implementation-patterns/)
 but, in your case, here is how your `UserRepository` interface should look like:
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomain\User;
@@ -249,7 +245,6 @@ Now that you have a decent **Domain Layer** with Entities, Value Objects, and
 Repositories, let's wire it to your Symfony2 application. Note that your
 **Domain Layer** is **reusable**, and loosely coupled. That is really important!
 
-
 ## The Infrastructure Layer
 
 In a **Code First** approach, you can **delay the decision** to choose a
@@ -259,7 +254,7 @@ the application without having to wait.
 You can create a `InMemoryUserRepository` class that implements the
 `UserRepository` interface which contains hardcoded objects:
 
-``` php
+```php
 <?php
 
 namespace Acme\CoreDomainBundle\Repository;
@@ -340,7 +335,7 @@ The `user_repository` service acts as an **interface**. It is an
 [alias](http://symfony.com/doc/current/components/dependency_injection/advanced.html#aliasing)
 that points to a **concrete implementation** which is a **non-public** service:
 
-``` xml
+```xml
 <!-- src/Acme/CoreDomainBundle/Resources/config/repositories.xml -->
 <?xml version="1.0" ?>
 <container xmlns="http://symfony.com/schema/dic/services"
@@ -364,7 +359,6 @@ that points to a **concrete implementation** which is a **non-public** service:
 Later when you will choose your persistence layer, you will just have to change
 the alias to another concrete implementation like `user_repository.doctrine` for
 instance, but you won't have to change your **Application Layer** code.
-
 
 ## The Application Layer
 
@@ -394,7 +388,7 @@ What you have to build is a REST API. The code will live in a bundle named
 
 You will need the following dependencies in your `composer.json` file:
 
-``` json
+```json
 "require": {
     ...
 
@@ -408,7 +402,7 @@ Don't forget to register the bundles in the `AppKernel` class.
 For now, you will implement only one action to retrieve all users into your
 `UserController` class:
 
-``` php
+```php
 <?php
 
 namespace Acme\ApiBundle\Controller;
@@ -434,31 +428,31 @@ There is no black magic here, things won't work out of the box. Let's take a
 look at the configuration. First, you need to add a new route to your routing
 definition:
 
-``` yaml
+```yaml
 # src/Acme/ApiBundle/Resources/config/routing.yml
 acme_api.user_all:
-    pattern:  /users.{_format}
-    defaults: { _controller: AcmeApiBundle:User:all, _format: ~ }
-    requirements:
-        _method: GET
+  pattern: /users.{_format}
+  defaults: { _controller: AcmeApiBundle:User:all, _format: ~ }
+  requirements:
+    _method: GET
 ```
 
 You also need to configure both
 [FOSRestBundle](https://github.com/friendsofsymfony/FOSRestBundle) and
 [SensioFrameworkExtraBundle](https://github.com/sensiolabs/SensioFrameworkExtraBundle):
 
-``` yaml
+```yaml
 # app/config/config.yml
 fos_rest:
-    view:
-        view_response_listener: force
-    format_listener:
-        default_priorities: ['json', 'html', '*/*']
-        fallback_format: json
-        prefer_extension: true
+  view:
+    view_response_listener: force
+  format_listener:
+    default_priorities: ["json", "html", "*/*"]
+    fallback_format: json
+    prefer_extension: true
 
 sensio_framework_extra:
-    view:    { annotations: false }
+  view: { annotations: false }
 ```
 
 At this time, you should be able to access `http://yourproject.local/users`, but
@@ -473,14 +467,14 @@ First of all, you need to tell the
 [Serializer](https://github.com/schmittjoh/serializer) where to find
 configuration files:
 
-``` yaml
+```yaml
 # app/config/config.yml
 jms_serializer:
-    metadata:
-        directories:
-            CoreDomain:
-                namespace_prefix: "Acme\\CoreDomain"
-                path: "@AcmeApiBundle/Resources/config/serializer/"
+  metadata:
+    directories:
+      CoreDomain:
+        namespace_prefix: "Acme\\CoreDomain"
+        path: "@AcmeApiBundle/Resources/config/serializer/"
 ```
 
 The `ApiBundle` owns the serializer configuration, it is one of its
@@ -489,50 +483,50 @@ annotations, because I don't want to pollute the agnostic **Domain Layer**.
 
 Here is the configuration file for the `User` entity:
 
-``` yaml
+```yaml
 # src/Acme/ApiBundle/Resources/config/serializer/User.User.yml
 Acme\CoreDomain\User\User:
-    exclusion_policy: ALL
-    properties:
-        id:
-            expose: true
-            inline: true
-        firstName:
-            expose: true
-            serialized_name: first_name
-        lastName:
-            expose: true
-            serialized_name: last_name
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      inline: true
+    firstName:
+      expose: true
+      serialized_name: first_name
+    lastName:
+      expose: true
+      serialized_name: last_name
 ```
 
 And here is the configuration file for the `UserId` value object:
 
-``` yaml
+```yaml
 # src/Acme/ApiBundle/Resources/config/serializer/User.UserId.yml
 Acme\CoreDomain\User\UserId:
-    exclusion_policy: ALL
-    properties:
-        value:
-            expose: true
-            serialized_name: id
+  exclusion_policy: ALL
+  properties:
+    value:
+      expose: true
+      serialized_name: id
 ```
 
 That should give you the following JSON content:
 
-``` json
+```json
 {
-    "users": [
-        {
-            "id":"8CE05088-ED1F-43E9-A415-3B3792655A9B",
-            "first_name":"John",
-            "last_name":"Doe"
-        },
-        {
-            "id":"62A0CEB4-0403-4AA6-A6CD-1EE808AD4D23",
-            "first_name":"Jean",
-            "last_name":"Bon"
-        }
-    ]
+  "users": [
+    {
+      "id": "8CE05088-ED1F-43E9-A415-3B3792655A9B",
+      "first_name": "John",
+      "last_name": "Doe"
+    },
+    {
+      "id": "62A0CEB4-0403-4AA6-A6CD-1EE808AD4D23",
+      "first_name": "Jean",
+      "last_name": "Bon"
+    }
+  ]
 }
 ```
 
@@ -568,7 +562,6 @@ Running `tree src/` on the command line should give you the following output:
             │       └── repositories.xml
             └── AcmeCoreDomainBundle.php
 
-
 ## Conclusion
 
 Adopting the right **folder structure** in your code is important. You should
@@ -578,7 +571,7 @@ up with a clean separation between Symfony2 related things, and your business
 logic.
 
 Bundles that integrate your **Domain Layer** packages are part of the
-**Infrastructure Layer**. Your controllers are part of the  **Application
+**Infrastructure Layer**. Your controllers are part of the **Application
 Layer**. The missing layer is the **Presentation Layer** (UI) which talk to
 the **Application Layer**. This layer is responsible for displaying information
 to the user, and accept new data, but I will cover it in another article.

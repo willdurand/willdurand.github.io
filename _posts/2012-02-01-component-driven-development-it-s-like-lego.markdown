@@ -2,7 +2,7 @@
 layout: post
 title: "Component Driven Development: it's like Lego!"
 location: Clermont-Fd Area, France
-tags: [ PHP ]
+tags: [PHP]
 ---
 
 Did you ever hear about **Component-Based Development**? Maybe about **Component Driven Development**?
@@ -38,9 +38,9 @@ The main drawbacks are the time you'll spend to think about your architecture, a
 (don't forget UML in that case). So, try to find a component before to write your own. In the PHP world, we have magic
 things:
 
-* [The Symfony2 components](http://fabien.potencier.org/article/49/what-is-symfony2): a reusable set of standalone PHP components;
-* [Composer](http://packagist.org/about-composer): the package manager you need;
-* [Packagist](http://packagist.org/): to discover awesome PHP components.
+- [The Symfony2 components](http://fabien.potencier.org/article/49/what-is-symfony2): a reusable set of standalone PHP components;
+- [Composer](http://packagist.org/about-composer): the package manager you need;
+- [Packagist](http://packagist.org/): to discover awesome PHP components.
 
 Since few months, I work on a project for a French startup, and it's my first **Component Driven Development**
 experience. I started by listing all my needs (an _OAuth_ client, a _iCalendar_ parser, ...). Then, I tried to find one component

@@ -10,7 +10,6 @@ restricted permissions for our users, disk quotas, NFS volumes, and a stable
 operating system: Debian Squeeze32. This work has been done in collaboration
 with the sysadmin of my University.
 
-
 ## Installation
 
 Vagrant needs VirtualBox 4.0 or upper, but the latest [VirtualBox version
@@ -38,14 +37,13 @@ packages at:
     wget http://files.vagrantup.com/packages/be0bc66efc0c5919e92d8b79e973d9911f2a511f/vagrant_1.0.5_i686.deb
     dpkg -i vagrant_1.0.5_i686.deb
 
-
 ## Customizing the default directories
 
 As I said in introduction, users have disk quotas (500Mo) so they can't use
 Vagrant for two reasons:
 
-* VirtualBox stores its VMs in `~/VirtualBox VMs/`;
-* Vagrant stores its boxes in `~/.vagrant.d/`.
+- VirtualBox stores its VMs in `~/VirtualBox VMs/`;
+- Vagrant stores its boxes in `~/.vagrant.d/`.
 
 The solution is to change these two directories. Thanksfully, Vagrant provides a
 `VAGRANT_HOME` environmental variable so you can easily change the Vagrant
@@ -78,7 +76,6 @@ To avoid conflicts, you can use `$USER` to define one machine folder per user:
     vboxmanage setproperty machinefolder "/usr/local/virtualbox/$USER"
 
 So far so good, our users can run Vagrant to install VMs.
-
 
 ## The `initramfs` prompt (of death)
 
@@ -118,7 +115,6 @@ the `Vagrantfile`:
 It worked fine without NFS set to `true` but it was quite slow. Thus, NFS was a
 requirement.
 
-
 ## The Surprise
 
 <blockquote class="twitter-tweet tw-align-center">
@@ -141,7 +137,6 @@ are sudoable.
 
 And, that's it! Our users can use Vagrant as usual.
 
-
 ## Useful Tips
 
 [Debugging Vagrant](http://vagrantup.com/v1/docs/debugging.html) can be really
@@ -150,12 +145,10 @@ To enable logging, use the `VAGRANT_LOG` environmental variable:
 
     VAGRANT_LOG=INFO vagrant up
 
-
 Hardware virtualization **should** be enabled if you want to run 64bits VMs on a
 32bits host. The VirtualBox documentation isn't clear about that in the chapter
 about [hardware vs software
 virtualization](http://www.virtualbox.org/manual/ch10.html#hwvirt).
-
 
 ## Conclusion
 

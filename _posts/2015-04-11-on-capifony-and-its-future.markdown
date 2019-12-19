@@ -8,15 +8,15 @@ title: "On capifony and its Future"
 
 > Hi! This is your captain speaking.
 >
-> **capifony** is based on *Capistrano v2.x* and will stick to this version
+> **capifony** is based on _Capistrano v2.x_ and will stick to this version
 > (i.e. capifony is feature-frozen, and will only accept bug fixes).
 >
-> At the time of writing, [*Capistrano v3*](http://capistranorb.com/) is the
-> current major version, and *capifony is not compatible* with it.
+> At the time of writing, [_Capistrano v3_](http://capistranorb.com/) is the
+> current major version, and _capifony is not compatible_ with it.
 >
-> Don't worry, there is a plugin for that! Using *Capistrano v3* +
-> [*capistrano/symfony*](https://github.com/capistrano/symfony) (heavily
-> inspired by *capifony*) may be the way to go for new projects!
+> Don't worry, there is a plugin for that! Using _Capistrano v3_ +
+> [_capistrano/symfony_](https://github.com/capistrano/symfony) (heavily
+> inspired by _capifony_) may be the way to go for new projects!
 >
 > Cheers!
 
@@ -48,11 +48,11 @@ to move forward!
 
 ### Now What?
 
-* If you use capifony on an existing project, **no need to upgrade**. It might be
- complicated, and you could introduce unwanted bugs. If your deployment process works
- for you, no need to change it.
+- If you use capifony on an existing project, **no need to upgrade**. It might be
+  complicated, and you could introduce unwanted bugs. If your deployment process works
+  for you, no need to change it.
 
-* If you start a new project, you can use Capistrano v3 and its symfony plugin.
+- If you start a new project, you can use Capistrano v3 and its symfony plugin.
   However, since the Capistrano era, **tools and practices evolved a lot**, and
   [Capistrano might not be the right tool for
   you](https://groups.google.com/forum/#!topic/capistrano/nmMaqWR1z84). I would

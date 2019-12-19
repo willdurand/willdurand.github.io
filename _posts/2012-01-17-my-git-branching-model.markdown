@@ -5,7 +5,7 @@ location: Clermont-Fd Area, France
 ---
 
 <br>
-_2015-09-11 - I like (and also use) this [simple yet powerful Git branching model by Juan Benet](https://gist.github.com/willdurand/eec15f945d55ea80d62a)._ 
+_2015-09-11 - I like (and also use) this [simple yet powerful Git branching model by Juan Benet](https://gist.github.com/willdurand/eec15f945d55ea80d62a)._
 
 We all probably know [a successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) which
 is a very interesting model for teams who want to use Git. However, this model is a bit too complex for common needs.
@@ -13,8 +13,8 @@ So here is my lightweight model.
 
 I use two main branches:
 
-* `master` : the code in a _production-ready_ state;
-* `develop` : the _integration branch_.
+- `master` : the code in a _production-ready_ state;
+- `develop` : the _integration branch_.
 
 ![](/images/bm002.png)
 
@@ -27,8 +27,8 @@ should reflect a feature in your backlog. I use a convention for these branches,
 
 A feature branch has two constraints:
 
-* the code must come from the `develop` branch;
-* the code must be merged in the `develop` branch.
+- the code must come from the `develop` branch;
+- the code must be merged in the `develop` branch.
 
 ![](/images/fb.png)
 

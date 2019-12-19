@@ -3,7 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 audio: false
-tags: [ "arduino", "coffuino" ]
+tags: ["arduino", "coffuino"]
 title: "Playing With a ESP8266 WiFi Module"
 ---
 
@@ -15,7 +15,7 @@ a Arduino driver for the ESP8266 WiFi Module.**
 Lately, I started to play with some [Arduino](http://arduino.cc/)-based
 technologies after having made my very own [Arduino
 DIY](http://redmine.acolab.fr/projects/yabbas-v1/wiki/YABBAS) at
-[AcoLab](http://acolab.fr/), a hackerspace based in Clermont-Fd.  My new world
+[AcoLab](http://acolab.fr/), a hackerspace based in Clermont-Fd. My new world
 domination plan, named **coffuino**, is to put a coffee machine over the
 Internets. I will write more on this project in the coming weeks, but as you may
 imagine for now, this project requires an Internet connection, hence the aim of
@@ -37,12 +37,12 @@ I got a _ESP-01_ version of this module, which has 8 pins: `VCC`, `GND`,
 `CH_PD`, `TX`, `RX`, `RST`, `GPIO0`, and `GPIO1`. Wiring the module is not
 complicated and should be the same for all versions of this module:
 
-* `VCC` needs **3.3V**
-* `CH_PD` has to be pulled-up (meaning it has to be connected to 3.3V as well)
-* `GND` is connected to FTDI's `GND` pin
-* `RX` is connected to FTDI's `TX` pin, because you want to create a loop: `RX` -> `TX` => `RX` -> `TX`
-* `TX` is connected to FTDI's `RX` pin
-* other pins are left floating
+- `VCC` needs **3.3V**
+- `CH_PD` has to be pulled-up (meaning it has to be connected to 3.3V as well)
+- `GND` is connected to FTDI's `GND` pin
+- `RX` is connected to FTDI's `TX` pin, because you want to create a loop: `RX` -> `TX` => `RX` -> `TX`
+- `TX` is connected to FTDI's `RX` pin
+- other pins are left floating
 
 ![](/images/posts/2015/esp/sketch.png)
 
@@ -108,7 +108,6 @@ interested in [nodemcu](https://github.com/nodemcu/nodemcu-firmware), a lua
 based interactive firmware for mcu like ESP8266.
 Now that the communication with the module is ok, let's join an access point.
 
-
 ## Joining an Access Point
 
 I chose [pyesp8266](https://github.com/guyz/pyesp8266), a Python script to tell
@@ -118,17 +117,16 @@ the module to connect to an Access Point and ensure everything works:
 
 A few hints in case something is wrong with your setup:
 
-* Is the red LED on the module lit? If it is not, the board is not getting
+- Is the red LED on the module lit? If it is not, the board is not getting
   power
-* When trying to issue commands, do you see the blue LED on the module blinking?
+- When trying to issue commands, do you see the blue LED on the module blinking?
   If not, check the RX/TX connections. If the LED is constantly lit, then one of
   the connections is wrong - probably RX/TX or one of the other pins
-* Are you seeing gibberish? You are probably doing well, but try a different
+- Are you seeing gibberish? You are probably doing well, but try a different
   baud rate. In one of the provided scripts, run the `AT+CIOBAUD` command first
   (you have to modify the script)
-* The script gets stuck on the `AT+CWJAP` command? Increase the timeout in the
+- The script gets stuck on the `AT+CWJAP` command? Increase the timeout in the
   script (default is: `5` seconds, mine works with `10`)
-
 
 ## Running a TCP Server
 
@@ -151,7 +149,6 @@ commands:
 In case you did not notice, it also send the `AT+CIFSR` to retrieve the IP
 address. Browsing it will give you a message starting wit `GOT IT!`
 
-
 ## Coffuino, You Said?
 
 **coffuino** is the project I am working on during my spare time, and it needs
@@ -166,24 +163,23 @@ teasers on [Twitter](https://twitter.com/couac)):
 ![](/images/posts/2015/esp/wiring.jpg)
 
 The Arduino is powered by a former Apple USB cable (\o/) whereas the WiFi module
-uses the 3.3V output of my FTDI.  Note that I set the baud rate to `115200` in
+uses the 3.3V output of my FTDI. Note that I set the baud rate to `115200` in
 order to connect the module to my Arduino (which perfectly handles such a rate).
 
 I will give more details on the software part in another article.
-
 
 ## Links
 
 Because it would not have been possible without these articles and useful
 resources, thanks!
 
-* [Getting started with the esp8266 and Arduino](http://www.madebymarket.com/blog/dev/getting-started-with-esp8266.html)
-* [noob's guide to ESP8266 with Arduino Mega 2560 or Uno](http://shin-ajaran.blogspot.fr/2014/12/noobs-guide-to-esp8266-with-arduino.html)
-* [ESP8266 Teensy Time](http://www.cse.dmu.ac.uk/~sexton/ESP8266/)
-* [ESP8266 WiFi module](http://tomeko.net/other/ESP8266/)
-* [ESP8266 - Upgrading the Firmware](https://www.ukhas.net/wiki/esp8266/firmware_update)
-* [ESP8266 Community Forum](http://www.esp8266.com/)
-* [ESP8266 Electrodragon](http://www.electrodragon.com/w/ESP8266)
-* [esp8266/esp8266-wiki - Toolchain @ GitHub](https://github.com/esp8266/esp8266-wiki)
-* [ESP8266 WiFi Module Quick Start Guide](http://www.labradoc.com/i/follower/p/notes-esp8266)
-* [ESP8266 Offical AT+ Command @ GitHub](https://github.com/espressif/esp8266_at)
+- [Getting started with the esp8266 and Arduino](http://www.madebymarket.com/blog/dev/getting-started-with-esp8266.html)
+- [noob's guide to ESP8266 with Arduino Mega 2560 or Uno](http://shin-ajaran.blogspot.fr/2014/12/noobs-guide-to-esp8266-with-arduino.html)
+- [ESP8266 Teensy Time](http://www.cse.dmu.ac.uk/~sexton/ESP8266/)
+- [ESP8266 WiFi module](http://tomeko.net/other/ESP8266/)
+- [ESP8266 - Upgrading the Firmware](https://www.ukhas.net/wiki/esp8266/firmware_update)
+- [ESP8266 Community Forum](http://www.esp8266.com/)
+- [ESP8266 Electrodragon](http://www.electrodragon.com/w/ESP8266)
+- [esp8266/esp8266-wiki - Toolchain @ GitHub](https://github.com/esp8266/esp8266-wiki)
+- [ESP8266 WiFi Module Quick Start Guide](http://www.labradoc.com/i/follower/p/notes-esp8266)
+- [ESP8266 Offical AT+ Command @ GitHub](https://github.com/espressif/esp8266_at)

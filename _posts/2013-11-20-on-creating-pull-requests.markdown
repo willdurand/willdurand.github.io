@@ -30,8 +30,8 @@ spending time on fixing a bug is enough, but it is actually **half the work**
 you have to do while contributing to any Open Source project. You always have
 to:
 
-* work on the project;
-* fit the project's philosophy.
+- work on the project;
+- fit the project's philosophy.
 
 The latest point includes coding standards, documentation, commit messages,
 and any other things related to the targeted project. Thanks to
@@ -74,7 +74,7 @@ test case.
 
 If you want your patch to be merged, you should send clean commits. Most of the
 time, a **single commit** including the fix, some tests, and an update on the
-documentation is enough.  Once you have hacked on the project, [squash your
+documentation is enough. Once you have hacked on the project, [squash your
 commits](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
 and send the result as a single commit.
 
@@ -97,10 +97,9 @@ Pull Request until it gets merged**. Don't disappear!
 
 Thank you my heroes! &hearts;
 
-
 ## TL;DR
 
-* Follow the rules of the project you are contributing to;
-* Attach clean commits to your Pull Request (rebase may help);
-* Write a description in your Pull Request, explaining the context.
-* More information at: [Git & GitHub & OpenSource](https://speakerdeck.com/willdurand/2015)
+- Follow the rules of the project you are contributing to;
+- Attach clean commits to your Pull Request (rebase may help);
+- Write a description in your Pull Request, explaining the context.
+- More information at: [Git & GitHub & OpenSource](https://speakerdeck.com/willdurand/2015)

@@ -55,7 +55,6 @@ In the following, I will review each of these 9 rules listed below:
    Variables](#8-no-classes-with-more-than-two-instance-variables)
 9. [No Getters/Setters/Properties](#9-no-getterssettersproperties)
 
-
 ## 1. Only One Level Of Indentation Per Method
 
 Having **too many levels of indentation** in your code **is often bad for
@@ -64,7 +63,7 @@ understand the code without _compiling_ it in your head, especially if you have
 various conditions at different level, or a loop in another loop, as shown in
 this example:
 
-``` java
+```java
 class Board {
     public String board() {
         StringBuilder buf = new StringBuilder();
@@ -93,7 +92,7 @@ exactly what you have to do/use.
 You won't reduce the number of lines of code, but you will **increase
 readability** in a significant way:
 
-``` java
+```java
 class Board {
     public String board() {
         StringBuilder buf = new StringBuilder();
@@ -119,7 +118,6 @@ class Board {
 }
 ```
 
-
 ## 2. Don't Use The ELSE Keyword
 
 The `else` keyword is well-known as the `if/else` construct is built into nearly
@@ -129,7 +127,7 @@ it should be avoided. As it is so easy to add a new branch to the existing code
 than refactoring it to a better solution, you often end up with a really bad
 code.
 
-``` java
+```java
 public void login(String username, String password) {
     if (userRepository.isValid(username, password)) {
         redirect("homepage");
@@ -144,7 +142,7 @@ public void login(String username, String password) {
 An easy way to remove the `else` keyword is to rely on the **early return**
 solution.
 
-``` java
+```java
 public void login(String username, String password) {
     if (userRepository.isValid(username, password)) {
         return redirect("homepage");
@@ -167,7 +165,7 @@ didn't think about.
 As an alternative, you can **introduce a variable** in order to make your
 **return statement parametrizable**. This is not always possible though.
 
-``` java
+```java
 public void login(String username, String password) {
     String redirectRoute = "homepage";
 
@@ -196,7 +194,6 @@ object:
 [http://sourcemaking.com/design_patterns/state](http://sourcemaking.com/design_patterns/state).
 </small>
 
-
 ## 3. Wrap All Primitives And Strings
 
 Following this rule is pretty easy, you simply have to **encapsulate all the
@@ -207,7 +204,6 @@ If the variable of your primitive type has a **behaviors**, you MUST encapsulate
 it. And this is especially true for **Domain Driven Design**. **DDD** describes
 **Value Objects** like `Money`, or `Hour` for instance.
 
-
 ## 4. First Class Collections
 
 **Any class that contains a collection should contain no other member
@@ -216,7 +212,6 @@ a class that is dedicated for this set.
 
 Each collection gets wrapped in its own class, so now **behaviors related to the
 collection have a home** (e.g. filter methods, applying a rule to each element).
-
 
 ## 5. One Dot Per Line
 
@@ -236,19 +231,19 @@ your immediate friends**, and don't talk to strangers.
 
 Look at these classes:
 
-``` java
+```java
 class Location {
     public Piece current;
 }
 ```
 
-``` java
+```java
 class Piece {
     public String representation;
 }
 ```
 
-``` java
+```java
 class Board {
     public String boardRepresentation() {
         StringBuilder buf = new StringBuilder();
@@ -268,7 +263,7 @@ thing (see [Rule 9](#9-no-getters/setters/properties)).
 
 However, the `boardRepresentation()` method is awful, take a look at this line:
 
-``` java
+```java
 buf.append(loc.current.representation.substring(0, 1));
 ```
 
@@ -279,7 +274,7 @@ Line_.
 Fortunately, the [Law of Demeter](http://c2.com/cgi/wiki?LawOfDemeter) tells you
 to talk to your friends, so let's do that:
 
-``` java
+```java
 class Location {
     private Piece current;
 
@@ -294,7 +289,7 @@ something bad. However, as you need to perform an action on this attribute, you
 need a new method `addTo()`. It is not `Location`'s responsibility to determine
 how the `Piece` will be added, so let's ask it:
 
-``` java
+```java
 class Piece {
     private String representation;
 
@@ -317,7 +312,7 @@ Also, extracting the code to get the first character of the `representation`
 in a new method looks like a good idea as it may be reused at some point.
 Finally, here is the updated `Board` class:
 
-``` java
+```java
 class Board {
     public String boardRepresentation() {
         StringBuilder buf = new StringBuilder();
@@ -332,7 +327,6 @@ class Board {
 ```
 
 Much better, right?
-
 
 ## 6. Don't Abbreviate
 
@@ -353,7 +347,6 @@ software by naming things](/2012/01/24/designing-a-software-by-naming-things/).
 
 Don't abbreviate, period.
 
-
 ## 7. Keep All Entities Small
 
 No class over **50 lines** and no package over 10 files. Well, it depends on
@@ -361,7 +354,6 @@ you, but I think you could change the number of lines from 50 to 150.
 
 The idea behind this rule is that **long files are harder to read**, harder to
 understand, and harder to maintain.
-
 
 ## 8. No Classes With More Than Two Instance Variables
 
@@ -383,7 +375,6 @@ of classes**, those that **maintain the state of a single instance variable**,
 and those that **coordinate two separate variables**. **Two** is an arbitrary
 choice that forces you to decouple your classes a lot.
 
-
 ## 9. No Getters/Setters/Properties
 
 My favorite rule. It could be rephrased as
@@ -401,7 +392,7 @@ Principle](http://en.wikipedia.org/wiki/Open/closed_principle).
 
 Let's take an example:
 
-``` java
+```java
 // Game
 private int score;
 
@@ -426,7 +417,7 @@ that make sense. Remember, you must **tell** the class to do something, and you
 should **not ask** it. In the following, you **tell** the `game` to update your
 score as you destroyed `ENEMY_DESTROYED_SCORE` enemies.
 
-``` java
+```java
 // Game
 public void addScore(int delta) {
     score += delta;
@@ -442,7 +433,6 @@ In this case, you could keep the `getScore()` as you may want to display it
 somewhere on the UI, but keep in mind that [setters should not be
 allowed](http://whitewashing.de/2012/08/22/building_an_object_model__no_setters_allowed.html).
 
-
 ## Conclusion
 
 If you don't feel comfortable with these rules, it is ok, but trust me when I
@@ -450,22 +440,19 @@ tell you that they can be used in real life. Try them in your spare time, by
 refactoring your Open Source projects for instance. I think it is just a matter
 of practice. Some rules are easy to follow, and may help you.
 
-
 ## Slides
 
 <script async class="speakerdeck-embed" data-id="9839ef20a6310130ee5c4ac98188c567" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
 
-
 ## Links
 
-* [Object Calisthenics and Code Readability in
-PHP](http://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808);
-* [Object Calisthenics Applied to
-PHP](http://www.slideshare.net/guilhermeblanco/object-calisthenics-applied-to-php);
-* [Object
+- [Object Calisthenics and Code Readability in
+  PHP](http://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808);
+- [Object Calisthenics Applied to
+  PHP](http://www.slideshare.net/guilhermeblanco/object-calisthenics-applied-to-php);
+- [Object
   Calisthenics](http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
   by Jeff Bay.
-
 
 ## TL;DR
 

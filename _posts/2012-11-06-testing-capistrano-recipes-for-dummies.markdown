@@ -10,7 +10,6 @@ a set of [Capistrano](https://github.com/capistrano/capistrano) recipes for
 [Symfony2](http://symfony.com) projects. I tried to revamp the project, and
 one of my goals was to add tests. This article sums up my work on that topic.
 
-
 ## Making your recipe testable
 
 In order to make a Capistrano recipe testable, a common practice is to create a
@@ -39,7 +38,6 @@ You are ready to test your recipe, but _how?_
 **capistrano-spec** integrates [RSpec](http://rspec.info/) into the Capistrano
 world so that you can easily test your recipes. It has been created by [Josh
 Nichols](https://github.com/technicalpickles).
-
 
 ### Installing capistrano-spec
 
@@ -109,7 +107,6 @@ task :default => :spec
 ```
 
 Now, you probably want to write your first test, and you are right!
-
 
 ## Writing your first test
 
@@ -203,11 +200,10 @@ what you need. Look at the
 [capistrano-spec readme](https://github.com/mydrive/capistrano-spec#testing) for more
 information, it also contains useful examples. That's all folks.
 
-
 ## Links
 
-* [Better Specs](http://betterspecs.org/): rspec guidelines with ruby;
-* [capistrano-spec](https://github.com/mydrive/capistrano-spec): helpers and
-matchers for testing capistrano;
-* [capifony specs](https://github.com/everzet/capifony/tree/master/spec): the
-capifony source code.
+- [Better Specs](http://betterspecs.org/): rspec guidelines with ruby;
+- [capistrano-spec](https://github.com/mydrive/capistrano-spec): helpers and
+  matchers for testing capistrano;
+- [capifony specs](https://github.com/everzet/capifony/tree/master/spec): the
+  capifony source code.

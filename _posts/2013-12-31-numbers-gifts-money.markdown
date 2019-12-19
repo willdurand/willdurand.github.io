@@ -100,17 +100,17 @@ better.
 I also do a lot of sport, mainly running, mountain biking, squash, and soccer. I
 have three goals for **2014**:
 
-* running **10** kilometers in less than **40** minutes;
-* swimming faster, and better (~**2**kms);
-* competing in a triathlon.
+- running **10** kilometers in less than **40** minutes;
+- swimming faster, and better (~**2**kms);
+- competing in a triathlon.
 
 My other goals for **2014** are:
 
-* reading more books;
-* writing more, maybe trying to write a book;
-* speaking more at conferences;
-* improving my English;
-* dominating the world.
+- reading more books;
+- writing more, maybe trying to write a book;
+- speaking more at conferences;
+- improving my English;
+- dominating the world.
 
 I wish you a Happy New Year, and all the best for your family, and you! See you
 next year!

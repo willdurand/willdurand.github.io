@@ -29,51 +29,51 @@ compilation](https://www.raspberrypi.org/documentation/linux/kernel/) a try.
 Below, you will find the different steps I followed to build, install, and run a
 patched Linux kernel:
 
-1. First, the `bc` package is needed (`apt-get install bc`), then linux kernel
-sources have to be cloned:
+1.  First, the `bc` package is needed (`apt-get install bc`), then linux kernel
+    sources have to be cloned:
 
-        git clone --depth=1 https://github.com/raspberrypi/linux
+            git clone --depth=1 https://github.com/raspberrypi/linux
 
-    Longest git checkout ever!
+        Longest git checkout ever!
 
-2. In order to compile a new kernel version, we have to slighty update its name. I
-edited the `EXTRAVERSION` variable in the `Makefile`:
+2.  In order to compile a new kernel version, we have to slighty update its name. I
+    edited the `EXTRAVERSION` variable in the `Makefile`:
 
-        head Makefile -n 4
+            head Makefile -n 4
 
-    <p></p>
+        <p></p>
 
-        VERSION = 4
-        PATCHLEVEL = 1
-        SUBLEVEL = 15
-        EXTRAVERSION = +will
+            VERSION = 4
+            PATCHLEVEL = 1
+            SUBLEVEL = 15
+            EXTRAVERSION = +will
 
-3. Now let's fetch the
-[patch](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/patch/?id=23567fd052a9abb6d67fe8e7a9ccdd9800a540f2)
-for this vulnerability, and apply it:
+3.  Now let's fetch the
+    [patch](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/patch/?id=23567fd052a9abb6d67fe8e7a9ccdd9800a540f2)
+    for this vulnerability, and apply it:
 
-        curl https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/patch/?id=23567fd052a9abb6d67fe8e7a9ccdd9800a540f2 | patch -p1
+            curl https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/patch/?id=23567fd052a9abb6d67fe8e7a9ccdd9800a540f2 | patch -p1
 
-4. So far so good. Before compiling the kernel, we have to instruct which kernel
-we wish to build, then we can build the related configuration:
+4.  So far so good. Before compiling the kernel, we have to instruct which kernel
+    we wish to build, then we can build the related configuration:
 
-        export KERNEL=kernel7
-        make bcm2709_defconfig
+            export KERNEL=kernel7
+            make bcm2709_defconfig
 
-5. Time to compile the kernel and its modules:
+5.  Time to compile the kernel and its modules:
 
         make -j4 zImage modules dtbs
 
-6. It was taking ages, so I started to write this blog post... At some point,
-compilation successfully ended. Let's install this brand new kernel:
+6.  It was taking ages, so I started to write this blog post... At some point,
+    compilation successfully ended. Let's install this brand new kernel:
 
-        sudo make modules_install
-        sudo cp arch/arm/boot/dts/*.dtb /boot/
-        sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
-        sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
-        sudo scripts/mkknlimg arch/arm/boot/zImage /boot/$KERNEL.img
+            sudo make modules_install
+            sudo cp arch/arm/boot/dts/*.dtb /boot/
+            sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
+            sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
+            sudo scripts/mkknlimg arch/arm/boot/zImage /boot/$KERNEL.img
 
-7. And now, time to try it for real (fingers crossed):
+7.  And now, time to try it for real (fingers crossed):
 
         uname -a
         Linux raspberrypi 4.1.15-v7+ #831 SMP Tue Jan 19 18:39:46 GMT 2016 armv7l GNU/Linux

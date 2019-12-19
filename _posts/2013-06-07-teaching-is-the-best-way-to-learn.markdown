@@ -49,8 +49,7 @@ as teacher. I enjoyed teaching things that took me a few years to learn.
 
 Actually, I think **I open sourced my knowledge**.
 
-
 ## TL;DR
 
-* [PHP Slides](http://edu.williamdurand.fr/php-slides/);
-* [Security Slides](http://edu.williamdurand.fr/security-slides/).
+- [PHP Slides](http://edu.williamdurand.fr/php-slides/);
+- [Security Slides](http://edu.williamdurand.fr/security-slides/).

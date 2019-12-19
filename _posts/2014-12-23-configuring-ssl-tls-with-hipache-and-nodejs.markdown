@@ -164,8 +164,8 @@ in your web server (Nginx here) configuration:
 
 ## Resources
 
-* [SSL/TLS Deployment Best
+- [SSL/TLS Deployment Best
   Practices](https://www.ssllabs.com/downloads/SSL_TLS_Deployment_Best_Practices.pdf)
-* [Qualys' Blog - Security Labs](https://community.qualys.com/blogs/securitylabs)
-* [Mozilla Security/Server Side
+- [Qualys' Blog - Security Labs](https://community.qualys.com/blogs/securitylabs)
+- [Mozilla Security/Server Side
   TLS](https://wiki.mozilla.org/Security/Server_Side_TLS)
