@@ -611,10 +611,6 @@ em.fork-and-edit {
   margin: 1em auto !important;
 }
 
-.money {
-  text-align: right;
-}
-
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -634,10 +630,8 @@ em.fork-and-edit {
 .ad {
   padding: 15px;
   margin-top: 5%;
-  /*border-radius: 4px;*/
   color: #8a6d3b;
   background-color: #fcf8e3;
-  /*border-color: #faebcc;*/
 }
 
 .ad strong {

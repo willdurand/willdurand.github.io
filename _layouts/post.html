@@ -3,6 +3,13 @@ layout: main
 ---
 
 <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="deprecation-notice">
+    <p>
+      This content has been written a long time ago... It might not reflect my
+      current views or even be entirely accurate.
+    </p>
+  </div>
+
   <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
   <span class="post-date">
@@ -31,7 +38,7 @@ layout: main
   </div>
 
   <em class="fork-and-edit">
-    Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a> if you found a typo. Thank you so much! This post is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/master/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.markdown">fork and edit this post</a> if you found a typo, thank you so much! This post is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
   </em>
 </div>
 
