@@ -1,6 +1,6 @@
 safe:      true
 permalink: pretty
-exclude:   [ README.md, Gemfile, vendor, .*, bower.json ]
+exclude:   [ README.md, Gemfile, vendor, .* ]
 
 # Setup
 title: "William Durand"
