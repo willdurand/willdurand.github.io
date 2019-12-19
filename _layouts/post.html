@@ -3,10 +3,13 @@ layout: main
 ---
 
 <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  {% assign pageYear = page.date | date: "%Y" | minus: 2019 %}
+  {% if pageYear < 0 %}
   <p class="deprecation-notice">
     <i class="fa fa-warning"></i> This content has been written a long time
     ago... It might not reflect my current views or even be entirely accurate.
   </p>
+  {% endif %}
 
   <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
