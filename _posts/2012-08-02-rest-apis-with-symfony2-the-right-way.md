@@ -926,11 +926,7 @@ it's already good, but you will have to write the documentation yourself!
 NelmioApiDocBundle to the rescue! I wrote this bundle at
 [Nelmio](http://nelm.io) in order to automatically generate documentation for
 our APIs. Based on code introspection, the bundle extracts a lot of information,
-and displays a nice page with all information found:
-
-![](https://github.com/nelmio/NelmioApiDocBundle/raw/master/Resources/doc/webview.png)
-
-![](https://github.com/nelmio/NelmioApiDocBundle/raw/master/Resources/doc/webview2.png)
+and displays a nice page with all information found.
 
 You now have all keys to build wonderful APIs!
 
