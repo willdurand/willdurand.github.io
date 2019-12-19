@@ -611,16 +611,6 @@ em.fork-and-edit {
   margin: 1em auto !important;
 }
 
-.christmas {
-  padding: 15px;
-  margin-top: 5%;
-  /*
-  border: 1px solid #268bd2;
-  border-radius: 4px;
-  */
-  background-color: rgba(38, 139, 210, 0.1);
-}
-
 .money {
   text-align: right;
 }
