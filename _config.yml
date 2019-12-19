@@ -32,8 +32,6 @@ twitter:
 my_github:   https://www.github.com/willdurand
 my_twitter:  https://www.twitter.com/couac
 
-#global_message:
-
 plugins:
   - jemoji
   - jekyll-seo-tag
