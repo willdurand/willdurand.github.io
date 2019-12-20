@@ -3,6 +3,7 @@ layout: post
 tldr: true
 location: Clermont-Fd Area, France
 title: Object Calisthenics
+image: /images/posts/2013/06/object-calisthenics.png
 ---
 
 _2016-05-11 - This article has been [translated into **Portuguese**](http://www.maawko.com/blog/carreira/object-calisthenics-regras-pra-um-codigo-melhor/) by [@paulorodriguexv](https://twitter.com/paulorodriguexv)._
