@@ -708,13 +708,14 @@ a.anchor-link:hover {
 }
 
 .menu-hint {
-  position: absolute;
-  height: 161px;
-  width: 200px;
-  top: 3em;
-  left: 4em;
   background: url(../images/arrow-menu.png) no-repeat;
+  height: 161px;
+  left: 4em;
   opacity: 0.3;
+  position: absolute;
+  top: 3em;
+  width: 200px;
+  z-index: 1;
 }
 
 .with-caption {
