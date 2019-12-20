@@ -3,7 +3,7 @@ layout: post
 tldr: true
 location: Clermont-Fd Area, France
 title: Object Calisthenics
-image: /images/posts/2013/06/object-calisthenics.png
+image: /images/posts/2013/06/object-calisthenics.png?v=1
 description: Object Calisthenics are 9 steps to better software design today.
 ---
 

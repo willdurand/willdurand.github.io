@@ -7,7 +7,7 @@ description: |
   STUPID is an acronym that describes bad practices in Oriented Object
   Programming. SOLID is an acronym that stands for five basic principle of
   Object-Oriented Programming and design to fix STUPID code.
-image: /images/posts/2013/07/stupid-solid.png
+image: /images/posts/2013/07/stupid-solid.png?v=1
 ---
 
 Last week I gave a talk about [Object-Oriented
