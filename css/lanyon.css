@@ -742,10 +742,6 @@ a.anchor-link:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .ribbon {
-    display: none;
-  }
-
   #toTop,
   #toTopHover {
     visibility: hidden;
