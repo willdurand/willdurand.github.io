@@ -185,7 +185,7 @@ pre code {
 /* Pygments via Jekyll */
 .highlight {
   margin-bottom: 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -234,7 +234,7 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Tables */
