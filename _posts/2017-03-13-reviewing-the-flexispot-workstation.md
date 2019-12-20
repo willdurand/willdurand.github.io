@@ -4,6 +4,7 @@ title: "Reviewing the FlexiSpot Desktop Workstation 27 inches"
 audio: false
 tldr: false
 location: "Freiburg, Germany"
+image: /images/posts/2017/03/flexispot.jpg
 tweet_id: 841280563428368385
 ---
 
