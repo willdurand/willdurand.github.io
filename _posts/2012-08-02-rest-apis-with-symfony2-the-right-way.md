@@ -15,6 +15,8 @@ _2013-04-11 - PUT/PATCH methods should not return a `Location`
 header in the context of this blog post, as PUT is used to **update** an
 existing resource **only**, so it naturally returns a `204` status code._
 
+---
+
 Designing a **REST** API is not easy. No, really! If you want to design an API the
 right way, you have to think a lot about everything, and either to be pragmatic
 or to be an API terrorist. It's not just about **GET**, **POST**, **PUT**, and
