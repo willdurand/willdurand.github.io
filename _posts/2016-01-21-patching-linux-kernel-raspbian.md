@@ -4,6 +4,7 @@ location: Clermont-Fd, France
 tldr: false
 audio: false
 title: "Patching Linux Kernel (Raspbian &amp; CVE-2016-0728)"
+tweet_id: 690069917241057280
 ---
 
 [CVE-2016-0728](https://security-tracker.debian.org/tracker/CVE-2016-0728) has

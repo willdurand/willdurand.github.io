@@ -4,6 +4,7 @@ title: "Reviewing the FlexiSpot Desktop Workstation 27 inches"
 audio: false
 tldr: false
 location: "Freiburg, Germany"
+tweet_id: 841280563428368385
 ---
 
 **Disclaimer:** Loctek Inc. contacted me spontaneously and offered me the

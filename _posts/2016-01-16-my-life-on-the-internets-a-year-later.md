@@ -4,6 +4,7 @@ location: Clermont-Fd, France
 tldr: false
 audio: false
 title: "My Life On The Internets: A Year Later"
+tweet_id: 688260129322450944
 ---
 
 It has been [a year since I changed the way I deal with
