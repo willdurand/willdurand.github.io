@@ -64,5 +64,13 @@ layout: main
 
 <section class="post-comments">
   <h2>Comments</h2>
-  <p>Sorry, I removed all comments on December 2019.</p>
+  <p>
+    Sorry, I removed all comments on December 19, 2019.
+    {% if page.tweet_id %}
+    You can <a href="https://twitter.com/{{ site.author.twitter }}/status/{{ page.tweet_id }}">reply to this tweet</a>
+    {% else %}
+    You can <a href="https://twitter.com/{{ site.author.twitter }}">tweet me</a>
+    {% endif %}
+    or <a href="mailto:{{ site.author.email }}?subject={{ page.title }}">send me an email</a> if you like.
+  </p>
 </section>
