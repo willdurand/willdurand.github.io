@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: true
 title: From STUPID to SOLID Code!
+image: /images/posts/2013/07/stupid-solid.png
 ---
 
 Last week I gave a talk about [Object-Oriented
