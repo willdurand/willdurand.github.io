@@ -136,8 +136,7 @@ SOLID means:
 
 ### Single Responsibility Principle
 
-[Single Responsibility
-Principle](http://www.objectmentor.com/resources/articles/srp.pdf) or
+Single Responsibility Principle or
 [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) states that
 **every class should have a single responsibility**. There should **never be
 more than one reason for a class to change**.
@@ -154,10 +153,9 @@ doing it wrong.
 
 ### Open/Closed Principle
 
-[Open/Closed Principle](http://www.objectmentor.com/resources/articles/ocp.pdf)
-or [OCP](http://en.wikipedia.org/wiki/Open/closed_principle) states that
-software entities should be **open for extension**, but **closed for
-modification**.
+Open/Closed Principle or
+[OCP](http://en.wikipedia.org/wiki/Open/closed_principle) states that software
+entities should be **open for extension**, but **closed for modification**.
 
 You should make all member variables **private** by default. Write getters and setters only
 when you need them. I've already covered this point in a previous
@@ -167,10 +165,9 @@ is related to this principle.
 
 ### Liskov Substitution Principle
 
-[Liskov Substitution
-Principle](http://www.objectmentor.com/resources/articles/lsp.pdf) or
-[LSP](http://c2.com/cgi/wiki?LiskovSubstitutionPrinciple) states that objects
-in a program should be **replaceable with instances of their subtypes without
+Liskov Substitution Principle or
+[LSP](http://c2.com/cgi/wiki?LiskovSubstitutionPrinciple) states that objects in
+a program should be **replaceable with instances of their subtypes without
 altering the correctness** of the program.
 
 Let's take an example. A rectangle is a plane figure with four right angles. It
@@ -205,8 +202,7 @@ violation of the Liskov Substitution Principle.
 
 ### Interface Segregation Principle
 
-[Interface Segregation
-Principle](http://www.objectmentor.com/resources/articles/isp.pdf) or
+Interface Segregation Principle or
 [ISP](http://en.wikipedia.org/wiki/Interface_segregation_principle) states that
 **many** client-specific **interfaces are better than one** general-purpose
 interface. In other words, you should not have to implement methods that you
@@ -226,9 +222,8 @@ meets a need. It is ok to have a class that implements different interfaces, but
 
 ### Dependency Inversion Principle
 
-[Dependency Inversion
-Principle](http://www.objectmentor.com/resources/articles/dip.pdf)
-or [DIP](http://www.c2.com/cgi/wiki?DependencyInversionPrinciple) has two key
+Dependency Inversion Principle or
+[DIP](http://www.c2.com/cgi/wiki?DependencyInversionPrinciple) has two key
 points:
 
 - **Abstractions should not depend upon details**;
