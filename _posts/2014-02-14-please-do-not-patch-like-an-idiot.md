@@ -4,6 +4,9 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: true
 title: "Please. Don't Patch Like An Idiot."
+description: |
+  This article is about the PATCH HTTP verb and how it should be used. That
+  being said, things have changed and it's fine to use it differently.
 ---
 
 <style>
