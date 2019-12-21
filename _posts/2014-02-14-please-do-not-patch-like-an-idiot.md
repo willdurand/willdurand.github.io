@@ -7,6 +7,7 @@ title: "Please. Don't Patch Like That."
 description: >-
   This article is about the PATCH HTTP verb and how it should be used. That
   being said, things have changed and it's fine to use it differently.
+imarmage: /images/posts/2014/02/patch.png
 updates:
   - date: 2016-08-06
     content: |-
@@ -64,10 +65,10 @@ but there is a better alternative: `PATCH`.
 `PATCH` is an HTTP method (a.k.a. verb) which has been described in [RFC
 5789](https://tools.ietf.org/html/rfc5789). The initial idea was to propose a
 new way to modify existing HTTP resources. The biggest issue with this method is
-that people misunderstand its usage. **No! `PATCH` is not **strictly** about
-sending an updated value, rather than the entire resource** as described in the
-first paragraph of this article. Please, **stop** doing this right now! This is
-not correct:
+that people often misunderstand its usage. No, `PATCH` is not **strictly** about
+sending an updated value, rather than the entire resource as described in the
+first paragraph of this article. Please, **avoid** doing this. This is not
+strictly correct:
 
 ```http
 PATCH /users/123
