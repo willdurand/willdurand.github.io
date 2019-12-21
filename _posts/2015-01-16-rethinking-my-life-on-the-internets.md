@@ -4,12 +4,17 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: false
 title: "Rethinking My Life (On The Internets)"
----
-
-_2015-01-30 - recommend [Privacy Badger](https://www.eff.org/privacybadger)
-rather than [Ghostery which uses the data it collects from its users to help
-advertisers](http://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6)_
-
+updates:
+  - date: 2015-01-30
+    content: >-
+      recommend [Privacy Badger](https://www.eff.org/privacybadger) rather than
+      [Ghostery which uses the data it collects from its users to help
+      advertisers](http://www.businessinsider.com/evidon-sells-ghostery-data-to-advertisers-2013-6).
+  - date: 2019-12-19
+    content: >-
+      I finally removed Disqus from the blog. Comments have been deleted but
+      it is better like this. You can now send me an email or reply to the
+      Twitter thread related to the article.
 ---
 
 > _The Internets._ This wonderful land where everything is **free**, **public**,

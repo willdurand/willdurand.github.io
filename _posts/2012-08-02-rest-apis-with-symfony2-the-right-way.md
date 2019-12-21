@@ -4,17 +4,18 @@ title: "REST APIs with Symfony2: The Right Way"
 location: Zürich, Switzerland
 audio: false
 tags: [PHP]
----
-
-_2014-02-14 - [PATCH should not be used the way it has been described
-here](/2014/02/14/please-do-not-patch-like-an-idiot/)._
-
-_2013-04-12 - Add an example on how to create new resources with PUT._
-
-_2013-04-11 - PUT/PATCH methods should not return a `Location`
-header in the context of this blog post, as PUT is used to **update** an
-existing resource **only**, so it naturally returns a `204` status code._
-
+updates:
+  - date: 2013-04-11
+    content: >-
+      PUT/PATCH methods should not return a `Location` header in the context of
+      this blog post, as PUT is used to **update** an existing resource
+      **only**, so it naturally returns a `204` status code.
+  - date: 2013-04-12
+    content: Add an example on how to create new resources with PUT.
+  - date: 2014-02-14
+    content: >-
+      [PATCH should not be used the way it has been described
+      here](/2014/02/14/please-do-not-patch-like-an-idiot/).
 ---
 
 Designing a **REST** API is not easy. No, really! If you want to design an API the

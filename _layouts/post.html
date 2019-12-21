@@ -36,6 +36,16 @@ layout: main
   {% endif %}
 
   <div itemprop="articleBody">
+    {% if page.updates %}
+    <div class="post-updates">
+      {% assign updates = page.updates|reverse %}
+      {% for update in updates %}
+      {{ update.date|append: ' - '|append:update.content|markdownify }}
+      {% endfor %}
+    </div>
+    <hr />
+    {% endif %}
+
     {{ content }}
   </div>
 

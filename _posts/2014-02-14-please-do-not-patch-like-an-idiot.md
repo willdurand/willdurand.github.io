@@ -4,9 +4,26 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: true
 title: "Please. Don't Patch Like That."
-description: |
+description: >-
   This article is about the PATCH HTTP verb and how it should be used. That
   being said, things have changed and it's fine to use it differently.
+updates:
+  - date: 2016-08-06
+    content: |-
+      Since I wrote this blog post, [RFC
+      7396](https://tools.ietf.org/html/rfc7396), introducing the **JSON Merge
+      Patch** format, has been created. It can be seen as the "just send what
+      you need" format. Therefore, it is valid to only send what you need to
+      update as the `[description of changes]` as far as it complies with the
+      [JSON Merge Patch format](https://tools.ietf.org/html/rfc7396).
+
+      On an unrelated note, I do apologize for the misuse of the word "idiot". I
+      did not want to be rude. The exact same word in French is less "strong"
+      than in English.
+  - date: 2019-12-20
+    content: >-
+      The title of this article has been edited. It should have been edited a
+      long time ago. Then again, sorry about that!
 ---
 
 <style>
@@ -15,24 +32,6 @@ description: |
     background: none!important;
   }
 </style>
-
----
-
-_2019-12-20 - The title of this article has been edited. It should have been
-edited a long time ago. Then again, sorry about that!_
-
-_2016-08-06 - Since I wrote this blog post, [RFC
-7396](https://tools.ietf.org/html/rfc7396), introducing the **JSON Merge Patch**
-format, has been created. It can be seen as the "just send what you need"
-format. Therefore, it is valid to only send what you need to update as the
-`[description of changes]` as far as it complies with the [JSON Merge Patch
-format](https://tools.ietf.org/html/rfc7396)._
-
-_On an unrelated note, I do apologize for the misuse of the word "idiot". I did
-not want to be rude. The exact same word in French is less "strong" than in
-English._
-
----
 
 Modifying HTTP resources is not a new topic. Most of the existing HTTP or REST
 APIs provide a way to modify resources. They often provide such a feature by

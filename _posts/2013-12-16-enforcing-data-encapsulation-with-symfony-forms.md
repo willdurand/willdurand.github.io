@@ -5,12 +5,12 @@ tldr: false
 audio: true
 tags: [PHP]
 title: "Enforcing Data Encapsulation with Symfony Forms"
----
-
-**Update:** [Mathias and I exchanged a few
-tweets](https://twitter.com/couac/status/412677521977921536), so I updated this
-post a bit to give the context.
-
+updates:
+  - date: 2016-12-17
+    content: >-
+      [Mathias and I exchanged a few
+      tweets](https://twitter.com/couac/status/412677521977921536), so I updated
+      this post a bit to give the context.
 ---
 
 Having classes (entities or whatever related to your model layer) that exposes

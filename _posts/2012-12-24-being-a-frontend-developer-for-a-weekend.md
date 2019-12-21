@@ -64,14 +64,14 @@ a package downloader for now, it's worth using it to avoid versioning
 Bootstrap](http://twitter.github.com/bootstrap/), etc. All you need is a
 `component.json` file that looks like:
 
-{% highlight json %}
+```json
 {
-"name": "travis-light",
-"dependencies": {
-"jquery": "~1.8.3"
+  "name": "travis-light",
+  "dependencies": {
+    "jquery": "~1.8.3"
+  }
 }
-}
-{% endhighlight %}
+```
 
 Running `bower install` installs the dependencies into a `components/` folder.
 
@@ -103,81 +103,79 @@ Compiling the JavaScript files is about compiling the
 [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs)
 plugin, it's super easy!
 
-{% highlight javascript %}
+```json
 requirejs: {
-compile: {
-options: {
-name: "main",
-baseUrl: "js/",
-mainConfigFile: "js/main.js",
-out: "dist/compiled.js"
+  compile: {
+    options: {
+      name: "main",
+      baseUrl: "js/",
+      mainConfigFile: "js/main.js",
+      out: "dist/compiled.js"
+    }
+  }
 }
-}
-}
-{% endhighlight %}
+```
 
 Compiling the CSS files in TravisLight is a two-step action. First, all images
 in the CSS are embedded using the
 [grunt-image-embed](https://github.com/ehynds/grunt-image-embed) plugin:
 
-{% highlight javascript %}
+```json
 imageEmbed: {
-application: {
-src: 'css/application.css',
-dest: 'dist/application-embed.css',
-deleteAfterEncoding : false
+  application: {
+    src: 'css/application.css',
+    dest: 'dist/application-embed.css',
+    deleteAfterEncoding : false
+  }
 }
-}
-{% endhighlight %}
+```
 
 Then, the CSS files are minified using the
 [grunt-contrib-mincss](https://github.com/gruntjs/grunt-contrib-mincss/) plugin:
 
-{% highlight javascript %}
+```json
 mincss: {
-compress: {
-files: {
-'dist/compiled.css': [
-'css/bootstrap.min.css',
-'dist/application-embed.css'
-]
+  compress: {
+    files: {
+      'dist/compiled.css': [
+        'css/bootstrap.min.css',
+        'dist/application-embed.css'
+      ]
+    }
+  }
 }
-}
-}
-{% endhighlight %}
+```
 
 Now, I just have to compile the HTML to use these compiled JS and CSS files.
 It's achieved by using the
 [grunt-targethtml](https://github.com/changer/grunt-targethtml) plugin:
 
-{% highlight javascript %}
+```json
 targethtml: {
-dist: {
-src: 'index.html',
-dest: 'dist/index.html'
+  dist: {
+    src: 'index.html',
+    dest: 'dist/index.html'
+  }
 }
-}
-{% endhighlight %}
+```
 
 The `index.html` file looks like:
 
-{% highlight html %}
-
+```html
 <!doctype html>
 <html lang="en">
-    ...
+  ...
 
-    <body data-api-url="https://api.travis-ci.org">
-        <!--(if target dist)>
-        <script data-main="compiled" src="js/require.js"></script>
-        <!(endif)-->
-        <!--(if target dummy)><!-->
-        <script data-main="js/main" src="components/requirejs/require.js"></script>
-        <!--<!(endif)-->
-    </body>
-
+  <body data-api-url="https://api.travis-ci.org">
+    <!--(if target dist)>
+    <script data-main="compiled" src="js/require.js"></script>
+    <!(endif)-->
+    <!--(if target dummy)><!-->
+    <script data-main="js/main" src="components/requirejs/require.js"></script>
+    <!--<!(endif)-->
+  </body>
 </html>
-{% endhighlight %}
+```
 
 `target dummy` is the default piece of code, used in development. This is a nice
 way to keep a single HTML file with the ability to switch from development to
@@ -188,15 +186,15 @@ Last but not the least, the
 [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy/) plugin
 is the one I used to copy some files to the `dist/` folder:
 
-{% highlight javascript %}
+```json
 copy: {
-dist: {
-files: {
-'dist/js/require.js': 'components/requirejs/require.js'
+  dist: {
+    files: {
+      'dist/js/require.js': 'components/requirejs/require.js'
+    }
+  }
 }
-}
-}
-{% endhighlight %}
+```
 
 Running `grunt package` performs all these tasks. See the TravisLight's
 [grunt.js](https://github.com/willdurand/TravisLight/blob/master/grunt.js) file
@@ -222,98 +220,91 @@ I tried Mocha and Chai. These libraries can be installed using
 NPM needs a `package.json` file with the list of the project's dependencies, and
 the _dev_ dependencies:
 
-{% highlight json %}
+```json
 {
-"name": "TravisLight",
-"version": "0.0.1",
-"dependencies": {
-},
-"devDependencies": {
-"mocha": "~1.7.4",
-"chai": "~1.4.0"
+  "name": "TravisLight",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.7.4",
+    "chai": "~1.4.0"
+  }
 }
-}
-{% endhighlight %}
+```
 
 Running `npm install` installs both Mocha and Chai in the `node_modules/`
 directory.
 
 Now, you need a `test/index.html` file to run the test suite in a browser:
 
-{% highlight html %}
-
+```html
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>TravisLight Test Suite</title>
-        <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
-    </head>
-    <body>
-        <div id="mocha"></div>
-        <script src="../node_modules/chai/chai.js"></script>
-        <script src="../node_modules/mocha/mocha.js"></script>
-        <script src="../components/jquery/jquery.min.js"></script>
-        <script src="../components/requirejs/require.js"></script>
-        <script src="setup.js"></script>
-        <script>
-            require(
-                [
-                    '../test/router.test',
-                ],
-                function () {
-                    mocha.run();
-                }
-            );
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>TravisLight Test Suite</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../components/jquery/jquery.min.js"></script>
+    <script src="../components/requirejs/require.js"></script>
+    <script src="setup.js"></script>
+    <script>
+      require(
+        [
+          '../test/router.test',
+        ],
+        function () {
+          mocha.run();
+        }
+      );
+    </script>
+  </body>
 </html>
-{% endhighlight %}
+```
 
 First, Mocha and Chai are loaded, followed by jQuery and RequireJS. Then, a
 `setup.js` file is loaded. It contains the Mocha and RequireJS configurations,
 and two global variables `assert` and `expect` that will be used in the test
 files:
 
-{% highlight javascript %}
+```json
 var assert = chai.assert,
 expect = chai.expect;
 
 mocha.setup({
-ui: 'bdd'
+  ui: 'bdd'
 });
 
 require.config({
-baseUrl: '../js/',
-
-    ...
-
+  baseUrl: '../js/',
+  ...
 });
-{% endhighlight %}
+```
 
 I decided to follow the **BDD** style, but it's just a matter of taste.
 Here is an example of test file for the TravisLight's `router`:
 
-{% highlight javascript %}
-define(
-[
-'router'
-],
-function (router) {
-"use script";
+```json
+define([
+  'router'
+], function (router) {
+  "use script";
 
-        describe('router', function () {
-            it('should be an instance of Backbone.Router', function () {
-                expect(router).to.be.an.instanceOf(Backbone.Router);
-            });
+  describe('router', function () {
+    it('should be an instance of Backbone.Router', function () {
+      expect(router).to.be.an.instanceOf(Backbone.Router);
+    });
 
-            it('should have a routes property', function () {
-                expect(router.routes).to.be.an('object');
-            });
-        });
-    }
-
-);
-{% endhighlight %}
+    it('should have a routes property', function () {
+      expect(router.routes).to.be.an('object');
+    });
+  });
+});
+```
 
 You can look at the [`test/`
 directory](https://github.com/willdurand/TravisLight/tree/master/test) for more
@@ -330,11 +321,11 @@ The [grunt-mocha](https://github.com/kmiyashiro/grunt-mocha) plugin allows to
 use Mocha and [PhantomJS](http://phantomjs.org/) to run a test suite. Here is
 the TravisLight's configuration for this plugin:
 
-{% highlight javascript %}
+```json
 mocha: {
-all: [ 'test/index.html' ]
+  all: [ 'test/index.html' ]
 }
-{% endhighlight %}
+```
 
 A simple `grunt mocha` runs the test suite using PhantomJS:
 
@@ -349,26 +340,29 @@ Not bad. However, Travis-CI needs to be configured using a `.travis.yml` file.
 JavaScript projects have to use the `node_js` environment on Travis-CI, and the
 application requires a set of libraries installed through Bower:
 
-{% highlight yaml %}
+```yaml
 language: node_js
 
-node_js: - 0.8
+node_js:
+  - 0.8
 
-before_script: - export PATH=\$PATH:`npm bin` - bower install
-{% endhighlight %}
+before_script:
+  - export PATH=\$PATH:`npm bin`
+  - bower install
+```
 
 Travis-CI will run `npm install` first, and then `npm test`. This second command
 has to be configured in the TravisLight's `package.json`:
 
-{% highlight json %}
+```json
 {
-...
+  ...
 
-"scripts": {
-"test": "./node_modules/grunt/bin/grunt test"
+  "scripts": {
+    "test": "./node_modules/grunt/bin/grunt test"
+  }
 }
-}
-{% endhighlight %}
+```
 
 ## The End
 

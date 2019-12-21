@@ -20,8 +20,6 @@ It works fine, and I never had any issues with this recipe. But for my Symfony2
 applications, I didn't write anything, not because I'm lazy, but just because
 there is a wonderful project called [capifony](http://capifony.org/).
 
-![](http://capifony.org/images/logo.png)
-
 **capifony** is a set of recipes for both symfony 1.x, and Symfony2
 applications. This project has been created by my friend
 [@everzet](https://twitter.com/everzet), and sponsored by KnpLabs.

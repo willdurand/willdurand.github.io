@@ -4,10 +4,12 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: false
 title: "Configuring SSL/TLS With Hipache (And Node.js)"
+updates:
+  - date: 2014-12-26
+    content: >-
+      most of the patches I have sent to Hipache have already been merged,
+      making Hipache safer than ever.
 ---
-
-_2014-12-26 - most of the patches I have sent to Hipache have already been
-merged, making Hipache safer than ever._
 
 Lately, I have been working on configuring a **SSL/TLS layer** for a project. As
 you may (or may not) think, it is not only about creating SSL certificates. In

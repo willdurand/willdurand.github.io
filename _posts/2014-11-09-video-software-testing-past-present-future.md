@@ -19,14 +19,16 @@ different periods: past, present, and future, hence the title of this talk.
 You will find the video of my talk (in French, sorry) below:
 
 <div class="video-container">
-<center>
-<iframe width="560" height="315" src="//www.youtube.com/embed/UNSJI4jsmCc" frameborder="0" allowfullscreen></iframe>
-</center>
+  <center>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/UNSJI4jsmCc" frameborder="0" allowfullscreen></iframe>
+  </center>
 </div>
+<p></p>
 
 And, here are my slides:
 
 <script async class="speakerdeck-embed" data-id="078b9d803cd6013218882e672ff93e89" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
+<p></p>
 
 If you attended my talk and did not rate it yet, please leave a comment on
 [joind.in](https://joind.in/11953). If you have any questions or remarks,

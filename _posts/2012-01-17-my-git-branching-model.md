@@ -2,14 +2,17 @@
 layout: post
 title: My Git Branching Model
 location: Clermont-Fd Area, France
+updates:
+  - date: 2015-09-11
+    content: >-
+      I like (and also use) this [simple yet powerful Git branching model by
+      Juan Benet](https://gist.github.com/willdurand/eec15f945d55ea80d62a).
 ---
 
-<br>
-_2015-09-11 - I like (and also use) this [simple yet powerful Git branching model by Juan Benet](https://gist.github.com/willdurand/eec15f945d55ea80d62a)._
-
-We all probably know [a successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) which
-is a very interesting model for teams who want to use Git. However, this model is a bit too complex for common needs.
-So here is my lightweight model.
+We all probably know [a successful Git branching
+model](http://nvie.com/posts/a-successful-git-branching-model/) which is a very
+interesting model for teams who want to use Git. However, this model is a bit
+too complex for common needs. So here is my lightweight model.
 
 I use two main branches:
 
@@ -18,8 +21,9 @@ I use two main branches:
 
 ![](/images/bm002.png)
 
-I also use **feature branches**. A feature branch contains a work in progress. Keep in mind that a feature branch
-should reflect a feature in your backlog. I use a convention for these branches, I always prefix them with `feat-`.
+I also use **feature branches**. A feature branch contains a work in progress.
+Keep in mind that a feature branch should reflect a feature in your backlog. I
+use a convention for these branches, I always prefix them with `feat-`.
 
     > git branch
     feat-my-feature
@@ -65,8 +69,9 @@ I always merge a feature branch into `develop` using `--no-ff` to keep a clean l
 
 ![](/images/merge-without-ff.png)
 
-The `--no--ff` option allows to keep track of a feature branch name which is quite useful.
-The following `git log` output shows you a feature branch merged with this option:
+The `--no--ff` option allows to keep track of a feature branch name which is
+quite useful. The following `git log` output shows you a feature branch merged
+with this option:
 
     commit 481771556824c4ae2e6da73ef14d6ce757fb5870
     Merge: 6abdd70 8cfe5a7
@@ -101,9 +106,9 @@ Without the `--no-ff` option, you'll get the following output:
 
     Initial commit
 
-In a team, you will probably have more than one feature branch, and you could have a dependency between
-two branches (this should be avoided).
-In this case, I use another branch in which I merge two or more feature branches.
+In a team, you will probably have more than one feature branch, and you could
+have a dependency between two branches (this should be avoided). In this case,
+I use another branch in which I merge two or more feature branches.
 
     > git checkout -b feat-my-feature-with-another-feature develop
 
@@ -113,10 +118,13 @@ Then, I can merge the two feature branches, and solve possible conflicts:
 
     > git merge feat-another-feature
 
-I don't use any other branches. The last part of the model is to merge `develop` into `master`.
-To avoid conflicts, there should be only one person who owns this responsability: the **release manager**.
+I don't use any other branches. The last part of the model is to merge `develop`
+into `master`. To avoid conflicts, there should be only one person who owns
+this responsability: the **release manager**.
 
-I experimented this model with different teams in terms of number of people and skills, and I never had more needs.
-I know some people use **releases** but it can be handled in another way.
+I experimented this model with different teams in terms of number of people and
+skills, and I never had more needs. I know some people use **releases** but it
+can be handled in another way.
 
-All credits go to Vincent Driessen and his [Git model](http://nvie.com/posts/a-successful-git-branching-model/).
+All credits go to Vincent Driessen and his [Git
+model](http://nvie.com/posts/a-successful-git-branching-model/).

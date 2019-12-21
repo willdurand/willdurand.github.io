@@ -5,10 +5,11 @@ tldr: false
 audio: false
 tags: [PHP, DDD]
 title: "DDD with Symfony2: Folder Structure And Code First"
+updates:
+  - date: 2013-08-11
+    content: >-
+      Move JMSSerializerBundle configuration files into the `ApiBundle` bundle.
 ---
-
-_2013-08-11 - Move JMSSerializerBundle configuration files into the `ApiBundle`
-bundle._
 
 [Domain Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) also
 known as **DDD** is an approach to develop software for complex needs by

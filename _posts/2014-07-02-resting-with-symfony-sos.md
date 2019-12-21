@@ -4,14 +4,18 @@ location: Clermont-Fd Area, France
 tldr: false
 tags: [PHP, Symfony]
 title: "RESTing with Symfony: SOS"
----
-
-_2019-12-20 - [API Platform](https://api-platform.com/) is a powerful but easy
-to use full stack PHP framework dedicated to API-driven projects. It is way more
-that I could have hoped for._
-
-_2014-07-08 - I created a [Symfony REST Working Group](https://groups.google.com/forum/#!forum/resting-with-symfony). More information on the [symfony.com blog](http://symfony.com/blog/improving-rest-in-symfony)!_
-
+updates:
+  - date: 2014-07-08
+    content: >-
+      I created a [Symfony REST Working
+      Group](https://groups.google.com/forum/#!forum/resting-with-symfony). More
+      information on the [symfony.com
+      blog](http://symfony.com/blog/improving-rest-in-symfony)!
+  - date: 2019-12-20
+    content: >-
+      [API Platform](https://api-platform.com/) is a powerful but easy to use
+      full stack PHP framework dedicated to API-driven projects. It is way more
+      that I could have hoped for.
 ---
 
 Two years ago, I wrote [REST APIs with Symfony2: The Right

@@ -5,9 +5,13 @@ location: Clermont-Fd Area, France
 title: Object Calisthenics
 image: /images/posts/2013/06/object-calisthenics.png?v=1
 description: Object Calisthenics are 9 steps to better software design today.
+updates:
+  - date: 2016-05-11
+    content: >-
+      This article has been [translated into
+      **Portuguese**](http://www.maawko.com/blog/carreira/object-calisthenics-regras-pra-um-codigo-melhor/)
+      by [@paulorodriguexv](https://twitter.com/paulorodriguexv), thank you!
 ---
-
-_2016-05-11 - This article has been [translated into **Portuguese**](http://www.maawko.com/blog/carreira/object-calisthenics-regras-pra-um-codigo-melhor/) by [@paulorodriguexv](https://twitter.com/paulorodriguexv)._
 
 Last month, I gave a talk about [Object
 Calisthenics](http://williamdurand.fr/object-calisthenics-slides/) at

@@ -4,10 +4,12 @@ location: Clermont-Fd Area, France
 tldr: true
 audio: false
 title: "On Creating Pull Requests"
+updates:
+  - date: 2015-11-29
+    content: >-
+      I added a note on PR title prefixes ([thanks to
+      Lukas](https://twitter.com/lsmith/status/670721764951986176)).
 ---
-
-_2015-11-29 - added a note on PR title prefixes ([thanks to
-Lukas](https://twitter.com/lsmith/status/670721764951986176))._
 
 As a [maintainer of various Open Source
 projects](https://github.com/willdurand), I use to manage quite a lot of issues
