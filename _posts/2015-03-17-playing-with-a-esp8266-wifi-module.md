@@ -5,6 +5,7 @@ tldr: false
 audio: false
 tags: ["arduino", "coffuino"]
 title: "Playing With a ESP8266 WiFi Module"
+image: /images/posts/2015/esp/wiring.jpg
 updates:
   - date: 2015-03-26
     content: >-
