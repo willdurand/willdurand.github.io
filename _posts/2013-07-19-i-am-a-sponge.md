@@ -3,13 +3,14 @@ layout: post
 location: Clermont-Fd Area, France
 tldr: false
 title: I Am A Sponge
+image: /images/posts/2013/07/spongebob-social.png
 ---
 
-According to my PhD advisor, **I am a sponge**. What does that mean though? That
-is the purpose of this article in which I am going to introduce a sort of
-_Sponge Theory_. First of all, it is not about
+According to my PhD advisor, **I am a sponge**. What does that mean though? This
+is the purpose of today's article. I am going to introduce a sort of _Sponge
+Theory_. First of all, it is not about
 [SpongeBob](https://en.wikipedia.org/wiki/SpongeBob_SquarePants). This theory is
-actually focused on two values: **learning** and **sharing**, and the order
+actually focused on two values: **learning** and **sharing** and the order
 matters.
 
 ![](/images/posts/spongebob.png)
@@ -36,12 +37,12 @@ you read. Being able to distinguish useful information is tricky though, and it
 depends on various parameters such as the context in which you are living, your
 tastes, your aspirations, etc. But I am digressing...
 
-However, behaving like a sponge is not just about swallowing and filtering
+Yet, behaving like a sponge is not only about swallowing and filtering
 information.
 
 ## Sharing
 
-As I said, a sponge is not just about holding water-based solutions. You can
+As I said, a sponge is not only about holding water-based solutions. You can
 **squeeze sponges in order to get the absorbed water** (please, don't do that
 with animals!). That is the second characteristic of a sponge, it is able to
 return what it contains.
