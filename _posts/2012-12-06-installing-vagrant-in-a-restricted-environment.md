@@ -119,7 +119,7 @@ requirement.
 
 <blockquote class="twitter-tweet tw-align-center">
 <p>So everybody uses <a href="https://twitter.com/search/%23vagrant">#vagrant</a> now, and nobody cares about `sudo su root`? WTF! <a href="https://t.co/ioVsrBqx" title="https://github.com/mitchellh/vagrant/blob/master/plugins/hosts/linux/host.rb#L51">github.com/mitchellh/vagr…</a></p>
-&mdash;William DURAND (@couac) <a href="https://twitter.com/couac/status/274191748786429953" data-datetime="2012-11-29T16:43:01+00:00">November 29, 2012</a>
+&mdash;William Durand (@couac) <a href="https://twitter.com/couac/status/274191748786429953" data-datetime="2012-11-29T16:43:01+00:00">November 29, 2012</a>
 </blockquote>
 
 I dug into the code to understand how NFS was managed, and why it asked for
