@@ -24,13 +24,11 @@ author:
   name: William Durand
   email: will@drnd.me
   twitter: couac
+  github: willdurand
 
 twitter:
   username: couac
   card: summary_large_image
-
-my_github:   https://www.github.com/willdurand
-my_twitter:  https://www.twitter.com/couac
 
 plugins:
   - jemoji
