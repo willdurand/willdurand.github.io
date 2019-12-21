@@ -334,12 +334,6 @@ tbody tr:nth-child(odd) th {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
-.page,
-.post {
-  margin-bottom: 4em;
-  text-align: justify;
-}
-
 .page h1,
 .page h2,
 .page h3,
@@ -757,9 +751,11 @@ a.sidebar-nav-item:focus {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
+
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  text-align: justify;
 }
 
 /* Blog post or page title */
