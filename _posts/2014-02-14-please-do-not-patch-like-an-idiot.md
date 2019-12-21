@@ -7,7 +7,7 @@ title: "Please. Don't Patch Like That."
 description: >-
   This article is about the PATCH HTTP verb and how it should be used. That
   being said, things have changed and it's fine to use it differently.
-imarmage: /images/posts/2014/02/patch.png
+image: /images/posts/2014/02/patch.png
 updates:
   - date: 2016-08-06
     content: |-
