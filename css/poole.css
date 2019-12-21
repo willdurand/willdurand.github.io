@@ -1190,6 +1190,10 @@ a.anchor-link:hover {
   margin-bottom: 1em;
 }
 
+.post-audio audio {
+  max-width: 100%;
+}
+
 .post-updates p {
   font-style: italic;
 }
