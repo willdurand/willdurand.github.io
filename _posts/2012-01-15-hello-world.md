@@ -2,6 +2,7 @@
 layout: post
 title: Hello, World!
 location: Clermont-Fd Area, France
+audio: true
 ---
 
 Hi folks!
