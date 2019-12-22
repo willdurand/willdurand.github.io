@@ -8,6 +8,7 @@ description: >-
   This article is about the PATCH HTTP verb and how it should be used. That
   being said, things have changed and it's fine to use it differently.
 image: /images/posts/2014/02/patch.png
+tweet_id: 435340423389663232
 updates:
   - date: 2016-08-06
     content: |-

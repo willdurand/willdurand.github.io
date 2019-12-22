@@ -8,6 +8,7 @@ description: |
   Programming. SOLID is an acronym that stands for five basic principle of
   Object-Oriented Programming and design to fix STUPID code.
 image: /images/posts/2013/07/stupid-solid.png?v=1
+tweet_id: 362206563953426433
 ---
 
 Last week I gave a talk about [Object-Oriented

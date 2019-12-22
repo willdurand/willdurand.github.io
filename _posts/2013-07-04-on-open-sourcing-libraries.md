@@ -2,7 +2,9 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: true
+audio: false
 title: On Open Sourcing Libraries
+tweet_id: 352787698618081282
 updates:
   - date: 2014-12-17
     content: Your project should have a Contributor Code of Conduct.

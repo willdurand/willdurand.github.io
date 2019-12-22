@@ -8,8 +8,6 @@ image: /images/posts/2017/03/flexispot.jpg
 tweet_id: 841280563428368385
 ---
 
----
-
 **Disclaimer:** Loctek Inc. contacted me spontaneously and offered me the
 product I am going to write about for review purpose. I agreed to do the review
 and asked about return shipping, only to be told that they offered me the

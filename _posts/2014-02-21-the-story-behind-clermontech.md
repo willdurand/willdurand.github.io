@@ -4,6 +4,7 @@ location: Clermont-Fd Area, France
 tldr: false
 audio: true
 title: "The Story Behind Clermont'ech"
+tweet_id: 436879585540849664
 ---
 
 A year ago, [Julien](https://twitter.com/themouette),
