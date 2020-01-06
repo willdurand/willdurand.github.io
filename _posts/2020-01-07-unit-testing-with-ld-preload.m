@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unit testing C code with LD_PRELOAD"
-audio: true
+audio: false
 tldr: false
 location: "Freiburg, Germany"
 image:
