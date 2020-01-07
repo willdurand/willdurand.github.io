@@ -23,18 +23,18 @@ Therefore, it is crucial to write them correctly and unit testing can help.
 
 In my project, I chose to have a unified C library for both my kernel code
 (which uses a library sometimes called _libk_) and
-[userland](https://en.wikipedia.org/wiki/User_space) code (which uses a _libc_). Because my C library provides
-the same API as other _libc_ (_e.g._, the one from my main system), I could not
-directly import my functions in my test code. I thought about this problem and
-came up with three options:
+[userland](https://en.wikipedia.org/wiki/User_space) code (which uses a _libc_).
+Because my C library provides the same API as other _libc_ (_e.g._, the one from
+my main system), I could not directly import my functions in my test code. I
+thought about this problem and came up with three options:
 
 1. Introduce a `PREFIX()` macro to alias my functions and import these aliased
    functions in the test code. This is needed because "global function" names
    should be unique in C. This option would improve isolation but it would make
    the kernel code harder to read.
 2. Use my C library to write test programs. This option would make debugging
-   harder because my library could introduce bugs in the test code. I would prefer not to
-   rely on my incomplete _libc_ too much.
+   harder because my library could introduce bugs in the test code. I would
+   prefer not to rely on my incomplete _libc_ too much.
 3. Override the function under test (FUT) when running the test program. It is
    a combination of (1) and (2) and this guarantees that only the FUT is tested.
 
@@ -226,8 +226,9 @@ hello:     file format elf64-x86-64
 ...
 ```
 
-Without knowing assembler, we can notice that there is no `call` to `strlen`. Instead the value `4` (`0x4`) is moved to a register
-before calling `printf`. The compiler optimized our code!
+Without knowing assembler, we can notice that there is no `call` to `strlen`.
+Instead the value `4` (`0x4`) is moved to a register before calling `printf`.
+The compiler optimized our code!
 
 ## Conclusion
 
