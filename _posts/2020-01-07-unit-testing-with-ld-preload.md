@@ -24,7 +24,7 @@ Therefore, it is crucial to write them correctly and unit testing can help.
 In my project, I chose to have a unified C library for both my kernel code
 (which uses a library sometimes called _libk_) and
 [userland](https://en.wikipedia.org/wiki/User_space) code (which uses a _libc_). Because my C library provides
-the same API as other _libc_ (_.e.g._ the one from my system), I could not
+the same API as other _libc_ (_e.g._, the one from my main system), I could not
 directly import my functions in my test code. I thought about this problem and
 came up with three options:
 
