@@ -226,7 +226,7 @@ hello:     file format elf64-x86-64
 ...
 ```
 
-There is no `call` to `strlen` but the value `4` (`0x4`) is moved to a register
+Without knowing assembler, we can notice that there is no `call` to `strlen`. Instead the value `4` (`0x4`) is moved to a register
 before calling `printf`. The compiler optimized our code!
 
 ## Conclusion
