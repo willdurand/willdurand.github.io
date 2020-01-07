@@ -35,7 +35,7 @@ came up with three options:
 2. Use my C library to write test programs. This option would make debugging
    harder because my library could introduce bugs in the test code. I would prefer not to
    rely on my incomplete _libc_ too much.
-3. Override the function under test (_FUT_) when running the test program. It is
+3. Override the function under test (FUT) when running the test program. It is
    a combination of (1) and (2) and this guarantees that only the FUT is tested.
 
 This idea of [monkey-patching](https://en.wikipedia.org/wiki/Monkey_patch) code
@@ -241,6 +241,6 @@ While it is an efficient method to write simple unit tests, it still requires
 some extra checks to make sure we are not testing the numerous compiler
 optimizations that would completely skip the FUT.
 
-With these _libc_ functions implemented and tested, I could build new features
+With these _libc_ functions implemented and tested, I can now build new features
 on top of them with confidence and write "traditional" unit tests for these
 modules.
