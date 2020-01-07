@@ -23,8 +23,7 @@ Therefore, it is crucial to write them correctly and unit testing can help.
 
 In my project, I chose to have a unified C library for both my kernel code
 (which uses a library sometimes called _libk_) and
-[userland](https://en.wikipedia.org/wiki/User_space) code (which uses a _libc_
-like [glibc](https://www.gnu.org/software/libc/)). Because my C library provides
+[userland](https://en.wikipedia.org/wiki/User_space) code (which uses a _libc_). Because my C library provides
 the same API as other _libc_ (_.e.g._ the one from my system), I could not
 directly import my functions in my test code. I thought about this problem and
 came up with three options:
@@ -34,7 +33,7 @@ came up with three options:
    should be unique in C. This option would improve isolation but it would make
    the kernel code harder to read.
 2. Use my C library to write test programs. This option would make debugging
-   harder as not even the test code could be "trusted". I would prefer not to
+   harder because my library could introduce bugs in the test code. I would prefer not to
    rely on my incomplete _libc_ too much.
 3. Override the function under test (_FUT_) when running the test program. It is
    a combination of (1) and (2) and this guarantees that only the FUT is tested.
@@ -53,9 +52,7 @@ program 🔥
 
 ## Example
 
-Let's take an example with an enhanced version of a "Hello, World" written in C
-(the reason why this source code is more complicated than it should is covered
-at the end of this article):
+Let's take an example with an enhanced version of a "Hello, World" written in C:
 
 ```c
 // hello.c
@@ -91,7 +88,6 @@ of the `strcpy()` function. In order to do this, we need to create a new file
 
 ```c
 // evil.c
-
 char* strcpy(char* dest, const char* src) {
   const char* evil = "oooops";
 
