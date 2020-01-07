@@ -4,7 +4,7 @@ title: "Unit testing C code with LD_PRELOAD"
 audio: false
 tldr: false
 location: "Freiburg, Germany"
-image: /images/posts/2020/01/willos-tests.png
+image: /images/posts/2020/01/willos-tests.png?v=2
 tweet_id: 1214498418862768129
 ---
 
