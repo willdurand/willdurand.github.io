@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/01/willos-tests.png
-tweet_id:
+tweet_id: 1214498418862768129
 ---
 
 One of my side projects is [a tiny kernel/operating
