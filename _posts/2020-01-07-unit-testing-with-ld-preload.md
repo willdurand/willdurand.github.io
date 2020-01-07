@@ -18,7 +18,7 @@ Writing a kernel often implies creating a lot of things from scratch, even the
 most basic "tools". For example, some sort of small [C
 library](https://wiki.osdev.org/C_Library) is required early in the process.
 Yet, it is hard to port an existing _libc_ when there is nothing else. Such a C
-library does not have tons of functions but everything else will depend on them.
+library does not have tons of functions but everything else likely depends on them.
 Therefore, it is crucial to write them correctly and unit testing can help.
 
 In my project, I chose to have a unified C library for both my kernel code
