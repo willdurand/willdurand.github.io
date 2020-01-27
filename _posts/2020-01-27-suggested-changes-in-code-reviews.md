@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/01/suggested-changes-social.png
-tweet_id:
+tweet_id: 1221801356937302018
 ---
 
 I recently wrote that [I wanted to blog more often and share how I
