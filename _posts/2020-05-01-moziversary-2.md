@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/05/win98.png
-tweet_id:
+tweet_id: 1256219738470068227
 ---
 
 Today is my second _Moziversary_. I joined Mozilla as a full-time employee on
