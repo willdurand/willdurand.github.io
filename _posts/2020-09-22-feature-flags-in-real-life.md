@@ -53,7 +53,7 @@ It is also possible to use a toggle to change a feature entirely for everyone,
 and that is the strategy I used for the [download stats on
 AMO](https://blog.mozilla.org/addons/2020/09/17/download-statistics-update/)
 lately. This is useful to preview a feature without risking a production
-incident :-)
+incident!
 
 ### Switches
 
@@ -63,7 +63,7 @@ achieved by a
 cannot target specific users or things like that, but it is what we use the most
 on AMO.
 
-For example, we have switches that act as [kill
+For example, we have switches that act as [emergency
 switches](https://en.wikipedia.org/wiki/Kill_switch) to quickly react to
 potential outages in production. Our kinda monolithic server-side application
 talks to some smaller services and if one of them goes crazy, we can quickly
@@ -78,13 +78,12 @@ production at a given time and we monitored the first executions.
 
 Similar to flags, switches are great to ship big features incrementally and
 allow long periods of tests in non-production environments. That way, we can
-detect and fix most issues early, preventing disasters when we are supposed to
-go live.
+detect and fix most issues early, preventing disasters when we go "live".
 
 ## Frontend toggles
 
-We do not have the exact same concept in our main frontend app, but we do have
-some sort of client-side feature toggles. We came up [a
+We do not have the exact same concept in our main frontend application, but we
+do have some sort of client-side feature toggles. We came up with [a
 convention](https://github.com/mozilla/addons-frontend/issues/6362) to implement
 switches on top of [node-config](https://github.com/lorenwest/node-config) and
 [our very own client-side
@@ -147,8 +146,8 @@ Every time we introduce a Waffle flag, a switch or a frontend toggle, we file a
 GitHub issue to clean up the code once there is no need for it anymore. If the
 author forgets about it, this is usually raised during the code review. This is
 how we mitigate the risk of having [spaghetti
-code](https://en.wikipedia.org/wiki/Spaghetti_code). Some toggles (like kill
-switches) are more permanent, though.
+code](https://en.wikipedia.org/wiki/Spaghetti_code). Some toggles (like
+emergency switches) are more permanent, though.
 
 In the server codebase, we delete the Waffle flag or switch using a database
 migration, then we remove the old code (including the toggle) and we update the
