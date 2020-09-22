@@ -157,10 +157,11 @@ test suite accordingly.
 ## Bonus: amo-info
 
 I created a [Firefox extension called
-"amo-info"](https://addons.mozilla.org/en-US/firefox/addon/amo-info/) to display
-various information about the public-facing part of the AMO platform. Among
-other things, this extension shows the configuration of our frontend toggles to
-quickly see which features are enabled/disabled in our different environments:
+"amo-info"](https://addons.mozilla.org/en-US/firefox/addon/amo-info/?utm_source=williamdurand.fr&utm_medium=referral&utm_content=featureflags)
+to display various information about the public-facing part of the AMO platform.
+Among other things, this extension shows the configuration of our frontend
+toggles to quickly see which features are enabled/disabled in our different
+environments:
 
 ![Screenshot of the amo-info Firefox extension](/images/posts/2020/09/amo-info.png)
 
