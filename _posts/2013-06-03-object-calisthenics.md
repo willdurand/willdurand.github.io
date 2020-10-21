@@ -373,7 +373,7 @@ A picture is worth a thousand words, so here is the explanation of this rule in
 picture. Note that it relies on [Rule 3: Wrap All Primitives And
 Strings](#3-wrap-all-primitives-and-strings).
 
-![](https://raw.github.com/TheLadders/object-calisthenics/master/assets/2-instance-variables.png)
+![](/images/posts/2013/06/2-instance-variables.png)
 
 <small class="source">Source: [https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables](https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables).</small>
 
