@@ -52,13 +52,13 @@ from [this repo](https://github.com/raspberrypi/firmware/tree/master/boot) and
 put them on the main
 [FAT32](https://en.wikipedia.org/wiki/File_Allocation_Table#FAT32) partition of
 a SD card. These files are provided by the Raspberry Pi Foundation, which means
-most of the early boot sequence is done for us. I know about [one alternative
+most of the early boot sequence is done for us. I know about [this alternative
 _second stage_ bootloader
 project](https://github.com/christinaa/rpi-open-firmware) but I am not sure why
 we'd use it to be honest.
 
 ```
-$ ls /Volumes/NO\ NAME/
+$ ls /Volumes/SDCARD/
 bootcode.bin*  fixup.dat*  start.elf*
 ```
 
@@ -93,17 +93,21 @@ uart_2ndstage=1
 kernel=u-boot.bin
 ```
 
-The SD card should now have 5 files:
+The SD card should now have five files:
 
 ```
-$ ls /Volumes/NO\ NAME
+$ ls /Volumes/SDCARD/
 bootcode.bin*  config.txt*  fixup.dat*  start.elf*  u-boot.bin*
 ```
 
-Let's connect a USB to TTL serial cable ("FTDI") between the Raspberry Pi 2 and
-our main computer, open the serial port (with `screen -L /dev/tty.usbserial-A900HHN1 115200` for instance), put the SD card in the Pi and
-power it on. After a few seconds, we should see the debug information from the
-boot sequence first:
+Let's connect a USB to TTL serial cable
+([FTDI](https://www.adafruit.com/?q=ftdi)) between the Raspberry Pi 2 and our
+main computer. We can now open the serial port (with `screen -L
+/dev/tty.usbserial-A900HHN1 115200` for instance), put the SD card in the Pi and
+power it on.
+
+After a few seconds, we should see the debug information from the boot sequence
+first:
 
 ```
 Raspberry Pi Bootcode
@@ -156,7 +160,8 @@ MESS:00:00:01.555553:0: brfs: File read: /mfs/sd/u-boot.bin
 MESS:00:00:01.559432:0: Loading 'u-boot.bin' to 0x8000 size 0x76ea4
 ```
 
-Shortly after U-Boot should write to the serial port too:
+Shortly after U-Boot should write to the serial port too and we can enter the
+built-in shell by pressing a key:
 
 ```
 U-Boot 2021.01-00688-g184aa65041 (Jan 23 2021 - 10:56:09 +0000)
@@ -180,7 +185,7 @@ U-Boot>
 
 Sweet!
 
-From there, we can print the U-Boot version for instance:
+From there, we can print the U-Boot version:
 
 ```
 U-Boot> version
@@ -192,7 +197,7 @@ GNU ld (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028
 
 Last but not least, the board has two built-in LEDs (power and activity) and we
 definitely need to blink LEDs ;-) We can toggle the activity LED with the
-following U-Boot command:
+following U-Boot command (GPIO `47` controls the activity LED):
 
 ```
 U-Boot> gpio toggle 47
@@ -210,7 +215,7 @@ information:
 1. `start.elf` will load and execute the code at `0x8000` by default (we usually
    configure this base address during the linking phase).
 2. when control is transferred to the "user" code, the CPU is in `HYP` mode
-   (Hypervisor) and depending on our needs, you may want to switch back to `SVC`
+   (Hypervisor) and depending on our needs, we may want to switch back to `SVC`
    mode (Supervisor).
 
 We can write a few lines of assembly and a bit of C to blink LEDs. I created [a
