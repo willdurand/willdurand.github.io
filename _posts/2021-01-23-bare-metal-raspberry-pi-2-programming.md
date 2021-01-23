@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bare-metal Raspberry Pi 2 Programming"
+title: "Bare-metal Raspberry Pi 2 programming"
 audio: false
 tldr: false
 location: "Clermont-Fd, France"
@@ -10,8 +10,9 @@ tweet_id:
 
 Last week-end, I started to play with
 [willOS](https://github.com/willdurand/willOS) (my very own 64-bit kernel) and
-one of the Raspberry Pi 2 I had in a drawer (32-bit architecture unfortunately
-but that's a story for another time).
+one of the [Raspberry Pi
+2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) I had in a
+drawer (32-bit architecture unfortunately but that's a story for another time).
 
 After a few hours, I was able to run willOS with most features disabled on real
 hardware (getting it to run in [QEMU](https://www.qemu.org/) was surprisingly
@@ -216,17 +217,22 @@ We can write a few lines of assembly and a bit of C to blink LEDs. I created [a
 Gist](https://gist.github.com/willdurand/614ad3ad1cac0189691f67c0ac71b9e6) with
 all the files necessary to build a minimal bare metal program that blinks the
 activity LED indefinitely. Once compiled, we can transfer `kernel7.img` to the
-SD card and update the `config.txt` file to not use U-Boot anymore.
+SD card and update the `config.txt` file to point to `kernel7.img` instead of
+`u-boot.bin` (or remove the line since it is the default value).
 
 ## "Stage 3" bootloader
 
 Many projects have their own bootloader to transfer programs using a serial
 cable and avoid the annoying SD card dance. Such "stage 3" bootloaders are quite
-simple. First, they relocate themselves to a higher address in RAM. Then, they
-initialize a serial port (UART0 or UART1), then they send a special sequence and
+simple.
+
+First, they relocate themselves to a higher address in RAM. Then, they
+initialize a serial port (UART0 or UART1). They then send a special sequence and
 wait for a reply. This special sequence should be received by a program running
 on the other computer, which should push the new code to the bootloader. Once
 downloaded and stored in memory, the bootloader should call the new code.
+
+This is what I have implemented too. Sneak peek:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I have been working on
 a stage3 bootloader to push my kernel over the serial port and I *think* I spent
