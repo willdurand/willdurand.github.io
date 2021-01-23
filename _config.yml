@@ -33,3 +33,5 @@ twitter:
 plugins:
   - jemoji
   - jekyll-seo-tag
+
+repository: willdurand/willdurand.github.io
