@@ -231,8 +231,9 @@ Many projects have their own bootloader to transfer programs using a serial
 cable and avoid the annoying SD card dance. Such "stage 3" bootloaders are quite
 simple.
 
-First, they relocate themselves to a higher address in RAM. Then, they
-initialize a serial port (UART0 or UART1). They then send a special sequence and
+First, a bootloader relocates itself to a higher address in RAM. This is
+required to be able to load the actual kernel code later. Then, it initializes a
+serial port (UART0 or UART1 on the Raspberry Pi), send a special sequence and
 wait for a reply. This special sequence should be received by a program running
 on the other computer, which should push the new code to the bootloader. Once
 downloaded and stored in memory, the bootloader should call the new code.
