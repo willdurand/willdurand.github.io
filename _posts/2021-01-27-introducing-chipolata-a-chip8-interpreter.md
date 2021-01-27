@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/chip8-space-intercept.png
-tweet_id:
+tweet_id: 1354403109053861888
 ---
 
 A few weeks ago, I wrote a CHIP-8 interpreter named
