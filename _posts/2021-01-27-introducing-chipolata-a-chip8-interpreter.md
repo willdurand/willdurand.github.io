@@ -50,9 +50,9 @@ double-check a few other things. Writing a debugger early in the process is
 always a good idea and it is useful even when the set of opcodes is relatively
 small.
 
-The core library exposes an
+An
 [`Interpreter`](https://github.com/willdurand/chipolata/blob/e55bcf32a0d74c9db4b35b493576a3e27399f4e6/src/chip8/mod.rs#L7)
-struct, which is a [facade](https://en.wikipedia.org/wiki/Facade_pattern) that
+struct, which is a [facade](https://en.wikipedia.org/wiki/Facade_pattern),
 exposes everything required to implement a "frontend" program. It's worth
 pointing out that the interpreter does not handle the main loop. Indeed, I
 decided to leave this part to the frontend side because I found it easier to
