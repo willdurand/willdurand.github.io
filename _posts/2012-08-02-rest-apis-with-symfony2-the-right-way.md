@@ -942,10 +942,3 @@ You now have all keys to build wonderful APIs!
 - [RFC 5988 - Web Linking](http://tools.ietf.org/html/rfc5988).
 
 I will probably update this post with more information, links, etc. So stay tuned!
-
-<p class="ad">
-Want to <strong>learn more</strong> about REST? Interested in reading more code? I
-co-authored the <strong><a href="http://knpuniversity.com/screencast/rest">RESTful
-APIs in the Real World screencast</a></strong>, and it is definitely worth buying it!
-Yes, I know it is not free, but for me, it is a way to "sponsor" my Open Source work.
-</p>

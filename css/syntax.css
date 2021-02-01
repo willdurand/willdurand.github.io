@@ -5,6 +5,10 @@
     color: #6c757d;
   }
 
+  .highlight .nv {
+    color: #f8f9fa;
+  }
+
   .highlight .gi,
   .highlight .gd {
     background-color: transparent;
