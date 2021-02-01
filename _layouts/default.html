@@ -32,26 +32,33 @@
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script src="/js/jquery-3.4.1.min.js"></script>
-    <script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
     <script src="/js/anchorify.js" type="text/javascript"></script>
     <script>
-      $().UItoTop();
       $('.post h2, .post h3, .post h4, .post h5, .post h6').anchorify();
 
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+      (function (doc) {
+        const toggle = doc.querySelector(".sidebar-toggle");
+        const sidebar = doc.querySelector("#sidebar");
+        const checkbox = doc.querySelector("#sidebar-checkbox");
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
+        doc.addEventListener(
+          "click",
+          (e) => {
+            const { target } = target;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
+            if (
+              !checkbox.checked ||
+              sidebar.contains(target) ||
+              target === checkbox ||
+              target === toggle
+            ) {
+              return;
+            }
 
-          checkbox.checked = false;
-        }, false);
+            checkbox.checked = false;
+          },
+          false
+        );
       })(document);
     </script>
   </body>
