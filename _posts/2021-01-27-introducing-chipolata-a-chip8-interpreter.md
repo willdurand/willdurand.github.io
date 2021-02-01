@@ -4,7 +4,7 @@ title: "Introducing chipolata: a CHIP-8 interpreter"
 audio: false
 tldr: false
 location: "Clermont-Fd, France"
-image: /images/posts/2021/01/chip8-space-intercept.png
+image: /images/posts/2021/01/chip8-space-intercept.webp
 tweet_id: 1354403109053861888
 ---
 
@@ -69,7 +69,7 @@ support _via_ [rodio](https://github.com/RustAudio/rodio). The screenshot below
 shows the display on the left side and a terminal running the built-in debugger
 on the right side:
 
-![](/images/posts/2021/01/chipolata-desktop.png)
+![](/images/posts/2021/01/chipolata-desktop.webp)
 
 At this point, I could play different games and everything was working as I
 expected so I decided to try something new.
@@ -92,7 +92,7 @@ Winter. I didn't want to add other games because there are enough CHIP-8
 interpreters online. Instead, I decided to implement different features such as
 a live view of the CPU registers and a disassembler.
 
-![](/images/posts/2021/01/chipolata-web.png)
+![](/images/posts/2021/01/chipolata-web.webp)
 
 The disassembler implementation is pretty naive, though. It reads the entire RAM
 starting at the start address (`0x200`) and, for each opcode, it prints a
