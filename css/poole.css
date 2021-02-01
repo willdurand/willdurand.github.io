@@ -1195,7 +1195,7 @@ a.anchor-link:hover {
 }
 
 .menu-hint {
-  background: url(../images/arrow-menu.png) no-repeat;
+  background: url(../images/arrow-menu.webp) no-repeat;
   height: 161px;
   left: 4em;
   opacity: 0.3;
@@ -1320,5 +1320,9 @@ a.anchor-link:hover {
   pre code {
     background-color: transparent;
     border: none;
+  }
+
+  .menu-hint {
+    background: url(../images/arrow-menu-dark-theme.webp) no-repeat;
   }
 }
