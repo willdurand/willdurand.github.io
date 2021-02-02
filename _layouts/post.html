@@ -54,6 +54,14 @@ layout: main
   </em>
 </div>
 
+{% if page.credits %}
+<section class="post-credits">
+  <h2>Credits</h2>
+
+  {{ page.credits|markdownify }}
+</section>
+{% endif %}
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts" itemscope itemtype="https://schema.org/Blog">

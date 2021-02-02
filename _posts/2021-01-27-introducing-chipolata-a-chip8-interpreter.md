@@ -6,6 +6,13 @@ tldr: false
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/chip8-space-intercept.webp
 tweet_id: 1354403109053861888
+credits: |
+  I use the following image to illustrate this blog post on social media:
+  ["Telmac 1800 running CHIP-8 game Space Intercept (Joseph Weisbecker,
+  1978)"](https://en.wikipedia.org/wiki/CHIP-8#/media/File:Space_intercept.png),
+  which is licensed under the [Creative Commons Attribution-Share Alike 4.0
+  International license](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ---
 
 A few weeks ago, I wrote a CHIP-8 interpreter named
@@ -129,13 +136,3 @@ Here is a list of useful links I read while working on this project:
 - <http://www.multigesture.net/wp-content/uploads/mirror/goldroad/chip8_instruction_set.shtml>
 - <http://devernay.free.fr/hacks/chip8/C8TECH10.HTM>
 - <https://tobiasvl.github.io/blog/write-a-chip-8-emulator>
-
----
-
-_Credits: I used the following image to illustrate this blog post on social
-media: ["Telmac 1800 running CHIP-8 game Space Intercept (Joseph Weisbecker,
-1978)"](https://en.wikipedia.org/wiki/CHIP-8#/media/File:Space_intercept.png),
-which is licensed under the [Creative Commons Attribution-Share Alike 4.0
-International license](https://creativecommons.org/licenses/by-sa/4.0/)._
-
----

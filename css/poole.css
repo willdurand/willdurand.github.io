@@ -1110,12 +1110,6 @@ a.anchor-link:hover {
   background: transparent url(../images/twitter.png) no-repeat;
 }
 
-.post-comments {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
-}
-
 .menu-hint {
   background: url(../images/arrow-menu.webp) no-repeat;
   height: 161px;
@@ -1155,6 +1149,13 @@ a.anchor-link:hover {
 
 .post-updates p {
   font-style: italic;
+}
+
+.post-comments,
+.post-credits {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1216,7 +1217,8 @@ a.anchor-link:hover {
   }
 
   .related,
-  .post-comments {
+  .post-comments,
+  .post-credits {
     border-color: #131618;
   }
 
