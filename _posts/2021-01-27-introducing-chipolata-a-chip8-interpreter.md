@@ -7,11 +7,10 @@ location: "Clermont-Fd, France"
 image: /images/posts/2021/01/chip8-space-intercept.webp
 tweet_id: 1354403109053861888
 credits: |
-  I use the following image to illustrate this blog post on social media:
-  ["Telmac 1800 running CHIP-8 game Space Intercept (Joseph Weisbecker,
-  1978)"](https://en.wikipedia.org/wiki/CHIP-8#/media/File:Space_intercept.png),
-  which is licensed under the [Creative Commons Attribution-Share Alike 4.0
-  International license](https://creativecommons.org/licenses/by-sa/4.0/).
+  Photo used on social media: ["Telmac 1800 running CHIP-8 game Space Intercept
+  (Joseph Weisbecker, 1978)"](https://en.wikipedia.org/wiki/CHIP-8#/media/File:Space_intercept.png),
+  licensed under the [Creative Commons Attribution-Share Alike 4.0 International
+  license](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 

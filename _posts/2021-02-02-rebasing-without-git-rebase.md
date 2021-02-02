@@ -7,9 +7,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2021/02/git-rebase.webp
 tweet_id:
 credits: |
-  I use the photo by [Yancy Min](https://unsplash.com/@yancymin) on
-  [Unsplash](https://unsplash.com/s/photos/git-merge) to illustrate this blog
-  post on social media.
+  Photo used on social media by [Yancy Min](https://unsplash.com/@yancymin).
 
 ---
 
