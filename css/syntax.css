@@ -9,8 +9,11 @@
     color: #f8f9fa;
   }
 
-  .highlight .gi,
   .highlight .gd {
-    background-color: transparent;
+    background-color: #c00;
+  }
+
+  .highlight .gi {
+    background-color: #0c0;
   }
 }
