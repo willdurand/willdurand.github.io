@@ -1,4 +1,5 @@
 safe:      true
+future:    false
 permalink: pretty
 exclude:   [ README.md, Gemfile, vendor, .* ]
 
