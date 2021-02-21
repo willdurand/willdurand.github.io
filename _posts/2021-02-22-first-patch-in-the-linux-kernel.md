@@ -48,15 +48,15 @@ people you work with, etc. This simple patch introduced me to some of the Linux
 Kernel Mailing-Lists and how to use them. I learned about the staging subsystem
 and the whole concept of "subsystems". Last but not least, I understood how
 patches were merged into the main Linux Kernel repository by following my commit
-from my local environment to [Linus' tree][5]:
+from my local environment to [Linus Torvalds' tree][5]:
 
-- I submitted a patch to the [DriverDev-Devel][15] mailing-list
-- after review, the patch landed in the _staging-testing_ branch of [Greg
-  Kroah-Hartman's tree][3] (Greg KH is the maintainer of the staging subsystem)
-- after testing, the patch was merged into the _staging-next_ branch
-- Greg KH prepared [a tag][6] for Linus and [requested][7] a `git pull`
-- Linus [pulled][8] from Greg KH's tree
-- First patch in the Linux Kernel! :)
+1. I submitted a patch to the [DriverDev-Devel][15] mailing-list
+2. after review, the patch landed in the _staging-testing_ branch of [Greg
+   Kroah-Hartman's tree][3] (Greg KH is the maintainer of the staging subsystem)
+3. after testing, the patch was merged into the _staging-next_ branch
+4. Greg KH prepared [a tag][6] for Linus and [requested][7] a `git pull`
+5. Linus [pulled][8] the tag from Greg KH's tree
+6. First patch in the Linux Kernel! :)
 
 ## Email-based `git` workflow
 
