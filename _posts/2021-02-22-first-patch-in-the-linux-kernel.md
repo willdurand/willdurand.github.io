@@ -30,9 +30,9 @@ index aa26b2fd2774..2e486ccb6432 100644
 If you're not familiar with the [unified format][2], this patch removed two
 blank lines in a (random) C file. It took me an hour to write and test it as I
 double-checked every single command I ran to avoid making silly mistakes. I was
-kinda terrified to be honest but everything went well. Since then, I contributed
-[some more patches][4] to the [staging][3] subsystem. Patches fixing stylistic
-issues are welcomed in this subsystem and it is where newcomers should start.
+kinda terrified but everything went well. Since then, I contributed [some more
+patches][4] to the [staging][3] subsystem. Patches fixing stylistic issues are
+welcomed in this subsystem and it is where newcomers should start.
 
 ## Gaining confidence
 
