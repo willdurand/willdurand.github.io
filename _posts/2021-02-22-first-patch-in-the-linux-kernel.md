@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/linux-kernel.webp
-tweet_id:
+tweet_id: 1363764147842916353
 credits:
 
 ---
