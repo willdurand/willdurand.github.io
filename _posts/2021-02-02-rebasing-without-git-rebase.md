@@ -43,34 +43,27 @@ rebase a branch named `feature-branch` without `git rebase`:
     $ git pull origin main
     ```
 
-2. "rename" the branch to rebase to `feature-branch-2` by creating a temporary
-   branch:
+2. "rename" the branch to rebase to `feature-branch-2`:
 
     ```text
     $ git checkout feature-branch
-    $ git checkout -b feature-branch-2
+    $ git branch --move feature-branch-2
     ```
 
-3. (safely) delete the branch `feature-branch`:
-
-    ```text
-    $ git branch -D feature-branch
-    ```
-
-4. recreate the branch `feature-branch` based on the main branch:
+3. recreate the branch `feature-branch` based on the main branch:
 
     ```text
     $ git checkout main
     $ git checkout -b feature-branch
     ```
 
-5. `git merge` the temporary branch **with squash**:
+4. `git merge` the temporary branch **with squash**:
 
     ```text
     $ git merge --squash feature-branch-2
     ```
 
-6. Now, commit and force push `feature-branch` to update the Pull/Merge Request
+5. Now, commit and force push `feature-branch` to update the Pull/Merge Request
    🎉 The temporary branch can be safely deleted at this point.
 
 That's it! Note that some of the commands above could be combined to be more
