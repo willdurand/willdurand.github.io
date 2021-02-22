@@ -55,7 +55,7 @@ from my local environment to [Linus Torvalds' tree][5]:
 2. after review, the patch landed in the _staging-testing_ branch of [Greg
    Kroah-Hartman's tree][3] (Greg KH is the maintainer of the staging subsystem)
 3. after testing, the patch was merged into the _staging-next_ branch
-4. Greg KH prepared [a tag][6] for Linus and [requested][7] a `git pull`
+4. Greg KH prepared a (short-lived) tag for Linus and [requested][7] a `git pull`
 5. Linus [pulled][8] the tag from Greg KH's tree
 6. [First patch in the Linux Kernel][18]! :)
 
@@ -116,7 +116,6 @@ get started and everyone I interacted with has been very friendly.
 [3]: https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/staging.git/
 [4]: https://lore.kernel.org/driverdev-devel/?q=a:will+git@drnd.me
 [5]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
-[6]: https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/staging.git/tag/?h=staging-5.12-rc1
 [7]: https://lore.kernel.org/lkml/YCqhISE0U6%2FUJoLb@kroah.com/
 [8]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5d99aa093b566d234b51b7822c67059e2bd3ed8d
 [9]: https://wiki.debian.org/rtl819x
