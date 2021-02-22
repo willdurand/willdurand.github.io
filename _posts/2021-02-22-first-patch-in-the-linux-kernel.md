@@ -57,7 +57,7 @@ from my local environment to [Linus Torvalds' tree][5]:
 3. after testing, the patch was merged into the _staging-next_ branch
 4. Greg KH prepared [a tag][6] for Linus and [requested][7] a `git pull`
 5. Linus [pulled][8] the tag from Greg KH's tree
-6. First patch in the Linux Kernel! :)
+6. [First patch in the Linux Kernel][18]! :)
 
 ## Email-based `git` workflow
 
@@ -128,3 +128,4 @@ get started and everyone I interacted with has been very friendly.
 [15]: https://lore.kernel.org/driverdev-devel/
 [16]: https://kernelnewbies.org/
 [17]: https://lore.kernel.org/driverdev-devel/20210219101206.18036-1-will+git@drnd.me/T/#u
+[18]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=465e8997e8543f78aac5016af018a4ceb445a21b
