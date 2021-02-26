@@ -38,7 +38,7 @@ by myself, and I learned a lot more about add-ons and the AMO platform.
 In 2019, my main focus was on hardening the AMO platform, a topic that is
 unfortunately confidential. This work started as a research-y project because we
 didn't really know what we could come up with. I chose to use what I learned
-during [my PhD][9]: I studied the "state of the art". After that, I built a few
+during [my PhD][9]: I studied the "state of the art". After that, I built several
 prototypes and presented the results of my initial work to different people, got
 feedback, iterated, and eventually proposed a plan to move forward. Some
 prototypes became "production-ready" and are now running in production while
