@@ -5,6 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/05/win98.png
+tags: mozilla
 tweet_id: 1256219738470068227
 ---
 

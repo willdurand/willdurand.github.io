@@ -6,6 +6,7 @@ tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/04/slack.webp
 tweet_id: 1387698748181164034
+tags: mozilla
 credits: |
   Photo used on social media by [@Slava](https://unsplash.com/@lovejoypassion).
 
