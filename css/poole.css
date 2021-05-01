@@ -1049,6 +1049,7 @@ em.fork-and-edit {
   color: #8a6d3b;
 }
 
+.atom-feeds,
 .social-links {
   list-style-type: none;
   padding-left: 0;

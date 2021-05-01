@@ -24,13 +24,21 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <span class="sidebar-nav-item">
-      <i class="fa fa-external-link"></i>&nbsp;<a href="/atom.xml">RSS</a>
-    </span>
   </nav>
 
   <div class="sidebar-item">
+    <ul class="atom-feeds">
+      <li>
+        <i class="fa fa-external-link"></i>&nbsp;<a href="/atom.xml">Atom feed (All)</a>
+      </li>
+      <li>
+        <i class="fa fa-external-link"></i>&nbsp;<a href="/php.xml">Atom feed (PHP)</a>
+      </li>
+      <li>
+        <i class="fa fa-external-link"></i>&nbsp;<a href="/mozilla.xml">Atom feed (Mozilla)</a>
+      </li>
+    </ul>
+
     <ul class="social-links">
       <li>
         <i class="fa fa-github"></i>&nbsp;<a href="https://www.github.com/{{ site.author.github }}">GitHub</a>
