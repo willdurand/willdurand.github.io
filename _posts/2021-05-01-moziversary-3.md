@@ -6,7 +6,7 @@ tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/05/moziversary-3.webp
 tags: mozilla
-tweet_id:
+tweet_id: 1388456430676623365
 credits: |
   Photo used on social media by [Jennie Brown](https://unsplash.com/@fabellastudios).
 ---
