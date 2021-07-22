@@ -10,7 +10,7 @@ credits:
 ---
 
 Pretty printers are tools used to format textual content according to a set of
-stylistic conventions. [Prettier][], [Black][], [rustfmt][] are great examples
+stylistic conventions. [Prettier][], [black][], [rustfmt][] are great examples
 of such tools, which we call "code formatters" because they are applied to
 source code. Users can usually specify the maximum line length and the type of
 indentation (spaces or tabs) among other things but those two are responsible
@@ -26,20 +26,22 @@ representation][prettier-ir]).
 
 ## How does Wadler's algorithm work?
 
-The general (but naive) idea is to take some code as input, parse it and
-translate the result into an intermediate representation, which can then be
-printed. There are two possible layouts: _flat_ and _broken_, which depend on
-the user-defined line length (a.k.a. "print width"). The code formatter should
-try to append as much content as possible on the same line (_flat_ layout) and,
-when that isn't possible, the _broken_ layout, which describes how to break the
-content on multiple lines, should be preferred.
+A code formatter takes some code as input, parse it and translate the result
+into a more beautiful version of the code. The parsing step usually generates an
+Abstract Syntax Tree (AST), from which we can derive an intermediate
+representation as presented in Wadler's paper.
 
-The parsing step usually creates an Abstract Syntax Tree (AST). Let's take an
-example with the JavaScript function definition below (taken from [my very own
-implementation of Wadler's algorithm in JS][demo-project]):
+Most implementations based on this paper use two possible layouts: _flat_ and
+_broken_, controlled by the user-defined line length (a.k.a. "print width").
+The code formatter should try to append as much content as possible on the same
+line (_flat_ layout) and, when that isn't possible, the _broken_ layout, which
+describes how to break the content on multiple lines, should be preferred.
+
+Let's take an example with the JavaScript function definition below, taken from
+[my very own implementation of Wadler's algorithm in JS][demo-project]:
 
 ```js
-const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {};
+const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {}
 ```
 
 Parsing this definition with [`espree`][espree] gives the following AST (some
@@ -119,22 +121,24 @@ rendered as is.
 
 ```js
 // This is the IR of the previous code snippet.
-['const ', 'renderDocument', ' = ', '...', ';'];
+['const ', 'renderDocument', ' = ', '...', ';']
 ```
 
-Note the semi-colon at the end, which isn't part of the input. That's because
-our formatter automatically adds a semi-colon when translating a node whose type
-is `VariableDeclaration`.
+Note the semi-colon at the end, which isn't part of the input. When walking the
+JavaScript AST, we produce IR specifically for JavaScript. This is why the
+translation logic can append a semi-colon to `VariableDeclaration`. While the IR
+"building blocks" are generic, the parsing and translation layers are
+language-specific. [Here is an example of translation logic for
+XML][xml-printer].
 
 ### Describing different layouts
 
 The RHS is an `ArrowFunctionExpression` and we want its pretty output to be
-rendered differently depending on the print width value (default: `80` chars)
-because such functions might have long parameter names, default values, etc. The
-idea is to print all the arguments of the function on the same line if the total
-width is less than the print width, otherwise we want to print each argument on
-its own line. The IR should describe these two options, without having to
-specify actual values.
+rendered differently depending on the print width value because such functions
+might have long parameter names, default values, etc. The idea is to print all
+the arguments of the function on the same line if the total width is less than
+the print width, otherwise we want to print each argument on its own line. The
+IR should describe these two options, without having to specify actual values.
 
 The `group` function (Prettier calls it a "command") is used to describe content
 that should be kept on a single line (like concatenation above) but, if it does
@@ -150,32 +154,48 @@ with different _lines_:
 
 We want to break after each function argument so `LINE` looks like a good fit.
 Let's create a group and add `LINE` between each parameter (name, default value
-if any, and comma). This would produce the following pretty output:
+if any, and comma).
 
 ```js
+[
+  "const ", "renderDocument", " = ",
+  // This object defines the RHS:
+  {
+    type: "group",
+    contents: [
+      "(",
+      "doc", ",",
+      LINE,
+      "fits", " = ", "DEFAULT_FITS", ",",
+      LINE,
+      "indentPrefix", " = ", "DEFAULT_INDENT_PREFIX",
+      ")", " => ", "{", "}",
+    ]
+  },
+  ";"
+]
+```
+
+This would produce the following pretty outputs:
+
+```js
+-------------------------------------------------------------------------------| <- 80 chars (broken layout was used)
 const renderDocument = (doc,
 fits = DEFAULT_FITS,
 indentPrefix = DEFAULT_INDENT_PREFIX) => {};
+
+-----------------------------------------------------------------------------------------------------------------------| <- 120 chars (flat layout was used)
+const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {};
 ```
 
-Ugh! Not pretty. We should probably break _after_ the opening parenthesis using
-a `SOFTLINE`, align all the arguments with one level of indentation and probably
-break before the closing parenthesis as well. This would produce the following
-pretty output:
+Ugh! The _broken_ layout version isn't pretty. We should probably break _after_
+the opening parenthesis using a `SOFTLINE`, align all the arguments with one
+level of indentation and probably break before the closing parenthesis as well.
 
-```js
-const renderDocument = (
-  doc,
-  fits = DEFAULT_FITS,
-  indentPrefix = DEFAULT_INDENT_PREFIX
-) => {};
-```
-
-In order to achieve this result, we need a new function named `nest()` that will
-change the current indentation level. This abstraction allows to later render
-the same input with 2 spaces, 4 spaces or tabs. Indentation is only updated
-after a hard line, which is why we don't have to specify that it only applies to
-the _broken_ layout.
+We can use a new function named `nest()` that will change the current
+indentation level. This abstraction allows to later render the same input with 2
+spaces, 4 spaces or tabs. Indentation is only updated after a hard line, which
+is why we don't have to specify that it only applies to the _broken_ layout.
 
 Here is the final IR of our function:
 
@@ -203,7 +223,7 @@ Here is the final IR of our function:
     ],
   },
   ";",
-];
+]
 ```
 
 ### The renderer
@@ -240,18 +260,18 @@ Rendering the full intermediate representation shown previously would give
 different outputs depending on the print width value:
 
 ```js
-//--------------------------------------------------------------- 80 chars --->|
-// print width: 80 chars
+-------------------------------------------------------------------------------| <- 80 chars
 const renderDocument = (
   doc,
   fits = DEFAULT_FITS,
   indentPrefix = DEFAULT_INDENT_PREFIX
 ) => {};
 
-//------------------------------------------------------------------------------------------------------ 120 chars --->|
-// print width: 120 chars
+-----------------------------------------------------------------------------------------------------------------------| <- 120 chars
 const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {};
 ```
+
+🎉🎉🎉
 
 ## It is more complicated than that.
 
@@ -403,3 +423,4 @@ mind-blowing to me.
 [js-reattach-comments]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/js-ast.js#L16-L26
 [rowan]: https://github.com/rust-analyzer/rowan
 [curried-patch]: https://github.com/prettier/prettier/commit/046ffb11f980269937b2e58a30567efdcdbf230c
+[xml-printer]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/xml-printer.js#L14-L70
