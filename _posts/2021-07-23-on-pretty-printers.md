@@ -121,10 +121,10 @@ the declaration has been replaced with `...`. We'll get back to that part later.
 
 <figure class="ascii">
 <pre>
-┌──────┐ ┌──────────────┐ ┌───┐ ┌───┐
-│const␣│ │renderDocument│ │␣=␣│ │...│
-└──────┘ └──────────────┘ └───┘ └─▲─┘
-                                  │
++------+ +--------------+ +---+ +---+ +-+
+|const␣| |renderDocument| |␣=␣| |...| |;|
++------+ +--------------+ +---+ +-^-+ +-+
+                                  |
                                  RHS
 </pre>
 </figure>
