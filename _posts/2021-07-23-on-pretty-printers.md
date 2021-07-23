@@ -4,9 +4,10 @@ title: "On pretty printers"
 audio: false
 tldr: false
 location: "Freiburg, Germany"
-image:
+image: /images/posts/2021/07/pretty-printers.webp
 tweet_id:
 credits:
+  Photo used on social media by [Bank Phrom](https://unsplash.com/@bank_phrom)
 ---
 
 Pretty printers are tools used to format textual content according to a set of
