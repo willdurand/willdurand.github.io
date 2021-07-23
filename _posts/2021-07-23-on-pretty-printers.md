@@ -123,7 +123,8 @@ the declaration has been replaced with `...`. We'll get back to that part later.
 <pre>
 +------+ +--------------+ +---+ +---+ +-+
 |const␣| |renderDocument| |␣=␣| |...| |;|
-+------+ +--------------+ +---+ +-^-+ +-+
++------+ +--------------+ +---+ +---+ +-+
+                                  ^
                                   |
                                  RHS
 </pre>
