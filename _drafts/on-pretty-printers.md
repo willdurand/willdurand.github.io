@@ -37,15 +37,20 @@ The code formatter should try to append as much content as possible on the same
 line (_flat_ layout) and, when that isn't possible, the _broken_ layout, which
 describes how to break the content on multiple lines, should be preferred.
 
-Let's take an example with the JavaScript function definition below, taken from
-[my very own implementation of Wadler's algorithm in JS][demo-project]:
+### Example: pretty-printing JavaScript
+
+In order to better understand how things work, let's take an example with the
+JavaScript function definition below, taken from [my very own implementation of
+Wadler's algorithm in JS][demo-project], which we are goint to format with that
+same implementation:
 
 ```js
 const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {}
 ```
 
-Parsing this definition with [`espree`][espree] gives the following AST (some
-properties have been removed for brevity):
+In order to format this code, we first need to parse it. Using the JavaScript
+parser [`espree`][espree], we get the following AST (some properties have been
+removed for brevity):
 
 ```js
 Node {
@@ -104,24 +109,37 @@ Node {
 ```
 
 Let's walk through the IR generation now. Skipping the `Program` node (which
-represents the entire source code), we want to pretty-print a variable
-declaration (`VariableDeclaration` and `VariableDeclarator` nodes). The pretty
-output should look like this:
-
-```js
-const renderDocument = ...;
-```
+represents the entire source code), we want to start pretty-printing a variable
+declaration (`VariableDeclaration` and `VariableDeclarator` nodes).
 
 ### A simple IR
 
-The Right-Hand Side (RHS) hasn't been specified yet, which makes the
-intermediate representation simple so far: it is a list of strings. It is
-"simple" because a list (JS array) implies concatenation and a string is
-rendered as is.
+We are only interested in the first part of our input for now, which is
+essentially the JavaScript code shown below where the Right-Hand Side (RHS) of
+the declaration has been replaced with `...`. We'll get back to that part later.
+
+<figure class="ascii">
+<pre>
+┌──────┐ ┌──────────────┐ ┌───┐ ┌───┐
+│const␣│ │renderDocument│ │␣=␣│ │...│
+└──────┘ └──────────────┘ └───┘ └─▲─┘
+                                  │
+                                 RHS
+</pre>
+</figure>
+
+In the meantime, this is convenient because it makes the intermediate
+representation simple: it is a list of strings. A list implies concatenation of
+all the items and a string is rendered as is.
 
 ```js
-// This is the IR of the previous code snippet.
+// The JavaScript array below is our IR!
 ['const ', 'renderDocument', ' = ', '...', ';']
+```
+
+```js
+// This is the result of our IR once rendered:
+const renderDocument = ...;
 ```
 
 Note the semi-colon at the end, which isn't part of the input. When walking the
@@ -133,7 +151,7 @@ XML][xml-printer].
 
 ### Describing different layouts
 
-The RHS is an `ArrowFunctionExpression` and we want its pretty output to be
+The RHS is an `ArrowFunctionExpression` and we want the pretty output to be
 rendered differently depending on the print width value because such functions
 might have long parameter names, default values, etc. The idea is to print all
 the arguments of the function on the same line if the total width is less than
@@ -158,8 +176,10 @@ if any, and comma).
 
 ```js
 [
+  // This is what we had before.
   "const ", "renderDocument", " = ",
-  // This object defines the RHS:
+
+  // This is NEW!
   {
     type: "group",
     contents: [
@@ -172,6 +192,8 @@ if any, and comma).
       ")", " => ", "{", "}",
     ]
   },
+
+  // This is what we had before.
   ";"
 ]
 ```
@@ -179,12 +201,14 @@ if any, and comma).
 This would produce the following pretty outputs:
 
 ```js
--------------------------------------------------------------------------------| <- 80 chars (broken layout was used)
+//-----------------------------------------------------------------------------| <- 80 chars (broken layout was used)
 const renderDocument = (doc,
 fits = DEFAULT_FITS,
 indentPrefix = DEFAULT_INDENT_PREFIX) => {};
+```
 
------------------------------------------------------------------------------------------------------------------------| <- 120 chars (flat layout was used)
+```js
+//---------------------------------------------------------------------------------------------------------------------| <- 120 chars (flat layout was used)
 const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {};
 ```
 
@@ -194,8 +218,9 @@ level of indentation and probably break before the closing parenthesis as well.
 
 We can use a new function named `nest()` that will change the current
 indentation level. This abstraction allows to later render the same input with 2
-spaces, 4 spaces or tabs. Indentation is only updated after a hard line, which
-is why we don't have to specify that it only applies to the _broken_ layout.
+spaces, 4 spaces or even tabs. Indentation is only updated after a hard line,
+which is why we don't have to specify that it only applies to the _broken_
+layout.
 
 Here is the final IR of our function:
 
@@ -206,6 +231,8 @@ Here is the final IR of our function:
     type: "group",
     contents: [
       "(",
+
+      // This is NEW!
       {
         type: "nest",
         indent: 1,
@@ -218,7 +245,9 @@ Here is the final IR of our function:
           "indentPrefix", " = ", "DEFAULT_INDENT_PREFIX",
         ],
       },
+      // This is NEW!
       SOFTLINE,
+
       ")", " => ", "{", "}",
     ],
   },
@@ -254,20 +283,34 @@ const LINE = flatChoice(HARDLINE, " ");
 [There are other functions][other-functions] but `group` and `flatChoice` are
 the ones used to describe multiple layouts and therefore very important.
 
+The IR presented in this article gives us some rendering configuration options
+"for free":
+
+1. the desired print width: used to determine when to use the _broken_ layout
+   (which is used by a [`fits()` function][fit-fn] under the hood)
+2. the "type" of indentation: used when the indentation level changes. With
+   `nest()`, the IR tells the renderer to indent or dedent the content that
+   follows by _N_ levels. The renderer is free to use [any number of spaces or
+   tabs for a single indentation level][default-indent]
+3. the control character to use to indicate the end of a line: while we probably
+   always want `\n`, it could be [any other character][default-newline]
+
 ### Results
 
 Rendering the full intermediate representation shown previously would give
 different outputs depending on the print width value:
 
 ```js
--------------------------------------------------------------------------------| <- 80 chars
+//-----------------------------------------------------------------------------| <- 80 chars
 const renderDocument = (
   doc,
   fits = DEFAULT_FITS,
   indentPrefix = DEFAULT_INDENT_PREFIX
 ) => {};
+```
 
------------------------------------------------------------------------------------------------------------------------| <- 120 chars
+```js
+//---------------------------------------------------------------------------------------------------------------------| <- 120 chars
 const renderDocument = (doc, fits = DEFAULT_FITS, indentPrefix = DEFAULT_INDENT_PREFIX) => {};
 ```
 
@@ -317,8 +360,9 @@ Here is a quote from the Prettier docs:
 > - Empty lines at the start and end of blocks (and whole files) are removed.
 >   (Files always end with a single newline, though.)
 
-Depending on the programming language, this might not be too difficult. As for
-comments, this is a completely different story!
+Depending on the programming language or parser (more on that in the next
+section), this might not be too difficult. As for comments, this is a completely
+different story!
 
 ### Comments
 
@@ -362,8 +406,9 @@ const currying =
     foo;
 ```
 
-With some trivial modifications to my implementation, this is how it would be
-pretty-printed:
+With some trivial modifications to my implementation (required because the JS
+formatter in my demo project does not support _all_ JS syntaxes), this is how it
+would be pretty-printed:
 
 ```js
 const currying = (argument1) => {
@@ -390,7 +435,9 @@ const currying = (argument1) => (argument2) => (argument3) => (argument4) => (
 ```
 
 In both cases, this isn't ideal. We really want to keep the input as output
-because it is more readable, i.e. fine-tuning the formatter in some cases.
+because it is more readable in this case. While Wadler's IR and renderer will
+happily pretty-print any content, fine tuning the translation layer is the
+complicated part.
 
 ## Conclusion
 
@@ -424,3 +471,6 @@ mind-blowing to me.
 [rowan]: https://github.com/rust-analyzer/rowan
 [curried-patch]: https://github.com/prettier/prettier/commit/046ffb11f980269937b2e58a30567efdcdbf230c
 [xml-printer]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/xml-printer.js#L14-L70
+[fit-fn]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/document.js#L69
+[default-indent]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/document.js#L121
+[default-newline]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/document.js#L120
