@@ -208,7 +208,7 @@ Following this rule is pretty easy, you simply have to **encapsulate all the
 primitives within objects**, in order to avoid the [**Primitive
 Obsession**](http://c2.com/cgi/wiki?PrimitiveObsession) anti-pattern.
 
-If the variable of your primitive type has a **behaviors**, you MUST encapsulate
+If the variable of your primitive type has a **behavior**, you MUST encapsulate
 it. And this is especially true for **Domain Driven Design**. **DDD** describes
 **Value Objects** like `Money`, or `Hour` for instance.
 
