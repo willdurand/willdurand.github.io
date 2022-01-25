@@ -18,7 +18,7 @@ having worked on [many](/2020/05/01/moziversary-2/)
 [promotion](/2021/02/26/i-got-a-promotion/) not too long ago, I made a [lateral
 move](https://www.glassdoor.com/blog/lateral-career-moves/).
 
-I am now a full time **Firefox engineer**, working on the [WebExtensions API][].
+I am now a full-time **Firefox engineer**, working on the [WebExtensions API][].
 I've been working on "web apps" for most of my career and now I'll be writing
 code for developers to write browser extensions.
 
