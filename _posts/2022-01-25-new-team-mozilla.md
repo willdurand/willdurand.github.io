@@ -4,7 +4,7 @@ title: I joined a new team (at Mozilla)
 audio: false
 tldr: false
 location: "Freiburg, Germany"
-tweet_id:
+tweet_id: 1485897610703560708
 tags: [mozilla]
 ---
 
