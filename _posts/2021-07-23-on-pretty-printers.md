@@ -119,16 +119,8 @@ We are only interested in the first part of our input for now, which is
 essentially the JavaScript code shown below where the Right-Hand Side (RHS) of
 the declaration has been replaced with `...`. We'll get back to that part later.
 
-<figure class="ascii">
-<pre>
-+------+ +--------------+ +---+ +---+ +-+
-|const␣| |renderDocument| |␣=␣| |...| |;|
-+------+ +--------------+ +---+ +---+ +-+
-                                  ^
-                                  |
-                                 RHS
-</pre>
-</figure>
+![](/images/posts/2021/07/code-rhs.webp)
+{:.can-invert-image-in-dark-mode}
 
 In the meantime, this is convenient because it makes the intermediate
 representation simple: it is a list of strings. A list implies concatenation of

@@ -1253,7 +1253,7 @@ a.anchor-link:hover {
     background: url(../images/arrow-menu-dark-theme.webp) no-repeat;
   }
 
-  .has-transparent-img img {
+  .can-invert-image-in-dark-mode img {
     filter: invert(100%);
   }
 }
