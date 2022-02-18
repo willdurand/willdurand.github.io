@@ -1252,6 +1252,10 @@ a.anchor-link:hover {
   .menu-hint {
     background: url(../images/arrow-menu-dark-theme.webp) no-repeat;
   }
+
+  .has-transparent-img img {
+    filter: invert(100%);
+  }
 }
 
 /* syntax highlighting code */

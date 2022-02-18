@@ -15,14 +15,6 @@ details in the context of ArvernOS._
 
 ---
 
-<style>
-@media (prefers-color-scheme: dark) {
-  .with-caption img {
-    background-color: #fff;
-  }
-}
-</style>
-
 There are different ways to approach a problem like "let's write a network
 stack". The most sane solution is probably to not do it because there are many
 great implementations already ([lwIP][] for example). On the other hand, _I_
@@ -43,7 +35,7 @@ the future, we'll see.
 
 ![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp)
 _Figure 1: ArvernOS network stack in (early) 2022_
-{:.with-caption}
+{:.with-caption .has-transparent-img}
 
 Figure 1 depicts the different layers/protocols already implemented in ArvernOS.
 Each implementation is far from perfect but it is "functional". In this article,
@@ -72,7 +64,7 @@ virtual machines (and on some cloud providers, potentially).
 
 ![ArvernOS "Layer 1"](/images/posts/2022/02/arvernos-layer1.webp)
 _Figure 2: ArvernOS "Layer 1" is basically a driver to send/receive data_
-{:.with-caption}
+{:.with-caption .has-transparent-img}
 
 Implementing the _RTL8139_ driver wasn't too complex (see these source files:
 [`drivers/rtl8139.h`][rtl8139.h] and [`drivers/rtl8139.c`][rtl8139.c]). The
@@ -108,7 +100,7 @@ be configured to ignore such frames).
 
 ![ArvernOS Layer 1 + 2](/images/posts/2022/02/arvernos-layer2.webp)
 _Figure 3: ArvernOS Layer 1 + 2_
-{:.with-caption}
+{:.with-caption .has-transparent-img}
 
 In ArvernOS, most protocol implementations provide two functions to receive and
 send data, which is what Figure 3 shows. The Ethernet implementation is defined
@@ -172,7 +164,7 @@ know the MAC address of _B_.
 
 ![ArvernOS Layer 1 + 2 + ARP](/images/posts/2022/02/arvernos-layer2-5.webp)
 _Figure 4: ArvernOS Layer 1 + 2 + ARP (Layer 2.5)_
-{:.with-caption}
+{:.with-caption .has-transparent-img}
 
 Currently, the network stack contains a naive ARP implementation (defined in
 this header file: [`kernel/net/arp.h`][arp.h]). No ARP cache. No Reverse ARP. As
@@ -237,7 +229,7 @@ encapsulated in the packet. Common types include [ICMP][] ("ping"), [UDP][] and
 
 ![ArvernOS Layers 1 + 2 + IPv4](/images/posts/2022/02/arvernos-layer3.webp)
 _Figure 5: ArvernOS Layer 1 + 2 + IPv4_
-{:.with-caption}
+{:.with-caption .has-transparent-img}
 
 Figure 5 shows how the IPv4 implementation is integrated in the network stack
 for ArvernOS. It is very similar to what has been described previously. When
