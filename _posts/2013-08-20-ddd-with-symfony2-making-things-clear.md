@@ -89,8 +89,7 @@ not always 1-1 with your Domain Model. See these resources as DTOs. For
 instance, if you deal with _Orders_ and _Payments_, you could **create** a
 _transaction_ resource to perform the business operation
 `payOrder(Order $order, Payment $payment)` as proposed by Jonathan Bensaid in
-[the comments of the previous
-article](http://williamdurand.fr/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/#comment-1006445621):
+the (now deleted) comments of the previous article:
 
     POST /transactions
     orderId=123&paymentId=456&...

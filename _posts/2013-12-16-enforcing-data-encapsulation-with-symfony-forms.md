@@ -25,8 +25,8 @@ values or state of a structured object inside a
 class](<http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)>),
 preventing unauthorized parties direct access to them. That is why you should
 [avoid getters and
-setters](http://williamdurand.fr/2013/06/03/object-calisthenics/#9-no-getters/setters/properties)
-as much as you can, not to say all the time!
+setters](/2013/06/03/object-calisthenics/#9-no-getterssettersproperties) as much
+as you can, not to say all the time!
 
 Working with the [Symfony
 Form](http://symfony.com/doc/current/components/form/introduction.html), it may

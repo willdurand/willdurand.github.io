@@ -111,7 +111,7 @@ application:
 
 This should be obvious, but still needs to be said: **name** your classes, methods,
 attributes, and variables **properly**. Oh, and [don't
-abbreviate](/2013/06/03/object-calisthenics/#6-don-t-abbreviate)! You write code
+abbreviate](/2013/06/03/object-calisthenics/#6-dont-abbreviate)! You write code
 for people, not for computers. They don't understand what you write anyway.
 Computers just understand `0` and `1`. **Programming languages are for humans**.
 
@@ -135,7 +135,7 @@ that was invented by Robert C. Martin, also known as _Uncle Bob_.
 SOLID means:
 
 - [**S**ingle Responsibility Principle](#single-responsibility-principle)
-- [**O**pen/Closed Principle](#open/closed-principle)
+- [**O**pen/Closed Principle](#openclosed-principle)
 - [**L**iskov Substitution Principle](#liskov-substitution-principle)
 - [**I**nterface Segregation Principle](#interface-segregation-principle)
 - [**D**ependency Inversion Principle](#dependency-inversion-principle)

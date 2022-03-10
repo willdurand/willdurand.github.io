@@ -153,10 +153,10 @@ class User
 ```
 
 Generally speaking, try to
-[avoid](/2013/06/03/object-calisthenics/#9-no-getters/setters/properties)
+[avoid](/2013/06/03/object-calisthenics//#9-no-getterssettersproperties)
 [setters](http://whitewashing.de/2012/08/22/building_an_object_model__no_setters_allowed.html)
 in order to make your code
-[solid](/2013/07/30/from-stupid-to-solid-code/#open/closed-principle).
+[solid](/2013/07/30/from-stupid-to-solid-code/#openclosed-principle).
 You could use a [Value
 Object](http://dddsample.sourceforge.net/characterization.html#Value_Objects)
 to [represent the name of the
