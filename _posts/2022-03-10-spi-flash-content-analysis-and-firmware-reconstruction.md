@@ -476,7 +476,7 @@ not too sure how that has been generated yet, maybe just `cat zImage *.dtb > ker
 A [initial ramdisk][] seems to be part of that same `zImage` too, and it
 contains different `init.*.rc` files.
 
-The next steps will be to build a new Linux kernel that looks like the extract
+The next steps will be to build a new Linux kernel that looks like the extracted
 one, and see if that works.
 
 ## Conclusion
