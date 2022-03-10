@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+for img in *.webp; do
+	width=$(identify -format '%w' "$img")
+
+	if [ $width -gt 1000 ]; then
+		if [ $width -eq 1024 ]; then
+			echo "skipping $img because width=$width"
+			continue
+		fi
+
+		echo "image: $img"
+		echo "width: $width"
+		echo ""
+
+		cwebp -resize 1000 0 "$img" -o "$img"
+	fi
+done
