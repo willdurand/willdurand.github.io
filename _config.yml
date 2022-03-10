@@ -32,7 +32,6 @@ twitter:
   card: summary_large_image
 
 plugins:
-  - jemoji
   - jekyll-seo-tag
 
 repository: willdurand/willdurand.github.io

@@ -1,5 +1,0 @@
-/*!
- * William DURAND <william.durand1@gmail.com>
- * MIT Licensed
- */
-(function(a,c){var b=(function(){var d=/[ ;,.'?!_]/g;function f(i){return i.trim().replace(d,"-").replace(/[-]+/g,"-").replace(/-$/,"").toLowerCase()}function g(i){var k=1,j=i;while(a.getElementById(i)){i=j+"-"+k++}return i}function e(k){var l;for(var j=0;j<k.childNodes.length;j++){l=k.childNodes[j];if(l.nodeType===Node.TEXT_NODE){return l.nodeValue}}}return function h(m,l){var n=l.text||"&para;",k=l.cssClass||"anchor-link",o=l.skipExisting;var r,q,p;for(var j=0;j<m.length;j++){r=m[j];if(r.id&&o){continue}r.id=r.id||g(f(e(r)));p=a.createElement("a");p.className=k;p.href="#"+r.id;p.innerHTML=n;if(l.position=="prepend"){r.insertBefore(p,r.firstChild)}else{r.appendChild(p)}}}})();if(typeof c!=="undefined"){c.fn.anchorify=function(d){b(c(this).get(),d||{});return this}}else{window.anchorify=function(e){e=e||{};var d=a.querySelectorAll(e.sel||"h1, h2, h3, h4, h5");return b(d,e)}}})(document,jQuery);

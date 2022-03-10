@@ -1,15 +1,13 @@
 ---
 ---
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html dir="ltr" lang="en-us">
   <head>
     {% include head.html %}
     {% seo %}
   </head>
 
   <body>
-
     {% include sidebar.html %}
 
     <div class="menu-hint hide-on-mobile"></div>
@@ -31,35 +29,48 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <script src="/js/anchorify.js" type="text/javascript"></script>
     <script>
-      $('.post h2, .post h3, .post h4, .post h5, .post h6').anchorify();
+      document.addEventListener("DOMContentLoaded", function () {
+        // Menu
+        const $toggle = document.querySelector(".sidebar-toggle");
+        const $sidebar = document.getElementById("sidebar");
+        const $checkbox = document.getElementById("sidebar-checkbox");
 
-      (function (doc) {
-        const toggle = doc.querySelector(".sidebar-toggle");
-        const sidebar = doc.querySelector("#sidebar");
-        const checkbox = doc.querySelector("#sidebar-checkbox");
-
-        doc.addEventListener(
+        document.addEventListener(
           "click",
           (e) => {
             const { target } = e;
 
             if (
-              !checkbox.checked ||
-              sidebar.contains(target) ||
-              target === checkbox ||
-              target === toggle
+              !$checkbox.checked ||
+              $sidebar.contains(target) ||
+              target === $checkbox ||
+              target === $toggle
             ) {
               return;
             }
 
-            checkbox.checked = false;
+            $checkbox.checked = false;
           },
           false
         );
-      })(document);
+
+        // Anchor links
+        const selector = ".post h2, .post h3, .post h4, .post h5, .post h6";
+
+        for (const $header of document.querySelectorAll(selector)) {
+          if (!$header.id) {
+            continue;
+          }
+
+          const $anchor = document.createElement("a");
+          $anchor.className = "anchor-link";
+          $anchor.href = "#" + $header.id;
+          $anchor.innerHTML = "&para;";
+
+          $header.appendChild($anchor);
+        }
+      });
     </script>
   </body>
 </html>
