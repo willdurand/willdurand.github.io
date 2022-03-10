@@ -5,7 +5,7 @@ audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2022/03/social.webp
-tweet_id:
+tweet_id: 1501871377158225922
 ---
 
 I wrote a [Twitter thread about hardware hacking][twitter-thread] some time ago.
