@@ -33,5 +33,6 @@ twitter:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 repository: willdurand/willdurand.github.io

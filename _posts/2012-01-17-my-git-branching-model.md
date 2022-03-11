@@ -3,6 +3,9 @@ layout: post
 title: My Git branching model
 location: Clermont-Fd Area, France
 audio: false
+credits: |
+    Vincent Driessen for his [Git model](http://nvie.com/posts/a-successful-git-branching-model/)
+    and illustrations.
 ---
 
 We all probably know [this successful Git branching
@@ -131,7 +134,5 @@ this responsibility: the **release manager**.
 I experimented this model with different teams in terms of number of people and
 skills, and I never had more needs. I know some people use **release** branches
 but it can be handled in another way.
-
-All credits go to Vincent Driessen and his [Git model][successful-git-model].
 
 [successful-git-model]: http://nvie.com/posts/a-successful-git-branching-model/
