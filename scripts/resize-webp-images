@@ -13,6 +13,6 @@ for img in *.webp; do
 		echo "width: $width"
 		echo ""
 
-		cwebp -resize 1000 0 "$img" -o "$img"
+		cwebp -lossless -resize 1000 0 "$img" -o "$img"
 	fi
 done
