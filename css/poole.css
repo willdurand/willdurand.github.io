@@ -1,3 +1,4 @@
+@import url("https://rsms.me/inter/inter.css");
 /*
  *                        ___
  *                       /\_ \
@@ -26,14 +27,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
 }
 
 body {
@@ -281,7 +276,7 @@ figcaption {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 40rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -389,7 +384,6 @@ figcaption {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -470,7 +464,13 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 h1,
@@ -479,7 +479,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -0.025rem;
@@ -514,7 +513,7 @@ h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 40rem;
   }
 }
 
@@ -574,11 +573,10 @@ h6 {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -14rem;
-  width: 14rem;
+  left: -15rem;
+  width: 15rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 0.875rem; /* 15px */
   color: rgba(255, 255, 255, 0.6);
   background-color: #202020;
@@ -742,9 +740,9 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-  -ms-transform: translateX(14rem);
-  transform: translateX(14rem);
+  -webkit-transform: translateX(15rem);
+  -ms-transform: translateX(15rem);
+  transform: translateX(15rem);
 }
 
 /*
@@ -811,7 +809,6 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -860,7 +857,7 @@ a.pagination-item:hover {
 
 .layout-reverse .sidebar {
   left: auto;
-  right: -14rem;
+  right: -15rem;
 }
 .layout-reverse .sidebar-toggle {
   left: auto;
@@ -870,9 +867,9 @@ a.pagination-item:hover {
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(-14rem);
-  -ms-transform: translateX(-14rem);
-  transform: translateX(-14rem);
+  -webkit-transform: translateX(-15rem);
+  -ms-transform: translateX(-15rem);
+  transform: translateX(-15rem);
 }
 
 /*
