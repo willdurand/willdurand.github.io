@@ -1090,9 +1090,9 @@ em.fork-and-edit {
 
 a.anchor-link {
   color: #eee;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 8px;
   text-decoration: none;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 a.anchor-link:hover {
