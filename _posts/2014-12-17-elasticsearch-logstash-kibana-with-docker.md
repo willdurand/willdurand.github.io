@@ -9,10 +9,10 @@ title: "Elasticsearch, Logstash &amp; Kibana with Docker"
 
 Yesterday, I gave a talk on [how I use **Docker** to deploy
 applications](https://speakerdeck.com/willdurand/docker-ceci-nest-pas-une-introduction-apihour-number-12)
-at Clermont'ech [API Hour \#12](http://clermontech.org/api-hours/api-hour-12.html),
-a French local developer group. I explained how to create a simple yet robust
-infrastructure to deploy a web application and a few services with **zero
-downtime**.
+at Clermont'ech [API Hour
+\#12](http://clermontech.org/api-hours/api-hour-12.html), a French local
+developer group. I explained how to create a simple yet robust infrastructure to
+deploy a web application and a few services with **zero downtime**.
 
 In order to monitor my infrastructure, and especially the HTTP responses, I gave
 the famous **ELK stack** a try. ELK stands for
@@ -28,7 +28,7 @@ image. While you can directly use this image to run a container (mounting a
 _host_ folder as a volume for the configuration files), you should probably
 extend it to add your own configuration so that you can get rid of this mapping to
 a _host_ folder. This is one of the Docker best practices. Last but not
-least, Elasticsearch's data are located into `/data`. I recommend that you use a
+least, Elasticsearch's data is located into `/data`. I recommend that you use a
 [data-only container](https://docs.docker.com/userguide/dockervolumes/) [to
 persist these
 data](http://www.tech-d.net/2013/12/16/persistent-volumes-with-docker-container-as-volume-pattern/).
@@ -43,7 +43,7 @@ $ docker run -p 8080:80 \
 
 ## Logstash Forwarder
 
-In my opinion, such a stack should run on its own server, that is why its
+In my opinion, such a stack should run on its own server, that is why the
 `logstash` configuration should only receive logs from the outside (the
 production environment for instance) and send them to Elasticsearch. In other
 words, we need a tool to collect logs in production, and process them elsewhere.
@@ -131,7 +131,7 @@ logs (and you would use `--volume-from datalogs` for instance).
 You are all set! You can now create your own dashboards in Kibana. Here is mine
 to monitor the HTTP responses of the load balancer:
 
-![](/images/kibana.png)
+![](/images/posts/2014/12/kibana.webp)
 
 Need inspiration? Watch [this
 video](https://www.youtube.com/watch?v=1r1SOeaDqH4&list=PL9zDdgiGjkIeeVlrsz9A8o3HtZhvERHT-&index=7)
@@ -140,8 +140,6 @@ if you speak French...
 ## Also...
 
 [Twelve Factors](http://12factor.net) has a point saying that logs should be
-sent to `std[err|out]`, which seems not always possible to me, but if you do
+sent to `std[err|out]`, which does not always seem possible to me, but if you do
 that, then you will probably be interested in
 [logspout](https://github.com/progrium/logspout).
-
-Don't hesitate to share your point of view :-)
