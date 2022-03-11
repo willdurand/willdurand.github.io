@@ -24,11 +24,11 @@ title: "Home"
     {% endif %}
     {% endif %}
     <li itemscope itemtype="http://schema.org/BlogPosting" class="post-title">
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="hide-on-mobile">
+        <a itemprop="headline" itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-title-date hide-on-mobile">
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
-            {{ post.date | date: '%d %b' }}
+            // {{ post.date | date: '%d %b' }}
         </time>
-        <span class="separator hide-on-mobile"> &raquo; </span><a itemprop="headline" itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
     </li>
 
     {% if forloop.last %}

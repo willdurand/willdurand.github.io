@@ -1,4 +1,13 @@
-@import url("https://rsms.me/inter/inter.css");
+@font-face {
+  font-display: block;
+  font-family: "Inter var";
+  src: url("/fonts/Inter-roman-minimal-subset-en-US.var.woff2") format("woff2");
+  font-weight: 100 900;
+  unicode-range: U+0020-007E, U+00A0, U+00A3, U+00A7, U+00A9, U+00AE,
+    U+00B0-00B2, U+00B5, U+00D7, U+00F7, U+2010, U+2013-2014, U+2018-2019,
+    U+201C-201D, U+2026, U+20AC, U+2122;
+}
+
 /*
  *                        ___
  *                       /\_ \
@@ -20,15 +29,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Inter var", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-}
-
-html {
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 body {
@@ -461,16 +471,6 @@ a.pagination-item:hover {
 html,
 body {
   overflow-x: hidden;
-}
-
-html {
-  font-family: "Inter", sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
 }
 
 h1,
@@ -1122,7 +1122,12 @@ a.anchor-link:hover {
   position: absolute;
   top: 3em;
   width: 200px;
-  z-index: 1;
+  z-index: 0;
+}
+
+.post-title-date {
+  color: #6c757d;
+  font-size: 16px;
 }
 
 .with-caption {
@@ -1162,20 +1167,20 @@ a.anchor-link:hover {
   border-top: 1px solid #eee;
 }
 
-@media only screen and (max-width: 1300px) {
-  .menu-hint {
-    opacity: 0.1;
-  }
-}
-
 @media only screen and (max-width: 500px) {
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 
   table {
     display: block;
     overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu-hint {
+    opacity: 0.1;
   }
 }
 
