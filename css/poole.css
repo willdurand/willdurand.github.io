@@ -1060,6 +1060,17 @@ em.fork-and-edit {
   padding-left: 0;
 }
 
+.atom-feeds li,
+.social-links li {
+  display: flex;
+  align-items: center;
+}
+
+.atom-feeds li a,
+.social-links li a {
+  margin-left: 8px;
+}
+
 .aligned-images {
   display: inline-block;
   white-space: nowrap;
@@ -1099,20 +1110,11 @@ a.anchor-link:hover {
   list-style-type: none;
 }
 
-.social-links .icon {
-  padding-left: 22px;
-}
-
-.social-links .github {
-  background: transparent url(../images/github.png) no-repeat;
-}
-
-.social-links .linkedin {
-  background: transparent url(../images/linkedin.png) no-repeat;
-}
-
-.social-links .twitter {
-  background: transparent url(../images/twitter.png) no-repeat;
+.svg-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
 }
 
 .menu-hint {
