@@ -26,6 +26,8 @@ updates:
     content: >-
       The title of this article has been edited. It should have been edited a
       long time ago. Then again, sorry about that!
+redirect_from:
+  - /2014/02/14/please-do-not-patch-like-an-idiot/
 ---
 
 <style>
