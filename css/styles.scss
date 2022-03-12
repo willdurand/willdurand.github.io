@@ -399,7 +399,9 @@ figcaption {
   z-index: 0;
 }
 
-// homepage
+// pages
+.talk-at,
+.book-authors,
 .post-title-date {
   color: $color-secondary;
   font-size: 16px;
@@ -852,9 +854,9 @@ figcaption {
   }
 }
 
-@media (min-width: 56em) {
+@media (min-width: 900px) {
   .container {
-    max-width: 40rem;
+    max-width: 700px;
   }
 }
 

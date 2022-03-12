@@ -5,15 +5,16 @@ tagline: "Books I've read."
 ---
 
 <ul class="books">
-{% for data in site.data.books %}
-    <h2 class="title">{{ data.year }}</h2>
+  {% for data in site.data.books %}
+  <h2 class="title">{{ data.year }}</h2>
 
-    <ul class="books-by-year {{ data.year }}">
+  <ul class="books-by-year {{ data.year }}">
     {% for book in data.books %}
-        <li>
-            <a href="{{ book.url }}" class="book-title">{{ book.title }}</a> - <em class="book-authors">{{ book.authors }}</em>
-        </li>
+    <li>
+      <a href="{{ book.url }}" class="book-title">{{ book.title }}</a>
+      <span class="book-authors"> // {{ book.authors }}</span>
+    </li>
     {% endfor %}
-    </ul>
-{% endfor %}
+  </ul>
+  {% endfor %}
 </ul>
