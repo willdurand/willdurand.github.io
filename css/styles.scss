@@ -10,6 +10,7 @@
 
 $color-text: #515151;
 $color-headings: #313131;
+$sidebar-width: 17rem;
 
 @font-face {
   font-display: block;
@@ -250,13 +251,13 @@ figcaption {
   bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
-  left: -15rem;
+  left: -$sidebar-width;
   overflow-y: auto;
   position: fixed;
   top: 0;
   transition: all 0.3s ease-in-out;
   visibility: hidden;
-  width: 15rem;
+  width: $sidebar-width;
 
   a {
     color: #fff;
@@ -384,9 +385,9 @@ figcaption {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -ms-transform: translateX(15rem);
-  -webkit-transform: translateX(15rem);
-  transform: translateX(15rem);
+  -ms-transform: translateX($sidebar-width);
+  -webkit-transform: translateX($sidebar-width);
+  transform: translateX($sidebar-width);
 }
 
 .menu-hint {
