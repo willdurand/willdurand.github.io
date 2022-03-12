@@ -21,7 +21,9 @@
         <div class="container">
           <h3 class="masthead-title">
             <a href="/" title="Home">{{ site.title }}</a>
-            <small>{% if page.tagline %}{{ page.tagline }}{% else %}{{ site.tagline }}{% endif %}</small>
+            {% if page.tagline %}
+            <small>{{ page.tagline }}{% else %}{{ site.tagline }}</small>
+            {% endif %}
           </h3>
         </div>
       </div>
