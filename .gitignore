@@ -1,4 +1,5 @@
 .DS_Store
-_site/
-Gemfile.lock
 .ruby-version
+Gemfile.lock
+_site/
+vendor/

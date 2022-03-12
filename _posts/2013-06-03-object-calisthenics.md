@@ -197,10 +197,8 @@ encapsulate varying behavior for the same routine based on an object's state
 object:
 
 ![](http://sourcemaking.com/files/sm/images/patterns/State1.gif)
-
-<small class="source">Source:
-[http://sourcemaking.com/design_patterns/state](http://sourcemaking.com/design_patterns/state).
-</small>
+_Source: [http://sourcemaking.com/design_patterns/state](http://sourcemaking.com/design_patterns/state)_
+{:.with-caption}
 
 ## 3. Wrap All Primitives And Strings
 
@@ -374,8 +372,8 @@ picture. Note that it relies on [Rule 3: Wrap All Primitives And
 Strings](#3-wrap-all-primitives-and-strings).
 
 ![](/images/posts/2013/06/2-instance-variables.png)
-
-<small class="source">Source: [https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables](https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables).</small>
+_Source: [https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables](https://github.com/TheLadders/object-calisthenics#rule-8-no-classes-with-more-than-two-instance-variables)_
+{:.with-caption}
 
 The main question was _Why two attributes?_ My answer was _Why not?_ Not the
 best explanation but, in my opinion, the main idea is to distinguish **two kinds

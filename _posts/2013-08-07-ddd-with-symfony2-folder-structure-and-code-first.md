@@ -578,8 +578,8 @@ the **Application Layer**. This layer is responsible for displaying information
 to the user, and accept new data, but I will cover it in another article.
 
 ![](/images/posts/ddd.png)
-
-<small class="source">Source: <a href="http://guptavikas.wordpress.com/2009/12/01/domain-driven-design-an-introduction/">http://guptavikas.wordpress.com/2009/12/01/domain-driven-design-an-introduction/</a></small>
+_Source: <a href="http://guptavikas.wordpress.com/2009/12/01/domain-driven-design-an-introduction/">http://guptavikas.wordpress.com/2009/12/01/domain-driven-design-an-introduction/</a>_
+{:.with-caption}
 
 By using the **Code First** approach, you have been able to write a first
 action that just works. You won't have to change it. However, you will be able

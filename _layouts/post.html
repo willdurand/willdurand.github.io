@@ -49,9 +49,11 @@ layout: main
     {{ content }}
   </div>
 
-  <em class="fork-and-edit">
-    Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/main/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.md">fork and edit this post</a> if you find a typo, thank you so much! This post is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-  </em>
+  <div class="fork-and-edit">
+    <p>
+      Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/main/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.md">fork and edit this post</a> if you find a typo, thank you so much! This post is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    </p>
+  </div>
 </div>
 
 {% if page.credits %}
@@ -62,7 +64,7 @@ layout: main
 </section>
 {% endif %}
 
-<div class="related">
+<section class="post-related-posts">
   <h2>Recent articles</h2>
   <ul class="related-posts" itemscope itemtype="https://schema.org/Blog">
     {% for post in site.related_posts limit:8 %}
@@ -78,7 +80,7 @@ layout: main
       </li>
     {% endfor %}
   </ul>
-</div>
+</section>
 
 <section class="post-comments">
   <h2>Comments</h2>
