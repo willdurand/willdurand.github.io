@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "I got a promotion!"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/promotion.webp

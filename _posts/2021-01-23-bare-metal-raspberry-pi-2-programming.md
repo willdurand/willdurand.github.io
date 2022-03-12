@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Bare-metal Raspberry Pi 2 programming"
-audio: false
 tldr: false
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/bootloader-rpi2.webp

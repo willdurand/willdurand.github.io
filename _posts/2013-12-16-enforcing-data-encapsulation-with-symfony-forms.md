@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: true
 tags: [PHP]
 title: "Enforcing Data Encapsulation with Symfony Forms"
 updates:

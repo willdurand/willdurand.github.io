@@ -2,7 +2,6 @@
 layout: post
 title: "REST APIs with Symfony2: The Right Way"
 location: Zürich, Switzerland
-audio: false
 tags: [PHP]
 updates:
   - date: 2013-04-11

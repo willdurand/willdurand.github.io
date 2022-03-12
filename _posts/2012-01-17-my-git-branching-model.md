@@ -2,7 +2,6 @@
 layout: post
 title: My Git branching model
 location: Clermont-Fd Area, France
-audio: false
 credits: |
     Vincent Driessen for his [Git model](http://nvie.com/posts/a-successful-git-branching-model/)
     and illustrations.

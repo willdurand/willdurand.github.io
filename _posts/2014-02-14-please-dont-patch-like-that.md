@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: true
 title: "Please. Don't Patch Like That."
 description: >-
   This article is about the PATCH HTTP verb and how it should be used. That

@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: false
 tags: [life, DIY]
 title: "Standing Desk Do It Yourself (DIY)"
 tweet_id: 445493021912862720

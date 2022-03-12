@@ -2,7 +2,6 @@
 layout: post
 title: Being A Frontend Developer For A WeekEnd
 location: Clermont-Fd Area, France
-audio: false
 ---
 
 Two weeks ago, I open-sourced

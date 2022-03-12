@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: true
 tags: [PHP, Geocoder]
 title: Taking Geocoder To The Next Level
 ---

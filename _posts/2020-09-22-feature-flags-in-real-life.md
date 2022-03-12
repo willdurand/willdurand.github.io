@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Feature flags in real life"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/09/waffle.jpg

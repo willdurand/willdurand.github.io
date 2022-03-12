@@ -2,7 +2,6 @@
 layout: post
 title: Services status dashboard
 location: Clermont-Fd Area, France
-audio: false
 ---
 
 Today, I was looking for an Open Source alternative to

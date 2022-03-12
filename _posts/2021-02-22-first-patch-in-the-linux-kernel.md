@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "First patch in the Linux Kernel"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/linux-kernel.webp

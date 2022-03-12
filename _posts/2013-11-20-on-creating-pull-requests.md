@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: true
-audio: false
 title: "On Creating Pull Requests"
 tweet_id: 403180287216975872
 updates:

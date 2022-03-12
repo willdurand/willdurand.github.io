@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "An introduction to `git worktree`"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/05/trees.webp

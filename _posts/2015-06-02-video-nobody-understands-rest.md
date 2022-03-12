@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd, France
 tldr: false
-audio: false
 tags: [REST, video]
 title: "[Video] Nobody Understands REST, but That's Ok ;-)"
 ---

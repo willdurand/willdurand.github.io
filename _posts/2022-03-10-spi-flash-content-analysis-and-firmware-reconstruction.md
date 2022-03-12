@@ -1,7 +1,6 @@
 ---
 layout: post
 title: SPI flash content analysis and firmware reconstruction
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2022/03/social.webp

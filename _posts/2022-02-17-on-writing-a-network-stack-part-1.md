@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "On writing a network stack (1/2)"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2022/02/network-stack-part-1.webp?v=2

@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: true
 title: "Numbers. Gifts. Money."
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Yes, it happened on Slack"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/04/slack.webp

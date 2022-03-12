@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Rebasing without `git rebase`"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/git-rebase.webp

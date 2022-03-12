@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: true
-audio: false
 title: On Open Sourcing Libraries
 tweet_id: 352787698618081282
 updates:

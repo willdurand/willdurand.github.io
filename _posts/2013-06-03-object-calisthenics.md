@@ -1,7 +1,6 @@
 ---
 layout: post
 tldr: true
-audio: true
 location: Clermont-Fd Area, France
 title: Object Calisthenics
 image: /images/posts/2013/06/object-calisthenics.png?v=1

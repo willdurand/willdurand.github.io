@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Suggested changes in code reviews"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/01/suggested-changes-social.png

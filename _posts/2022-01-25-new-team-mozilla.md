@@ -1,7 +1,6 @@
 ---
 layout: post
 title: I joined a new team (at Mozilla)
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2022/01/newteam.webp

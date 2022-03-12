@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Introducing chipolata: a CHIP-8 interpreter"
-audio: false
 tldr: false
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/chip8-space-intercept.webp

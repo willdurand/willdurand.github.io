@@ -2,7 +2,6 @@
 layout: post
 title: Introduction to Propel2 at Symfony Live 2012
 location: Paris, France
-audio: false
 tags: [PHP]
 ---
 

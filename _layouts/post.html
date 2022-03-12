@@ -23,12 +23,6 @@ layout: main
     {% endif %}{{ page.location }}
   </span>
 
-  {% if page.audio != false %}
-  <div class="post-audio">
-    <audio itemprop="audio" src="/mp3/{{ page.id|remove_first:'/'|replace:'/','-' }}.mp3" controls preload></audio>
-  </div>
-  {% endif %}
-
   {% if page.tldr %}
   <div class="post-shortcuts">
     <p>Jump to: <a href="#tldr">TL;DR</a></p>

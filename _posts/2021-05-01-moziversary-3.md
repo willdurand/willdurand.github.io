@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Moziversary #3"
-audio: false
 tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/05/moziversary-3.webp

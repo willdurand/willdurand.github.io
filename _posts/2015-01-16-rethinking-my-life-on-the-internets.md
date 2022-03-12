@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: false
 title: "Rethinking My Life (On The Internets)"
 updates:
   - date: 2015-01-30

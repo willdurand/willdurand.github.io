@@ -2,7 +2,6 @@
 layout: post
 title: Designing software by naming things
 location: Clermont-Fd Area, France
-audio: false
 redirect_from:
   - /2012/01/24/designing-a-software-by-naming-things/
 ---

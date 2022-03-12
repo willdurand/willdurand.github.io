@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 tldr: false
-audio: false
 tags: ["arduino", "coffuino"]
 title: "Playing With a ESP8266 WiFi Module"
 image: /images/posts/2015/esp/wiring.jpg
