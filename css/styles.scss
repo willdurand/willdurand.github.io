@@ -8,8 +8,17 @@
 #
 ---
 
-$color-text: #515151;
+$white: #fff;
+$color-border: #e5e5e5;
 $color-headings: #313131;
+$color-inline-code: #bf616a;
+$color-link: #268bd2;
+$color-secondary: #6c757d;
+$color-text: #515151;
+
+$bg-color-sidebar: #202020;
+$bg-color-code: #f9f9f9;
+
 $sidebar-width: 17rem;
 
 @font-face {
@@ -37,7 +46,7 @@ body {
 body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #fff;
+  background-color: $white;
   color: $color-text;
   font-family: Inter, -system-ui, sans-serif;
   font-size: 18px;
@@ -60,7 +69,7 @@ h6 {
 }
 
 a {
-  color: #268bd2;
+  color: $color-link;
   text-decoration: none;
 
   &:hover,
@@ -93,7 +102,6 @@ strong {
 }
 
 strong {
-  color: #303030;
   font-style: normal;
   font-weight: 500;
 }
@@ -117,20 +125,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
-
-abbr {
-  font-size: 85%;
-  font-weight: 500;
-  color: #555;
-  text-transform: uppercase;
-}
-
-abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #e5e5e5;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid lighten($color-border, 10);
 }
 
 code,
@@ -139,15 +135,15 @@ pre {
 }
 
 code {
-  background-color: #f9f9f9;
+  background-color: $bg-color-code;
   border-radius: 3px;
-  color: #bf616a;
+  color: $color-inline-code;
   font-size: 85%;
   padding: 0.15em 0.3em;
 }
 
 pre {
-  background-color: #f9f9f9;
+  background-color: $bg-color-code;
   display: block;
   font-size: 0.8rem;
   line-height: 1.4;
@@ -167,8 +163,8 @@ pre {
 blockquote {
   padding: 0.5rem 1rem;
   margin: 0.8rem 0;
-  color: #6c757d;
-  border-left: 0.25rem solid #e5e5e5;
+  color: $color-secondary;
+  border-left: 0.25rem solid $color-border;
 
   p:last-child {
     margin-bottom: 0;
@@ -191,16 +187,17 @@ table {
 
 td,
 th {
-  border: 1px solid #e5e5e5;
+  border: 1px solid $color-border;
   padding: 0.25rem 0.5rem;
 }
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: $bg-color-code;
 }
 
 figcaption {
+  font-size: 0.8em;
   font-style: italic;
 }
 
@@ -210,6 +207,8 @@ figcaption {
   max-width: 40rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .masthead {
@@ -220,16 +219,15 @@ figcaption {
 }
 
 .masthead-title {
-  color: #505050;
   margin-bottom: 0;
   margin-top: 0;
 
   a {
-    color: #505050;
+    color: $color-text;
   }
 
   small {
-    color: #c0c0c0;
+    color: $color-secondary;
     font-size: 75%;
   }
 }
@@ -247,7 +245,7 @@ figcaption {
 
 .sidebar {
   -webkit-transition: all 0.3s ease-in-out;
-  background-color: #202020;
+  background-color: $bg-color-sidebar;
   bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
@@ -260,7 +258,7 @@ figcaption {
   width: $sidebar-width;
 
   a {
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -321,9 +319,9 @@ figcaption {
 }
 
 .sidebar-toggle {
-  background-color: #fff;
+  background-color: $white;
   border-radius: 0.25rem;
-  color: #505050;
+  color: $color-text;
   cursor: pointer;
   display: block;
   left: 1rem;
@@ -355,8 +353,8 @@ figcaption {
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #555;
+  color: $white;
+  background-color: $bg-color-sidebar;
 }
 
 .sidebar-toggle:active:before,
@@ -403,7 +401,7 @@ figcaption {
 
 // homepage
 .post-title-date {
-  color: #6c757d;
+  color: $color-secondary;
   font-size: 16px;
 }
 
@@ -416,7 +414,7 @@ figcaption {
   display: block;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
-  color: #6c757d;
+  color: $color-secondary;
 }
 
 .post {
@@ -431,11 +429,11 @@ figcaption {
       width: 50%;
 
       &:first-child {
-        border-right: 1px solid #fff;
+        border-right: 1px solid $white;
       }
 
       &:last-child {
-        border-left: 1px solid #fff;
+        border-left: 1px solid $white;
       }
     }
   }
@@ -519,17 +517,17 @@ figcaption {
   padding-left: 0;
 
   h3 {
-    margin-top: 0;
+    margin: 0.5em 0;
   }
 
   li {
     small {
-      color: #999;
+      color: $color-secondary;
       font-size: 75%;
     }
 
     a:hover {
-      color: #268bd2;
+      color: $color-link;
 
       small {
         color: inherit;
@@ -883,9 +881,11 @@ figcaption {
   }
 }
 
+$dark-bg-color: #212529;
+
 @media (prefers-color-scheme: dark) {
   body {
-    background: #212529;
+    background: $dark-bg-color;
   }
 
   body,
@@ -904,7 +904,7 @@ figcaption {
   h5,
   h6,
   a.anchor-link {
-    color: #6c757d;
+    color: $color-secondary;
   }
 
   a.anchor-link:active,
@@ -922,16 +922,16 @@ figcaption {
   td,
   th,
   hr {
-    border-color: #6c757d;
+    border-color: $color-secondary;
   }
 
   code {
     background-color: transparent;
-    border: 1px solid #6c757d;
+    border: 1px solid $color-secondary;
   }
 
   blockquote {
-    border-left: 0.25rem solid #6c757d;
+    border-left: 0.25rem solid $color-secondary;
   }
 
   pre {
@@ -944,11 +944,12 @@ figcaption {
   }
 
   .masthead {
-    border-bottom: 2px solid #131618;
+    border-bottom: 2px solid darken($dark-bg-color, 3);
   }
 
   .menu-hint {
     background: url(../images/arrow-menu-dark-theme.webp) no-repeat;
+    z-index: 1;
   }
 
   .post-related-posts,
@@ -963,7 +964,7 @@ figcaption {
 
   .highlight {
     .gh {
-      color: #6c757d;
+      color: $color-secondary;
     }
 
     .nv {
