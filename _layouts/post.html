@@ -64,9 +64,7 @@ layout: main
     {% for post in site.related_posts limit:8 %}
       <li itemscope itemtype="https://schema.org/BlogPosting">
         <h3>
-          <a href="{{ post.url }}" itemprop="name" itemprop="headline">
-            {{ post.title }}
-          </a>
+          <a href="{{ post.url }}" itemprop="name" itemprop="headline">{{ post.title }}</a>
           <time datetime="{{ post.date | date_to_xmlschema }}">
             <small><meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</small>
           </time>
