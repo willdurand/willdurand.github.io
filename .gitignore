@@ -1,5 +1,7 @@
 .DS_Store
+.bundle/
 .ruby-version
 Gemfile.lock
+_drafts/
 _site/
 vendor/
