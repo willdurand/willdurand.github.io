@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 title: "Je N'Ai Rien A Cacher (I've Got Nothing To Hide)"
 ---
 

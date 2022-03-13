@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 tags: [Docker]
 title: "Elasticsearch, Logstash &amp; Kibana with Docker"
 ---

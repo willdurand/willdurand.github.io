@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Introducing srht.vim"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/03/srhtvim.webp?v=1
 tweet_id: 1366347190998810627

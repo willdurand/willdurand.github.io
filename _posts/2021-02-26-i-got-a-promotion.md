@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "I got a promotion!"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/promotion.webp
 tweet_id: 1365232065940226049

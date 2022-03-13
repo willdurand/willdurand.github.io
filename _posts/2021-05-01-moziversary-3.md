@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Moziversary #3"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/05/moziversary-3.webp
 tags: mozilla

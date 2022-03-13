@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "On pretty printers"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/07/pretty-printers.webp
 tweet_id: 1418516550571773952

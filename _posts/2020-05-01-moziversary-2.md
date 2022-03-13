@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Moziversary #2"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2020/05/win98.png
 tags: mozilla

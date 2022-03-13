@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd, France
-tldr: false
 title: "My Life On The Internets: A Year Later"
 tweet_id: 688260129322450944
 updates:

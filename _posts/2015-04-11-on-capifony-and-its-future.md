@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 title: "On capifony and its Future"
 ---
 

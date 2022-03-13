@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Lyon, France
-tldr: false
 tags: [PHP, Symfony, video]
 title: "[Video] REST dans le monde Symfony"
 ---

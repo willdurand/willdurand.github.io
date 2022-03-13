@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Paris, France
-tldr: false
 tags: [PHP, Symfony, video, Software Testing]
 title: "[Video] Software Testing: Past, Present, Future"
 ---

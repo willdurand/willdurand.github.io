@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 title: I Am A Sponge
 image: /images/posts/2013/07/spongebob-social.png
 tweet_id: 358241098675650560

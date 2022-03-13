@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Yes, it happened on Slack"
-tldr: false
 location: "Freiburg, Germany"
 image: /images/posts/2021/04/slack.webp
 tweet_id: 1387698748181164034

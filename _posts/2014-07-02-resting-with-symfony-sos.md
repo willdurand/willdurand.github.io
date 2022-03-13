@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 tags: [PHP, Symfony]
 title: "RESTing with Symfony: SOS"
 updates:
