@@ -1,8 +1,8 @@
 ---
 layout: post
 location: Paris, France
-tags: [PHP, Symfony, video, Software Testing]
-title: "[Video] Software Testing: Past, Present, Future"
+tags: [PHP]
+title: "[Video] Software testing: past, present, future"
 ---
 
 Last month, I gave a talk on software testing at [Forum PHP
@@ -14,20 +14,20 @@ team, this event was a blast! (As usual, I would say :-))
 In this talk, I gave an overview of what software testing was, describing three
 different periods: past, present, and future, hence the title of this talk.
 
-You will find the video of my talk (in French, sorry) below:
+You will find the video of my talk below (in French, sorry):
 
 <div class="video-container">
   <center>
     <iframe width="560" height="315" src="//www.youtube.com/embed/UNSJI4jsmCc" frameborder="0" allowfullscreen></iframe>
   </center>
 </div>
-<p></p>
 
+<p></p>
 And, here are my slides:
 
 <script async class="speakerdeck-embed" data-id="078b9d803cd6013218882e672ff93e89" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
-<p></p>
 
+<p></p>
 If you attended my talk and did not rate it yet, please leave a comment on
-[joind.in](https://joind.in/11953). If you have any questions or remarks,
-comments are welcome ;-)
+[joind.in](https://joind.in/11953). ~~If you have any questions or remarks,
+comments are welcome ;-)~~
