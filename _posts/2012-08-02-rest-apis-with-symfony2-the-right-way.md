@@ -14,7 +14,7 @@ updates:
   - date: 2014-02-14
     content: >-
       [PATCH should not be used the way it has been described
-      here](/2014/02/14/please-do-not-patch-like-an-idiot/).
+      here](/2014/02/14/please-don't-patch-like-that/).
 ---
 
 Designing a **REST** API is not easy. No, really! If you want to design an API the
@@ -737,7 +737,7 @@ you provide a `PATCH` method.
 
 This section has been removed as it described a wrong way to use the `PATCH`
 method. You can read this: [Please. Don't Patch Like An
-Idiot.](/2014/02/14/please-do-not-patch-like-an-idiot/). It covers how to update
+Idiot.](/2014/02/14/please-don't-patch-like-that/). It covers how to update
 user's email, using the `PATCH` method the right way, but not in PHP
 unfortunately.
 

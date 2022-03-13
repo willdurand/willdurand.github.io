@@ -2,6 +2,9 @@
 layout: post
 title: Deploying with Git
 location: Clermont-Fd Area, France
+updates:
+  - date: 2022-03-12
+    content: I proofread this article and removed dead links.
 ---
 
 I often rely on [Capistrano](https://github.com/capistrano/capistrano/wiki/) to
@@ -10,8 +13,8 @@ In this article, I am going to describe a simpler approach to deploy simple
 apps.
 
 When you need to deploy a simple web application on a server, like this blog for
-instance, there is no need to use Capistrano or [Fabric][]. It's just about
-copying a set of files so one could rely on `rsync` or `scp`... How boring!
+instance, there is no need to use Capistrano or [Fabric][]. We mainly want a way
+to copy a set of files and one could rely on `rsync` or `scp`... How boring!
 
 An alternative is to rely on **Git**, assuming you are using it. But how?
 
@@ -69,8 +72,9 @@ do
 done
 ```
 
-This script updates the working tree after changes have been pushed, and send an email to the
-last committer. Keep in mind that it always deploys the last branch you push.
+This script updates the working tree after changes have been pushed, and send an
+email to the last committer. Keep in mind that it always deploys the last branch
+you push.
 
 The important part is:
 

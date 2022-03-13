@@ -4,6 +4,9 @@ title: Designing software by naming things
 location: Clermont-Fd Area, France
 redirect_from:
   - /2012/01/24/designing-a-software-by-naming-things/
+updates:
+  - date: 2022-03-12
+    content: I proofread this article.
 ---
 
 > There are only two hard things in Computer Science: cache invalidation and

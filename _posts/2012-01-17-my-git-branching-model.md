@@ -5,12 +5,15 @@ location: Clermont-Fd Area, France
 credits: |
     Vincent Driessen for his [Git model](http://nvie.com/posts/a-successful-git-branching-model/)
     and illustrations.
+updates:
+  - date: 2022-03-12
+    content: I proofread this article and updated the figures.
 ---
 
 We all probably know [this successful Git branching
 model][successful-git-model], which looks like a very interesting model for
 teams that want to use Git. That being said, this model is a bit too complex for
-common needs, so here is my lightweight model.
+common needs in my opinion. In this article, I introduce my lightweight model.
 
 I use two main branches:
 
@@ -18,7 +21,7 @@ I use two main branches:
 - `develop` : the _integration branch_.
 
 ![](/images/posts/2012/01/git-develop-main.webp)
-_Figure 1: Commits over time on two branches: "develop" and "main"<br>(based on
+_Figure 1: Commits over time on two branches: "develop" and "main" (based on
 Vincent Driessen's similar illustration)_
 {:.with-caption .can-invert-image-in-dark-mode}
 
@@ -36,8 +39,8 @@ A feature branch has two constraints:
 - the code must be merged in the `develop` branch.
 
 ![](/images/posts/2012/01/git-feature-branch.webp)
-_Figure 2: A feature branch next based on the "develop" branch<br>(based on
-Vincent Driessen's similar illustration)_
+_Figure 2: A feature branch next based on the "develop" branch (based on Vincent
+Driessen's similar illustration)_
 {:.with-caption .can-invert-image-in-dark-mode}
 
 To create a feature branch, I use the following command:
@@ -73,8 +76,8 @@ I always merge a feature branch into `develop` using `--no-ff` to keep a clean
 log:
 
 ![](/images/posts/2012/01/git-merge.webp)
-_Figure 3: The difference between `git merge` and `git merge --no-ff`<br>(based
-on Vincent Driessen's similar illustration)_
+_Figure 3: The difference between `git merge` and `git merge --no-ff` (based on
+Vincent Driessen's similar illustration)_
 {:.with-caption .can-invert-image-in-dark-mode}
 
 The `--no--ff` option allows to keep track of a feature branch name which is

@@ -2,6 +2,9 @@
 layout: post
 title: Hello, World!
 location: Clermont-Fd Area, France
+updates:
+  - date: 2022-03-12
+    content: I proofread this article and removed dead links.
 ---
 
 Hi folks!

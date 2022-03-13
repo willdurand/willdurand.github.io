@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tldr: false
 title: "Please. Don't Patch Like That."
 description: >-
   This article is about the PATCH HTTP verb and how it should be used. That
@@ -18,9 +17,8 @@ updates:
       update as the `[description of changes]` as far as it complies with the
       [JSON Merge Patch format](https://tools.ietf.org/html/rfc7396).
 
-      On an unrelated note, I do apologize for the misuse of the word "idiot". I
-      did not want to be rude. The exact same word in French is less "strong"
-      than in English.
+      I do apologize for the misuse of the word "idiot". I did not want to be
+      rude. The exact same word in French is less "strong" than in English.
   - date: 2019-12-20
     content: >-
       The title of this article has been edited. It should have been edited a

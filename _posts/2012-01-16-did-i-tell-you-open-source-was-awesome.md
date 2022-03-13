@@ -2,6 +2,9 @@
 layout: post
 title: Did I tell you open source was awesome?
 location: Clermont-Fd Area, France
+updates:
+  - date: 2022-03-12
+    content: I proofread this article and removed dead links.
 ---
 
 A few months ago, my father offered me a Karotz (the new Nabaztag) for my

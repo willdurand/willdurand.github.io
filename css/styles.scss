@@ -138,14 +138,14 @@ code {
   background-color: $bg-color-code;
   border-radius: 3px;
   color: $color-inline-code;
-  font-size: 85%;
+  font-size: 0.9em;
   padding: 0.15em 0.3em;
 }
 
 pre {
   background-color: $bg-color-code;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   line-height: 1.4;
   margin-bottom: 1rem;
   margin-top: 0;
@@ -208,11 +208,10 @@ figcaption {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
-  z-index: 2;
 }
 
 .masthead {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $color-border;
   margin-bottom: 1em;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -396,7 +395,11 @@ figcaption {
   position: absolute;
   top: 3em;
   width: 200px;
-  z-index: 0;
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
 }
 
 // pages
@@ -442,7 +445,7 @@ figcaption {
 
   .anchor-link {
     color: lighten($color-headings, 40);
-    font-size: 80%;
+    font-size: 0.8em;
     padding: 0 0 0 8px;
     text-decoration: none;
 
@@ -487,7 +490,10 @@ figcaption {
     text-align: center;
 
     em {
+      display: block;
       font-size: 0.8em;
+      margin: 0 auto;
+      max-width: 80%;
     }
   }
 
@@ -501,20 +507,24 @@ figcaption {
 }
 
 .post-updates {
+  font-size: 0.9em;
+  margin: 0 0 3rem 0;
+
   p {
     font-style: italic;
+    margin-bottom: 0.5em;
   }
 }
 
 .post-comments,
 .post-credits,
-.post-related-posts {
+.post-recent-posts {
   border-top: 1px solid #eee;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.related-posts {
+.recent-posts {
   list-style: none;
   padding-left: 0;
 
@@ -951,10 +961,9 @@ $dark-bg-color: #212529;
 
   .menu-hint {
     background: url(../images/arrow-menu-dark-theme.webp) no-repeat;
-    z-index: 1;
   }
 
-  .post-related-posts,
+  .post-recent-posts,
   .post-comments,
   .post-credits {
     border-color: #131618;

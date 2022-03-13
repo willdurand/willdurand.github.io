@@ -2,6 +2,9 @@
 layout: post
 title: Services status dashboard
 location: Clermont-Fd Area, France
+updates:
+  - date: 2022-03-12
+    content: I proofread this article and removed dead links.
 ---
 
 Today, I was looking for an Open Source alternative to
@@ -14,9 +17,9 @@ to know whether an application is alive or not. Additionally, you may want to
 store results in order to make graphs or calculate uptime average. Before
 writing such a tool myself, I tried to find existing projects on GitHub.
 
-Good news! I found a really nice project: [Status
+Good news! I found a nice project: [Status
 Dashboard](https://github.com/obazoud/statusdashboard) created by Olivier
-Bazoud. This project is easy to configure, you can use provided plugins
+Bazoud. This project is simple to configure, you can use provided plugins
 (Twitter, IRC bot, History, ...) or add your owns, and you can monitor various
 services (not only HTTP). If you don't want to use the beautiful interface, then
 you'll find a REST API as well.
@@ -61,7 +64,8 @@ Then, start the server:
 
     node server.js
 
-Check the server is running by browsing _http://127.0.0.1:8080/_ or by querying the API:
+Check the server is running by browsing _http://127.0.0.1:8080/_ or by querying
+the API:
 
     > curl http://127.0.0.1:8080/api/services
     {"lastupdate":"Mon, 16 Jan 2012 13:29:11 GMT","services":[{"name":"williamdurand.fr","label":"William Durand (blog)","status":"up","statusCode":200,"message":""}],"summarize":{"lastupdate":"Mon, 16 Jan 2012 13:29:11 GMT","up":1,"critical":0,"down":0,"unknown":0}}
