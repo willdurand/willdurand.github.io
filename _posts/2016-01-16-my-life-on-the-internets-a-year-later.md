@@ -1,70 +1,74 @@
 ---
 layout: post
 location: Clermont-Fd, France
-title: "My Life On The Internets: A Year Later"
+title: "My life on The Internets: a year later"
 tweet_id: 688260129322450944
 updates:
   - date: 2019-12-22
     content: No more Disqus on this blog, hurray!
+  - date: 2022-03-14
+    content: I proofread this article. Also, no more Google Fonts on this blog!
 ---
 
-It has been [a year since I changed the way I deal with
-Internet](/2015/01/16/rethinking-my-life-on-the-internets/) now and I would like
-to share some updates. I am pretty satisfied with my current setup, but a few
-things could be improved.
+It's been [a year since I changed the way I deal with my Internet
+presence](/2015/01/16/rethinking-my-life-on-the-internets/). I would like to
+share some updates in this article. In short, I am pretty satisfied with my
+current setup but a few things could be improved.
 
 I am more than **happy** with [Fastmail](http://www.fastmail.com/?STKI=13808765)
 (affiliate link) for emails, calendars and contacts. It works very well! It has
-everything I ever needed and the support team is amazing! The only missing
-feature is that, when sending an event invitation from my phone or laptop, it
-uses my Fastmail email (`account@fastmail.com`) rather than the email with my
-own domain, _i.e._ `will@drnd.me`. This should be supported soon, though.
+everything I ever needed and the support team has been amazing! The only missing
+feature is that, when sending an invite from my phone or laptop, it uses my
+Fastmail email address (`account@fastmail.com`) instead of an email with my
+own domain. This should be supported soon, though.
 
-I do not use any Instant Messaging application anymore. I was a Google Talk user
-but as I do not use it anymore, I simply do not use any IM client anymore.
-It is fine though, since email and SMS work well. Oh, and there is
-[Slack](https://slack.com/) now :-) Unfortunately, I now use
-[WhatsApp](https://www.whatsapp.com/), which is owned by Facebook now. Not my
-best choice but it is a bit like fighting against Skype with family/friends, it
-is a tough job.
+I don't use any Instant Messaging application anymore (I was using Google Talk
+before). Instead, I rely on emails and SMS. There is [Slack](https://slack.com/)
+now too :-) I started to use [WhatsApp](https://www.whatsapp.com/), which is
+owned by Facebook now, ugh! Not my best choice but it is a bit like fighting
+against Skype with family/friends, it is a tough job.
 
 Another "complicated battle" is related to the use of encrypted emails. I still
-do send more clear text emails than encrypted ones. It is a bit sad but
-definitely understandable. I do not think people care enough about privacy.
-Also, I do not use [iPGMail](https://ipgmail.com/) on my iPhone anymore, and it
-is likely better since most of the encrypted emails I receive/send are
-business-related.
+send more clear text emails than encrypted ones. It is a bit sad but
+understandable, I guess. I don't think people care enough about privacy... On
+the same topic, I don't use [iPGMail](https://ipgmail.com/) on my iPhone
+anymore.
 
-A couple months ago, I bought a [Raspberry Pi 2](https://www.raspberrypi.org/)
-for my place. I wanted to try **self-hosting**, _i.e._ hosting **my** server,
-**my** data and **my** services at home. I first installed [Tiny Tiny
+A few months ago, I bought a [Raspberry Pi 2](https://www.raspberrypi.org/) for
+my place. I wanted to try **self-hosting**, _i.e._ hosting **my** server, **my**
+data and **my** services at home. I first installed [Tiny Tiny
 RSS](https://tt-rss.org/), the best RSS feed reader ever! The feature I love is
 the daily email digest. Every morning, I get an email at 8am, offering a few
-links to read. Since there is an abstract for each link, I can ignore those I am
-not interested in so that I do not spend to much time reading.
+links to read. Because there is an abstract for each link, I can skip those I am
+not interested in so that I do not spend too much time reading.
 
-![An email sent by Tiny Tiny RSS](/images/posts/tt-rss.png)
+![An email sent by Tiny Tiny RSS](/images/posts/2016/01/tt-rss.webp)
 
-I also self-host a Pastebin like, called
-[ZeroBin](https://github.com/sebsauvage/ZeroBin), and
-[ownCloud](https://owncloud.org/). The latter actually brings a new way of
-thinking: we can go deeper (_Hi Cobb!_). Indeed, **ownCloud** 8 is amazingly
-stable and fast, and it is now possible to [replace
-Dropbox](https://twitter.com/couac/status/686325660080562178) (or Drive), but
-also to **self-host calendars and contacts**. I would not self-host my emails
-though, since emails are rather critical and should not be unavailable for too
-long. At work, we chose to self-host most of our tools, including files,
-calendars, and contacts. I may consider moving my personal calendars/contacts
-from Fastmail to my ownCloud instance too. In case you do not want to manage
-your "own" ownCloud, there are countless providers: in France, I would recommend
-[Framadrive](https://framadrive.org/).
+I also self-host a Pastebin-like called [ZeroBin][] and [ownCloud][].
+**ownCloud** 8 is amazingly stable and fast, and it is now possible to [replace
+Dropbox][] (or Drive). It can also be used to **self-host calendars and
+contacts**. I don't want to self-host my emails though. Emails are rather
+critical and should not be unavailable for too long.
 
-Last but not least, I keep using [Instapaper](https://www.instapaper.com), the
-last web application that I am not self-hosting, even though
-[Wallabag](https://www.wallabag.org/) seems more and more what I need. What is
-weird is that I do not know why I am still relying on Instapaper instead of
-Wallabag. Oh and I still did not find any [Disqus](https://disqus.com/)
-alternative.
+At work, we chose to use ownCloud to self-host most of our tools, including
+files, calendars, and contacts. I may consider moving my personal calendars and
+contacts from Fastmail to my ownCloud instance as well. In case you don't want
+to manage your "own" ownCloud, there are countless providers. In France, I would
+recommend [Framadrive][].
 
-If you have any suggestions/ideas/whatever or want to share your own experience,
-comments are open :-)
+Last but not least, I keep using [Instapaper](https://www.instapaper.com),
+likely the only web application that I am not self-hosting. [Wallabag][] seems
+more and more what I need, though. I don't know why I am still relying on
+Instapaper instead of Wallabag, maybe because changing habits is hard?
+
+One more thing actually... I still did not find any [Disqus][] alternative :-(
+
+~~If you have any suggestions/ideas/whatever or want to share your own
+experience, comments are open :-)~~
+
+[framadrive]: https://framadrive.org/
+[wallabag]: https://www.wallabag.org/
+[owncloud]: https://owncloud.org/
+[replace dropbox]: https://twitter.com/couac/status/686325660080562178
+[zerobin]: https://github.com/sebsauvage/ZeroBin
+[disqus]: https://disqus.com/
