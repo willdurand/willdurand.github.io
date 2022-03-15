@@ -7,7 +7,7 @@ tweet_id: 1214498418862768129
 ---
 
 One of my side projects is [a tiny kernel/operating
-system](https://github.com/willdurand/willOS), which I started to learn more
+system](https://github.com/willdurand/ArvernOS), which I started to learn more
 about operating systems (OS) and kernel development in general. The codebase is
 fairly small (around 4K lines of code at the time of writing) but I started to
 face a few bugs that I could have likely avoided with unit testing.
@@ -179,7 +179,7 @@ That's what happened!
 ## Compilers are (too) smart.
 
 I used a similar approach to write tests for my little kernel
-([patch](https://github.com/willdurand/willOS/pull/21)) but it did not always
+([patch](https://github.com/willdurand/ArvernOS/pull/21)) but it did not always
 work well. For example, I could not test the `strlen()` function because the
 compiler optimized my code in a way that there was no need to link to the
 `strlen()` function anymore. In other words, the symbol table did not contain

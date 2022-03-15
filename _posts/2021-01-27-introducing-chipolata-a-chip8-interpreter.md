@@ -121,8 +121,8 @@ implement it in the web application. The disassembler could also be rewritten in
 Rust and become a core feature.
 
 In the back of my mind, being able to run this interpreter on
-[willOS](https://github.com/willdurand/willOS) would be a great achievement. I
-haven't looked in details yet but I think it's doable ;-)
+[ArvernOS](https://github.com/willdurand/ArvernOS) would be a great achievement.
+I haven't looked in details yet but I think it's doable ;-)
 
 ## Links
 

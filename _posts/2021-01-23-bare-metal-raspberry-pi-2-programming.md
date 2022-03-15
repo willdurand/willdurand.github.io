@@ -7,12 +7,12 @@ tweet_id: 1353004633946521600
 ---
 
 Last week-end, I started to play with
-[willOS](https://github.com/willdurand/willOS) (my very own 64-bit kernel) and
-one of the [Raspberry Pi
+[ArvernOS](https://github.com/willdurand/ArvernOS) (my very own 64-bit kernel)
+and one of the [Raspberry Pi
 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) I had in a
 drawer (32-bit architecture unfortunately but that's a story for another time).
 
-After a few hours, I was able to run willOS with most features disabled on real
+After a few hours, I was able to run ArvernOS with most features disabled on real
 hardware (getting it to run in [QEMU](https://www.qemu.org/) was surprisingly
 straightforward). In the following, I'll explain the boot sequence of a
 Raspberry Pi 2 and show how it works using an example.
@@ -62,8 +62,8 @@ bootcode.bin*  fixup.dat*  start.elf*
 
 The next step is more interesting. We need something for the `start.elf` program
 to complete successfully. In this example, we want to use U-Boot so let's
-compile it. I personally used the Docker-based [willOS
-toolchain](https://github.com/willdurand/willOS/tree/77910ccd44608c683423b2bed1e90d5b050923d7#docker-recommended-way)
+compile it. I personally used the Docker-based [ArvernOS
+toolchain](https://github.com/willdurand/ArvernOS/tree/77910ccd44608c683423b2bed1e90d5b050923d7#docker-recommended-way)
 for that:
 
 ```
@@ -238,11 +238,12 @@ downloaded and stored in memory, the bootloader should call the new code.
 
 This is what I have implemented too. Sneak peek:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I have been working on
-a stage3 bootloader to push my kernel over the serial port and I *think* I spent
-too much time on the &quot;pusher&quot; UI part 😅 <a
-href="https://t.co/TzFi15slx6">pic.twitter.com/TzFi15slx6</a></p>&mdash; William
-Durand ✊🏽✊🏾✊🏿 @willdurand@mamot.fr (@couac) <a
-href="https://twitter.com/couac/status/1351992990647123972?ref_src=twsrc%5Etfw">January
-20, 2021</a></blockquote> <script async
-src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    I have been working on a stage3 bootloader to push my kernel over the serial
+    port and I *think* I spent too much time on the &quot;pusher&quot; UI part
+    😅 <a href="https://t.co/TzFi15slx6">pic.twitter.com/TzFi15slx6</a>
+  </p>&mdash; William Durand ✊🏽✊🏾✊🏿 @willdurand@mamot.fr (@couac)
+  <a href="https://twitter.com/couac/status/1351992990647123972">January 20, 2021</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
