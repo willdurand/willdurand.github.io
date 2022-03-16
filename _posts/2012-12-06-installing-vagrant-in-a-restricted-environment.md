@@ -117,15 +117,10 @@ requirement.
 
 ## The Surprise
 
-<blockquote class="twitter-tweet tw-align-center">
-<p>So everybody uses <a href="https://twitter.com/search/%23vagrant">#vagrant</a> now, and nobody cares about `sudo su root`? WTF! <a href="https://t.co/ioVsrBqx" title="https://github.com/mitchellh/vagrant/blob/master/plugins/hosts/linux/host.rb#L51">github.com/mitchellh/vagr…</a></p>
-&mdash;William Durand (@couac) <a href="https://twitter.com/couac/status/274191748786429953" data-datetime="2012-11-29T16:43:01+00:00">November 29, 2012</a>
-</blockquote>
-
-I dug into the code to understand how NFS was managed, and why it asked for
-admin credentials. I was really suprised while reading the code. There is no way
-to configure Vagrant to control the NFS part, and sadly it asks for the `root`
-password.
+I dug into the code to understand how NFS was managed and why it asked for admin
+credentials. I was really suprised while reading the code. There is no way to
+configure Vagrant to control the NFS part and sadly it asks for the `root`
+password because of a call to `sudo su root`.
 
 There is no way to give the `root` password to our users (mainly students). We
 ended up patching Vagrant to use `exportfs` and a shell script to perform `sed`.

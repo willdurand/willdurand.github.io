@@ -85,8 +85,7 @@ earlier actually... Then, I created new aliases and changed my email everywhere.
 I reconfigured Gmail to send my new personal email as _Reply-To_ email's header,
 so that it is being spread slowly but surely.
 
-Then, [based on
-recommandations](https://twitter.com/couac/status/554218360050049024), I chose
+Then, based on some recommendations on Twitter, I chose
 **[Fastmail](http://www.fastmail.com/?STKI=13808765)** (affiliate link) to take
 care of my emails, and I am **happy to pay** for it! It is **blazing fast**, it
 works and it perfectly fits my needs. Importing all my emails from Gmail took
