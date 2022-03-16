@@ -2,6 +2,7 @@
 layout: post
 title: "[Video] Nobody understands REST but that's OK ;-)"
 location: Clermont-Fd, France
+tweet_id: 605635605024911360
 ---
 
 Last month, I gave a talk on why nobody understands REST at [PHP Tour Luxembourg
