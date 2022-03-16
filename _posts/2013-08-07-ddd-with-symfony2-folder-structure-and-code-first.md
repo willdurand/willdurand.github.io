@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP, DDD]
 title: "DDD with Symfony2: Folder Structure And Code First"
+tweet_id: 365134928003870721
 updates:
   - date: 2013-08-11
     content: >-

@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP, DDD]
 title: "DDD with Symfony2: Making Things Clear"
+tweet_id: 369854926416928768
 ---
 
 [Domain Driven Design](http://en.wikipedia.org/wiki/Domain-driven_design) also

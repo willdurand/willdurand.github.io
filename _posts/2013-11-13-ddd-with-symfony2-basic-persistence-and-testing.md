@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP, DDD]
 title: "DDD with Symfony2: Basic Persistence &amp; Testing"
+tweet_id: 400575910480334848
 ---
 
 After having described [a decent folder

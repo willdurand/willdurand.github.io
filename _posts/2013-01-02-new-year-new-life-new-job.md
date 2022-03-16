@@ -2,6 +2,7 @@
 layout: post
 title: New Year, New Life, New Job
 location: Clermont-Fd Area, France
+tweet_id: 286547268402835456
 ---
 
 Today was my first day at [Michelin](http://www.michelin.com/corporate/EN/home),

@@ -2,6 +2,7 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "Numbers. Gifts. Money."
+tweet_id: 418082226463461376
 ---
 
 In **5** hours, a new year will start, **2014**. But, let's take a look at
