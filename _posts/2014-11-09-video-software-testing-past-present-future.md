@@ -3,6 +3,7 @@ layout: post
 location: Paris, France
 tags: [PHP]
 title: "[Video] Software testing: past, present, future"
+tweet_id: 531507910409736192
 ---
 
 Last month, I gave a talk on software testing at [Forum PHP

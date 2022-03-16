@@ -3,6 +3,7 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP, Symfony]
 title: "RESTing with Symfony: SOS"
+tweet_id: 484338347394236416
 updates:
   - date: 2014-07-08
     content: >-

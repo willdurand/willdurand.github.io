@@ -3,6 +3,7 @@ layout: post
 location: Lyon, France
 tags: [PHP]
 title: "[Video] REST dans le monde Symfony"
+tweet_id: 489318138375602176
 ---
 
 Last month, I gave a talk about REST and Symfony at [PHP Tour Lyon
