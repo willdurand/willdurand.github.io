@@ -2,9 +2,9 @@
 layout: post
 title: "Some non-production tools I wrote"
 location: "Freiburg, Germany"
-image: /images/posts/2022/03/some-non-production-tools-i-wrote.webp
+image: /images/posts/2022/03/some-non-production-tools-i-wrote.webp?v=1
 tags: mozilla
-tweet_id:
+tweet_id: 1508748161686327302
 ---
 
 This is a short article about 3 different tools I authored for my needs at
