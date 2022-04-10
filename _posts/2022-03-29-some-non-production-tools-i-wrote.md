@@ -108,7 +108,6 @@ programming languages, frameworks, libraries, or some internals.
 [amo]: https://addons.mozilla.org/
 [android-extensions]: https://blog.mozilla.org/addons/2020/09/29/expanded-extension-support-in-firefox-for-android-nightly/
 [eslint-plugin-amo]: https://github.com/mozilla/eslint-plugin-amo
-
 [feature flags]: {% post_url 2020-09-22-feature-flags-in-real-life %}
 [format-release-notes]: https://github.com/willdurand/dotfiles/blob/8abc8da3ca5f9f7a3d8e0d629552a15a819ad2d5/scripts/format-release-notes
 [fw-reconstruction]: {% post_url 2022-03-10-spi-flash-content-analysis-and-firmware-reconstruction %}

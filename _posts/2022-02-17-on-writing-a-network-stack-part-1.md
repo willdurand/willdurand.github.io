@@ -32,10 +32,15 @@ without looking at other existing implementations. That might be a problem in
 the future, we'll see.
 
 ![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp)
-_Figure 1: ArvernOS network stack in (early) 2022_
+_Figure 1: ArvernOS network stack in (early) 2022, which is divided into 5
+layers (the TCP/IP model sits on top of a physical layer)_
 {:.with-caption .can-invert-image-in-dark-mode}
 
-Figure 1 depicts the different layers/protocols already implemented in ArvernOS.
+Figure 1 depicts the 5 different layers/protocols already implemented in
+ArvernOS: I chose to have a first distinct physical layer, and then we have the
+4 layers of the TCP/IP model. This makes the first 4 layers of this model
+similar to the [OSI model][osi] as well.
+
 Each implementation is far from perfect but it is "functional". In this article,
 I introduce the three first layers (at the bottom), which cover three network
 protocols: Ethernet (as per IEEE 802.3), ARP and IPv4.
@@ -262,7 +267,7 @@ perfect but it is functional.
 ## The End.
 
 That's it for today. Let me know if you have questions or comments (email or
-Twitter). In part 2, we'll cover [UDP][], [DHCP][] and possibly [DNS][].
+Twitter). In [part 2][part-2], we'll cover [UDP][], [DHCP][] and [DNS][].
 
 [arvernos]: https://github.com/willdurand/ArvernOS/
 [osi]: https://en.wikipedia.org/wiki/OSI_model
@@ -299,3 +304,4 @@ Twitter). In part 2, we'll cover [UDP][], [DHCP][] and possibly [DNS][].
 [arp_receive_packet]: https://github.com/willdurand/ArvernOS/blob/8b183a51311591158fd4f20c5a08a73c69dd1b03/src/kernel/net/arp.c#L58-L99
 [ethernet_receive_frame]: https://github.com/willdurand/ArvernOS/blob/8b183a51311591158fd4f20c5a08a73c69dd1b03/src/kernel/net/ethernet.c#L10-L42
 [pr-linux-compat]: https://github.com/willdurand/ArvernOS/pull/552
+[part-2]: {% post_url 2022-04-11-on-writing-a-network-stack-part-2 %}
