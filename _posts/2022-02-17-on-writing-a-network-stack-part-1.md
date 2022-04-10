@@ -2,14 +2,14 @@
 layout: post
 title: "On writing a network stack (1/2)"
 location: "Freiburg, Germany"
-image: /images/posts/2022/02/network-stack-part-1.webp?v=2
+image: /images/posts/2022/02/network-stack-social.webp
 tweet_id: 1494288808669503492
 ---
 
 _I am writing a minimum viable network stack from scratch for [ArvernOS][] (a
-UNIX-like kernel experiment). This two-part story describes some protocols of
-the [OSI][] model and [TCP/IP][tcp-ip] stack as well as some implementation
-details in the context of ArvernOS._
+UNIX-like toy kernel). This two-part story describes some protocols of the
+[TCP/IP][tcp-ip] stack as well as some implementation details in the context of
+ArvernOS._
 
 ---
 
@@ -87,8 +87,8 @@ exchange data with other machines **within the same LAN** (a "home" or "office"
 network for instance). Machines are connected to each other with **physical**
 cables.
 
-At this level (or layer in OSI model parlance), we send and receive frames using
-[MAC addresses][mac address]. A MAC address looks like this:
+At this level (or layer in [OSI model][osi] parlance), we send and receive
+frames using [MAC addresses][mac address]. A MAC address looks like this:
 `52:55:0a:00:02:03`. It's possible to target a specific machine but only if we
 know its MAC address. Otherwise we have to use the broadcast MAC address, which
 target all machines configured to accept broadcasted frames (network cards can
