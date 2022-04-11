@@ -2,7 +2,7 @@
 layout: post
 title: "On writing a network stack (1/2)"
 location: "Freiburg, Germany"
-image: /images/posts/2022/02/network-stack-social.webp?v=20220411
+image: /images/posts/2022/02/network-stack-social.webp?v=20220411-2
 tweet_id: 1494288808669503492
 ---
 
