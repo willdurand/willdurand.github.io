@@ -38,7 +38,7 @@ layers (the TCP/IP model sits on top of a physical layer)_
 
 Figure 1 depicts the 5 different layers/protocols already implemented in
 ArvernOS: I chose to have a first distinct physical layer, and then we have the
-4 layers of the TCP/IP model. This makes the first 4 layers of this model
+4 layers of the [TCP/IP][tcp-ip] model. This makes the first 4 layers of this model
 similar to the [OSI model][osi] as well.
 
 Each implementation is far from perfect but it is "functional". In this article,
