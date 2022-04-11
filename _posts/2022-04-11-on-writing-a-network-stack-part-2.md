@@ -95,7 +95,7 @@ passed to the `netif_rx()` or [`netif_receive_skb()` function][pia-part4]. This
 is where the incoming packet starts to actually "climb" the network stack. For
 UDP, the function [`__udp4_lib_lookup()`][__udp4_lib_lookup] describes how the
 kernel retrieves a socket for a given UDP packet. The way Linux calls this
-function and forwards the packet to the socket is more complex but [this article
+function and forwards the packet to the socket is a bit hard to follow but [this article
 explains it well][pia-part5].
 
 ## Domain Name System (DNS)
