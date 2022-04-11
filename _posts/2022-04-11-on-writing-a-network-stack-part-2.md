@@ -171,7 +171,7 @@ other protocols implemented in ArvernOS_
 
 The DHCP implementation in ArvernOS follows the sequence described in the
 previous section (see: [`kernel/net/dhcp.c`][dhcp.c]). This sequence starts with
-a call to the `dhcp_discover()` function during the initialization process (near
+a call to the `dhcp_discover()` function during the kernel initialization (near
 the end). The implementation is fragile. It uses busy waiting and does not
 handle errors at all but that seems to be okay for QEMU's DHCP server:
 
