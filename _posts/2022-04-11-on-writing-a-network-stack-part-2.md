@@ -78,7 +78,7 @@ bits.
 
 When the kernel receives incoming data on a network interface, it needs to know
 where to send the data next. In most cases, an application in the user space
-need the data and that's where sockets are useful. "All" the kernel has to do is
+needs the data and that's where sockets are useful. "All" the kernel has to do is
 to retrieve the right socket given an incoming packet. It is easier said than
 done, though.
 
