@@ -19,7 +19,7 @@ scratch. In this second part, I continue to climb the different layers of this
 stack. After having introduced UDP, I'll describe two "high" level network
 protocols: DHCP and DNS.
 
-![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp)
+![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp?v=20220411)
 _Figure 1: ArvernOS network stack in (early) 2022, which is divided into 5
 layers (the TCP/IP model sits on top of a physical layer)_
 {:.with-caption .can-invert-image-in-dark-mode}

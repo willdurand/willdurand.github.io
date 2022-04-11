@@ -31,7 +31,7 @@ network card in my kernel and (2) send some valid data. I designed this stack
 without looking at other existing implementations. That might be a problem in
 the future, we'll see.
 
-![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp)
+![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp?v=20220411)
 _Figure 1: ArvernOS network stack in (early) 2022, which is divided into 5
 layers (the TCP/IP model sits on top of a physical layer)_
 {:.with-caption .can-invert-image-in-dark-mode}
