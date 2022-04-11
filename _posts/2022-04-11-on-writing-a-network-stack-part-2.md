@@ -26,7 +26,7 @@ layers (the TCP/IP model sits on top of a physical layer)_
 
 Figure 1 depicts the 5 different layers/protocols already implemented in
 ArvernOS: I chose to have a first distinct physical layer, and then we have the
-4 layers of the TCP/IP model. This makes the first 4 layers of this model
+4 layers of the [TCP/IP][tcp-ip] model. This makes the first 4 layers of this model
 similar to the [OSI model][osi] as well. Again, each implementation is far from
 perfect but it is functional to some extents.
 
@@ -37,7 +37,7 @@ perfect but it is functional to some extents.
 ## User Datagram Protocol (UDP)
 
 UDP is a communication protocol listed in the _Transport_ layer of the TCP/IP
-model. The protocol is "not connected", which means there is no end-to-end
+model. This protocol is "not connected", which means there is no end-to-end
 connection. It is considered unreliable because packets could be lost and the
 emitter wouldn't have any (built-in) way to know that. On the other hand, this
 makes UDP simpler to implement (compared to [TCP][] for instance).
