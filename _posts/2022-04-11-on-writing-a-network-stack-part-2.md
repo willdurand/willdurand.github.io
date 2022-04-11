@@ -61,8 +61,8 @@ computing a pseudo header checksum, which took me quite some time to get right.
 Wireshark seems happy now, though.
 
 As far as I can remember, this initial UDP implementation was designed to
-[explore DNS][tweet-dns] (another protocol that I describe in the next section
-of this article). Initially, it was only possible to receive UDP packets [based
+[explore DNS][tweet-dns] (another protocol that I describe later
+in this article). Initially, it was only possible to receive UDP packets [based
 on the _destination port_][udp-dest-port]. Later, I added the concept of sockets
 and the UDP logic was adjusted a bit to retrieve the right socket for each
 packet received. That was an interesting problem so let's talk about it in the
