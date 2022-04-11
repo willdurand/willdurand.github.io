@@ -16,7 +16,7 @@ ArvernOS._
 In [Part 1 of this two-part story][part-1], I presented some of the network
 protocols that I implemented when I started writing a network stack from
 scratch. In this second part, I continue to climb the different layers of this
-stack. After having introduce UDP, I'll describe two "high" level network
+stack. After having introduced UDP, I'll describe two "high" level network
 protocols: DHCP and DNS.
 
 ![ArvernOS network stack in (early) 2022](/images/posts/2022/02/arvernos-network-stack-202201.webp)
