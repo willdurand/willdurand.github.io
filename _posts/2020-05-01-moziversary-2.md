@@ -8,9 +8,8 @@ tweet_id: 1256219738470068227
 mastodon_id: 104093528704428539
 ---
 
-Today is my second _Moziversary_. I joined Mozilla as a full-time employee on
-May 1st, 2018, not too long after contracting with them _via_ my previous
-company.
+_Today is my second Moziversary. I joined Mozilla as a full-time employee on May
+1st, 2018, not too long after contracting with them via my previous company._
 
 I am part of the Firefox Add-ons team and I work on
 [AMO](https://addons.mozilla.org/), which is much more than "just a website". I

@@ -10,8 +10,8 @@ credits: |
   Photo used on social media by [Jennie Brown](https://unsplash.com/@fabellastudios).
 ---
 
-Three years at Mozilla, yay! 🎉 It's my longest time at the same company, and I
-am now a [Staff Software Engineer][promotion]. What a ride!
+_Three years at Mozilla, yay! 🎉 It's my longest time at the same company, and I
+am now a [Staff Software Engineer][promotion]. What a ride!_
 
 A year ago, [I wrote that I was starting to be more involved in
 Firefox][moziversary-2]. I worked on very diverse projects in 2020 but one of
