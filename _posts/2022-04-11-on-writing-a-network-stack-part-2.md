@@ -125,7 +125,7 @@ This function is also exposed to user space thanks to the
 program][host.c] shows how that can be used:
 
 ![](/images/posts/2022/04/dns.webp)
-_Figure 3: ArvernOS (x86_64 running in QEMU. The `host` command has been
+_Figure 3: ArvernOS (x86_64) running in QEMU. The `host` command has been
 executed several times with different domain names_
 {:.with-caption}
 
