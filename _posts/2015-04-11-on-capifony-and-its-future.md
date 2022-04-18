@@ -1,8 +1,11 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-title: "On capifony and its Future"
+title: "On capifony and its future"
 tweet_id: 586897932609265664
+updates:
+  - date: 2022-04-18
+    content: I proofread this article and fixed some links.
 ---
 
 > Hi! This is your captain speaking.
@@ -23,18 +26,18 @@ Dear capifony users/friends,
 
 As of yesterday (2015-04-10), this is the message you can read on the [capifony
 GitHub's page](https://github.com/everzet/capifony). Indeed, capifony is now
-**officially feature-frozen**, and we will **only accept bug fixes**. **It does
-not mean it is no longer active** though.
+**officially feature-frozen**, and we will **only accept bug fixes**. **This
+doesn't mean it is no longer active**, though.
 
-Over the years, capifony became pretty stable, especially with the addition of
-[tests](https://github.com/everzet/capifony/tree/master/spec). Even if it is not
-perfect, it ensures a certain confidence. Recent bug reports are mostly edge
-cases that are tricky to solve, and that we should take care of.
+Over the years, capifony became pretty stable, in part thanks to the addition of
+a [test suite](https://github.com/everzet/capifony/tree/master/spec). Even if it
+is not perfect, it ensures a certain confidence. Recent bug reports are mostly
+edge cases that are tricky to solve and that we should take care of.
 
 Under the hood, capifony leverages Capistrano v2, which is not the latest
-version. [Capistrano v3](http://capistranorb.com/) has been released in late
-2013, and is known as the latest major version of Capistrano. But, it has been
-entirely rewritten, and obviously, breaks backward compatibility.
+version. [Capistrano v3](https://capistranorb.com/) has been released in late
+2013 and it is the current/latest major version of Capistrano. It has been
+entirely rewritten, though, and it obviously breaks backward compatibility.
 
 We [discussed the creation of capifony
 v3](https://github.com/everzet/capifony/pull/437) but due to various reasons, a
@@ -42,14 +45,14 @@ v3](https://github.com/everzet/capifony/pull/437) but due to various reasons, a
 work on _capifony v3_ did not get merged into capifony. The plugin has been
 built from scratch and is what could have been known as _capifony v3_, [without
 tests](https://github.com/capistrano/symfony/issues/27) unfortunately. That is
-one of the reasons why I did not write this article earlier... But now, it is time
-to move forward!
+one of the reasons why I did not write this article earlier... But now, it is
+time to move forward!
 
 ### Now What?
 
 - If you use capifony on an existing project, **no need to upgrade**. It might be
-  complicated, and you could introduce unwanted bugs. If your deployment process works
-  for you, no need to change it.
+  complicated, and you could introduce unwanted bugs. If your deployment process 
+  works for you, no need to change it.
 
 - If you start a new project, you can use Capistrano v3 and its symfony plugin.
   However, since the Capistrano era, **tools and practices evolved a lot**, and
