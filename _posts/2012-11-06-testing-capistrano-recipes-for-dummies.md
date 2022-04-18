@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Testing Capistrano Recipes For Dummies
+title: Testing Capistrano recipes for dummies
 location: Clermont-Fd Area, France
+updates:
+  - date: 2022-04-18
+    content: I proofread this article and fixed some links.
 ---
 
-A couple months ago, I [took the lead of
-capifony](2012-06-22-capifony-the-cool-capistrano-recipes-for-symfony-applications),
-a set of [Capistrano](https://github.com/capistrano/capistrano) recipes for
-[Symfony2](http://symfony.com) projects. I tried to revamp the project, and
-one of my goals was to add tests. This article sums up my work on that topic.
+A couple months ago, I [took the lead of capifony][post-capifony], a set of
+[Capistrano][] recipes for [Symfony](http://symfony.com) projects. I tried to
+revamp the project and one of my goals was to add tests. This article presents
+my work on that topic.
 
 ## Making your recipe testable
 
@@ -33,16 +35,15 @@ end
 The last three lines are needed to keep the original behavior of your recipe,
 assuming you have an existing recipe that doesn't follow this practice.
 
-You are ready to test your recipe, but _how?_
-[capistrano-spec](https://github.com/mydrive/capistrano-spec) to the rescue!
-**capistrano-spec** integrates [RSpec](http://rspec.info/) into the Capistrano
-world so that you can easily test your recipes. It has been created by [Josh
+Now you are ready to test your recipe, but _how?_ [capistrano-spec][] to the
+rescue! **capistrano-spec** brings [RSpec][] to the Capistrano world so that
+you can easily test your recipes. It has been created by [Josh
 Nichols](https://github.com/technicalpickles).
 
 ### Installing capistrano-spec
 
 The first step is to create a `spec/spec_helper.rb` file used to load everything
-to run your tests. This file looks like:
+to run your tests. This file should look like this:
 
 ```ruby
 # Bundler
@@ -66,8 +67,8 @@ end
 require 'my_recipe'
 ```
 
-As you may noticed, [Bundler](http://gembundler.com/) is used to manage our
-dependencies. The `Gemfile` file should contain:
+As you may have noticed, [Bundler][] is used to manage the dependencies. The
+`Gemfile` file should contain the following content:
 
 ```ruby
 source 'http://rubygems.org'
@@ -76,24 +77,25 @@ gemspec
 
 gem 'rake'
 gem 'rspec'
-gem 'capistrano-spec', :git => 'git://github.com/mydrive/capistrano-spec.git'
+gem 'capistrano-spec'
 ```
 
-`gemspec` loads all dependencies located in the `.gemspec` file, used to build your
-_gem_. For more information, please read [Using Bundler with Rubygem
-gemspecs](http://gembundler.com/rubygems.html).
+`gemspec` loads all the dependencies located in the `.gemspec` file, which is
+used to build your _gem_. For more information, please read [Using Bundler with
+Rubygem gemspecs][bundler-rubygems].
 
-Also, a best practice here is to rename your `Gemfile` to `.gemfile` as
-it's used for testing purpose only. It's not a big deal though, it just makes
-your project a bit cleaner.
+Also, a best practice here is to rename your `Gemfile` to `.gemfile` because
+it is used for testing purposes only. It's not a big deal but it makes your
+project a bit "cleaner".
 
 Run the command below to install your dependencies:
 
     BUNDLE_GEMFILE=.gemfile bundle install
 
-You also need a `Rakefile` file to configure [Rake](http://rake.rubyforge.org/).
-It is similar to `make` and allows you to run a set of tasks. In order to run
-your examples, you need a `spec` task. The following snippet is all you need:
+You also need a `Rakefile` file to configure [Rake][]. It is similar to `make`
+and it allows to run a set of tasks written in Ruby. In order to run your test
+files ("examples" in RSpec), you need a `spec` task. The following snippet is
+all you need:
 
 ```ruby
 require 'rspec/core/rake_task'
@@ -106,7 +108,8 @@ end
 task :default => :spec
 ```
 
-Now, you probably want to write your first test, and you are right!
+Now you probably want to write your first test file, and you are right! Let's
+do it!
 
 ## Writing your first test
 
@@ -127,8 +130,8 @@ describe "MyRecipe" do
 end
 ```
 
-As you can see, we create a Capistrano configuration instance, and we extend it
-with capistrano-spec. This configuration instance is injected into our module.
+We create a Capistrano configuration instance and we extend it with capistrano-spec.
+This configuration instance is injected into our module.
 
 Try to run the `spec` task using the following command:
 
@@ -140,8 +143,8 @@ You should see:
     0 examples, 0 failures
 
 If everything looks good, congratulations! Time to write your **examples**. Yes,
-in Rspec, you don't really write tests, you write **executable examples** of the
-expected behavior of your code.
+in Rspec, you don't really write "tests", you write **executable examples** of
+the expected behaviors of your code.
 
 First, declare the `@configuration` variable as subject:
 
@@ -149,8 +152,7 @@ First, declare the `@configuration` variable as subject:
 subject { @configuration }
 ```
 
-It tells RSpec what we are doing the tests on. Instead of writing something
-like:
+It tells RSpec what we are going to test. Instead of writing something like:
 
 ```ruby
 it { @configuration.should have_run('pwd') }
@@ -178,11 +180,11 @@ end
 
 A `context` block always starts with either `When` or `With`, and should
 describe one feature in a given context. In this context, we try to find and
-execute the task `my:command`, and to ensure it has run `echo "Hello, World!"`.
+execute the task `my:command` and ensure it has run `echo "Hello, World!"`.
 
-If this task has some parameters, like a `:name` variable, you should write a
-new `context` to test it. The `@configuration` object has all methods available
-in your recipe, so you can call the `set` method to change a parameter:
+If this task takes parameters like a `:name` variable, you should write a new
+`context` to test it. The `@configuration` object has all its methods available
+in your recipe. You can call the `set` method to change a parameter:
 
 ```ruby
 context "when running my:command" do
@@ -195,15 +197,22 @@ context "when running my:command" do
 end
 ```
 
-Other matchers are available like `have_gotten`, or `have_uploaded` depending on
-what you need. Look at the
-[capistrano-spec readme](https://github.com/mydrive/capistrano-spec#testing) for more
-information, it also contains useful examples. That's all folks.
+Other matchers are available like `have_gotten` or `have_uploaded` depending on
+what you need. Look at the [capistrano-spec README][capistrano-spec] for more
+information (it also contains useful examples). That's all folks!
 
 ## Links
 
-- [Better Specs](http://betterspecs.org/): rspec guidelines with ruby;
+- [Better Specs](https://www.betterspecs.org/): RSpec guidelines with Ruby
 - [capistrano-spec](https://github.com/mydrive/capistrano-spec): helpers and
-  matchers for testing capistrano;
+  matchers for testing capistrano recipes
 - [capifony specs](https://github.com/everzet/capifony/tree/master/spec): the
-  capifony source code.
+  capifony test files
+
+[bundler]: https://bundler.io/
+[bundler-rubygems]: https://bundler.io/rubygems.html
+[capistrano]: https://github.com/capistrano/capistrano
+[capistrano-spec]: https://github.com/mydrive/capistrano-spec
+[post-capifony]: {% post_url 2012-06-22-capifony-the-cool-capistrano-recipes-for-symfony-applications %}
+[rake]: https://ruby.github.io/rake/
+[rspec]: https://rspec.info/
