@@ -7,10 +7,9 @@ tweet_id: 489318138375602176
 ---
 
 Last month, I gave a talk about REST and Symfony at [PHP Tour Lyon
-2014](http://afup.org/pages/phptourlyon2014/index.php), organized by the french
-foundation of French speaking PHP users
-([AFUP](http://www.afup.org/pages/site/)). Congratulations to the team, this
-event was a blast!
+2014](https://event.afup.org/phptourlyon2014__programme/), organized by the
+french foundation of French speaking PHP users ([AFUP](https://afup.org/home)).
+Congratulations to the team, this event was a blast!
 
 You will find the video of my talk below (in French, sorry):
 
@@ -31,5 +30,4 @@ I used the
 [Propilex](https://github.com/willdurand/Propilex) projects for the demos.
 
 If you attended my talk and did not rate it yet, please leave a comment on
-[joind.in](https://joind.in/11215). ~~If you have any questions or remarks,
-comments are welcome ;-)~~
+[joind.in](https://joind.in/11215).
