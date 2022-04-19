@@ -1,0 +1,3 @@
+tasks:
+  - init: bundle install
+    command: bundle exec jekyll serve -w -D
