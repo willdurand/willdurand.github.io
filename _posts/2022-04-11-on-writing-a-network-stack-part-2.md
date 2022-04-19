@@ -11,8 +11,6 @@ UNIX-like toy kernel). This two-part story describes some protocols of the
 [TCP/IP][tcp-ip] stack as well as some implementation details in the context of
 ArvernOS._
 
----
-
 In [Part 1 of this two-part story][part-1], I presented some of the network
 protocols that I implemented when I started writing a network stack from
 scratch. In this second part, I continue to climb the different layers of this
