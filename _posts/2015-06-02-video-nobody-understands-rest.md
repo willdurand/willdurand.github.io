@@ -3,12 +3,14 @@ layout: post
 title: "[Video] Nobody understands REST but that's OK ;-)"
 location: Clermont-Fd, France
 tweet_id: 605635605024911360
+updates:
+  - date: 2022-04-19
+    content: I proofread this article and fixed some links.
 ---
 
 Last month, I gave a talk on why nobody understands REST at [PHP Tour Luxembourg
-2015](www.afup.org/pages/phptourluxembourg2015/). It is not quite right to say
-"nobody" understands _X_, no matter the topic. The title of this talk is
-definitely catchy!
+2015][phptour-2015]. It is not quite right to say "nobody" understands _X_, no
+matter the topic. The title of this talk is definitely catchy!
 
 The aim of this presentation was to explain how complicated REST was, and
 describe why it was impractical in real life (with concrete examples). I also
@@ -32,5 +34,6 @@ And, here are my slides:
 
 <p></p>
 If you attended my talk and did not rate it yet, please leave a comment on
-[joind.in](https://joind.in/14276). ~~If you have any questions or remarks,
-comments are welcome ;-)~~
+[joind.in](https://joind.in/14276).
+
+[phptour-2015]: https://event.afup.org/phptourluxembourg2015__programme/
