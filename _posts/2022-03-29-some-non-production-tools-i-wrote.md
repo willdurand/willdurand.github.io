@@ -3,7 +3,7 @@ layout: post
 title: "Some non-production tools I wrote"
 location: "Freiburg, Germany"
 image: /images/posts/2022/03/some-non-production-tools-i-wrote.webp?v=1
-tags: mozilla
+tags: [mozilla]
 tweet_id: 1508748161686327302
 ---
 

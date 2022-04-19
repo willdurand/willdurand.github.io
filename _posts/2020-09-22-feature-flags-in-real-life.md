@@ -3,7 +3,7 @@ layout: post
 title: "Feature flags in real life"
 location: "Freiburg, Germany"
 image: /images/posts/2020/09/waffle.jpg
-tags: mozilla
+tags: [mozilla]
 tweet_id: 1308380650962026496
 ---
 

@@ -4,7 +4,7 @@ title: "I got a promotion!"
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/promotion.webp
 tweet_id: 1365232065940226049
-tags: mozilla
+tags: [mozilla]
 credits: |
   Photo used on social media by [@ghebby](https://unsplash.com/@ag_ghebby).
 

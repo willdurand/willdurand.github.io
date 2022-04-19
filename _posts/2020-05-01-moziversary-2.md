@@ -3,7 +3,7 @@ layout: post
 title: "Moziversary #2"
 location: "Freiburg, Germany"
 image: /images/posts/2020/05/win98.png
-tags: mozilla
+tags: [mozilla]
 tweet_id: 1256219738470068227
 ---
 

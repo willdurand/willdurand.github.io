@@ -4,8 +4,6 @@ title: "First patch in the Linux Kernel"
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/linux-kernel.webp
 tweet_id: 1363764147842916353
-credits:
-
 ---
 
 Below is the [very first patch][1] that I recently landed in the Linux Kernel:
