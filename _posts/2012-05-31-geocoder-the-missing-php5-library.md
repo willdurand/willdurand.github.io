@@ -1,47 +1,42 @@
 ---
 layout: post
-title: "Geocoder: The Missing PHP5 Library"
+title: "Geocoder: the missing PHP library"
 location: Zürich, Switzerland
 tags: [PHP]
+updates:
+  - date: 2022-04-19
+    content: I proofread this article and updated some links.
 ---
 
-Seven months ago, I released [Geocoder](https://github.com/willdurand/Geocoder),
-a PHP 5.3 library to ease geocoding manipulations. More and more applications
-have to deal with geolocation, and even if HTML5 provides a [Geolocation
-API](http://www.w3.org/TR/geolocation-API/), a server side library is
-always useful. Today this library has more than 230 watchers on GitHub, and it's
-time to introduce it here.
+Seven months ago, I released [Geocoder][], a PHP 5.3+ library to ease geocoding
+manipulations. More and more applications have to deal with geolocation and,
+even if HTML5 provides a [Geolocation API][], a server-side library is always
+useful. Today, this library has more than 230 watchers on GitHub and it's time
+to introduce it here.
 
-The library is standalone, and split in two parts: `HttpAdapters` which
-are responsible to get data from remote APIs, and `Providers` which own the
-logic to extract information.
+The library is standalone and split in two parts: `HttpAdapters`, which
+are responsible for getting data from remote APIs, and `Providers`, which own
+the logic to extract information.
 
-### Adapters
+## Adapters
 
-There are many adapters to use Geocoder with:
+There are many adapters to use Geocoder with, like
 [Buzz](https://github.com/kriswallsmith/Buzz),
-[cURL](http://php.net/manual/book.curl.php),
-[Guzzle](https://github.com/guzzle/guzzle), or [Zend Http
-Client](http://framework.zend.com/manual/en/zend.http.client.html).
-If you want to use another HTTP layer, you can easily write your own provider by
-implementing the `HttpAdapterInterface` interface.
+[cURL](https://www.php.net/manual/en/book.curl.php),
+[Guzzle](https://github.com/guzzle/guzzle) and the Zend Http Client. If you want
+to use another HTTP layer, you can easily write your own provider by implementing
+the `HttpAdapterInterface` interface.
 
 ## Providers
 
-The most important part of Geocoder is probably all its providers:
-[FreeGeoIp](http://freegeoip.net/static/index.html),
-[HostIp](http://www.hostip.info/), [IpInfoDB](http://www.ipinfodb.com/), [Yahoo!
-PlaceFinder](http://developer.yahoo.com/geo/placefinder/), [Google
-Maps](http://code.google.com/apis/maps/documentation/geocoding/), [Bing
-Maps](http://msdn.microsoft.com/en-us/library/ff701715.aspx),
-[OpenStreetMaps](http://nominatim.openstreetmap.org/),
-[CloudMade](http://developers.cloudmade.com/projects/show/geocoding-http-api),
-and even [Geoip](http://php.net/manual/book.geoip.php), the PHP extension.
-Same thing here, you can easily write your own provider by implementing the
+The most important part of Geocoder is probably all its providers: FreeGeoIp,
+[HostIp][], [IpInfoDB][], Yahoo! PlaceFinder, [Google Maps][], [Bing Maps][],
+[OpenStreetMaps][], CloudMade, and even [Geoip][], the PHP extension. Same thing
+here, you can easily write your own provider by implementing the
 `ProviderInterface` interface.
 
 Geocoder supports both geocoding and reverse geocoding. It depends on the
-provider you choose, and also what you want to do. The API is really simple:
+provider you choose and also what you want to do. The API is really simple:
 
 ```php
 <?php
@@ -63,38 +58,49 @@ $result = $geocoder->geocode('10 rue Gambetta, Paris, France');
 $result = $geocoder->reverse($latitude, $longitude);
 ```
 
-The `$result` variable is an instance of [ResultInterface](https://github.com/willdurand/Geocoder/blob/master/src/Geocoder/Result/ResultInterface.php).
+The `$result` variable is an instance of [`ResultInterface`][ResultInterface].
 Again, the API is simple.
 
-### Dumpers
+## Dumpers
 
-Another feature provided by Geocoder is the ability to dump a
-`ResultInterface` object in standard formats like GPS eXchange (GPX),
-[GeoJSON](http://geojson.org/),
-[Keyhole Markup Language](http://en.wikipedia.org/wiki/Keyhole_Markup_Language)
-(KML), Well-Known Binary (WKB), or Well-Known Text (WKT).
-This is too small to become a separated library, and it can be helpful if you need
-to share geolocated data.
+Another feature provided by Geocoder is the ability to dump a `ResultInterface`
+object in standard formats like GPS eXchange (GPX), [GeoJSON][], [Keyhole Markup
+Language][KML] (KML), Well-Known Binary (WKB) or Well-Known Text (WKT). This is
+too small to become a separated library and it can be helpful if you need to
+share geolocated data.
 
-### Conclusion
+## Conclusion
 
-Geocoder is quite stable now, and is well integrated with
-[Propel](http://www.propelorm.org) thanks to the
-[GeocodableBehavior](https://github.com/willdurand/GeocodableBehavior), and even
-with [Doctrine2](http://www.doctrine-project.org/) thanks to the
-[DoctrineBehaviors](https://github.com/KnpLabs/DoctrineBehaviors#geocodable).
-Both behaviors are really powerful, install them, and your model objects
-(entities) will become geo-aware.
-Note for Drupal guys, [the geocoder module should use Geocoder](http://drupal.org/node/1334838), sooner or later.
+Geocoder is quite stable now. It is well integrated with [Propel][] thanks to
+the [GeocodableBehavior][] and with [Doctrine][] thanks to the [DoctrineBehaviors][].
+Both behaviors are really powerful. Install them and your model objects
+(entities) become geo-aware! For Drupal folks, [the geocoder module should use
+Geocoder](https://www.drupal.org/node/1334838) sooner or later.
 
-Geocoder has more than ten contributors (thank you so much guys), is actively
-maintained, and already used in production! Oh, and it's heavily unit tested
-with more than a hundred tests, and almost a thousand assertions.
+Geocoder has more than ten contributors (thank you so much!!!). It is actively
+maintained and already used in production! Oh and it's well unit tested, with
+more than a hundred tests and almost a thousand assertions!
 
-If you plan to use geocoding stuff in your project, or to integrate something
-in your favourite Framework, you should give Geocoder a try ;)
+If you plan to deal with geocoding stuff in your PHP project, you should give
+Geocoder a try ;)
 
-### Links
+## Links
 
-- [The Geocoder website](http://geocoder-php.org/);
-- [The GitHub repository](https://github.com/willdurand/Geocoder).
+- [The Geocoder website](https://geocoder-php.org/)
+- [The GitHub repository][Geocoder]
+
+[Geocoder]: https://github.com/willdurand/Geocoder
+[Geolocation API]: https://www.w3.org/TR/geolocation/
+[HostIP]: https://www.hostip.info/
+[IpInfoDB]: https://www.ipinfodb.com/
+[Google Maps]: https://developers.google.com/maps/documentation/geocoding/
+[Bing Maps]: https://docs.microsoft.com/en-us/bingmaps/rest-services/locations/
+[OpenStreetMaps]: https://nominatim.openstreetmap.org/ui/search.html
+[Geoip]: https://www.php.net/manual/en/book.geoip.php
+[ResultInterface]: https://github.com/willdurand/Geocoder/blob/master/src/Geocoder/Result/ResultInterface.php
+[GeoJSON]: https://geojson.org/
+[KML]: https://en.wikipedia.org/wiki/Keyhole_Markup_Language
+[Propel]: http://propelorm.org/
+[Doctrine]: https://www.doctrine-project.org/
+[DoctrineBehaviors]: https://github.com/KnpLabs/DoctrineBehaviors#geocodable
+[GeocodableBehavior]: https://github.com/willdurand/GeocodableBehavior
