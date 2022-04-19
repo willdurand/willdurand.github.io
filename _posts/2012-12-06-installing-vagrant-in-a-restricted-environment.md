@@ -84,7 +84,7 @@ appears because no disk can be found.
 
 That's why we tried to change the disk controller. We removed the SATA
 controller and attached the disk to the IDE controller. With this configuration,
-we were able to boot the image, and to log in. [This was been
+we were able to boot the image, and to log in. [This has been
 reported](https://github.com/mitchellh/vagrant/issues/884#issuecomment-10857450)
 as well.
 
