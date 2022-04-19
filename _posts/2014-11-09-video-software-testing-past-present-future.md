@@ -6,11 +6,10 @@ title: "[Video] Software testing: past, present, future"
 tweet_id: 531507910409736192
 ---
 
-Last month, I gave a talk on software testing at [Forum PHP
-2014](http://afup.org/pages/forumphp2014/) in Paris, organized by the french
-foundation of French speaking PHP users
-([AFUP](http://www.afup.org/pages/site/)). Then again, congratulations to the
-team, this event was a blast! (As usual, I would say :-))
+Last month, I gave a talk on software testing at [Forum PHP 2014][] in Paris,
+organized by the french foundation of French speaking PHP users
+([AFUP](https://afup.org/home)). Then again, congratulations to the team, this
+event was a blast! (As usual, I would say :-))
 
 In this talk, I gave an overview of what software testing was, describing three
 different periods: past, present, and future, hence the title of this talk.
@@ -30,5 +29,6 @@ And, here are my slides:
 
 <p></p>
 If you attended my talk and did not rate it yet, please leave a comment on
-[joind.in](https://joind.in/11953). ~~If you have any questions or remarks,
-comments are welcome ;-)~~
+[joind.in](https://joind.in/11953).
+
+[Forum PHP 2014]: https://event.afup.org/forumphp2014__programme/
