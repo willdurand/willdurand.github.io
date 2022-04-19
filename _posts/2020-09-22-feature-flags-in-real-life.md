@@ -164,5 +164,5 @@ environments:
 ![Screenshot of the amo-info Firefox extension](/images/posts/2020/09/amo-info.png)
 
 That's it for today :-) Are you using feature toggles too? I'd be interested in
-knowing how you manage them and what you do differently than than we do. Don't
+knowing how you manage them and what you do differently than us. Don't
 hesitate to get in touch!
