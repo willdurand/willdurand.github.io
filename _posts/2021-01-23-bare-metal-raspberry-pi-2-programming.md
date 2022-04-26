@@ -4,6 +4,7 @@ title: "Bare-metal Raspberry Pi 2 programming"
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/bootloader-rpi2.webp
 tweet_id: 1353004633946521600
+mastodon_id: 105605786739677264
 ---
 
 Last week-end, I started to play with

@@ -4,6 +4,7 @@ title: "On pretty printers"
 location: "Freiburg, Germany"
 image: /images/posts/2021/07/pretty-printers.webp
 tweet_id: 1418516550571773952
+mastodon_id: 106634349978485261
 credits: |
   Photo used on social media by [Bank Phrom](https://unsplash.com/@bank_phrom)
 ---

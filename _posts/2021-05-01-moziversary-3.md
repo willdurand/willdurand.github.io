@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2021/05/moziversary-3.webp
 tags: [mozilla]
 tweet_id: 1388456430676623365
+mastodon_id: 106159724428020853
 credits: |
   Photo used on social media by [Jennie Brown](https://unsplash.com/@fabellastudios).
 ---
