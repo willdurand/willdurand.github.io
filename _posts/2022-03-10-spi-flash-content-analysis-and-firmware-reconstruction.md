@@ -4,6 +4,7 @@ title: SPI flash content analysis and firmware reconstruction
 location: "Freiburg, Germany"
 image: /images/posts/2022/03/social.webp
 tweet_id: 1501871377158225922
+mastodon_id: 108203072255299580
 ---
 
 I wrote a [Twitter thread about hardware hacking][twitter-thread] some time ago.
