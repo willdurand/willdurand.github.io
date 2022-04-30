@@ -489,6 +489,10 @@ figcaption {
   .with-caption {
     text-align: center;
 
+    img {
+      margin-bottom: 0.5em;
+    }
+
     em {
       display: block;
       font-size: 0.8em;
