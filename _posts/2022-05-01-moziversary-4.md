@@ -4,6 +4,8 @@ title: "Moziversary #4"
 location: "Freiburg, Germany"
 image: /images/posts/2022/05/moziversary-4-social.webp
 tags: [mozilla]
+tweet_id: 1520687934856470530
+mastodon_id: 108225742381978909
 ---
 
 _Today is my fourth Moziversary 🎂 I have been working at Mozilla as a full-time
