@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2022/05/gitpod-firefox-social.webp?v=20220503
 tags: [mozilla]
 mastodon_id: 108237109619474962
+tweet_id: 1521421331711074304
 ---
 
 [Gitpod][] provides Linux-based development environments on demand along with a
