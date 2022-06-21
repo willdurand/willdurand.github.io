@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2022/06/containers-social.webp
 mastodon_id:
 tweet_id:
+credits: Photo used on social media by [ines mills](https://unsplash.com/@inesmills).
 ---
 
 It (almost) all started with [this talk from Liz Rice][containers-go] that I
@@ -87,8 +88,7 @@ gitpod  44488  Sl    22:01   \_ yacr --log-format json --log /home/gitpod/.run/y
 ```
 
 When we ask the shim to start the container using the HTTP API, it invokes the
-runtime again to start the container. At this point, the container process (`sh
-/hello-loop.sh` in this example) should be running under the `yacs` (subreaper)
+runtime again to start the container. At this point, the container process (`sh /hello-loop.sh` in this example) should be running under the `yacs` (subreaper)
 process (see `ps` output below).
 
 ```console
