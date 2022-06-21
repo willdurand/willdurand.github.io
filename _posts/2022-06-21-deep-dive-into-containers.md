@@ -3,8 +3,8 @@ layout: post
 title: "Deep dive into containers"
 location: "Freiburg, Germany"
 image: /images/posts/2022/06/containers-social.webp
-mastodon_id:
-tweet_id:
+mastodon_id: 108515106268116792
+tweet_id: 1539177916701057024
 credits: Photo used on social media by [ines mills](https://unsplash.com/@inesmills).
 ---
 
@@ -22,8 +22,8 @@ is more of a "Show and Tell" in which I describe what I've poked around.
 
 At this level, there is no concept of images, registries, volumes, etc. An [Open
 Container Initiative][] (OCI)-compliant runtime takes an identifier and a
-"bundle" as input. A bundle is a folder that contains a `config.json` file and a
-root filesystem ("rootfs").
+"bundle" as input. A bundle is a folder that contains a
+[`config.json`][oci-config] file and a root filesystem ("rootfs").
 
 I started by updating the code I had initially written to build a minimal (and
 insecure[^1]) runtime named [Yacr][]. I learned a lot of low-level information
@@ -56,7 +56,7 @@ shim invokes an OCI runtime to create/start containers. In addition, shims solve
 the two problems stated above by:
 
 1. becoming a [subreaper][prctl], which allows them to reap (adopt) any child
-   processes created by their own child processes (e.g. the runtime). This, in
+   processes created by their own child processes (_e.g._ the runtime). This, in
    turns, allows shims to be notified when child processes exit
 2. keeping open the container's input/output. For instance, my implementation
    creates FIFOs (named pipes) so that it is possible to interact with the
@@ -81,10 +81,10 @@ $ yacs --bundle=/tmp/alpine-bundle --container-id=alpine
 /home/gitpod/.run/yacs/alpine/shim.sock
 
 $ ps auxf
-USER    PID    STAT  START  COMMAND
+USER    PID    COMMAND
 [...]
-gitpod  44458  Ssl   22:01  yacs --bundle=/tmp/alpine-bundle --container-id=alpine
-gitpod  44488  Sl    22:01   \_ yacr --log-format json --log /home/gitpod/.run/yacs/alpine/yacr.log create container alpine --root /home/gitpod/.run/yacr --bundle /tmp/alpine-bundle
+gitpod  44458  yacs --bundle=/tmp/alpine-bundle --container-id=alpine
+gitpod  44488   \_ yacr --log-format json --log /home/gitpod/.run/yacs/alpine/yacr.log create container alpine --root /home/gitpod/.run/yacr --bundle /tmp/alpine-bundle
 ```
 
 When we ask the shim to start the container using the HTTP API, it invokes the
@@ -107,11 +107,11 @@ $ curl -X POST -d 'cmd=start' --unix-socket /home/gitpod/.run/yacs/alpine/shim.s
 }
 
 $ ps auxf
-USER    PID    STAT  START  COMMAND
+USER    PID    COMMAND
 [...]
-gitpod  44458  Ssl   22:01  yacs --bundle=/tmp/alpine-bundle --container-id=alpine
-gitpod  44488  S     22:01   \_ sh /hello-loop.sh
-gitpod  55758  S     22:02       \_ sleep 1
+gitpod  44458  yacs --bundle=/tmp/alpine-bundle --container-id=alpine
+gitpod  44488   \_ sh /hello-loop.sh
+gitpod  55758       \_ sleep 1
 ```
 
 Yacs saves the output of the container process in a JSON file (called a "log
@@ -128,7 +128,7 @@ $ curl --unix-socket /home/gitpod/.run/yacs/alpine/shim.sock http://shim/logs
 Each line in a log file is a JSON object with the output message (`m`), the
 stream (`s`) and the timestamp (`t`). Container managers can then implement a
 `logs` command that can read this log file and print each message to the right
-stream (`stdout` or `stderr`), with or without a timestamp appended 😎
+stream (`stdout` or `stderr`).
 
 Yacs also supports [console sockets][]. In which case, logs are not available.
 The HTTP API supports [other commands to send signals to a container, delete it
@@ -157,13 +157,14 @@ more elegant in general but that's my personal opinion.
 The first example pipes `wttr.in` to a first container that reads from its
 standard input (`stdin`) in order to call `wget`, which will print its output to
 `stdout` (workaround for not having `curl` in the container). This first
-container should be automatically removed when it is done because the `--rm`
-option is specified).
+container should be automatically removed when it exits because the `--rm`
+option has been specified.
 
 The output of the first container is piped into a second container (running an
 "alpine" image from a different registry), which will only take the first 7
-lines of the input it receives. We then get the final output of these commands
-into our terminal 🎉
+lines of the input it receives.
+
+We then get the final output of these commands into our terminal 🎉
 
 ```console
 $ echo 'wttr.in' \
@@ -177,10 +178,14 @@ Weather report: Freiburg im Breisgau, Germany
       ⚡‘‘⚡‘‘  9 km
       ‘ ‘ ‘ ‘   0.0 mm
 
+// We list all the containers and observe that the first container has been
+// removed automatically. The second one is still listed.
 $ yaman c ls -a
-CONTAINER ID                       IMAGE                            COMMAND       CREATED          STATUS                      NAME
-10bddbfd480c46ffbbc8a5005134e1d7    quay.io/aptible/alpine:latest   head -n 7     35 seconds ago   Exited (0) 35 seconds ago   bold_zhukovsky
+CONTAINER ID                       IMAGE                           COMMAND       CREATED          STATUS                      NAME
+10bddbfd480c46ffbbc8a5005134e1d7   quay.io/aptible/alpine:latest   head -n 7     35 seconds ago   Exited (0) 35 seconds ago   bold_zhukovsky
 
+// Even if the second container has exited, we can still fetch its logs. We ask
+// Yaman to print the logs with the timestamps.
 $ yaman c logs --timestamps 10bddbfd480c46ffbbc8a5005134e1d7
 2022-06-21T07:04:06Z - Weather report: Freiburg im Breisgau, Germany
 2022-06-21T07:04:06Z -
@@ -191,9 +196,9 @@ $ yaman c logs --timestamps 10bddbfd480c46ffbbc8a5005134e1d7
 2022-06-21T07:04:06Z -       ‘ ‘ ‘ ‘   0.0 mm
 ```
 
-The second example below shows that we can re-attach a container started in
-detached mode. In addition to that, the container is created by [runc][] and we
-specify a custom `hostname`:
+The second example below shows that we can re-attach to a container started in
+detached mode (with terminal). This new container was created by [runc][] and we
+specified a custom `hostname`:
 
 ```console
 $  yaman c run --rm --runtime runc --hostname ubuntu-demo -it -d docker.io/library/ubuntu
@@ -215,7 +220,7 @@ DISTRIB_DESCRIPTION="Ubuntu 22.04 LTS"
 ### Internals
 
 Under the hood, this container manager, named [Yaman][], relies on
-[fuse-overlayfs][] in rootless mode, native OverlayFS in rootfull mode (e.g.
+[fuse-overlayfs][] in rootless mode, native OverlayFS in rootfull mode (_e.g._
 when Yaman is executed with `sudo`) and [slirp4netns][] for the network layer.
 
 That has been a lot of work[^2] and I took many shortcuts and introduced a few
@@ -233,7 +238,7 @@ more reliable and secure[^3] 😬
 
 ## Conclusion
 
-I learned so much recently! If you want to know more about _my_ work, you can
+I learned so much recently! If you want to know more about this work, you can
 find [Yacr][], [Yacs][] and [Yaman][] on [GitHub][repo]. Feel free to try them
 out on [Gitpod][] or locally using [Vagrant][].
 
@@ -241,14 +246,12 @@ I have been using Docker for many years without necessarily questioning why
 things were what they were or how this whole thing was actually working under
 the hood.
 
-Now when I have a more specific question about Docker (or [containerd][] or
-Podman), I can follow the source code and usually think "oh, _that_ makes sense"
-or "ha, yeah, clever!". This happened a few times lately and that put a smile on
-my face every time.
+Now when I have a more specific question about [Docker][] (or [containerd][] or
+[Podman][]), I can follow the source code and usually think "oh, _that_ makes
+sense" or "ha, yeah, clever!". This happened a few times lately and that put a
+smile on my face every time.
 
-And that's enough to consider this deep dive a good investment of my free time! ❤️
-
----
+And it's enough to consider this deep dive a good investment of my free time! ❤️
 
 [containers-go]: https://www.youtube.com/watch?v=Utf-A4rODH8
 [a month ago]: https://twitter.com/couac/status/1528476035024568322
@@ -277,3 +280,4 @@ And that's enough to consider this deep dive a good investment of my free time! 
 [gitpod]: gitpod.io/
 [vagrant]: https://www.vagrantup.com/
 [hacks]: https://github.com/willdurand/containers/pull/81
+[oci-config]: https://github.com/opencontainers/runtime-spec/blob/v1.0.2/config.md
