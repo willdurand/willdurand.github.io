@@ -26,8 +26,8 @@ containers inside VMs for better isolation.
 
 Similar to how others have been [running Docker containers inside QEMU
 VMs][qemu-microvm-docker], I started by tinkering with QEMU's
-[microvm][qemu-microvm] machine. I compiled a custom Linux kernel for it, and
-wrote my own `init`[^1] program. The latter was needed to mimic what a
+[microvm][qemu-microvm] machine. I compiled a custom Linux kernel for it and
+wrote my own `init`[^1] program. The latter is needed to mimic what a
 traditional container runtime does when creating a container from a bundle[^2].
 
 [^1]:
@@ -41,11 +41,11 @@ traditional container runtime does when creating a container from a bundle[^2].
     file and the container's root filesystem (which is a folder usually named
     `rootfs`).
 
-The biggest unknown at the time was about the root filesystem, which resided on
-the host but needed to be used within the VM. Creating a disk image (e.g.
-[qcow2][]) didn't sound too great: it's overly complicated and slow. Instead, I
-used [virtiofsd][], a daemon running on the host that can share a folder with a
-guest (VM) using [virtio-fs][].
+The biggest unknown at the time was the root file system, which resided on the
+host but had to be used within the VM. Creating a disk image (e.g.  [qcow2][])
+didn't sound too great: it's overly complicated and slow. Instead, I used
+[virtiofsd][], a daemon running on the host that can share a folder with a guest
+(VM) using [virtio-fs][].
 
 For the Linux kernel, I created a _minimal_ configuration with `make
 allnoconfig` and `make menuconfig` to enable some options. I spent a lot of time
@@ -62,8 +62,8 @@ Last but not least, I wrote a simple [`init` program][init.c] to mount some
 directories (similar to what I did in [Yacr][]) and read some environment
 variables in order to (1) set the `hostname` and (2) execute the container
 process. About the latter, the kernel doesn't expect the special `init` process
-to be terminated, which happens when the container process has finished its
-execution. I [patched the kernel to reboot instead][patch-001] 🙈
+to be terminated, which necessarily happens when the container process has
+finished its execution. I [patched the kernel to reboot instead][patch-001] 🙈
 
 The `init` program reads environment variables because the Linux kernel passes
 unknown [kernel parameters][] to it[^3]. This is super convenient because QEMU
@@ -143,8 +143,8 @@ Under the hood, the following steps are performed:
    standard output (`stdout`) and the second container exits.
 
 The `--rm` option was not specified when we ran the second container, meaning we
-can still retrieve it by listing all the containers. From there, we can fetch
-the container's logs (or inspect it) until we delete it:
+can still retrieve it by listing all the containers. With the container ID, we
+can fetch the logs and inspect the container (until we delete it):
 
 ```console
 $ sudo yaman c ls -a
