@@ -3,7 +3,7 @@ layout: post
 title: "Containers and micro virtual machines"
 location: "Freiburg, Germany"
 image: /images/posts/2022/07/containers-and-micro-vms-social.webp
-mastodon_id:
+mastodon_id: 108630271663138071
 tweet_id: 1546461708306219008
 credits: Photo used on social media by [Bernd Dittrich](https://unsplash.com/@hdbernd).
 ---
