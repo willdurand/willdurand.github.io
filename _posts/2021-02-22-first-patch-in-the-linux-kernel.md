@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "First patch in the Linux Kernel"
+title: "First patch in the Linux kernel"
 location: "Freiburg, Germany"
 image: /images/posts/2021/02/linux-kernel.webp
 tweet_id: 1363764147842916353
 mastodon_id: 105773914867031817
 ---
 
-Below is the [very first patch][1] that I recently landed in the Linux Kernel:
+Below is the [very first patch][1] that I recently landed in the Linux kernel:
 
 ```
 diff --git a/drivers/staging/rtl8192e/rtllib_wx.c b/drivers/staging/rtl8192e/rtllib_wx.c
