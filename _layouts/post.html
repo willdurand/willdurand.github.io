@@ -79,16 +79,11 @@ layout: main
 
   <p>
     No comments here.
-    {% if page.tweet_id %}
-    You can <a href="https://twitter.com/{{ site.author.twitter }}/status/{{ page.tweet_id }}">reply on Twitter</a>
+    {% if page.mastodon_id %}
+    You can <a href="https://mamot.fr/@{{ site.author.mastodon }}/{{ page.mastodon_id }}">interact on Mastodon</a>
     {% else %}
-    You can <a href="https://twitter.com/{{ site.author.twitter }}">reach me on Twitter</a>
+    You can <a href="https://mamot.fr/@{{ site.author.mastodon }}">get in touch with me on Mastodon</a>
     {% endif %}
     or <a href="mailto:{{ site.author.email }}?subject={{ page.title }}">send me an email</a> if you prefer.
-    {% if page.mastodon_id %}
-    <br>
-    <img src="/images/new-animated.jpg" class="new-animated">
-    You can also <a href="https://mamot.fr/@{{ site.author.mastodon }}/{{ page.mastodon_id }}">interact on Mastodon</a>.
-    {% endif %}
   </p>
 </section>

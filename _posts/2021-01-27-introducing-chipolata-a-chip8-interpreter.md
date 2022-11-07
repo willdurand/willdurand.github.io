@@ -3,7 +3,6 @@ layout: post
 title: "Introducing chipolata: a CHIP-8 interpreter"
 location: "Clermont-Fd, France"
 image: /images/posts/2021/01/chip8-space-intercept.webp
-tweet_id: 1354403109053861888
 mastodon_id: 105627639030993582
 credits: |
   Photo used on social media: ["Telmac 1800 running CHIP-8 game Space Intercept

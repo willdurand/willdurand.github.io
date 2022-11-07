@@ -3,7 +3,6 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP]
 title: "Enforcing Data Encapsulation with Symfony Forms"
-tweet_id: 412640781568991232
 updates:
   - date: 2016-12-17
     content: >-

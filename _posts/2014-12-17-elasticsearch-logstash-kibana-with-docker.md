@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "Elasticsearch, Logstash &amp; Kibana with Docker"
-tweet_id: 545263698890485760
 ---
 
 Yesterday, I gave a talk on [how I use **Docker** to deploy

@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "On capifony and its future"
-tweet_id: 586897932609265664
 updates:
   - date: 2022-04-18
     content: I proofread this article and fixed some links.

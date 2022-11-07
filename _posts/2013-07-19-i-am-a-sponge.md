@@ -3,7 +3,6 @@ layout: post
 location: Clermont-Fd Area, France
 title: I am a sponge
 image: /images/posts/2013/07/spongebob-social.png
-tweet_id: 358241098675650560
 updates:
   - date: 2022-05-01
     content: I proofread this article and removed dead links.

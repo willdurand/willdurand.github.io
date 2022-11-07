@@ -4,7 +4,6 @@ title: "Deep dive into containers"
 location: "Freiburg, Germany"
 image: /images/posts/2022/06/containers-social.webp
 mastodon_id: 108515106268116792
-tweet_id: 1539177916701057024
 credits: Photo used on social media by [ines mills](https://unsplash.com/@inesmills).
 ---
 

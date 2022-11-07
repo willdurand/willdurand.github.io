@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "Je n'ai rien a cacher (I've got nothing to hide)"
-tweet_id: 561429804059480064
 updates:
   - date: 2022-05-01
     content: I proofread this article and removed dead links.

@@ -3,7 +3,6 @@ layout: post
 location: Clermont-Fd Area, France
 title: "Playing with a ESP8266 WiFi module"
 image: /images/posts/2015/esp/wiring.jpg
-tweet_id: 577852966130069505
 updates:
   - date: 2015-03-26
     content: >-

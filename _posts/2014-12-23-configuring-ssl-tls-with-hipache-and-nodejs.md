@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "Configuring SSL/TLS With Hipache (And Node.js)"
-tweet_id: 547343169642582016
 updates:
   - date: 2014-12-26
     content: >-

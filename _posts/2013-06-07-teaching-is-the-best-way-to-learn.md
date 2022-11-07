@@ -2,7 +2,6 @@
 layout: post
 title: Teaching is the best way to learn
 location: Clermont-Fd Area, France
-tweet_id: 342950409507319808
 updates:
   - date: 2022-05-01
     content: I proofread this article and fixed some links.

@@ -3,7 +3,6 @@ layout: post
 title: "Introducing srht.vim"
 location: "Freiburg, Germany"
 image: /images/posts/2021/03/srhtvim.webp?v=1
-tweet_id: 1366347190998810627
 mastodon_id: 105814266085602375
 ---
 

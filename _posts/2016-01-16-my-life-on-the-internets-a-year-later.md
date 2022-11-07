@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd, France
 title: "My life on The Internets: a year later"
-tweet_id: 688260129322450944
 updates:
   - date: 2019-12-22
     content: No more Disqus on this blog, hurray!

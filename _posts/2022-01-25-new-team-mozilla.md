@@ -3,7 +3,6 @@ layout: post
 title: I joined a new team (at Mozilla)
 location: "Freiburg, Germany"
 image: /images/posts/2022/01/newteam.webp
-tweet_id: 1485897610703560708
 mastodon_id: 107694439668081063
 tags: [mozilla]
 ---

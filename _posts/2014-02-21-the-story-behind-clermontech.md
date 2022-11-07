@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "The Story Behind Clermont'ech"
-tweet_id: 436879585540849664
 ---
 
 A year ago, [Julien](https://twitter.com/themouette),

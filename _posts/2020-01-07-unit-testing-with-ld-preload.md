@@ -3,7 +3,6 @@ layout: post
 title: "Unit testing C code with LD_PRELOAD"
 location: "Freiburg, Germany"
 image: /images/posts/2020/01/willos-tests.png?v=2
-tweet_id: 1214498418862768129
 ---
 
 One of my side projects is [a tiny kernel/operating

@@ -3,7 +3,6 @@ layout: post
 location: Clermont-Fd Area, France
 tags: [PHP, Geocoder]
 title: Taking Geocoder To The Next Level
-tweet_id: 373010759074074625
 ---
 
 Almost two years ago, I was pushing the [first

@@ -3,7 +3,6 @@ layout: post
 location: Paris, France
 tags: [PHP]
 title: "[Video] Software testing: past, present, future"
-tweet_id: 531507910409736192
 updates:
   - date: 2022-04-19
     content: I proofread this article and fixed some links.

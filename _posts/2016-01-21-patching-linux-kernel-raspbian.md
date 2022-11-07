@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd, France
 title: "Patching the Linux kernel (Raspbian &amp; CVE-2016-0728)"
-tweet_id: 690069917241057280
 updates:
   - date: 2022-03-11
     content: I proofread this article and removed dead links.

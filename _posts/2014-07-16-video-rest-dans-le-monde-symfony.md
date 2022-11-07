@@ -3,7 +3,6 @@ layout: post
 location: Lyon, France
 tags: [PHP]
 title: "[Video] REST dans le monde Symfony"
-tweet_id: 489318138375602176
 updates:
   - date: 2022-04-19
     content: I proofread this article and fixed some links.

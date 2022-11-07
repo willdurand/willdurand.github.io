@@ -2,7 +2,6 @@
 layout: post
 title: "[Video] Nobody understands REST but that's OK ;-)"
 location: Clermont-Fd, France
-tweet_id: 605635605024911360
 updates:
   - date: 2022-04-19
     content: I proofread this article and fixed some links.

@@ -2,7 +2,6 @@
 layout: post
 title: Being A .NET Developer For A WeekEnd
 location: Zürich, Switzerland
-tweet_id: 332521553424183297
 ---
 
 Even if I learnt C# and the .NET platform at school, I really started playing

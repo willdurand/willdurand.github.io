@@ -2,7 +2,6 @@
 layout: post
 location: Clermont-Fd Area, France
 title: "A year in pictures"
-tweet_id: 549539449651359745
 ---
 
 [Open Source](https://github.com/willdurand) and work put aside, here are some

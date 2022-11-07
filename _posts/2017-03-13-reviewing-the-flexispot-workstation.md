@@ -3,7 +3,6 @@ layout: post
 title: "Reviewing the FlexiSpot Desktop Workstation 27 inches"
 location: "Freiburg, Germany"
 image: /images/posts/2017/03/flexispot.webp
-tweet_id: 841280563428368385
 updates:
   - date: 2022-03-13
     content: |
