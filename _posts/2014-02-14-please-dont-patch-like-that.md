@@ -168,10 +168,9 @@ Now, please, either don't use the `PATCH` method, or use it the right way!
 
 It is worth mentioning that `PATCH` is not really designed for truly RESTful APIs,
 as Fielding's dissertation does not define any way to **partially** modify
-resources. But, Roy Fielding himself said that
-[PATCH was something \[he\] created for the initial HTTP/1.1 proposal because partial
-PUT is never RESTful](https://twitter.com/fielding/status/275471320685367296).
-Sure you are not transferring a **complete** representation, but REST does not
+resources. But, Roy Fielding himself said that PATCH was something he created
+for the initial HTTP/1.1 proposal because partial PUT is never RESTful.  Sure
+you are not transferring a **complete** representation, but REST does not
 require representations to be complete anyway.
 
 ## Useful Links

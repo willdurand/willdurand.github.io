@@ -23,8 +23,8 @@ because I'm lazy but because a wonderful project called _capifony_ already
 exists!
 
 Capifony is a set of recipes for both symfony 1.x and Symfony (2.x)
-applications. This project has been created by my friend
-[@everzet](https://twitter.com/everzet) and sponsored by KnpLabs.
+applications. This project has been created by my friend @everzet and sponsored
+by KnpLabs.
 
 This week, I'm really proud to announce that Konstantin gave me the keys of this
 project so that I can maintain and improve it. I released [capifony

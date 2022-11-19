@@ -64,24 +64,15 @@ pleasure to receive gifts for Christmas:
 
 ![](/images/gifts.jpg)
 
-In no particular order, I would like to thank
-[Pascal](https://twitter.com/pborreli),
-[Ryan](https://twitter.com/weaverryan),
-[Leanna](https://twitter.com/leannapelham),
-[Lukas](https://twitter.com/lsmith),
-[Mathias](https://twitter.com/mathiasverraes),
-[Antoine](https://twitter.com/toin0u), and [Hubert](https://twitter.com/youb_s)
-for these awesome gifts!
+In no particular order, I would like to thank @pborreli, @weaverryan,
+@leannapelham, @lsmith, @mathiasverraes, @toin0u and @youb_s for these awesome
+gifts!
 
-As of now, I would be very grateful if you would support my work via
-[Gittip](https://www.gittip.com/willdurand) or
-[Flattr](https://flattr.com/profile/willdurand), but remember that I also love
-to receive emails.
-I know that money in Open Source is always a tricky point. Be sure that I won't
-get paid twice for the Open Source work I am doing. I am not sponsored by
-anyone, and over the last **3** years, I never asked for money. I don't need
-money to create new projects, or to maintain them. However, domain names, GitHub
-account, and so on, are not free ;-)
+I know money in Open Source is always a tricky point. Be sure that I won't get
+paid twice for the Open Source work I am doing. I am not sponsored by anyone,
+and over the last **3** years, I never asked for money. I don't need money to
+create new projects, or to maintain them. However, domain names, GitHub account,
+and so on, are not free ;-)
 
 Next year, I will probably continue my Open Source stuff, and I will try to
 learn more things. I have new ideas to improve REST support in PHP/Symfony, but

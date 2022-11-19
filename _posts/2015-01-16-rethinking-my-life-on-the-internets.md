@@ -108,7 +108,7 @@ because most of the existing IM solutions are tied to corporations (Facebook,
 Google, etc.). The main issue is that GTalk conversations are indexed by Google
 in Gmail, meaning these conversations are not really private.
 
-As suggested by [Josh](https://twitter.com/codeguy), [using Adium and firing up
+As suggested by Josh, [using Adium and firing up
 OTR-encryption](https://joshlockhart.com/archive/goodbye-google) is a wise
 solution. Because I can't force my friends to use a secure communication
 channel, I am forced to consider IM conversations in the public domain. If one
@@ -143,8 +143,7 @@ things turn worse than expected here in France...
 
 For years, I helped Google track you by using Google Analytics. I do
 **apologize** for that. I switched to [Piwik](http://piwik.org/) last month
-thanks to [Geoffrey](https://twitter.com/ubermuda), and I now recommend it over
-Google Analytics.
+thanks to @ubermuda, and I now recommend it over Google Analytics.
 
 I am now looking for alternatives to [Disqus](https://disqus.com/) for the same
 reasons, but it is a bit complicated since this blog is basically static HTML,

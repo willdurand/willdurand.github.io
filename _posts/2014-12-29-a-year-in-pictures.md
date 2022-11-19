@@ -34,11 +34,11 @@ _Running &mdash; Gergovie, France_
 ## May
 
 ![](/images/posts/2014/12/montreal.jpg)
-_Visiting <a href="https://twitter.com/KPhoen">Kevin</a> + City Trip &mdash; Montreal, Canada_
+_Visiting @KPhoen + City Trip &mdash; Montreal, Canada_
 {:.with-caption}
 
 ![](/images/posts/2014/12/nyc.jpg)
-_City Trip + Visiting <a href="https://twitter.com/jmikola">Jeremy</a> &mdash; New York City, USA_
+_City Trip + Visiting @jmikola &mdash; New York City, USA_
 {:.with-caption}
 
 ![](/images/posts/2014/12/quebec.jpg)
@@ -48,7 +48,7 @@ _Visiting Julien + City Trip &mdash; Quebec, Canada_
 ## June
 
 ![](/images/posts/2014/12/phptour.jpg)
-_Visiting <a href="https://twitter.com/youb_s">Hubert</a> + Conference &mdash; Lyon, France_
+_Visiting @youb_s + Conference &mdash; Lyon, France_
 {:.with-caption}
 
 ## July
@@ -80,7 +80,7 @@ _Road Trip &mdash; Valley of Fire, USA_
 ## August
 
 ![](/images/posts/2014/12/berlin.jpg)
-_Visiting <a href="https://twitter.com/igorwhilefalse">Igor</a> + City Trip &mdash; Berlin, Germany_
+_Visiting @igorwhilefalse + City Trip &mdash; Berlin, Germany_
 {:.with-caption}
 
 ![](/images/posts/2014/12/vichy-tri.jpg)

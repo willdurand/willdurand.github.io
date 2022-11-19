@@ -45,8 +45,8 @@ Assuming a Gitpod-based setup would work for me, this could possibly become a
 strong alternative for other contributors as well. Then, _mayyybe_ I could start
 a conversation about it internally in the (far) future.
 
-Note that this isn't a novel idea, [Jan Keromnes][jan] was already working on a
-similar tool called ["Janitor" for Mozilla needs in 2015][yt-janitor].
+Note that this isn't a novel idea, Jan Keromnes was already working on a similar
+tool called ["Janitor" for Mozilla needs in 2015][yt-janitor].
 
 ## Firefox development with Gitpod = ❤️
 
@@ -132,7 +132,6 @@ qualify for the [Gitpod for Open Source][gitpod-opensource] program.
 [gitpod]: https://gitpod.io/
 [intermittent]: https://bugzilla.mozilla.org/show_bug.cgi?id=1761550
 [issue-rr]: https://github.com/rr-debugger/rr/issues/2952
-[jan]: https://twitter.com/jankeromnes
 [mercurial]: https://www.mercurial-scm.org/
 [moz-phab]: https://moz-conduit.readthedocs.io/en/latest/phabricator-user.html#setting-up-mozphab
 [mozilla-unified]: https://mozilla-version-control-tools.readthedocs.io/en/latest/hgmozilla/unifiedrepo.html

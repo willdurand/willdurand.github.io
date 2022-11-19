@@ -68,10 +68,10 @@ code. [sourcehut][10] is a platform that leverages this process as well. I like
 that approach because all the metadata around the source code is open, public
 and sort of distributed. If GitHub goes down, a team cannot collaborate anymore
 because they cannot exchange patches or review code, until GitHub comes back.
-When [GitHub removes a repository][12] for some reasons, all the past code
-reviews and patches (Pull Requests) are lost.
+When GitHub removes a repository for some reasons, all the past code reviews and
+patches (Pull Requests) are lost.
 
-Other Open Source projects like Firefox have [a different workflow][11] too and
+Other Open Source projects like Firefox have [a different workflow][^11] too and
 it isn't really easier than emails. That being said, most email clients are not
 compatible with the email-based `git` workflow by default, and that's a huge
 problem. This workflow requires [plaintext emails][13] and, for the Linux Kernel
@@ -107,6 +107,14 @@ If you think this is stupid, well, not everyone agrees with you ;-)
 If you'd like to contribute too, [Kernelnewbies][16] has a lot of information to
 get started and everyone I interacted with has been very friendly.
 
+[^11]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1245323812729753600):
+    > A #git workflow for #Gecko development:
+    > [https://glandium.org/blog/?page_id=3438](https://glandium.org/blog/?page_id=3438)
+    > // This was very useful last week!  I can't explain why `hg` is so slow
+    > for me.. Anyway, with bugzilla, phabricator, moz-phab, etc. having `git`
+    > means one less new thing to learn.
+    {:.footnote-tweet}
+
 [1]: https://lore.kernel.org/driverdev-devel/20210213034711.14823-1-will+git@drnd.me/
 [2]: https://en.wikipedia.org/wiki/Diff#Unified_format
 [3]: https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/staging.git/
@@ -116,8 +124,6 @@ get started and everyone I interacted with has been very friendly.
 [8]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5d99aa093b566d234b51b7822c67059e2bd3ed8d
 [9]: https://wiki.debian.org/rtl819x
 [10]: https://sourcehut.org/
-[11]: https://twitter.com/couac/status/1245323812729753600
-[12]: https://twitter.com/grhmc/status/1334138105738256389
 [13]: https://useplaintext.email/
 [14]: https://aerc-mail.org/
 [15]: https://lore.kernel.org/driverdev-devel/

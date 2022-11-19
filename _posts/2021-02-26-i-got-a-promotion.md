@@ -15,7 +15,7 @@ Julia Evans explains [what a senior engineer's job is][6] and her blog post
 describes my role well enough, which is why I won't go into details here.
 Instead, I chose to write a more personal "status update".
 
-First of all, Mozilla has a great [career path for engineers][7], which doesn't
+First of all, Mozilla has a great [career path for engineers][^7], which doesn't
 force folks who like to code to become managers, a very common practice in
 French companies (and maybe elsewhere, ugh!). It's such a relief!
 
@@ -90,21 +90,31 @@ year. I landed trivial patches and made all the possible mistakes. I learned a
 lot with Rob and then Luca.
 
 In Q3 2020, I worked on [new AMO statistics][3] for add-on developers, which
-involved [various components][4] and required some Firefox changes. I was able
-to land some patches in Firefox in order to support the rest of my work. That
-was really cool because I worked on ALL the building blocks.
+involved various components[^1] and required some Firefox changes. I was able to
+land some patches in Firefox in order to support the rest of my work. That was
+really cool because I worked on ALL the building blocks.
 
 Last month, I got [Commit Access Level 3][5] on Firefox! It's rewarding because
 it means I earned the trust of my peers.
 
 I am so happy!
 
+[^1]: I was working on a project involving some frontend work and a lot of
+      backend changes for AMO. I also had to prototype the ETL queries and
+      implemented a feature to collect data I needed in Firefox.
+
+[^7]: This used to be a link to a [tweet from @Gankra_](https://twitter.com/Gankra_/status/1046438955439271936):
+    > i really like that mozilla has an engineer track that just tries to
+    > capture the depth/responsibility of the tasks you're currently tackling,
+    > and doesn't necessarily involve moving on to management roles
+    >
+    > [screenshot of a spreadsheet with the Mozilla's career ladder]
+    {:.footnote-tweet}
+
 [1]: {% post_url 2019-12-20-sigcont %}
 [2]: {% post_url 2020-05-01-moziversary-2 %}
 [3]: https://blog.mozilla.org/addons/2020/06/10/improvements-to-statistics-processing-on-amo/
-[4]: https://twitter.com/couac/status/1291380264971767809
 [5]: https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/
 [6]: https://jvns.ca/blog/senior-engineer/
-[7]: https://twitter.com/Gankro/status/1046438955439271936
 [8]: https://github.com/mozilla/addons-frontend/graphs/contributors
 [9]: {% post_url 2016-05-16-phd-check %}

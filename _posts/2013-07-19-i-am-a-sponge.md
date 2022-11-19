@@ -47,9 +47,9 @@ return what it contains.
 
 You love **sharing** things you learned, either by talking to your friends,
 writing, teaching, tweeting, etc. For instance, I read a lot of RSS feeds and
-weekly mailing lists and I tend to [tweet](https://twitter.com/couac) about
-things that I consider relevant. [I also teach at the
-University](/2013/06/07/teaching-is-the-best-way-to-learn/) from time to time.
+weekly mailing lists and I tend to tweet about things that I consider relevant.
+[I also teach at the University](/2013/06/07/teaching-is-the-best-way-to-learn/)
+from time to time.
 
 For me personally, it is not too different than the
 [Open](/2012/01/16/did-i-tell-you-open-source-was-awesome/)

@@ -15,7 +15,7 @@ I started to play with some [Arduino][]-based technologies after having built my
 very own [Arduino board][arduino diy] at [AcoLab](https://acolab.fr/)[^1] a few
 weeks ago. I've been working on a project to connect a coffee machine to the
 Internets. In this article, I introduce the ESP8266 WiFi module, courtesy of
-[Paul](https://twitter.com/disk_91), from a "user perspective".
+@disk_91, from a "user perspective".
 
 [^1]: AcoLab is a hackerspace based in Clermont-Fd, France.
 
@@ -89,7 +89,7 @@ rate) so I looked into flashing my ESP-01 with a more recent firmware.
 I downloaded the most recent official firmware from [espressif/esp8266_at][]. In
 order to flash the module, `GPIO0` must be pulled-down by wiring its pin to
 `GND`. After that, [esptool](https://github.com/themadinventor/esptool) can be
-used: 
+used:
 
 ``` console
 $ esptool.py -p /dev/tty.usbserial-A50285BI write_flash 0x0000 boot_v1.1.bin \

@@ -10,7 +10,7 @@ updates:
     content: >-
       This article has been [translated into
       **Portuguese**](http://www.maawko.com/blog/carreira/object-calisthenics-regras-pra-um-codigo-melhor/)
-      by [@paulorodriguexv](https://twitter.com/paulorodriguexv), thank you!
+      by @paulorodriguexv, thank you!
 ---
 
 Last month, I gave a talk about [Object
@@ -20,14 +20,12 @@ Calisthenics](http://williamdurand.fr/object-calisthenics-slides/) at
 developer group based in Clermont-Ferrand (France).
 
 I discovered **Object Calisthenics** almost two years ago, but I wasn't
-open-minded enough to give them a try. A year ago, [Guilherme
-Blanco](https://twitter.com/guilhermeblanco) and I were
-[drinking beers](https://twitter.com/jmikola/status/210448122642575360/photo/1)
-in Paris. He told me that [Rafael Dohms](https://twitter.com/rdohms) and him
-ported the concept of Object Calisthenics to PHP. That was awesome, and I
-decided to learn, understand, and try these rules. I am now convinced that
-these rules are really helpful, and that trying to respect these rules help you
-write **better Oriented Object code**.
+open-minded enough to give them a try. A year ago, Guilherme Blanco and I were
+drinking beers in Paris. He told me that Rafael Dohms and him ported the concept
+of Object Calisthenics to PHP. That was awesome, and I decided to learn,
+understand, and try these rules. I am now convinced that these rules are really
+helpful, and that trying to respect these rules help you write **better Oriented
+Object code**.
 
 > Cal • is • then • ics - /ˌkaləsˈTHeniks/
 

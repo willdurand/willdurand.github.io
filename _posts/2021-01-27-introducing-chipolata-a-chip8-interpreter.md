@@ -23,14 +23,13 @@ believe.
 
 ## Context
 
-One of my personal projects is [a GameBoy
-emulator](https://twitter.com/couac/status/1210992901779591169), which I
-initially started in order to learn more about emulators, graphics and Rust.
-This GameBoy project is currently unfinished and not publicly available. The
-truth is: I wasn't very happy with some of the architecture decisions I made so
-I put it on hold. After a year of inactivity, I decided to work on a similar but
-a lot simpler project in order to (hopefully) solve some of my design issues and
-finish the emulator. The _chipolata_ project was born.
+One of my personal projects is a GameBoy emulator, which I initially started in
+order to learn more about emulators, graphics and Rust. This GameBoy project is
+currently unfinished and not publicly available. The truth is: I wasn't very
+happy with some of the architecture decisions I made so I put it on hold. After
+a year of inactivity, I decided to work on a similar but a lot simpler project
+in order to (hopefully) solve some of my design issues and finish the emulator.
+The _chipolata_ project was born.
 
 I wrote _chipolata_ in Rust (a programming language I don't practice enough) and
 it is split into three components:

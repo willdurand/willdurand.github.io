@@ -61,7 +61,7 @@ computing a pseudo header checksum, which took me quite some time to get right.
 Wireshark seems happy now, though.
 
 As far as I can remember, this initial UDP implementation was designed to
-[explore DNS][tweet-dns] (another protocol that I describe later
+[explore DNS][^tweet-dns] (another protocol that I describe later
 in this article). Initially, it was only possible to receive UDP packets [based
 on the _destination port_][udp-dest-port]. Later, I added the concept of sockets
 and the UDP logic was adjusted a bit to retrieve the right socket for each
@@ -102,7 +102,7 @@ explains it well][pia-part5].
 
 [DNS][] is a protocol used to associate a domain name with an IP address. Some
 people thought it'd be easier to remember `github.com` than `140.82.121.4`. I
-would recommend to read [Julia Evans' tweets about DNS][tweet-b0rk-dns] if you
+would recommend to read [Julia Evans' tweets about DNS][^tweet-b0rk-dns] if you
 want to learn more about this protocol from a "user perspective". She covered
 _many_ aspects of it!
 
@@ -194,7 +194,19 @@ wouldn't be this project. As such, working on such features from scratch helps
 me gain deeper knowledge on various topics. That also allows me to appreciate
 existing solutions and give me a different perspective on things.
 
-[__udp4_lib_lookup]: https://elixir.bootlin.com/linux/v5.17.2/source/net/ipv4/udp.c#L485
+[^tweet-b0rk-dns]: This used to be a link to a [tweet from @b0rk](https://twitter.com/b0rk/status/1485773079741706240):
+    > life of a DNS query [https://wizardzines.com/comics/life-of-a-dns-query/](https://wizardzines.com/comics/life-of-a-dns-query/)
+    {:.footnote-tweet}
+
+[^tweet-dns]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1334277598457815041):
+    > I received my very first DNS packet in reply to a query crafted with my
+    > very own network stack ❤️
+    >
+    > In other words, my little kernel is finally able to talk to the Internet
+    > and I am extremely happy!
+    >
+    > [there was a picture with ArvernOS in QEMU and Wireshark]
+    {:.footnote-tweet}
 
 [arp]: {% post_url 2022-02-17-on-writing-a-network-stack-part-1 %}#layer-25-address-resolution-protocol-arp
 [arvernos]: https://github.com/willdurand/ArvernOS/
@@ -219,8 +231,6 @@ existing solutions and give me a different perspective on things.
 [skbuff]: https://wiki.linuxfoundation.org/networking/sk_buff
 [tcp-ip]: https://en.m.wikipedia.org/wiki/Internet_protocol_suite
 [tcp]: https://en.wikipedia.org/wiki/Transmission_Control_Protocol
-[tweet-b0rk-dns]: https://twitter.com/b0rk/status/1485773079741706240
-[tweet-dns]: https://twitter.com/couac/status/1334277598457815041
 [udp datagrams]: https://en.wikipedia.org/wiki/User_Datagram_Protocol#UDP_datagram_structure
 [udp-dest-port]: https://github.com/willdurand/ArvernOS/blob/063cb613eac62ae9b6e62a5e56724cf965306486/src/kernel/net/udp.c#L42-L53
 [udp-lookup]: https://github.com/willdurand/ArvernOS/blob/4cb72648f0718c69a39fb664164490b138b770d2/src/kernel/net/udp.c#L34-L40

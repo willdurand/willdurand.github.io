@@ -15,8 +15,7 @@ The aim of this presentation was to explain how complicated REST was, and
 describe why it was impractical in real life (with concrete examples). I also
 gave some ideas to build powerful and pragmatic web APIs.
 
-As usual, congratulations to the [AFUP](https://twitter.com/afup) team, this
-event was a blast!
+As usual, congratulations to the AFUP team, this event was a blast!
 
 You will find the video of my talk below (in French, sorry):
 

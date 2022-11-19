@@ -8,9 +8,9 @@ title: Taking Geocoder To The Next Level
 Almost two years ago, I was pushing the [first
 commits](https://github.com/geocoder-php/Geocoder/commit/a5e2ebe5a13eab1da663681e0901072b8b121d49)
 of a project that was anything but useful. I worked on this project to ease
-[@themouette](https://twitter.com/themouette)'s life while he was playing with
-the Google Maps API. I named this project [**Geocoder**](http://geocoder-php.org)
-because I could not come up with a better name...
+@themouette's life while he was playing with the Google Maps API. I named this
+project [**Geocoder**](https://geocoder-php.org) because I could not come up
+with a better name...
 
 A few weeks later, the project got a lot of attention, and people started to
 contribute. I got positive feedback, it was amazing! More than **630 commits**
@@ -20,9 +20,8 @@ installed more than **40k times**. Awesome for such a library! As a reminder,
 Geocoder is an abstraction layer for most of the existing third-party APIs, so
 it is very specific, and that is why these numbers are even more awesome! It is
 also my most starred library on [GitHub](https://github.com/willdurand)! And it
-has even been featured by [Smashing Magazine on
-Twitter](https://twitter.com/smashingmag/status/298115029478293505). Thanks
-everyone, seriously!
+has even been featured by Smashing Magazine on Twitter. Thanks everyone,
+seriously!
 
 I think it worked because Geocoder has been created to answer only **one need**,
 and was small enough. The library was focused on (reverse) geocoding addresses,
@@ -30,7 +29,7 @@ nothing more, nothing fancy. That is how all libraries should be/have been
 written.
 
 Earlier this week, I decided to move forward. I am glad to introduce a **new
-website** still available at [geocoder-php.org](http://geocoder-php.org). The
+website** still available at [geocoder-php.org](https://geocoder-php.org). The
 homepage presents **Geocoder** as well as its related projects. More projects
 will join the family soon! Each project has its own documentation page, and a
 cookbook is about to be written.
