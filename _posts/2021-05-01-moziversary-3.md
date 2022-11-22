@@ -15,12 +15,12 @@ am now a [Staff Software Engineer][promotion]. What a ride!_
 A year ago, [I wrote that I was starting to be more involved in
 Firefox][moziversary-2]. I worked on very diverse projects in 2020 but one of
 them was super fun: we revamped the AMO statistics and it required backend
-changes on AMO, some ETL/BigQuery work, and new data collection in Firefox. [I
-worked on all those components][fullstack] and learned a lot of stuff along the
-way. I also [deleted a lot of code][deleted-code], [changed a lot of
-code][black], contributed to Firefox for Android (Fenix), created new libraries
-to support the work of my team, continued to work on security stuff, and even
-wrote some [PHP][php] lately.
+changes on AMO, some ETL/BigQuery work, and new data collection in Firefox. I
+worked on all those components and learned a lot of stuff along the way. I also
+[deleted a lot of code][^deleted-code], [changed a lot of code][^black],
+contributed to Firefox for Android (Fenix), created new libraries to support the
+work of my team, continued to work on security stuff, and even wrote some PHP
+lately.
 
 My role is constantly evolving. By knowing every bit of the AMO platform and
 expanding my skill sets with contributions in Firefox, I am hoping to have a
@@ -50,11 +50,15 @@ Last, I am extremely happy at Mozilla and I am super lucky to be part of the
 amazing Add-ons team. I would like to thank everyone in my team as well as all
 the folks I worked with so far! I wouldn't be where I am today without you ❤️
 
+[^black]: This used to be a link to a [tweet from
+    me](https://twitter.com/couac/status/1336738803453714434). I tweeted a
+    screenshot with diff stats, showing a lot of changed code after having
+    applied a python code formatter on a large codebase.
 
-[black]: https://twitter.com/couac/status/1336738803453714434
-[deleted-code]: https://twitter.com/couac/status/1321017805207228416
-[fullstack]: https://twitter.com/couac/status/1291380264971767809
+[^deleted-code]: This used to be a link to a [tweet from
+    me](https://twitter.com/couac/status/1321017805207228416). I tweeted a
+    screenshot with diff stats, showing a lot of code removed after I removed a
+    lot of code in a project.
+
 [moziversary-2]: {% post_url 2020-05-01-moziversary-2 %}
-[open]: https://twitter.com/couac/status/1383016597900648449
-[php]: https://twitter.com/couac/status/1374477716095782918
 [promotion]: {% post_url 2021-02-26-i-got-a-promotion %}

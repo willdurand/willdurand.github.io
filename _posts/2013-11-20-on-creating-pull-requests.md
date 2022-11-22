@@ -5,9 +5,7 @@ tldr: true
 title: "On Creating Pull Requests"
 updates:
   - date: 2015-11-29
-    content: >-
-      I added a note on PR title prefixes ([thanks to
-      Lukas](https://twitter.com/lsmith/status/670721764951986176)).
+    content: I added a note on PR title prefixes thanks to @lsmith.
 ---
 
 As a [maintainer of various Open Source

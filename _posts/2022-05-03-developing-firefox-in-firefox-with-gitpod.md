@@ -9,8 +9,7 @@ mastodon_id: 108237109619474962
 
 [Gitpod][] provides Linux-based development environments on demand along with a
 web editor frontend (VS Code). There is apparently no limit on what you can do
-in a [Gitpod workspace][], e.g., I ran my own [toy kernel in QEMU in the
-browser][tweet-gitpod-qemu].
+in a [Gitpod workspace][], e.g., I ran my own toy kernel in QEMU in the browser.
 
 I like Gitpod because it...
 
@@ -92,7 +91,7 @@ the one that contains the Gitpod configuration.
 In case you're wondering, I also started a full build (no artifact) and it took
 about 40 minutes to finish 🙁 I was hoping to have better performances out of
 the box even if it isn't _that_ bad. For comparison, it takes [~15min on my
-MacBook Pro with M1 Max][tweet-m1-max] (and 2 hours on my previous Apple
+MacBook Pro with M1 Max][^tweet-m1-max] (and 2 hours on my previous Apple
 machine).
 
 There are other things that I'd like to poke around. For instance, I would love
@@ -121,6 +120,12 @@ let's discuss!
 One more thing: Mozilla employees (and many other Open Source contributors)
 qualify for the [Gitpod for Open Source][gitpod-opensource] program.
 
+[^tweet-m1-max]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1463582168450539541):
+    > This new MBP 14" with M1 Max chip seems promising: keyboard feels nice, no
+    > distracting touch bar, and it compiles Firefox in less than 15 minutes!
+    > (vs ~2 hours with my previous machine)
+    {:.footnote-tweet}
+
 [asahi linux]: https://asahilinux.org/
 [cinnabar]: https://github.com/glandium/git-cinnabar
 [docker-gitpod-firefox-dev]: https://hub.docker.com/r/willdurand/gitpod-firefox-dev
@@ -140,7 +145,5 @@ qualify for the [Gitpod for Open Source][gitpod-opensource] program.
 [rr-docker]: https://github.com/rr-debugger/rr/wiki/Docker
 [rr]: https://github.com/rr-debugger/rr
 [stacked diff]: https://jg.gg/2018/09/29/stacked-diffs-versus-pull-requests/
-[tweet-gitpod-qemu]: https://twitter.com/couac/status/1494807135577853954
-[tweet-m1-max]: https://twitter.com/couac/status/1463582168450539541
 [x11 and vnc]: https://www.gitpod.io/blog/native-ui-with-vnc
 [yt-janitor]: https://www.youtube.com/watch?v=5sNDMIh-iVw

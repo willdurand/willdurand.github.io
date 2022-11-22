@@ -13,9 +13,9 @@ same code and decided to study more in-depth. I wanted to better understand what
 was behind containers and how the different technologies interacted with each
 other.
 
-That was [a month ago][] or so and things got out of control pretty quickly 😅
-Given there are many talks and articles about containers already, this article
-is more of a "Show and Tell" in which I describe what I've poked around.
+That was a month ago or so and things got out of control pretty quickly 😅 Given
+there are many talks and articles about containers already, this article is more
+of a "Show and Tell" in which I describe what I've poked around.
 
 ## Yacr: Yet another container runtime
 
@@ -253,7 +253,6 @@ smile on my face every time.
 And it's enough to consider this deep dive a good investment of my free time! ❤️
 
 [containers-go]: https://www.youtube.com/watch?v=Utf-A4rODH8
-[a month ago]: https://twitter.com/couac/status/1528476035024568322
 [yacr]: https://github.com/willdurand/containers/blob/main/cmd/yacr/README.md
 [yacr-docker]: https://github.com/willdurand/containers/blob/11aa764816f040b8dd1306edc1c20cee257d7961/cmd/yacr/README.md#getting-started-with-docker
 [yacr-containerd]: https://github.com/willdurand/containers/tree/11aa764816f040b8dd1306edc1c20cee257d7961/cmd/yacr#getting-started-with-containerd

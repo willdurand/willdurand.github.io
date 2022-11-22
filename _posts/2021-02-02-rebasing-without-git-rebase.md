@@ -21,11 +21,10 @@ short-lived git branch. Using this approach, executing `git rebase` is
 straightforward and there is usually little to no _conflict_ to handle.
 
 That being said, it can be tricky to perform a rebase sometimes (for example,
-when the main branch has changed a lot after [someone ran a code formatter on
-the entire codebase](https://twitter.com/couac/status/1336738803453714434)).
-Such a situation could also occur when one merges the main branch into the
-feature branch, resulting in a _merge commit_ like `Merge branch 'main' into
-feature-branch`.
+when the main branch has changed a lot after someone ran a code formatter on the
+entire codebase).  Such a situation could also occur when one merges the main
+branch into the feature branch, resulting in a _merge commit_ like `Merge branch
+'main' into feature-branch`.
 
 Attempting a rebase in these situations will convince a lot of people that git
 rebase is awful but we can achieve pretty much the same result using a different

@@ -27,8 +27,7 @@ was not much interested in anything over IP at that time.
 ## Fighting Technology Enslavement
 
 By the end of 2013, I **unsubscribed** myself from most of the mailing-lists I
-had subscribed to in the past, and basically [turned off all
-notifications](https://twitter.com/beberlei/status/411839552731361280),
+had subscribed to in the past, and basically turned off all notifications,
 including phone notifications (Twitter, Facebook, Emails, etc.). I moved from a
 push approach to a **pull** approach: **I decide** when I want to consume
 information, not the other way around, so that I can keep focused on what I am

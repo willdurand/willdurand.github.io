@@ -14,7 +14,7 @@ My first conferences as an attendee were Symfony Live 2011, and the
 [ParisJS](https://parisjs.org/) events when I was living in Paris. That was an
 **eye-opener**! Back to Clermont-Fd (my place), I talked to some of my friends
 about the idea of organizing conferences [here, between the
-volcanoes](https://twitter.com/cedlab/status/435870905126768641). Unfortunately,
+volcanoes](https://en.wikipedia.org/wiki/Massif_Central). Unfortunately,
 we were all quite busy, and nothing happened. This was in 2011.
 
 Then, I moved to Switzerland, where I learnt what **simplicity** and **freedom**
@@ -37,10 +37,8 @@ values**:
 
 - **openness**: we are technology-agnostic, even C++ guys can join the flock;
 - **independence**: we are not tied to any company or organization, no matter
-  how much they could give us (well, it is worth mentioning that [16 billion
-  dollars seems to be the "fuck you"
-  price](https://twitter.com/codinghorror/status/436265430005448704), so ...);
-- **respect**: basically, people who stir up trouble are not welcomed;
+  how much they could give us;
+- **respect**: people who stir up trouble are not welcomed;
 - **sharing**: every decision we make is driven by this value, we don't just
   promote sharing through the conferences.
 
@@ -72,8 +70,7 @@ we were able to do more, making
 [stickers](https://www.flickr.com/photos/96523012@N07/10696881453/in/set-72157637356442883),
 [business
 cards](https://www.flickr.com/photos/96523012@N07/10696880443/in/set-72157637356442883),
-postcards, but also
-[**chocolates**](https://twitter.com/disk_91/status/413000570027667457/photo/1)!
+postcards, but also **chocolates**!
 
 [![](/images/posts/apihours-2.jpg)](https://www.flickr.com/photos/96523012@N07/)
 

@@ -7,9 +7,8 @@ updates:
   - date: 2022-03-13
     content: |
       I proofread this article and removed dead links. I would also like to
-      mention that, because of the pandemic, [I have been using this workstation
-      again](https://twitter.com/couac/status/1438416545089208320) for the past
-      two years (pretty much all the time).
+      mention that, because of the pandemic, I have been using this workstation
+      again for the past two years (pretty much all the time).
 ---
 
 **Disclaimer:** Loctek Inc. contacted me spontaneously and offered me the
@@ -39,13 +38,12 @@ standing almost all the time did not give me significant results regarding my
 productivity. Nonetheless, it is clear that I have been more focused and I have
 been feeling better than ever by working in a standing position.
 
-After [having given standing desk a
-try](https://twitter.com/couac/status/443674631892123649) with cardboard boxes,
-then with a [DIY standing desk I
-built](/2014/03/17/standing-desk-do-it-yourself/) (the one I used for two
-years), I have been given the opportunity to try the [FlexiSpot Desktop
-Workstation 27"](https://flexispot.com/). In the rest of the article, the terms
-"workstation", "FlexiSpot" and "standing-desk" all refer to this product.
+After having given standing desk a try with cardboard boxes, then with a [DIY
+standing desk I built](/2014/03/17/standing-desk-do-it-yourself/) (the one I
+used for two years), I have been given the opportunity to try the [FlexiSpot
+Desktop Workstation 27"](https://flexispot.com/). In the rest of the article,
+the terms "workstation", "FlexiSpot" and "standing-desk" all refer to this
+product.
 
 ## What is this FlexiSpot thing?
 

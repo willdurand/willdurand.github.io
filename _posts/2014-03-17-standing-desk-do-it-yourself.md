@@ -27,10 +27,9 @@ According to most people using standing desks, [they even make you more
 productive](http://readwrite.com/2013/09/26/standing-desks-productivity), but I
 didn't find any formal report confirming that yet.
 
-After [having given standing desk a
-try](https://twitter.com/couac/status/443674631892123649) with cardboard last
-week, I decided to build my own standing desk, on top of my existing desk, for
-less than 30 euros (\$40). There are plenty examples of
+After having given cardboard box-based standing desk a try last week, I decided
+to build my own standing desk, on top of my existing desk, for less than 30
+euros (\$40). There are plenty examples of
 [DIY](http://en.wikipedia.org/wiki/Do_it_yourself) standing desks on the
 Internet, but [that
 one](http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html) is

@@ -238,12 +238,6 @@ downloaded and stored in memory, the bootloader should call the new code.
 
 This is what I have implemented too. Sneak peek:
 
-<blockquote class="twitter-tweet">
-  <p lang="en" dir="ltr">
-    I have been working on a stage3 bootloader to push my kernel over the serial
-    port and I *think* I spent too much time on the &quot;pusher&quot; UI part
-    😅 <a href="https://t.co/TzFi15slx6">pic.twitter.com/TzFi15slx6</a>
-  </p>&mdash; William Durand ✊🏽✊🏾✊🏿 @willdurand@mamot.fr (@couac)
-  <a href="https://twitter.com/couac/status/1351992990647123972">January 20, 2021</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+![](/images/posts/2021/01/bootpusher.webp)
+
+I spent too much time on the &quot;pusher&quot; UI part, I think 😅

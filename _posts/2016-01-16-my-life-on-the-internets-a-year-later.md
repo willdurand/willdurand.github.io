@@ -44,8 +44,8 @@ not interested in so that I do not spend too much time reading.
 ![An email sent by Tiny Tiny RSS](/images/posts/2016/01/tt-rss.webp)
 
 I am also self-hosting a Pastebin-like called [ZeroBin][] and [ownCloud][].
-ownCloud 8 is amazingly stable and fast and it is now possible to [replace
-Dropbox][] (or Drive). It can also be used to self-host calendars and contacts.
+ownCloud 8 is amazingly stable and fast and it is now possible to replace
+Dropbox (or Drive). It can also be used to self-host calendars and contacts.
 I don't want to self-host my emails though. Emails are rather critical and
 should not be unavailable for too long.
 
@@ -66,7 +66,6 @@ One more thing by the way... I did not find any [Disqus][] alternative yet :-(
 [framadrive]: https://framadrive.org/
 [wallabag]: https://www.wallabag.org/
 [owncloud]: https://owncloud.org/
-[replace dropbox]: https://twitter.com/couac/status/686325660080562178
 [zerobin]: https://github.com/sebsauvage/ZeroBin
 [disqus]: https://disqus.com/
 [Fastmail]: https://www.fastmail.com/?STKI=13808765

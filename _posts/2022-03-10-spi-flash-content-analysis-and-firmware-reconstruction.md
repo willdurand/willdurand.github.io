@@ -6,7 +6,7 @@ image: /images/posts/2022/03/social.webp
 mastodon_id: 108203072255299580
 ---
 
-I wrote a [Twitter thread about hardware hacking][twitter-thread] some time ago.
+I wrote a [Twitter thread about hardware hacking][^twitter-thread] some time ago.
 The idea was to explain _one_ way to obtain privileged access on a device. In
 this case, the target was a cheap Chromecast-like device (more on that below)
 and I "easily" got `root` access _via_ UART.
@@ -50,9 +50,9 @@ updating the software or re-purposing it. I knew it'd be complex but also that
 I'd learn a lot. At the time of writing, I didn't achieve my goal yet but I made
 good progress.
 
-I explained how I gained access to a Linux console in [the Twitter
-thread][twitter-thread] so I am not going to repeat myself here. Instead, the
-rest of this blog post describes what happened next.
+I explained how I gained access to a Linux console in the Twitter thread so I am
+not going to repeat myself here. Instead, the rest of this blog post describes
+what happened next.
 
 ## Diving into the content of the SPI flash
 
@@ -82,10 +82,10 @@ $ ls squashfs-root/
 bin/  build.prop*  etc/  fonts/  lib/  usr/  vendor/
 ```
 
-In the [Twitter thread][twitter-thread], I mentioned that the device was running
-Android. This SquashFS partition is very likely the `system` partition. Among
-other things, it contains the content of the web application described in the
-previous section. Each page is a [CGI][] ELF binary:
+In the Twitter thread, I mentioned that the device was running Android. This
+SquashFS partition is very likely the `system` partition. Among other things, it
+contains the content of the web application described in the previous section.
+Each page is a [CGI][] ELF binary:
 
 ```
 $ file squashfs-root/bin/home.cgi
@@ -391,9 +391,9 @@ device yet so its effectiveness was purely theoretical.
 
 In order to verify that my tool was producing correct firmware, I needed a way
 to write to the SPI flash chip and then boot the device. Near the end of the
-[Twitter thread][twitter-thread], the flash had been desoldered. Soldering and
-desoldering the flash every time was not an option, and I couldn't properly use
-[flashrom][] when the flash was soldered on the device.
+Twitter thread, the flash had been desoldered. Soldering and desoldering the
+flash every time was not an option, and I couldn't properly use [flashrom][]
+when the flash was soldered on the device.
 
 I decided to design a small PCB to get access to the flash pins using a 1.27mm
 16-pin socket, which would be soldered on the device (see Figure 3). The same
@@ -494,6 +494,11 @@ known issues so far: (1) building the right (Android) kernel for the device, and
 Last but not least, both the tool and the KiCad files have been [published on
 GitHub][github-repo]. Enjoy!
 
+[^twitter-thread]: This used to be a link to a [Twitter thread from
+    me](https://twitter.com/couac/status/1478696626994745344). I documented how
+    I gained (root) access on a cheap device, which involved hardware and
+    software skills.
+
 [adb]: https://developer.android.com/studio/command-line/adb
 [android-vs-linux]: https://embeddedbits.org/what-differs-android-from-other-linux-based-systems/
 [binwalk]: https://github.com/ReFirmLabs/binwalk
@@ -515,5 +520,4 @@ GitHub][github-repo]. Enjoy!
 [rkflash_blk.h]: https://github.com/rockchip-linux/kernel/blob/82c9666cb6fe999eb61f23c2c9d0d5dad7332fb6/drivers/rkflash/rkflash_blk.h
 [rkflashtool]: https://github.com/linux-rockchip/rkflashtool
 [squashfs]: https://en.wikipedia.org/wiki/SquashFS
-[twitter-thread]: https://twitter.com/couac/status/1478696626994745344
 [vbindiff]: https://github.com/madsen/vbindiff

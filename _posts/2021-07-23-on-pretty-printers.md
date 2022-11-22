@@ -15,12 +15,12 @@ source code. Users can usually specify the maximum line length and the type of
 indentation (spaces or tabs) among other things but those two are responsible
 for endless debates in our industry 🤷.
 
-After a ["I wonder how that works"][works-tweet] moment, I researched different
-ways to implement a code formatter and stumbled upon ["A prettier
-printer"][wadler] authored by Philipp Wadler. This paper introduces an
-_Intermediate Representation_ (IR) used to format content that can then be
-printed with multiple possible layouts. This is the foundation of some popular
-code formatters like Prettier (see also: [Prettier's intermediate
+After a "I wonder how that works" moment, I researched different ways to
+implement a code formatter and stumbled upon ["A prettier printer"][wadler]
+authored by Philipp Wadler. This paper introduces an _Intermediate
+Representation_ (IR) used to format content that can then be printed with
+multiple possible layouts. This is the foundation of some popular code
+formatters like Prettier (see also: [Prettier's intermediate
 representation][prettier-ir]).
 
 ## How does Wadler's algorithm work?
@@ -453,7 +453,6 @@ mind-blowing to me.
 [wadler]: https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf
 [prettier-ir]: https://github.com/prettier/prettier/blob/aefcb0cc0ab729d06f487202beb17b0f4b550bbf/commands.md
 [espree]: https://github.com/eslint/espree
-[works-tweet]: https://twitter.com/couac/status/1406172941574979585
 [demo-project]: https://github.com/willdurand/demo-pretty-printer
 [other-functions]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/document.js#L1-L45
 [renderer]: https://github.com/willdurand/demo-pretty-printer/blob/dd4d437893513264b257568d8978df67810736e0/document.js#L124
