@@ -2,8 +2,9 @@
 layout: post
 title: "GitHub Container Registry, Proxy and Synology"
 location: Clermont-Fd Area, France
-image:
+image: /images/posts/2023/03/synology-socia.webp
 mastodon_id:
+credits: Photo used on social media by [Claudio Schwarz](https://unsplash.com/@purzlbaum).
 ---
 
 Last week, I migrated a private application from Heroku to my Synology NAS
