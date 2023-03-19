@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Container Registry, Proxy and Synology"
 location: Clermont-Fd Area, France
 image: /images/posts/2023/03/synology-socia.webp
-mastodon_id:
+mastodon_id: 110049046797980380
 credits: Photo used on social media by [Claudio Schwarz](https://unsplash.com/@purzlbaum).
 ---
 
