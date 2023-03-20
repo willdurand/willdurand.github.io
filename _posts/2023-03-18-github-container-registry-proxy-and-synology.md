@@ -39,7 +39,7 @@ new API endpoints specified by the [HTTP API v2][docker-http-api] specification
 and it uses the [GitHub REST API][rest-packages] to retrieve the necessary data.
 All the other calls are transparently forwarded to the upstream GitHub registry.
 
-[^1]: Important: this works for me™ but that doesn't mean all edge cases are handled. This might explain why GitHub isn't fully compatible with the HTTP API v2 specification yet but I am speculating here.
+[^1]: Important: this works for me™ but that doesn't mean all edge cases are handled. This might explain why GitHub isn't fully compatible with the HTTP API v2 specification yet. I don't know.
 
 ![](/images/posts/2023/03/container-registry-proxy.webp)
 {:.can-invert-image-in-dark-mode}
