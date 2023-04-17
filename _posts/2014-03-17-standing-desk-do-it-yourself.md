@@ -1,7 +1,6 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tags: [life, DIY]
 title: "Standing Desk Do It Yourself (DIY)"
 updates:
   - date: 2014-03-19

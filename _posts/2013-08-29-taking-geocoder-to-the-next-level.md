@@ -1,7 +1,7 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tags: [PHP, Geocoder]
+tags: [PHP]
 title: Taking Geocoder To The Next Level
 ---
 

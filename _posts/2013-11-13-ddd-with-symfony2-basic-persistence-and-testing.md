@@ -1,7 +1,7 @@
 ---
 layout: post
 location: Clermont-Fd Area, France
-tags: [PHP, DDD]
+tags: [PHP]
 title: "DDD with Symfony2: Basic Persistence &amp; Testing"
 ---
 
