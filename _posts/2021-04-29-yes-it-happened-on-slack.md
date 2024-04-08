@@ -19,12 +19,11 @@ of these should NOT have been left in Slack alone. At the very least, the Slack
 threads or some key messages should have been copied to some more open and
 permanent places like Bugzilla or GitHub (in public issues).
 
-It won't come as a surprise, I don't like Slack (but [it wasn't always like
-that][remote-work]). There is a reason to that: it is **the antithesis of
-working in the open**. What happens in Slack stays in Slack. What stays in Slack
-is basically lost forever. "Chat apps" aren't the right tool for
-decision-making, especially when working with external contributors and
-distributed teams across the globe.
+It won't come as a surprise, I don't like Slack (but it wasn't always like
+that). There is a reason to that: it is **the antithesis of working in the
+open**. What happens in Slack stays in Slack. What stays in Slack is basically
+lost forever. "Chat apps" aren't the right tool for decision-making, especially
+when working with external contributors and distributed teams across the globe.
 
 I understand the need for synchronous communication but (1) we have Matrix at
 Mozilla, which is open at least, and (2) we should not use Slack for
@@ -52,5 +51,4 @@ Important note: I wrote this article in the context of my very own team at
 Mozilla. Those are my views and they could be applied to other companies as
 well.
 
-[remote-work]: https://tailordev.fr/blog/2016/03/24/on-remote-work/
 [working-open]: https://wiki.mozilla.org/Working_open
