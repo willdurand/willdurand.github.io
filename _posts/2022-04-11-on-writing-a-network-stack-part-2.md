@@ -198,7 +198,7 @@ existing solutions and give me a different perspective on things.
     > life of a DNS query [https://wizardzines.com/comics/life-of-a-dns-query/](https://wizardzines.com/comics/life-of-a-dns-query/)
     {:.footnote-tweet}
 
-[^tweet-dns]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1334277598457815041):
+[^tweet-dns]: This used to be a link to a tweet from me:
     > I received my very first DNS packet in reply to a query crafted with my
     > very own network stack ❤️
     >

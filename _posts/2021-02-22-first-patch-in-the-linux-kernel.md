@@ -107,7 +107,7 @@ If you think this is stupid, well, not everyone agrees with you ;-)
 If you'd like to contribute too, [Kernelnewbies][16] has a lot of information to
 get started and everyone I interacted with has been very friendly.
 
-[^11]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1245323812729753600):
+[^11]: This used to be a link to a tweet from me:
     > A #git workflow for #Gecko development:
     > [https://glandium.org/blog/?page_id=3438](https://glandium.org/blog/?page_id=3438)
     > // This was very useful last week!  I can't explain why `hg` is so slow

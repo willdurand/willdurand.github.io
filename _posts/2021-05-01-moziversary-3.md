@@ -50,13 +50,11 @@ Last, I am extremely happy at Mozilla and I am super lucky to be part of the
 amazing Add-ons team. I would like to thank everyone in my team as well as all
 the folks I worked with so far! I wouldn't be where I am today without you ❤️
 
-[^black]: This used to be a link to a [tweet from
-    me](https://twitter.com/couac/status/1336738803453714434). I tweeted a
-    screenshot with diff stats, showing a lot of changed code after having
-    applied a python code formatter on a large codebase.
+[^black]: This used to be a link to a tweet from me. I tweeted a screenshot with
+    diff stats, showing a lot of changed code after having applied a python code
+    formatter on a large codebase.
 
-[^deleted-code]: This used to be a link to a [tweet from
-    me](https://twitter.com/couac/status/1321017805207228416). I tweeted a
+[^deleted-code]: This used to be a link to a tweet from me. I tweeted a
     screenshot with diff stats, showing a lot of code removed after I removed a
     lot of code in a project.
 

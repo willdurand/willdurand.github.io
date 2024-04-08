@@ -494,10 +494,9 @@ known issues so far: (1) building the right (Android) kernel for the device, and
 Last but not least, both the tool and the KiCad files have been [published on
 GitHub][github-repo]. Enjoy!
 
-[^twitter-thread]: This used to be a link to a [Twitter thread from
-    me](https://twitter.com/couac/status/1478696626994745344). I documented how
-    I gained (root) access on a cheap device, which involved hardware and
-    software skills.
+[^twitter-thread]: This used to be a link to a Twitter thread from me. I
+    documented how I gained (root) access on a cheap device, which involved
+    hardware and software skills.
 
 [adb]: https://developer.android.com/studio/command-line/adb
 [android-vs-linux]: https://embeddedbits.org/what-differs-android-from-other-linux-based-systems/

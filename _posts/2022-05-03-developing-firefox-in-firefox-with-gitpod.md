@@ -120,7 +120,7 @@ let's discuss!
 One more thing: Mozilla employees (and many other Open Source contributors)
 qualify for the [Gitpod for Open Source][gitpod-opensource] program.
 
-[^tweet-m1-max]: This used to be a link to a [tweet from me](https://twitter.com/couac/status/1463582168450539541):
+[^tweet-m1-max]: This used to be a link to a tweet from me:
     > This new MBP 14" with M1 Max chip seems promising: keyboard feels nice, no
     > distracting touch bar, and it compiles Firefox in less than 15 minutes!
     > (vs ~2 hours with my previous machine)
