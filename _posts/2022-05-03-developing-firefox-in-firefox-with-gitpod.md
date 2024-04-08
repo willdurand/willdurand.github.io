@@ -103,8 +103,8 @@ gitpod /workspace/gitpod-firefox-dev/mozilla-unified (bookmarks/central) $ rr re
 [FATAL /tmp/rr/src/PerfCounters.cc:224:start_counter() errno: EPERM] Failed to initialize counter
 ```
 
-After a few messages exchanged on Twitter, [Jan Keromnes][jan] (yeah, same as
-above) from Gitpod filed a [feature request to support `rr`][feat-req-gitpod] 🤞
+After a few messages exchanged on Twitter, Jan Keromnesjan (yeah, same as above)
+from Gitpod filed a [feature request to support `rr`][feat-req-gitpod] 🤞
 
 ## Next steps
 
