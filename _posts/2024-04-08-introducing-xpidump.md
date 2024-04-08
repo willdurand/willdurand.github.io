@@ -4,7 +4,7 @@ title: Introducing xpidump
 location: "Clermont-Ferrand, France"
 image: /images/posts/2025/04/xpidump-social.webp
 tags: [mozilla]
-mastodon_id:
+mastodon_id: 112233710424881107
 ---
 
 I wrote _xpidump_ to give a human-readable summary of some information about a
