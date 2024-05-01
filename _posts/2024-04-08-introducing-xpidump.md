@@ -2,7 +2,7 @@
 layout: post
 title: Introducing xpidump
 location: "Clermont-Ferrand, France"
-image: /images/posts/2025/04/xpidump-social.webp
+image: /images/posts/2024/04/xpidump-social.webp
 tags: [mozilla]
 mastodon_id: 112233710424881107
 ---
@@ -43,7 +43,7 @@ more convenient (no need to install anything). It's written in Rust, and
 compiled to WebAssembly for the web app. You can try it at:
 [williamdurand.fr/xpidump/](https://williamdurand.fr/xpidump/).
 
-![](/images/posts/2025/04/xpidump.webp)
+![](/images/posts/2024/04/xpidump.webp)
 _xpidump is available in the browser thanks to WebAssembly!_
 {:.with-caption}
 
