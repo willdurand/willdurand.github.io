@@ -6,7 +6,7 @@ image: /images/posts/2024/05/moziversary-6-social.webp
 tags: [mozilla]
 mastodon_id: 112366912631746105
 credits: |
-  Photo used on social media by [Sarah Shull Williamson](https://unsplash.com/@sarahshull).
+  Photo used on social media by [Sarah Shull](https://unsplash.com/@sarahshull).
 ---
 
 _Today is my sixth Moziversary 🎂 I joined Mozilla as a full-time employee on
