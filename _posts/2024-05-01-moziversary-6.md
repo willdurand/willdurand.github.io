@@ -3,7 +3,8 @@ layout: post
 title: "Moziversary #6"
 location: "Clermont-Ferrand, France"
 image: /images/posts/2024/05/moziversary-6-social.webp
-mastodon_id:
+tags: [mozilla]
+mastodon_id: 112366912631746105
 credits: |
   Photo used on social media by [Sarah Shull Williamson](https://unsplash.com/@sarahshull).
 ---
