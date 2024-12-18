@@ -93,10 +93,10 @@ In Linux, it is a bit different. In a Linux network driver, the incoming
 data is encapsulated into a [`sk_buff` structure][skbuff], which is eventually
 passed to the `netif_rx()` or [`netif_receive_skb()` function][pia-part4]. This
 is where the incoming packet starts to actually "climb" the network stack. For
-UDP, the function [`__udp4_lib_lookup()`][__udp4_lib_lookup] describes how the
-kernel retrieves a socket for a given UDP packet. The way Linux calls this
-function and forwards the packet to the socket is a bit hard to follow but [this article
-explains it well][pia-part5].
+UDP, the function `__udp4_lib_lookup()` describes how the kernel retrieves a
+socket for a given UDP packet. The way Linux calls this function and forwards
+the packet to the socket is a bit hard to follow but [this article explains it
+well][pia-part5].
 
 ## Domain Name System (DNS)
 
