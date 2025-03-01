@@ -90,7 +90,7 @@ _Triathlon (Olympic distance) &mdash; Vichy, France_
 ## September
 
 ![](/images/posts/2014/12/bike.jpg)
-_Mountain Biking race with friends (2x85km) &mdash; <a href="https://en.wikipedia.org/wiki/Massif_Central">Massif Central</a>, France_
+_Mountainbike race with friends (2x85km) &mdash; <a href="https://en.wikipedia.org/wiki/Massif_Central">Massif Central</a>, France_
 {:.with-caption}
 
 ## October
