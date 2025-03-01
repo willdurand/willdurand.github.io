@@ -91,7 +91,9 @@ On a personal plan, I lost 15 kilograms in 2013. This was part of my new
 lifestyle changes. I stopped drinking alcohol. I'm also getting into
 [flexitarianism](https://en.wikipedia.org/wiki/Semi-vegetarianism). I feel much
 better now and enjoy a more balanced diet. My fitness routine includes running,
-mountain biking, squash, and soccer. I have three goals for 2014:
+mountain biking, squash, and soccer.
+
+I have three goals for 2014:
 
 - run 10 kilometers in under 40 minutes
 - swim faster and improve endurance (~2 km)
