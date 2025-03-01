@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing xpidump
-location: "Clermont-Ferrand, France"
+location: Clermont-Fd Area, France
 image: /images/posts/2024/04/xpidump-social.webp
 tags: [mozilla]
 mastodon_id: 112233710424881107

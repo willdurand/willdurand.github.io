@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Moziversary #6"
-location: "Clermont-Ferrand, France"
+location: Clermont-Fd Area, France
 image: /images/posts/2024/05/moziversary-6-social.webp
 tags: [mozilla]
 mastodon_id: 112366912631746105

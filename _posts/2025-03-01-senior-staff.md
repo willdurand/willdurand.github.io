@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Senior Staff."
-location: "Clermont-Ferrand, France"
+location: Clermont-Fd Area, France
 image: /images/posts/2021/02/promotion.webp
 credits: |
   Photo used on social media by [@ghebby](https://unsplash.com/@ag_ghebby).
