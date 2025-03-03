@@ -3,9 +3,9 @@ layout: post
 title: "Senior Staff."
 location: Clermont-Fd Area, France
 image: /images/posts/2021/02/promotion.webp
+mastodon_id: 114087297895302094
 credits: |
   Photo used on social media by [@ghebby](https://unsplash.com/@ag_ghebby).
-
 ---
 
 I remember a conversation I had with a colleague a while back, shortly after I
