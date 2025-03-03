@@ -68,7 +68,7 @@ messages weekly. This is incredibly gratifying and truly rewarding! This year, I
 even shared my Amazon Wish List on Twitter, and I had the pleasure of receiving
 gifts for Christmas:
 
-![](/images/gifts.jpg)
+![](/images/posts/2013/12/gifts.jpg)
 
 In no particular order, I would like to thank @pborreli, @weaverryan,
 @leannapelham, @lsmith, @mathiasverraes, @toin0u and @youb_s for these awesome
