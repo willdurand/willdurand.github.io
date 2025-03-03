@@ -4,11 +4,9 @@ title: Talks
 tagline: "Talks I've given."
 ---
 
-Most of my slides are available on [Speaker
+_Most of my slides are available on [Speaker
 Deck](https://speakerdeck.com/willdurand). The sources can be found at:
-[slides.williamdurand.fr](http://slides.williamdurand.fr/).
-
----
+[slides.williamdurand.fr](https://slides.williamdurand.fr/)._
 
 <ul class="talks">
   {% for data in site.data.talks %}

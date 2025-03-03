@@ -19,13 +19,8 @@ As usual, congratulations to the AFUP team, this event was a blast!
 
 You will find the video of my talk below (in French, sorry):
 
-<div class="video-container">
-<center>
-<iframe width="560" height="315" src="//www.youtube.com/embed/u_jDzcXCimM" frameborder="0" allowfullscreen></iframe>
-</center>
-</div>
+<iframe src="//www.youtube.com/embed/u_jDzcXCimM" frameborder="0" allowfullscreen></iframe>
 
-<p></p>
 And, here are my slides:
 
 <script async class="speakerdeck-embed" data-id="b14006e42cc247cdac1ad58e4cd7994a" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>

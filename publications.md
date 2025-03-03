@@ -4,13 +4,11 @@ title: Publications
 tagline: "Papers I've written."
 ---
 
-I have conducted research as a PhD student for Michelin, from January 2013 to
+_I have conducted research as a PhD student for Michelin, from January 2013 to
 May 2016. My two main research fields are **software testing** and (formal)
 **model inference**, which I link together by developing Model-based Testing
 techniques. You can find my publications below, and you may also have a look at
-my [DBLP entry](http://dblp.uni-trier.de/pers/hd/d/Durand:William.html).
-
----
+my [DBLP entry](https://dblp.uni-trier.de/pers/hd/d/Durand:William.html)._
 
 <ul class="publications">
   {% for data in site.data.publications %}

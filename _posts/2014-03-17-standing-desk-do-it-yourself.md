@@ -45,10 +45,9 @@ Then, it was time to write down **THE plan**. I needed to put the keyboard
 at the height of 32cm starting from the top of my existing desk, and the main
 monitor at the height of 10-15cm upper.
 
-<p class="aligned-images">
-    <a href="/images/posts/standing-desk/items.jpg"><img src="/images/posts/standing-desk/items_small.jpg" /></a>
-    <a href="/images/posts/standing-desk/the-plan.jpg"><img src="/images/posts/standing-desk/the-plan_small.jpg" /></a>
-</p>
+![](/images/posts/standing-desk/items_small.jpg)
+
+![](/images/posts/standing-desk/the-plan_small.jpg)
 
 The side tables are square (50x50cm), and their height (42cm) perfectly fits my
 needs, given my existing desk dimensions as described above. That is why I chose
@@ -62,42 +61,38 @@ I put into the table, that one being made of wood with paper filling. This
 happens when you buy cheap furniture... Adding these blocks did the trick
 though.
 
-<p class="aligned-images">
-    <a href="/images/posts/standing-desk/half-table.jpg"><img src="/images/posts/standing-desk/half-table_small.jpg" /></a>
-    <a href="/images/posts/standing-desk/blocks.jpg"><img src="/images/posts/standing-desk/blocks_small.jpg" /></a>
-</p>
+![](/images/posts/standing-desk/half-table_small.jpg)
+
+![](/images/posts/standing-desk/blocks_small.jpg)
 
 I did the same thing for the two hollow legs of the half table, gluing blocks of
 wood into them so that it looks exactly like the original legs. Here, I reused
 the blocks that were located in the offcuts of the two legs I cut.
 
-<p class="aligned-images">
-    <a href="/images/posts/standing-desk/legs.jpg"><img src="/images/posts/standing-desk/legs_small.jpg" /></a>
-    <a href="/images/posts/standing-desk/wood-block-legs.jpg"><img src="/images/posts/standing-desk/wood-block-legs_small.jpg" /></a>
-</p>
+![](/images/posts/standing-desk/legs_small.jpg)
+
+![](/images/posts/standing-desk/wood-block-legs_small.jpg)
 
 At that time, everything was ready for assembling. I put up the other side
 table, then I screwed the short legs and the brackets on the half table.
 
-<p class="aligned-images">
-    <a href="/images/posts/standing-desk/table.jpg"><img src="/images/posts/standing-desk/table_small.jpg" /></a>
-    <a href="/images/posts/standing-desk/blocks-and-brackets.jpg"><img src="/images/posts/standing-desk/blocks-and-brackets_small.jpg" /></a>
-</p>
+![](/images/posts/standing-desk/table_small.jpg)
+
+![](/images/posts/standing-desk/blocks-and-brackets_small.jpg)
 
 Sort of protip, I used a black marker to color the edges of the half table in
 order to make them pretty. Version 1 will not hide the back of the half table
 unfortunately. I didn't find a satisfying solution yet.
 
-[![](/images/posts/standing-desk/black-marker_small.jpg)](/images/posts/standing-desk/black-marker.jpg)
+![](/images/posts/standing-desk/black-marker_small.jpg)
 
 Then, I screwed the half table part to the main side table, and cut and stuck
 rubber pads on each leg. That way, the whole piece of furniture should be pretty
 stable once put on the desk.
 
-<p class="aligned-images">
-    <a href="/images/posts/standing-desk/assembling.jpg"><img src="/images/posts/standing-desk/assembling_small.jpg" /></a>
-    <a href="/images/posts/standing-desk/rubber-pads.jpg"><img src="/images/posts/standing-desk/rubber-pads_small.jpg" /></a>
-</p>
+![](/images/posts/standing-desk/assembling_small.jpg)
+
+![](/images/posts/standing-desk/rubber-pads_small.jpg)
 
 And voilà! I am ready to work standing up. It is worth mentioning that I can
 double the space of the upper surface, if I want to, by simply buying another
@@ -105,9 +100,9 @@ side table (I actually bought a few ones already, just in case you know). I also
 kept the other part of the table I cut so that I can possibly build another
 similar piece of furniture.
 
-[![](/images/posts/standing-desk/final-front_small.jpg)](/images/posts/standing-desk/final-front.jpg)
+![](/images/posts/standing-desk/final-front_small.jpg)
 
-[![](/images/posts/standing-desk/final-back_small.jpg)](/images/posts/standing-desk/final-back.jpg)
+![](/images/posts/standing-desk/final-back_small.jpg)
 
 I would like to thank Jean-Pierre who has provided me all the tools and
 knowledge I needed.

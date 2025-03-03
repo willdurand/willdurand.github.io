@@ -7,15 +7,11 @@ exclude:   [ README.md, Gemfile, vendor, .* ]
 title: "William Durand"
 tagline: ""
 description: |
-  Hi! I'm <a href="https://mamot.fr/@willdurand">Will</a>.
+  Hi! I'm <a href="https://mamot.fr/@willdurand">Will</a>. Lifelong learner.
+  OSS evangelist. (Traveler.) Cyclist. (Runner.) (Speaker.) Firefox dev.
+  He/him.
   <br>
-  <br>
-  Lifelong learner. OSS evangelist. (Traveler.) Cyclist. (Runner.) (Speaker.) Firefox dev. He/him.
-  <br>
-  <br>
-  <small>
   <a href="mailto:will@drnd.me">will@drnd.me</a> | 0xa509bcf1c1274f3b
-  </small>
 
 # Used in Atom feeds
 url: "https://williamdurand.fr"
@@ -26,10 +22,6 @@ author:
   email: will@drnd.me
   github: willdurand
   mastodon: willdurand
-
-twitter:
-  username: couac
-  card: summary_large_image
 
 plugins:
   - jekyll-seo-tag

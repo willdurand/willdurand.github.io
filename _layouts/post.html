@@ -44,7 +44,7 @@ layout: main
 
   <div class="fork-and-edit">
     <p>
-      Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/main/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.md">fork and edit this post</a> if you find a typo, thank you so much! This post is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license.
+      ℹ️ Feel free to <a href="https://github.com/willdurand/willdurand.github.io/edit/main/_posts/{{ page.url | remove_first:'/' | replace_first:'/','-' | replace_first:'/','-' |replace_first:'/','-' | remove:'/' }}.md">fork and edit this post</a> if you find a typo, thank you so much! This post is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license.
     </p>
   </div>
 </div>
@@ -63,12 +63,10 @@ layout: main
   <ul class="recent-posts" itemscope itemtype="https://schema.org/Blog">
     {% for post in site.related_posts limit:10 %}
       <li itemscope itemtype="https://schema.org/BlogPosting">
-        <h3>
-          <a href="{{ post.url }}" itemprop="name" itemprop="headline">{{ post.title }}</a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            <small><meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</small>
-          </time>
-        </h3>
+        <a href="{{ post.url }}" itemprop="name" itemprop="headline">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          <small><meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</small>
+        </time>
       </li>
     {% endfor %}
   </ul>
@@ -78,7 +76,7 @@ layout: main
   <h2>Comments</h2>
 
   <p>
-    No comments here.
+    No comments on this site.
     {% if page.mastodon_id %}
     You can <a href="https://mamot.fr/@{{ site.author.mastodon }}/{{ page.mastodon_id }}">interact on Mastodon</a>
     {% else %}
