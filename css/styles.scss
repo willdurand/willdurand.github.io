@@ -179,6 +179,8 @@ main {
 footer {
   border-top: 1px solid currentColor;
   margin-top: 2em;
+  text-align: center;
+  text-wrap: balance;
 
   .footer-links {
     font-size: $small-font-size;
