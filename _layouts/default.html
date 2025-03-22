@@ -40,17 +40,14 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Anchor links
-        const selector = ".post h2, .post h3, .post h4, .post h5, .post h6";
+        const selector = ".post h2[id], .post h3[id], .post h4[id], .post h5[id], .post h6[id]";
 
         for (const $header of document.querySelectorAll(selector)) {
-          if (!$header.id) {
-            continue;
-          }
-
           const $anchor = document.createElement("a");
           $anchor.className = "anchor-link";
-          $anchor.href = "#" + $header.id;
-          $anchor.innerHTML = "#";
+          $anchor.href = `#${$header.id}`;
+          $anchor.textContent = "#";
+          $anchor.setAttribute("aria-hidden", true);
 
           $header.appendChild($anchor);
         }
