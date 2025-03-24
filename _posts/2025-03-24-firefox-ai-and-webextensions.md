@@ -4,7 +4,7 @@ title: "Firefox AI & WebExtensions"
 location: Clermont-Fd Area, France
 image: /images/posts/2025/03/ai-social.webp
 tags: [mozilla]
-# mastodon_id:
+mastodon_id: 114216878591542060
 ---
 
 _I gave an introduction to the Firefox AI runtime and WebExtensions at a [French
