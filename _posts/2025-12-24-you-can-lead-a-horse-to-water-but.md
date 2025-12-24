@@ -28,7 +28,7 @@ assignment to enforce focus.
 My manager, having listened patiently to my description of the sheer effort
 required to maintain momentum, made the following comment:
 
-> You can lead a horse to water but you can't force it drink.
+> You can lead a horse to water but you can't force it to drink.
 
 At the time, my sole obsession was the completion of the project. This singular
 focus blinded me to a set of important leadership principles, which this saying
