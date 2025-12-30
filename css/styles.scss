@@ -85,6 +85,8 @@ main {
   blockquote {
     border-left: 8px solid currentColor;
     font-style: italic;
+    font-weight: 300;
+    margin: 0;
     padding-left: $default-padding;
   }
 
