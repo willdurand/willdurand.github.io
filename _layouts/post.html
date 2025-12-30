@@ -61,7 +61,7 @@ layout: main
   <h2>Recent articles</h2>
 
   <ul class="recent-posts" itemscope itemtype="https://schema.org/Blog">
-    {% for post in site.related_posts limit:10 %}
+    {% for post in site.related_posts limit:5 %}
       <li itemscope itemtype="https://schema.org/BlogPosting">
         <a href="{{ post.url }}" itemprop="name" itemprop="headline">{{ post.title }}</a>
         <time datetime="{{ post.date | date_to_xmlschema }}">
