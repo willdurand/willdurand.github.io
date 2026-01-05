@@ -3,7 +3,7 @@ layout: post
 title: My process for pitching projects as an engineer
 location: Clermont-Fd Area, France
 image: /images/posts/2025/12/my-process-for-pitching-projects-as-an-engineer.webp
-tags: [mozilla, engineering]
+tags: [mozilla]
 mastodon_id: 115813163155347931
 description: |
   Ever had a great idea at work but struggled to get it on the roadmap? As an

@@ -26,7 +26,11 @@ layout: main
 
   {% if page.tags.size > 0  %}
   <span class="post-tags">
-    // {{ page.tags | join: ', ' }}
+    //
+    {% for tag in page.tags %}
+      <a href="/tags/{{ tag|downcase|replace: " ", "-" }}/">{{ tag }}</a>
+      {%- if forloop.last == false -%}, {%- endif -%}
+    {% endfor %}
   </span>
   {% endif %}
 

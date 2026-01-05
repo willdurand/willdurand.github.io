@@ -1,0 +1,19 @@
+---
+layout: main
+---
+
+<h1 class="page-title">{{ page.title }}</h1>
+
+{{ content }}
+
+<ul class="posts" itemscope itemtype="http://schema.org/Blog">
+  {% for post in site.tags[page.tag] %}
+  <li itemscope itemtype="http://schema.org/BlogPosting" class="post-title">
+    <a itemprop="headline" itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-title-date hide-on-mobile">
+      <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
+      // {{ post.date | date: '%b %d, %Y' }}
+    </time>
+  </li>
+  {% endfor %}
+</ul>

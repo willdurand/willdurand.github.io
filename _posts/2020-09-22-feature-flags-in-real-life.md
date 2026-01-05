@@ -3,7 +3,7 @@ layout: post
 title: "Feature flags in real life"
 location: "Freiburg, Germany"
 image: /images/posts/2020/09/waffle.jpg
-tags: [mozilla, engineering]
+tags: [mozilla]
 mastodon_id: 104908545011729969
 ---
 
