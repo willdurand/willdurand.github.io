@@ -6,6 +6,7 @@ image: /images/posts/2021/05/trees.webp
 mastodon_id: 106182350048923017
 credits: |
   Photo used on social media by [Markus Spiske](https://unsplash.com/@markusspiske)
+tags: [git]
 ---
 
 This is a quick introduction to a `git` feature I use quite often because I find
