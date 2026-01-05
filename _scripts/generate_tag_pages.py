@@ -2,6 +2,7 @@ TAGS = [
     "PHP",
     "ai",
     "career",
+    "git",
     "mozilla",
     "side projects",
     "tech leadership",
