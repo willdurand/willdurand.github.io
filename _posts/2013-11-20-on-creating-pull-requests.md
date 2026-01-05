@@ -6,6 +6,7 @@ title: "On Creating Pull Requests"
 updates:
   - date: 2015-11-29
     content: I added a note on PR title prefixes thanks to @lsmith.
+tags: [thoughts]
 ---
 
 As a [maintainer of various Open Source
