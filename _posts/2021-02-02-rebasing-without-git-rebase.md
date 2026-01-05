@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2021/02/git-rebase.webp
 credits: |
   Photo used on social media by [Yancy Min](https://unsplash.com/@yancymin).
+tags: [git]
 ---
 
 My `git` workflow involves creating a lot of short-lived branches (a.k.a.
