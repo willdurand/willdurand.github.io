@@ -5,6 +5,7 @@ title: "Patching the Linux kernel (Raspbian &amp; CVE-2016-0728)"
 updates:
   - date: 2022-03-11
     content: I proofread this article and removed dead links.
+tags: [notes]
 ---
 
 [CVE-2016-0728][] has been disclosed earlier this week and it is a [serious
