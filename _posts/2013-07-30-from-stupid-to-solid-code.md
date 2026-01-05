@@ -217,7 +217,7 @@ When talking about **coupling**,
 [cohesion](<http://en.wikipedia.org/wiki/Cohesion_(computer_science)>) is often
 mentioned as well. **High cohesion** means to keep similar and related things
 together. The **union** of cohesion and coupling is [orthogonal
-design](http://www.jasoncoffin.com/cohesion-and-coupling-principles-of-orthogonal-object-oriented-programming/).
+design](https://medium.com/@jasoncof/cohesion-and-coupling-principles-of-orthogonal-object-oriented-programming-9bf1eb92a2e5).
 The idea is to **keep your components focused** and try to **minimize the
 dependencies between them**.
 
