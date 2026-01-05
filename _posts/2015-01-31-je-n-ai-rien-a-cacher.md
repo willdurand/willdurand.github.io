@@ -5,6 +5,7 @@ title: "Je n'ai rien a cacher (I've got nothing to hide)"
 updates:
   - date: 2022-05-01
     content: I proofread this article and removed dead links.
+tags: [side projects]
 ---
 
 This week, I launched [jenairienacacher.fr](https://jenairienacacher.fr/), a
