@@ -8,6 +8,7 @@ credits: |
 updates:
   - date: 2022-03-12
     content: I proofread this article and updated the figures.
+tags: [git]
 ---
 
 We all probably know [this successful Git branching
