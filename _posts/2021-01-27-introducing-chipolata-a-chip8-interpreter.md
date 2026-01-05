@@ -9,6 +9,7 @@ credits: |
   (Joseph Weisbecker, 1978)"](https://en.wikipedia.org/wiki/CHIP-8#/media/File:Space_intercept.png),
   licensed under the [Creative Commons Attribution-Share Alike 4.0 International
   license](https://creativecommons.org/licenses/by-sa/4.0/).
+tags: [side projects]
 ---
 
 A few weeks ago, I wrote a CHIP-8 interpreter named

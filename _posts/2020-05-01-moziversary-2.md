@@ -3,7 +3,7 @@ layout: post
 title: "Moziversary #2"
 location: "Freiburg, Germany"
 image: /images/posts/2020/05/win98.png
-tags: [mozilla]
+tags: [mozilla, career]
 mastodon_id: 104093528704428539
 ---
 

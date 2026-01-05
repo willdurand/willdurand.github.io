@@ -4,11 +4,11 @@ title: I joined a new team (at Mozilla)
 location: "Freiburg, Germany"
 image: /images/posts/2022/01/newteam.webp
 mastodon_id: 107694439668081063
-tags: [mozilla]
+tags: [mozilla, career]
 ---
 
 The year is 2022 and I am still using my blog to share personal-ish status
-updates. Yeah, I am _that_ old. Today's post is about my career.
+updates. Today's post is about my career.
 
 I work at Mozilla for ~4 years now (including my time as a contractor). After
 having worked on [many](/2020/05/01/moziversary-2/)

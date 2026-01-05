@@ -3,7 +3,7 @@ layout: post
 title: "Firefox AI & WebExtensions"
 location: Clermont-Fd Area, France
 image: /images/posts/2025/03/ai-social.webp
-tags: [mozilla]
+tags: [mozilla, engineering, ai]
 mastodon_id: 114216878591542060
 ---
 

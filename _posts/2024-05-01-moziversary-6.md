@@ -3,7 +3,7 @@ layout: post
 title: "Moziversary #6"
 location: Clermont-Fd Area, France
 image: /images/posts/2024/05/moziversary-6-social.webp
-tags: [mozilla]
+tags: [mozilla, career]
 mastodon_id: 112366912631746105
 credits: |
   Photo used on social media by [Sarah Shull](https://unsplash.com/@sarahshull).

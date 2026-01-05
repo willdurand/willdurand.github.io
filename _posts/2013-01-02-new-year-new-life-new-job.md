@@ -2,6 +2,7 @@
 layout: post
 title: New year, new life, new job
 location: Clermont-Fd Area, France
+tags: [career]
 updates:
   - date: 2022-04-19
     content: I proofread this article and updated some links.

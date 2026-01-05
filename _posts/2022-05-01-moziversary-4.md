@@ -3,7 +3,7 @@ layout: post
 title: "Moziversary #4"
 location: "Freiburg, Germany"
 image: /images/posts/2022/05/moziversary-4-social.webp
-tags: [mozilla]
+tags: [mozilla, career]
 mastodon_id: 108225742381978909
 ---
 

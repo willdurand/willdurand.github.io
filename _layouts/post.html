@@ -18,10 +18,17 @@ layout: main
     {% if page.date %}
     <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
       <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
-      {{ page.date | date_to_long_string }} &mdash;
+      {{ page.date | date_to_long_string }}
     </time>
+    &mdash;
     {% endif %}{{ page.location }}
   </span>
+
+  {% if page.tags.size > 0  %}
+  <span class="post-tags">
+    // {{ page.tags | join: ', ' }}
+  </span>
+  {% endif %}
 
   {% if page.tldr %}
   <div class="post-shortcuts">

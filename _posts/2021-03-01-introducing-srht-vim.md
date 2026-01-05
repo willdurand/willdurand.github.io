@@ -4,6 +4,7 @@ title: "Introducing srht.vim"
 location: "Freiburg, Germany"
 image: /images/posts/2021/03/srhtvim.webp?v=1
 mastodon_id: 105814266085602375
+tags: [side projects]
 ---
 
 [Sourcehut][1] is a free and open source platform to develop software. It

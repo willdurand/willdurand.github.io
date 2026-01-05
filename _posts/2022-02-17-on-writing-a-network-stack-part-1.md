@@ -4,6 +4,7 @@ title: "On writing a network stack (1/2)"
 location: "Freiburg, Germany"
 image: /images/posts/2022/02/network-stack-social.webp?v=20220411-2
 mastodon_id: 107818608718601514
+tags: [side projects]
 ---
 
 _I am writing a minimum viable network stack from scratch for [ArvernOS][] (a

@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2022/07/containers-and-micro-vms-social.webp
 mastodon_id: 108630271663138071
 credits: Photo used on social media by [Bernd Dittrich](https://unsplash.com/@hdbernd).
+tags: [side projects]
 ---
 
 I wrote [an article about my deep dive into containers][post-containers] last

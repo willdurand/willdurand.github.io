@@ -3,7 +3,7 @@ layout: post
 title: "Developing Firefox in Firefox with Gitpod"
 location: "Freiburg, Germany"
 image: /images/posts/2022/05/gitpod-firefox-social.webp?v=20220503
-tags: [mozilla]
+tags: [mozilla, engineering]
 mastodon_id: 108237109619474962
 ---
 

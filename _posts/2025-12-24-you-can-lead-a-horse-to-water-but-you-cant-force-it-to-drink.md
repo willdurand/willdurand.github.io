@@ -3,7 +3,7 @@ layout: post
 title: You can lead a horse to water but you can't force it to drink
 location: Clermont-Fd Area, France
 image: /images/posts/2025/12/you-can-lead-a-horse-to-water-but.webp
-tags: [mozilla]
+tags: [mozilla, tech leadership]
 mastodon_id: 115773554578447338
 credits: |
   Photo used on social media by [Vito Natale](https://unsplash.com/@otiv345).

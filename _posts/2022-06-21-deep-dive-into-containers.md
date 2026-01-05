@@ -5,6 +5,7 @@ location: "Freiburg, Germany"
 image: /images/posts/2022/06/containers-social.webp
 mastodon_id: 108515106268116792
 credits: Photo used on social media by [ines mills](https://unsplash.com/@inesmills).
+tags: [side projects]
 ---
 
 It (almost) all started with [this talk from Liz Rice][containers-go] that I

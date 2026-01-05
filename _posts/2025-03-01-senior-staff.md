@@ -4,6 +4,7 @@ title: "Senior Staff."
 location: Clermont-Fd Area, France
 image: /images/posts/2021/02/promotion.webp
 mastodon_id: 114087297895302094
+tags: [mozilla, career]
 credits: |
   Photo used on social media by [@ghebby](https://unsplash.com/@ag_ghebby).
 # Override description to avoid adding the footnote.
