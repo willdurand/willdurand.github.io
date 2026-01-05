@@ -5,6 +5,7 @@ TAGS = [
     "mozilla",
     "side projects",
     "tech leadership",
+    "thoughts",
 ]
 
 TEMPLATE = """---
