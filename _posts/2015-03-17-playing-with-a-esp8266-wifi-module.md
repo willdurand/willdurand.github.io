@@ -9,6 +9,7 @@ updates:
       ~~I open-sourced EspWiFi, a Arduino driver for the ESP8266 WiFi Module.~~
   - date: 2022-07-25
     content: I proofread this article and fixed some links.
+tags: [notes]
 ---
 
 I started to play with some [Arduino][]-based technologies after having built my
