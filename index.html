@@ -25,7 +25,7 @@ show_description: true
     {% endif %}
     {% endif %}
     <li itemscope itemtype="http://schema.org/BlogPosting" class="post-title">
-        <a itemprop="headline" itemprop="name" href="{{ post.url }}" class="link">{{ post.title }}</a>
+        <a itemprop="headline" href="{{ post.url }}" class="link">{{ post.title }}</a>
         <time datetime="{{ post.date | date_to_xmlschema }}" class="post-title-date hide-on-mobile">
             <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
             // {{ post.date | date: '%d %b' }}
